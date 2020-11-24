@@ -1,0 +1,122 @@
+2020-01-21 18:46:38,285 : kivy : Factory: 184 symbols loaded
+2020-01-21 18:46:38,380 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2020-01-21 18:46:38,431 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-01-21 18:46:38,431 : kivy : Video: Provider: gstplayer
+2020-01-21 18:46:38,495 : kivy : Loading MPF-MC controller
+2020-01-21 18:46:38,495 : mpfmc : Mission Pinball Framework Media Controller v0.53.0-dev.15
+2020-01-21 18:46:38,495 : mpfmc : Mission Pinball Framework Game Engine v0.53.0-dev.68
+2020-01-21 18:46:38,495 : mpfmc : Machine path: E:\mpf\wows\wows
+2020-01-21 18:46:38,496 : ConfigProcessor : Config file in cache changed: E:\mpf\wows\wows\config\config
+2020-01-21 18:46:38,497 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-01-21 18:46:38,540 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2020-01-21 18:46:38,546 : ConfigProcessor : Loading config from file E:\mpf\wows\wows\config\config.
+2020-01-21 18:46:38,632 : ConfigProcessor : Loading config: E:\mpf\wows\wows\config\config
+2020-01-21 18:46:38,634 : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\398a03908486e3c8525902f452489fb5.mpf_cache
+2020-01-21 18:46:38,634 : mpfmc : Starting clock at 60.0Hz
+2020-01-21 18:46:38,645 : kivy : Text: Provider: sdl2
+2020-01-21 18:46:38,678 : kivy : Window: Provider: sdl2
+2020-01-21 18:46:39,072 : kivy : GL: Using the "OpenGL" graphics system
+2020-01-21 18:46:39,079 : kivy : GL: GLEW initialization succeeded
+2020-01-21 18:46:39,079 : kivy : GL: Backend used <glew>
+2020-01-21 18:46:39,079 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 432.00'>
+2020-01-21 18:46:39,079 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2020-01-21 18:46:39,079 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060 6GB/PCIe/SSE2'>
+2020-01-21 18:46:39,079 : kivy : GL: OpenGL parsed version: 4, 6
+2020-01-21 18:46:39,079 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2020-01-21 18:46:39,079 : kivy : GL: Texture max size <32768>
+2020-01-21 18:46:39,079 : kivy : GL: Texture max units <32>
+2020-01-21 18:46:39,096 : kivy : Window: auto add sdl2 input provider
+2020-01-21 18:46:39,096 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2020-01-21 18:46:39,103 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2020-01-21 18:46:39,315 : AudioInterface : Initialized
+2020-01-21 18:46:39,316 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2020-01-21 18:46:39,317 : kivy : Base: Start application main loop
+2020-01-21 18:46:39,317 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2020-01-21 18:46:39,317 : EventManager : Event: ======'display_dmd_initialized'====== Args={}
+2020-01-21 18:46:39,377 : mpfmc : Display: Setting 'dmd' as default display
+2020-01-21 18:46:39,382 : EventManager : Event: ======'displays_initialized'====== Args={}
+2020-01-21 18:46:39,383 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2020-01-21 18:46:39,383 : EventManager : Event: ======'display_window_ready'====== Args={}
+2020-01-21 18:46:39,384 : EventManager : Event: ======'slide_dmd_blank_created'====== Args={}
+2020-01-21 18:46:39,384 : EventManager : Event: ======'display_dmd_ready'====== Args={}
+2020-01-21 18:46:39,393 : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-01-21 18:46:39,396 : EventManager : Event: ======'mc_ready'====== Args={}
+2020-01-21 18:46:39,396 : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-01-21 18:46:39,397 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1e6cc6775e87a3e14ded8d45fd065b10.mpf_cache
+2020-01-21 18:46:39,397 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2020-01-21 18:46:39,398 : ConfigProcessor : Config file in cache changed: E:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml
+2020-01-21 18:46:39,398 : ConfigProcessor : Loading config from file E:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml.
+2020-01-21 18:46:39,405 : kivy : Base: Leaving application in progress...
+2020-01-21 18:46:39,405 : kivy : Exception while processing RegisteredHandler(callback=<bound method ModeController._load_modes of <mpfmc.core.mode_controller.ModeController object at 0x000001AE8EBBBF60>>, priority=1, kwargs={}, key=UUID('6aae9ef2-3ec7-47fa-9692-29f46367a3a1'), condition=None, blocking_facility=None) for event init_phase_2
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 197, in load
+    config = self.process(f)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 222, in process
+    return yaml.load(data_string, Loader=MpfLoader)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\ruamel\yaml\main.py", line 639, in load
+    return loader._constructor.get_single_data()  # type: ignore
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\ruamel\yaml\constructor.py", line 104, in get_single_data
+    return self.construct_document(node)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\ruamel\yaml\constructor.py", line 114, in construct_document
+    for dummy in generator:
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\ruamel\yaml\constructor.py", line 611, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 135, in construct_mapping
+    format(key, key_node.start_mark))
+KeyError: 'Key "event_player" was defined multiple times in config   in "E:\\mpf\\wows\\wows\\modes\\mode_1\\config\\mode_1.yaml", line 39, column 1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 662, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mode_controller.py", line 59, in _load_modes
+    self.mc.modes[mode] = self._load_mode(mode)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mode_controller.py", line 132, in _load_mode
+    store_to_cache=self.mc.options['create_config_cache'], ignore_unknown_sections=True)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_processor.py", line 113, in load_config_files_with_cache
+    ignore_unknown_sections)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_processor.py", line 169, in _load_config_file_and_return_loaded_files
+    config = FileManager.load(filename, expected_version_str, True)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\file_manager.py", line 98, in load
+    return interface.load(file, verify_version, halt_on_error)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 211, in load
+    raise ValueError(msg)
+ValueError: Error found in file E:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml: 'Key "event_player" was defined multiple times in config   in "E:\\mpf\\wows\\wows\\modes\\mode_1\\config\\mode_1.yaml", line 39, column 1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\commands\mc.py", line 213, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\app.py", line 855, in run
+    runTouchApp()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+    self._mainloop()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+    EventLoop.idle()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\base.py", line 339, in idle
+    Clock.tick()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\clock.py", line 591, in tick
+    self._process_events()
+  File "kivy\_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\uix\display.py", line 205, in _displays_initialized
+    self.mc.displays_initialized()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mc.py", line 336, in displays_initialized
+    self._init()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mc.py", line 380, in _init
+    self.events.process_event_queue()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 743, in process_event_queue
+    **event[3])
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 708, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 664, in _run_handlers
+    raise Exception("Exception while processing {} for event {}".format(handler, event)) from e
+Exception: Exception while processing RegisteredHandler(callback=<bound method ModeController._load_modes of <mpfmc.core.mode_controller.ModeController object at 0x000001AE8EBBBF60>>, priority=1, kwargs={}, key=UUID('6aae9ef2-3ec7-47fa-9692-29f46367a3a1'), condition=None, blocking_facility=None) for event init_phase_2
+2020-01-21 18:46:39,409 : kivy : Stopping child threads... (1 remaining)
+2020-01-21 18:46:40,416 : kivy : All child threads stopped.

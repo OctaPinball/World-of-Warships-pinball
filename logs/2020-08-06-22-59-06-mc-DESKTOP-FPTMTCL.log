@@ -1,0 +1,38 @@
+2020-08-06 22:59:06,875 : kivy : Factory: 184 symbols loaded
+2020-08-06 22:59:07,402 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.1
+2020-08-06 22:59:07,403 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer, img_gif 
+2020-08-06 22:59:07,648 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-08-06 22:59:07,648 : kivy : Video: Provider: gstplayer
+2020-08-06 22:59:07,825 : kivy : Loading MPF-MC controller
+2020-08-06 22:59:07,832 : YamlMultifileConfigLoader : Machine config file #1: config
+2020-08-06 22:59:07,832 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config
+2020-08-06 22:59:07,832 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-08-06 22:59:07,876 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2020-08-06 22:59:07,876 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.
+2020-08-06 22:59:08,058 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config
+2020-08-06 22:59:08,094 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_mode_support.yaml
+2020-08-06 22:59:08,100 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_hc_support.yaml
+2020-08-06 22:59:08,106 : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\051200dc57c22661ccd061bb2017f3a6.mpf_cache
+2020-08-06 22:59:08,106 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-08-06 22:59:08,107 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-08-06 22:59:08,107 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-08-06 22:59:08,108 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2020-08-06 22:59:08,108 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\45b3b9aa5591eaef8a230445e70fa468.mpf_cache
+2020-08-06 22:59:08,109 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\dec453850496132f8dddcdfa0a36feb5.mpf_cache
+2020-08-06 22:59:08,109 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2020-08-06 22:59:08,110 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2020-08-06 22:59:08,110 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f0ffd5ecaddfe34035bf3b1779215a88.mpf_cache
+2020-08-06 22:59:08,110 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2020-08-06 22:59:08,111 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2020-08-06 22:59:08,111 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2020-08-06 22:59:08,111 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2020-08-06 22:59:08,112 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2020-08-06 22:59:08,112 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2020-08-06 22:59:08,113 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2020-08-06 22:59:08,113 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2020-08-06 22:59:08,114 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2020-08-06 22:59:08,114 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2020-08-06 22:59:08,115 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2020-08-06 22:59:08,115 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2020-08-06 22:59:08,116 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\hc_multiball_super\config\hc_multiball_super.yaml
+2020-08-06 22:59:08,116 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\hc_multiball_super\config\hc_multiball_super.yaml.

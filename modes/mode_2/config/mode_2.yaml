@@ -1,0 +1,197 @@
+#config_version=5
+
+mode:
+    start_events: start_mode_2
+    stop_events: end_mode_2
+    events_when_started: mode_enabled
+    events_when_stopped: mode_disabled
+    priority: 300
+
+timers:
+  aa_fire_expire_timer:
+    start_value: 2
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: restart_aa_timer
+        action: restart
+
+counters:
+  mode_2_counter:
+    count_events: mode_2_switch_hit
+    count_complete_value: 5
+    disable_on_complete: false
+
+event_player:
+  sw_bumper_hit{current_player.mode_shot_enabled == 1}:
+    - search_aa_fire
+    - restart_aa_timer
+    - add_aa_slide_check
+    - award_aa_fire
+    - mode_2_switch_hit
+  add_aa_slide_check{current_player.aa_fire_timer_active == 0 and current_player.mode_shot_enabled == 1}:
+    - add_aa_slide
+
+variable_player:
+  logicblock_mode_2_counter_complete:
+    mode_shot_made:
+      int: 1
+      action: add
+  award_aa_fire:
+    m2value: 
+      int: (current_player.JetValue * 4)
+      action: set
+    modetotal: current_player.m2value
+    score: current_player.m2value
+    m2shotmade:
+      int: 1
+      action: add
+    modeshotmade:
+      int: 1
+      action: add
+    m2shotremaining:
+      int: (20 - current_player.m2shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m2shotremaining)
+      action: set
+  player_JetValue:
+    m2value: 
+      int: (current_player.JetValue * 4)
+      action: set
+  mode_mode_2_started:
+    m2value: 
+      int: (current_player.JetValue * 4)
+      action: set
+  add_aa_slide:
+    aa_fire_timer_active:
+      int: 1
+      action: set
+  timer_aa_fire_expire_timer_complete:
+    aa_fire_timer_active:
+      int: 0
+      action: set
+
+random_event_player:
+  search_aa_fire:
+    - found_aa_fire_1
+    - found_aa_fire_2
+    - found_aa_fire_3
+    - found_aa_fire_4
+
+slides:
+  mode_2_shot_made_slide:
+    - type: image
+      image: match_ship
+      anchor_x: left
+      anchor_y: bottom
+      x: 27
+      y: bottom
+    - type: text
+      text: "(m2shotremaining) MORE"
+      x: right-2
+      anchor_x: right
+      anchor_y: top
+      y: top-11
+      style: small
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: text
+      text: "DEF. AA"
+      x: right-2
+      anchor_x: right
+      anchor_y: top
+      y: top-2
+      style: medium
+      round_anchor_x: left
+      round_anchor_y: top
+
+
+slide_player:
+  add_aa_slide:
+    mode_2_shot_made_slide:
+      priority: 200
+  timer_aa_fire_expire_timer_complete:
+    mode_2_shot_made_slide:
+      action: remove
+
+widget_player:
+  timer_aa_fire_expire_timer_complete:
+    aa_fire_1:
+      slide: mode_2_shot_made_slide
+      action: remove
+    aa_fire_2:
+      slide: mode_2_shot_made_slide
+      action: remove
+    aa_fire_3:
+      slide: mode_2_shot_made_slide
+      action: remove
+    aa_fire_4:
+      slide: mode_2_shot_made_slide
+      action: remove
+  found_aa_fire_1:
+    aa_fire_1:
+      slide: mode_2_shot_made_slide
+      action: add
+  found_aa_fire_2:
+    aa_fire_2:
+      slide: mode_2_shot_made_slide
+      action: add
+  found_aa_fire_3:
+    aa_fire_3:
+      slide: mode_2_shot_made_slide
+      action: add
+  found_aa_fire_4:
+    aa_fire_4:
+      slide: mode_2_shot_made_slide
+      action: add
+
+
+widgets:
+  aa_fire_1:
+    - type: image
+      image: aa_1
+      anchor_x: left
+      anchor_y: top
+      x: 0
+      y: top
+      z: 110
+      loops: 0
+      auto_play: true
+      expire: 0.9s
+  aa_fire_2:
+    - type: image
+      image: aa_2
+      anchor_x: left
+      anchor_y: top
+      x: 0
+      y: top
+      z: 110
+      loops: 0
+      auto_play: true
+      expire: 1.2s
+  aa_fire_3:
+    - type: image
+      image: aa_3
+      anchor_x: left
+      anchor_y: top
+      x: 0
+      y: top
+      z: 110
+      loops: 0
+      auto_play: true
+      expire: 1.3s
+  aa_fire_4:
+    - type: image
+      image: aa_4
+      anchor_x: left
+      anchor_y: top
+      x: 0
+      y: top
+      z: 110
+      loops: 0
+      auto_play: true
+      expire: 1.2s
+

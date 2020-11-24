@@ -1,0 +1,11 @@
+#show_version=5
+
+- time: 0
+  widgets:
+    load_status_widget_1:
+      action: add
+      slide: battle_slide
+- time: +0.5
+  events:
+    - check_reload_status
+- time: +0.5

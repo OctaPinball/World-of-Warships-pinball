@@ -1,0 +1,453 @@
+#config_version=5
+
+mode:
+    start_events: battle_active
+    stop_events: battle_inactive
+    priority: 300
+
+
+
+#shots:
+
+counters:
+  citadel_load_counter:
+    disable_on_complete: false
+    count_events: s_left_ramp_made_active, s_side_ramp_made_active
+    count_complete_value: current_player.citadel_load_number
+    events_when_complete: citadel_loaded
+    events_when_hit: citadel_load_advance
+  torpedo_load_counter:
+    disable_on_complete: false
+    count_events: s_right_ramp_made_active, s_side_ramp_made_active
+    count_complete_value: current_player.torpedo_load_number
+    events_when_complete: torpedo_loaded
+    events_when_hit: torpedo_load_advance
+
+variable_player:
+  mode_battle_started:
+    ship_hp:
+      float: 100
+      action: set
+    torpedo_number:
+      int: 0
+      action: set
+    citadel_number:
+      int: 0
+      action: set
+  citadel_loaded:
+    citadel_ready:
+      int: 1
+      action: set
+    citadel_number:
+      int: 1
+      action: add
+  torpedo_loaded:
+    torpedo_ready:
+      int: 1
+      action: set
+    torpedo_number:
+      int: 1
+      action: add
+  deal_torpedo_dmg:
+    ship_hp:
+      float: -(current_player.torpedo_number * current_player.torpedo_dmg)
+      action: add
+    torpedo_ready:
+      int: 0
+      action: set
+    torpedo_number:
+      int: 0
+      action: set
+  magnet_citadel_magnet_grabbing_ball:
+    citadel_locked:
+      int: 1
+      action: set
+  deal_citadel_dmg:
+    citadel_ready:
+      int: 0
+      action: set 
+    ship_hp:
+      float: -(current_player.citadel_number * current_player.citadel_dmg)
+      action: add
+    citadel_locked:
+      int: 0
+      action: set 
+    citadel_number:
+      int: 0
+      action: set
+  deal_fire_dmg:
+    ship_hp:
+      float: -(current_player.fire_dmg)
+      action: add
+  penatration_dmg_deal:
+    ship_hp:
+      float: -(current_player.penetration_dmg)
+      action: add
+  start_fire_1:
+    fire_1_active:
+      int: 1
+      action: set
+  start_fire_2:
+    fire_2_active:
+      int: 1
+      action: set
+  start_fire_3:
+    fire_3_active:
+      int: 1
+      action: set
+  timer_fire_1_timer_complete:
+    fire_1_active:
+      int: 0
+      action: set
+  timer_fire_2_timer_complete:
+    fire_2_active:
+      int: 0
+      action: set
+  timer_fire_3_timer_complete:
+    fire_3_active:
+      int: 0
+      action: set
+  player_ship_hp:
+    ship_hp_animation:
+      int: (current_player.ship_hp * 74 / 100)
+      action: set
+  check_reload_status:
+    citadel_remaining:
+      int: (current_player.citadel_load_number - device.counters.citadel_load_counter.value)
+      action: set
+    torpedo_remaining:
+      int: (current_player.torpedo_load_number - device.counters.torpedo_load_counter.value)
+      action: set
+
+state_machines:
+  devestatingstrike:
+    starting_state: above
+    states:
+      above:
+        label: Start state
+        events_when_started: devstrike_above
+      available:
+        events_when_started: devstrike_available
+      expired:
+        events_when_started: devstrike_expired
+    transitions:
+      - source: above
+        target: available
+        events: activate_devstrike
+      - source: available
+        target: expired
+        events: timer_devstrike_countdown_complete
+      - source: available, expired 
+        target: above
+        events: start_battle
+
+random_event_player:
+  start_fire_search:
+    events:
+      - start_fire_1
+      - start_fire_2
+      - start_fire_3
+
+timers:
+  devstrike_countdown:
+    start_value: 5
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: devstrike_available
+        action: restart
+  fire_1_timer:
+    start_value: 15
+    end_value: 0
+    direction: down
+    start_running: false
+    control_events:
+      - event: start_fire_1
+        action: restart
+  fire_2_timer:
+    start_value: 15
+    end_value: 0
+    direction: down
+    start_running: false
+    control_events:
+      - event: start_fire_2
+        action: restart
+  fire_3_timer:
+    start_value: 15
+    end_value: 0
+    direction: down
+    start_running: false
+    control_events:
+      - event: start_fire_3
+        action: restart
+
+
+event_player:
+  s_right_loop_pre_active{current_player.fire_3_active == 1}:
+    - activate_citadel_diverter
+  s_right_ramp_pre_active{current_player.fire_2_active == 1}:
+    - activate_citadel_diverter
+  s_torpedo_pre_active{current_player.fire_1_active == 1}:
+    - activate_torpedo_peg
+  right_loop_timeout:
+    - deactivate_citadel_diverter
+  right_ramp_citadel_timeout:
+    - deactivate_citadel_diverter
+  torpedo_citadel_timeout:
+    - deactivate_torpedo_peg
+  mode_battle_started:
+    - deal_dmg
+  s_torpedo_active{current_player.torpedo_ready==1}:
+    - deal_torpedo_dmg
+    - deal_dmg
+  citadel_loaded{current_player.citadel_locked==0}:
+    - enable_citadel_magnet
+#    - enable_loop_magnet                                     |REWORK NEED ~ LOOP DIVERTER
+    - disable_drop_target
+    - drop_target_knockdown
+ # s_citadel_lock_active{current_player.citadel_ready==1}:
+ #   - disable_loop_magnet                                    |REWORK NEED ~ LOOP DIVERTER
+  s_citadel_active{current_player.citadel_locked==1}:
+    - deal_citadel_dmg
+    - deal_dmg
+    - reset_citadel_magnet
+    - enable_drop_target
+    - drop_target_reset
+  sw_bumper_hit:
+    - deal_fire_dmg
+    - deal_dmg
+  s_drop_target_active:
+    - penatration_dmg_deal
+    - deal_dmg
+#    - enable_drop_target
+#    - drop_target_reset
+  sw_pen_target:
+    - penatration_dmg_deal
+    - deal_dmg
+  deal_dmg{current_player.ship_hp < 50}:
+    - activate_devstrike
+  deal_dmg{current_player.ship_hp <= 0}:
+    - ship_sunk
+  ship_sunk{device.state_machines.devestatingstrike.state == "available"}:
+    - award_devestating_strike
+
+  check_reload_status{current_player.citadel_ready == 0}: add_citadel_unready
+  check_reload_status{current_player.citadel_ready == 1}: add_citadel_ready
+  check_reload_status{current_player.torpedo_ready == 0}: add_torpedo_unready
+  check_reload_status{current_player.torpedo_ready == 1}: add_torpedo_ready
+
+slides:
+    ship_hp_slide:
+      - type: text
+        text: (ship_hp)
+        number_grouping: true
+        min_digits: 2
+        font_size: 30
+        color: red
+      - type: text
+        text: PLAYER (number)
+        y: 0
+        x: 0
+        font_size: 8
+        anchor_x: left
+        anchor_y: bottom
+        color: blue
+      - type: text
+        text: BALL (ball)
+        y: 0
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 8
+        color: green
+    battle_slide:
+      - type: image
+        image: battle_destroyer
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: bottom
+        y: bottom
+        x: left
+      - type: text
+        text: (score)
+        anchor_y: top
+        anchor_x: right
+        round_anchor_x: right
+        round_anchor_y: top
+        x: right
+        y: top-13
+        style: small
+        number_grouping: true
+        min_digits: 2
+      - type: text
+        text: (ship_hp)%
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 39
+        y: top-2
+        z: 300
+        style: small
+        number_grouping: true
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 105
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 0.5
+        color: white
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 120
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 130
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: red
+        animations:
+            player_ship_hp_animation:
+                - property: width
+                  relative: false
+                  value: (value)
+                  easing: out_quint
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 125
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: white
+        animations:
+            player_ship_hp_animation:
+                - property: width
+                  relative: false
+                  value: (value)
+                  easing: in_quint
+
+widget_player:
+  add_citadel_unready:
+    citadel_unloaded_widget:
+      action: add
+      slide: battle_slide
+  add_torpedo_unready:
+    torpedo_unloaded_widget:
+      action: add
+      slide: battle_slide
+  add_citadel_ready:
+    citadel_loaded_widget:
+      action: add
+      slide: battle_slide
+  add_torpedo_ready:
+    torpedo_loaded_widget:
+      action: add
+      slide: battle_slide
+
+widgets:
+  load_status_widget_1:
+      - type: text
+        text: "CITADEL"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+        expire: 0.5s
+      - type: text
+        text: "TORPEDO"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+        expire: 0.5s
+  citadel_unloaded_widget:
+      - type: text
+        text: "(citadel_remaining) MORE"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+        expire: 0.5s
+  torpedo_unloaded_widget:
+      - type: text
+        text: "(torpedo_remaining) MORE"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+        expire: 0.5s
+  citadel_loaded_widget:
+      - type: text
+        text: "READY"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+        expire: 0.5s
+        color: 00FF00
+  torpedo_loaded_widget:
+      - type: text
+        text: "READY"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+        expire: 0.5s
+        color: 00FF00
+
+slide_player:
+  mode_battle_started: battle_slide
+
+show_player:
+  slide_battle_slide_active:
+    sh_weapon_load_status:
+      loops: -1
+

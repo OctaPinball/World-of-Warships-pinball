@@ -1,0 +1,11 @@
+#show_version=5
+- time: 0
+  widgets:
+      sec_shell_12:
+        slide: high_caliber_slide
+- time: +1
+  widgets:
+      sec_shell_12:
+        slide: high_caliber_slide
+        action: remove
+

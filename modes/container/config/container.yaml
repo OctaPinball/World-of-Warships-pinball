@@ -1,0 +1,132 @@
+#config_version=5
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  lane_A:
+    switch: s_left_outlane
+    show_tokens:
+      light: l_a
+  lane_B:
+    switch: s_left_mid_inlane
+    show_tokens:
+      light: l_b
+  lane_C:
+    switch: s_left_inlane
+    show_tokens:
+      light: l_c
+  lane_D:
+    switch: s_right_inlane
+    show_tokens:
+      light: l_d
+  lane_E:
+    switch: s_right_outlane
+    show_tokens:
+      light: l_e
+
+shot_groups:
+  container_lanes:
+    shots: lane_A, lane_B, lane_C, lane_D, lane_E
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    reset_events: container_lanes_lit_complete
+
+variable_player:
+  container_lanes_lit_complete:
+    container_lit:
+      int: 1
+      action: set
+  award_container:
+    container_lit:
+      int: 0
+      action: set
+  add_a_ball:
+    addaball_lit:
+      int: 0
+      action: set
+  more_time:
+    more_time_lit:
+      int: 0
+      action: set
+  activate_multiball:
+    addaball_lit:
+      int: 1
+      action: set
+
+
+random_event_player:
+    random_container:
+      force_different: false
+      force_all: false
+      events:
+        - increase_bonus_x
+        - increase_dmg_value
+        - increase_jet_value
+        - increase_xp
+
+event_player:
+  start_container: award_container
+  award_container{current_player.addaball_lit == 1}: add_a_ball
+  award_container{current_player.addaball_lit == 0}: award_container_phase_1
+  award_container_phase_1{current_player.more_time_lit == 1}: more_time
+  award_container_phase_1{current_player.more_time_lit == 0}: random_container
+  slide_container_xp_text_removed: container_slide_end
+  slide_container_x_text_removed: container_slide_end
+  slide_container_jet_text_removed: container_slide_end
+  slide_container_dmg_text_removed: container_slide_end
+  slide_container_time_text_removed: container_slide_end
+  slide_container_ball_text_removed: container_slide_end
+
+show_player:
+  container_lanes_lit_complete:
+    flash:
+      loops: 4
+      speed: 20
+      show_tokens:
+        lights: l_a, l_b, l_c, l_d, l_e
+    sh_on:
+      loops: -1
+      show_tokens:
+        led: l_container_lit
+  award_container:
+    sh_on:
+      loops: -1
+      action: stop
+      show_tokens:
+        led: l_container_lit
+  add_a_ball:
+    sh_container_ball:
+      loops: 0
+
+  increase_bonus_x:
+    sh_container_x:
+      loops: 0
+  increase_dmg_value:
+    sh_container_dmg:
+      loops: 0
+  increase_jet_value:
+    sh_container_jet:
+      loops: 0
+  increase_xp:
+    sh_container_xp:
+      loops: 0
+
+slide_player:
+  more_time:
+    container_time:
+      priority: 200
+      expire: 1.3s
+  slide_container_time_removed:
+    container_time_text:
+      priority: 200
+      expire: 1s
+
+slides:
+    container_time:
+      - type: image
+        image: container_time
+    container_time_text:
+      - type: image
+        image: container_time_text

@@ -1,0 +1,15 @@
+#show_version=5
+- time: 0
+  slides:
+    mode_5_start_slide:
+      - type: image
+        image: mode_5_start
+- time: +1.5
+  slides:
+    mode_5_start_slide_text:
+      - type: image
+        image: mode_5_start_text
+- time: +1
+  events:
+    - mode_slide_can_start
+    - mode_start_slide_end

@@ -1,0 +1,1223 @@
+#config_version=5
+
+
+
+timers:
+  mode_countdown:
+    start_value: 31
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: mode_countdown_run_disabled
+        action: stop
+      - event: mode_countdown_run_enabled
+        action: start
+      - event: mode_will_enabled
+        action: reset
+      - event: s_main_hole_active
+        action: stop
+      - event: total_mode_timer_stop
+        action: stop
+      - event: total_mode_timer_reset
+        action: reset
+  mode_freeze:
+    start_value: 15
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: mode_freeze_run_disabled
+        action: stop
+      - event: mode_freeze_run_enabled
+        action: start
+      - event: mode_enabled
+        action: reset
+      - event: total_mode_timer_stop
+        action: stop
+      - event: total_mode_timer_reset
+        action: reset
+  mode_countdown_delay:
+    start_value: 2
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: s_main_hole_active
+        action: stop
+      - event: start_delay
+        action: restart
+      - event: total_mode_timer_stop
+        action: stop
+      - event: total_mode_timer_reset
+        action: reset
+  mode_overtime:
+    start_value: 5
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: mode_overtime_run_enabled
+        action: start
+      - event: mode_overtime_run_disabled
+        action: stop
+      - event: mode_overtime_reset
+        action: reset
+      - event: total_mode_timer_stop
+        action: stop
+      - event: total_mode_timer_reset
+        action: reset
+  mode_finish:
+    start_value: 2
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: mode_finish_timer_restart
+        action: restart
+
+event_player:
+  player_modeshotremaining{value == 0}:
+    - mode_finish_timer_restart
+    - total_mode_timer_reset
+    - total_mode_timer_stop
+    - mode_state_machine_reset
+    - disable_mode_shots
+  s_main_hole_inactive: mode_timer_pause_event
+  sw_bumper_hit: mode_timer_pause_event
+  timer_mode_finish_complete: end_mode
+  timer_mode_overtime_complete: end_mode
+  end_mode{current_player.m1_active == 1}: end_mode_1
+  end_mode{current_player.m2_active == 1}: end_mode_2
+  end_mode{current_player.m3_active == 1}: end_mode_3
+  end_mode{current_player.m4_active == 1}: end_mode_4
+  end_mode{current_player.m5_active == 1}: end_mode_5
+  end_mode{current_player.m6_active == 1}: end_mode_6
+  end_mode{current_player.m7_active == 1}: end_mode_7
+  end_mode{current_player.m8_active == 1}: end_mode_8
+  end_mode{current_player.m9_active == 1}: end_mode_9
+  end_mode:
+    - mode_base_started
+    - pause_countdown
+    - pause_delay
+  slide_mode_1_start_slide_text_removed: mode_start_slide_end
+  slide_mode_2_start_slide_text_removed: mode_start_slide_end
+  slide_mode_3_start_slide_text_removed: mode_start_slide_end
+  slide_mode_4_start_slide_text_removed: mode_start_slide_end
+  slide_mode_5_start_slide_text_removed: mode_start_slide_end
+  slide_mode_6_start_slide_text_removed: mode_start_slide_end
+  slide_mode_7_start_slide_text_removed: mode_start_slide_end
+  slide_mode_8_start_slide_text_removed: mode_start_slide_end
+  slide_mode_9_start_slide_text_removed: mode_start_slide_end
+
+
+state_machines:
+  mode_timer_state:
+    starting_state: mode_timer_disabled
+    states:
+      mode_countdown_run:
+        events_when_started: mode_countdown_run_enabled
+        events_when_stopped: mode_countdown_run_disabled
+      mode_countdown_pause:
+        events_when_started: start_delay
+        events_when_stopped: stop_delay
+      mode_freeze_run:
+        events_when_started: mode_freeze_run_enabled
+        events_when_stopped: mode_freeze_run_disabled
+      mode_freeze_pause:
+        events_when_started: start_delay
+        events_when_stopped: stop_delay
+      mode_overtime_run:
+        events_when_started: mode_overtime_run_enabled
+        events_when_stopped: mode_overtime_run_disabled
+      mode_overtime_pause:
+        events_when_started: start_delay
+        events_when_stopped: stop_delay
+      mode_overtime_freeze_run:
+        events_when_started: mode_overtime_freeze_run_enabled
+        events_when_stopped: mode_overtime_freeze_run_disabled
+      mode_overtime_freeze_pause:
+        events_when_started: start_delay
+        events_when_stopped: stop_delay
+      mode_timer_disabled:
+        label: Start state
+        events_when_started: mode_timer_disable
+        events_when_stopped: mode_timer_enabled
+    transitions:
+      - source: mode_countdown_run
+        target: mode_countdown_pause
+        events: mode_timer_pause_event
+      - source: mode_countdown_pause
+        target: mode_countdown_run
+        events: timer_mode_countdown_delay_complete
+      - source: mode_freeze_run
+        target: mode_freeze_pause
+        events: mode_timer_pause_event
+      - source: mode_freeze_pause
+        target: mode_freeze_run
+        events: timer_mode_countdown_delay_complete
+      - source: mode_overtime_run
+        target: mode_overtime_pause
+        events: mode_timer_pause_event
+      - source: mode_overtime_pause
+        target: mode_overtime_run
+        events: timer_mode_countdown_delay_complete
+      - source: mode_overtime_freeze_run
+        target: mode_overtime_freeze_pause
+        events: mode_timer_pause_event
+      - source: mode_overtime_freeze_pause
+        target: mode_overtime_freeze_run
+        events: timer_mode_countdown_delay_complete
+                                                      #INNETŐL KÜLSŐ VÁLTÁSOK, NEM CSAK RUN/STOP KAPCSOLAT
+      - source: mode_countdown_pause
+        target: mode_freeze_pause
+        events: more_time
+      - source: mode_freeze_run
+        target: mode_countdown_run
+        events: timer_mode_freeze_complete
+      - source: mode_countdown_run
+        target: mode_overtime_run
+        events: timer_mode_countdown_complete
+                                                      #MODE OVERTIME ÉS FREEZE KAPCSOLAT
+      - source: mode_overtime_pause
+        target: mode_overtime_freeze_pause
+        events: more_time
+      - source: mode_overtime_freeze_run
+        target: mode_overtime_run
+        events: timer_mode_freeze_complete
+                                                      #MODE DISABLED KAPCSOLAT
+      - source: mode_timer_disabled
+        target: mode_freeze_pause
+        events: more_time
+      - source: mode_timer_disabled
+        target: mode_countdown_pause
+        events: start_mode_countdown
+      - source: mode_overtime_run
+        target: mode_timer_disabled
+        events: timer_mode_overtime_complete
+      - source: mode_countdown_run, mode_countdown_pause, mode_freeze_run, mode_freeze_pause, mode_overtime_run, mode_overtime_pause, mode_overtime_freeze_run, mode_overtime_freeze_pause
+        target: mode_timer_disabled
+        events: mode_state_machine_reset
+
+show_player:
+  end_mode:
+    sh_mode_end_sound:
+      loops: 0
+  start_mode_1:
+    sh_mode_1_start:
+      loops: 0
+  start_mode_2:
+    sh_mode_2_start:
+      loops: 0
+  start_mode_3:
+    sh_mode_3_start:
+      loops: 0
+  start_mode_4:
+    sh_mode_4_start:
+      loops: 0
+  start_mode_5:
+    sh_mode_5_start:
+      loops: 0
+  start_mode_6:
+    sh_mode_6_start:
+      loops: 0
+  start_mode_7:
+    sh_mode_7_start:
+      loops: 0
+  start_mode_8:
+    sh_mode_8_start:
+      loops: 0
+  start_mode_9:
+    sh_mode_9_start:
+      loops: 0
+
+queue_relay_player:
+  mode_starting:
+    post: pause_delay
+    wait_for: port_check_phase_2_finished
+  starting_mode_countdown:
+    post: HAGYDFIGYELMENKIVUL
+    wait_for: s_main_hole_inactive
+
+queue_event_player:
+  mode_will_enabled:
+    queue_event: mode_starting
+    events_when_finished: mode_enabled
+  start_mode:
+    queue_event: starting_mode_countdown
+    events_when_finished: start_mode_countdown
+
+variable_player:
+  disable_mode_shots:
+    mode_shot_enabled:
+      int: 0
+      action: set
+  mode_enabled:
+    freeze_started:
+      action: set 
+      int: 0
+    modeshotmade:
+      action: set 
+      int: 0
+    more_time_lit:
+      int: 1
+      action: set
+    modetotal: 
+      action: set
+      int: 100000
+    score: 100000
+    countdown_bar_progress:
+      action: set 
+      int: current_player.mode_manager_mode_countdown_tick - 1
+  end_mode:
+    more_time_lit:
+      int: 1
+      action: set
+  mode_will_enabled:
+    countdown_bar_progress:
+      action: set 
+      int: current_player.mode_manager_mode_countdown_tick - 1
+    mode_shot_enabled:
+      action: set
+      int: 1
+  timer_mode_countdown_tick:
+    countdown_bar_progress:
+      action: set 
+      int: current_player.mode_manager_mode_countdown_tick - 1
+  start_mode_1:
+    m1_active:
+      action: set 
+      int: 1
+  start_mode_2:
+    m2_active:
+      action: set 
+      int: 1
+  start_mode_3:
+    m3_active:
+      action: set 
+      int: 1
+  start_mode_4:
+    m4_active:
+      action: set 
+      int: 1
+  start_mode_5:
+    m5_active:
+      action: set 
+      int: 1
+  start_mode_6:
+    m6_active:
+      action: set 
+      int: 1
+  start_mode_7:
+    m7_active:
+      action: set 
+      int: 1
+  start_mode_8:
+    m8_active:
+      action: set 
+      int: 1
+  start_mode_9:
+    m9_active:
+      action: set 
+      int: 1
+  end_mode_1:
+    m1_active:
+      action: set 
+      int: 0
+  end_mode_2:
+    m2_active:
+      action: set 
+      int: 0
+  end_mode_3:
+    m3_active:
+      action: set 
+      int: 0
+  end_mode_4:
+    m4_active:
+      action: set 
+      int: 0
+  end_mode_5:
+    m5_active:
+      action: set 
+      int: 0
+  end_mode_6:
+    m6_active:
+      action: set 
+      int: 0
+  end_mode_7:
+    m7_active:
+      action: set 
+      int: 0
+  end_mode_8:
+    m8_active:
+      action: set 
+      int: 0
+  end_mode_9:
+    m9_active:
+      action: set 
+      int: 0
+
+widgets:
+  mode_time_widget:
+    - type: text
+      text: (countdown_bar_progress)
+      style: big
+      font_size: 16
+      color: red
+      x: 18
+      y: 16
+      z: 120
+      min_digits: 2
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 90
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 1
+      color: black
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 80
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+      opacity: 1
+      color: 00FF80
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            player_countdown_bar_progress:
+                - property: height
+                  relative: false
+                  value: (value)
+    - type: rectangle
+      x: 1
+      y: 32
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            player_countdown_bar_progress:
+                - property: y
+                  relative: false
+                  value: (value)
+  repair_party_widget:
+      - type: image
+        image: repair_party_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: REPAIR PARTY
+        x: 80
+        anchor_y: top
+        y: top-1
+        round_anchor_x: left
+        round_anchor_y: top
+        style: medium
+      - type: text
+        text: VALUE = (m1value)
+        number_grouping: true
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-9
+        style: small
+      - type: text
+        text: SHOOT DMG TARGETS
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-15
+        style: small
+      - type: text
+        text: "(m1shotremaining) MORE"
+        x: 65
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+      - type: text
+        text: (score)
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+  def_aa_widget:
+      - type: image
+        image: def_aa_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: DEFENSIVE AA
+        x: 80
+        anchor_y: top
+        y: top-1
+        round_anchor_x: left
+        round_anchor_y: top
+        style: medium
+      - type: text
+        text: VALUE = (m2value)
+        number_grouping: true
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-9
+        style: small
+      - type: text
+        text: SHOOT JET BUMPERS
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-15
+        style: small
+      - type: text
+        text: "(m2shotremaining) MORE"
+        x: 65
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+      - type: text
+        text: (score)
+        x: 80
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+  dmg_con_party_widget:
+      - type: image
+        image: dmg_con_party_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+  engine_widget:
+      - type: image
+        image: engine_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: ENGINE BOOST
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = 30000000
+        number_grouping: true
+        x: 38
+        anchor_y: top
+        anchor_x: left
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT ORBITS
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m5shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  fighter_widget:
+      - type: image
+        image: fighter_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: FIGHTER
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = (m3value)
+        number_grouping: true
+        x: 38
+        anchor_y: top
+        y: 80
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT PEN. TARGETS
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m3shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  hydro_widget:
+      - type: image
+        image: hydro_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: HYDROAC. SEARCH
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = 25000000
+        number_grouping: true
+        x: 38
+        anchor_y: top
+        anchor_x: left
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT STANDUPS
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m6shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  main_widget:
+      - type: image
+        image: main_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: MAIN. B. R. BOOST.
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = (m9value)
+        number_grouping: true
+        x: 80
+        anchor_y: top
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT CITADEL
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m9shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  radar_widget:
+      - type: image
+        image: radar_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SURV. RADAR
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = 20000000
+        number_grouping: true
+        x: 38
+        anchor_y: top
+        anchor_x: left
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT RAMPS
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m8shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  smoke_widget:
+      - type: image
+        image: smokde_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SMOKE GENERATOR
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = 30000000
+        number_grouping: true
+        x: 38
+        anchor_y: top
+        anchor_x: left
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT UNDERGROUND
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m4shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+  torpedo_widget:
+      - type: image
+        image: torpedo_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TORP. R. BOOSTER
+        x: 80
+        anchor_y: top
+        y: top-1
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: VALUE = (m7value)
+        number_grouping: true
+        x: 80
+        anchor_y: top
+        y: top-9
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SHOOT TORPEDO
+        x: 80
+        anchor_y: top
+        y: top-15
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: "(m7shotremaining) MORE"
+        x: 65
+        anchor_x: left
+        anchor_y: top
+        y: top-21
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (score)
+        x: 80
+        anchor_y: top
+        y: top-27
+        style: small
+        min_digits: 2
+        number_grouping: true
+        round_anchor_x: left
+        round_anchor_y: top
+
+widget_player:
+  start_mode_1:
+    repair_party_widget:
+      slide: mode_slide
+      action: add
+  start_mode_2:
+    def_aa_widget:
+      slide: mode_slide
+      action: add
+  start_mode_3:
+    fighter_widget:
+      slide: mode_slide
+      action: add
+  start_mode_4:
+    smoke_widget:
+      slide: mode_slide
+      action: add
+  start_mode_5:
+    engine_widget:
+      slide: mode_slide
+      action: add
+  start_mode_6:
+    hydro_widget:
+      slide: mode_slide
+      action: add
+  start_mode_7:
+    torpedo_widget:
+      slide: mode_slide
+      action: add
+  start_mode_8:
+    radar_widget:
+      slide: mode_slide
+      action: add
+  start_mode_9:
+    main_widget:
+      slide: mode_slide
+      action: add
+  end_mode_1:
+    repair_party_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_2:
+    def_aa_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_3:
+    fighter_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_4:
+    smoke_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_5:
+    engine_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_6:
+    hydro_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_7:
+    torpedo_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_8:
+    radar_widget:
+      slide: mode_slide
+      action: remove
+  end_mode_9:
+    main_widget:
+      slide: mode_slide
+      action: remove
+  slide_mode_slide_active:
+    mode_time_widget:
+      slide: mode_slide
+      action: add
+
+slides:
+  mode_slide: []
+  mode_1_total:
+    - type: text
+      text: REPAIR PARTY TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_2_total:
+    - type: text
+      text: DEFENSIVE AA TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_3_total:
+    - type: text
+      text: FIGHTER TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_4_total:
+    - type: text
+      text: SMOKE GEN. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_5_total:
+    - type: text
+      text: ENGINE BOOST TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_6_total:
+    - type: text
+      text: HYDRO. SEARCH TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_7_total:
+    - type: text
+      text: TORPEDO R. B. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_8_total:
+    - type: text
+      text: S. RADAR TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_9_total:
+    - type: text
+      text: MAIN B. R. B. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+
+slide_player:
+  mode_slide_can_start: mode_slide
+  mode_state_stopped:
+    mode_slide:
+         action: remove
+  end_mode_1:
+    mode_1_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_2:
+    mode_2_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_3:
+    mode_3_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_4:
+    mode_4_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_5:
+    mode_5_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_6:
+    mode_6_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_7:
+    mode_7_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_8:
+    mode_8_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_9:
+    mode_9_total:
+      priority: 600
+      expire: 1.5s
+
+
+
+
+
+

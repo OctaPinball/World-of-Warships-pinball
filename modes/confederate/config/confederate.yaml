@@ -1,0 +1,51 @@
+#config_version=5
+
+mode:
+  start_events: main_state
+  stop_events: main_state_stopped
+  events_when_started:
+  priority: 100
+
+shots:
+  confederate_1:
+    switch: s_left_loop_made
+    profile: confederate_profile
+    show_tokens:
+      light: l_left_loop_confederate
+  confederate_2:
+    switch: s_left_ramp_made
+    profile: confederate_profile
+    show_tokens:
+      light: l_left_ramp_confederate
+  confederate_3:
+    switch: s_torpedo
+    profile: confederate_profile
+    show_tokens:
+      light: l_torpedo_confederate
+  confederate_4:
+    switch: s_citadel_lock
+    profile: confederate_profile
+    show_tokens:
+      light: l_citadel_confederate
+  confederate_5:
+    switch: s_center_ramp
+    profile: confederate_profile
+    show_tokens:
+      light: l_center_ramp_confederate
+  confederate_6:
+    switch: s_right_ramp_made
+    profile: confederate_profile
+    show_tokens:
+      light: l_right_ramp_confederate
+
+shot_profiles:
+    confederate_profile:
+        states:
+          - name: unlit
+            show: "off"
+          - name: flash
+            show: "flash"
+            speed: 10
+          - name: lit
+            show: "on"
+

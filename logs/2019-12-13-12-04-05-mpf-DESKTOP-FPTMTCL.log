@@ -1,0 +1,87 @@
+2019-12-13 12:04:05,277 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.68
+2019-12-13 12:04:05,277 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-12-13-12-04-05-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-12-13 12:04:05,277 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-12-13 12:04:05,277 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-12-13 12:04:05,277 : INFO : Machine : Platform: win32
+2019-12-13 12:04:05,277 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-12-13 12:04:05,277 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-12-13 12:04:05,277 : INFO : Machine : Machine config file #1: config.yaml
+2019-12-13 12:04:05,278 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-12-13 12:04:05,284 : INFO : Machine : Initialise MPF.
+2019-12-13 12:04:05,494 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.68', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.68, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,529 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,530 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,530 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,530 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-12-13 12:04:05,530 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-12-13 12:04:05,557 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-12-13 12:04:05,562 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-12-13 12:04:05,566 : WARNING : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml
+2019-12-13 12:04:05,566 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml.
+2019-12-13 12:04:05,571 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml
+2019-12-13 12:04:05,571 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\ecc9b395424c2990811feee9ed731d4b.mpf_cache
+2019-12-13 12:04:05,595 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2019-12-13 12:04:05,595 : INFO : SwitchController : Found active switch: ('2', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,596 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,596 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,596 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,596 : INFO : SwitchController : Found active switch: ('6', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,596 : INFO : SwitchController : Found active switch: ('7', <Platform.SmartVirtual>)
+2019-12-13 12:04:05,598 : ERROR : asyncio : Exception in callback EventManager._done(<Task finishe...pe: 'dict'",)>)
+handle: <Handle EventManager._done(<Task finishe...pe: 'dict'",)>)>
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 695, in _done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 612, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 96, in initialise_modes
+    mode.initialise_mode()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 576, in initialise_mode
+    **item.kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 133, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 105, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\config_players\flat_config_player.py", line 15, in validate_config_entry
+    config = self._parse_config(settings, name)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 121, in _parse_config
+    config = self.get_list_config(config)   # pylint: disable-msg=assignment-from-no-return
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\config_players\event_player.py", line 63, in get_list_config
+    result[event] = {}
+TypeError: unhashable type: 'dict'
+2019-12-13 12:04:05,602 : INFO : Machine : Starting the main run loop.
+2019-12-13 12:04:05,604 : INFO : Machine : Shutting down...
+2019-12-13 12:04:05,604 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-12-13 12:04:05,605 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 765, in _run_loop
+    raise self._exception['exception']
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 695, in _done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 612, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 96, in initialise_modes
+    mode.initialise_mode()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 576, in initialise_mode
+    **item.kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 133, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 105, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\config_players\flat_config_player.py", line 15, in validate_config_entry
+    config = self._parse_config(settings, name)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 121, in _parse_config
+    config = self.get_list_config(config)   # pylint: disable-msg=assignment-from-no-return
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\config_players\event_player.py", line 63, in get_list_config
+    result[event] = {}
+TypeError: unhashable type: 'dict'
+2019-12-13 12:04:05,606 : INFO : root : MPF run loop ended.

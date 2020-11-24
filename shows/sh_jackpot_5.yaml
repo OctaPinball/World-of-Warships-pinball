@@ -1,0 +1,36 @@
+#show_version=5
+- time: 0
+  widgets:
+      shell_5:
+        slide: high_caliber_slide
+      jackpot:
+        slide: high_caliber_slide
+- time: +1
+  widgets:
+      shell_5:
+        slide: high_caliber_slide
+        action: remove
+      explosion_5:
+        slide: high_caliber_slide
+- time: +0.2
+  widgets:
+      fire_start_5:
+        slide: high_caliber_slide
+- time: +0.6
+  widgets:
+      fire_start_5:
+        slide: high_caliber_slide
+        action: remove
+      fire_5:
+        slide: high_caliber_slide
+- time: +0.2
+  events:
+    jackpot_5_text_removed
+  widgets:
+      explosion_5:
+        slide: high_caliber_slide
+        action: remove
+      jackpot:
+        slide: high_caliber_slide
+        action: remove
+  duration: -1

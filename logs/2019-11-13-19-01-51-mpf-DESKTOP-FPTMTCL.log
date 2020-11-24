@@ -1,0 +1,50 @@
+2019-11-13 19:01:51,980 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.67
+2019-11-13 19:01:51,981 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-11-13-19-01-51-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-11-13 19:01:51,981 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-11-13 19:01:51,981 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-11-13 19:01:51,981 : INFO : Machine : Platform: win32
+2019-11-13 19:01:51,981 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-11-13 19:01:51,981 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-11-13 19:01:51,981 : INFO : Machine : Machine config file #1: config.yaml
+2019-11-13 19:01:51,982 : WARNING : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\config\config.yaml
+2019-11-13 19:01:51,982 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2019-11-13 19:01:51,982 : DEBUG : YAML File Interface : Loading file: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2019-11-13 19:01:52,057 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2019-11-13 19:01:52,064 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\config\config.yaml.
+2019-11-13 19:01:52,064 : DEBUG : YAML File Interface : Loading file: D:\mpf\wows\wows\config\config.yaml
+2019-11-13 19:01:52,084 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\config\config.yaml
+2019-11-13 19:01:52,085 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-13 19:01:52,086 : DEBUG : asyncio : Using selector: SelectSelector
+2019-11-13 19:01:52,087 : INFO : Machine : Initialise MPF.
+2019-11-13 19:01:52,146 : ERROR : Machine : Failed to initialise MPF
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\platforms\p_roc_common.py", line 25, in <module>
+    import pinproc
+ModuleNotFoundError: No module named 'pinproc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\platforms\p_roc_common.py", line 44, in <module>
+    from mpf.platforms.pinproc.x64.python36 import pinproc
+ImportError: DLL load failed: A megadott modul nem található.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 684, in initialise_mpf
+    raise init.exception()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 240, in initialise
+    await self.initialise_core_and_hardware()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 226, in initialise_core_and_hardware
+    self._load_hardware_platforms()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 484, in _load_hardware_platforms
+    self.add_platform(hardware_platform)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 621, in add_platform
+    self.hardware_platforms[name] = hardware_platform(self)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\platforms\p3_roc.py", line 41, in __init__
+    super().__init__(machine)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\platforms\p_roc_common.py", line 168, in __init__
+    'the -x command like option for now instead.') from IMPORT_ERROR
+AssertionError: Could not import "pinproc". Most likely you do not have libpinproc and/or pypinproc installed. You can run MPF in software-only "virtual" mode by using the -x command like option for now instead.
+2019-11-13 19:01:52,183 : INFO : root : MPF run loop ended.

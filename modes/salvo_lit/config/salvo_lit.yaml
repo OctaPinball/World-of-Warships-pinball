@@ -1,0 +1,36 @@
+#config_version=5
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  ricochet_1:
+    switch: s_ricochet_1
+    show_tokens:
+      light: l_ricichet_1
+  ricochet_2:
+    switch: s_ricochet_2
+    show_tokens:
+      light: l_ricichet_2
+  ricochet_3:
+    switch: s_ricochet_3
+    show_tokens:
+      light: l_ricichet_3
+  ricochet_4:
+    switch: s_ricochet_4
+    show_tokens:
+      light: l_ricichet_4
+
+
+
+shot_groups:
+  ricochet_targets:
+    shots: ricochet_1, ricochet_2, ricochet_3, ricochet_4
+    reset_events: ricochet_targets_lit_complete
+
+light_player:
+  ricochet_targets_lit_complete:
+    l_salvo: on
+
+

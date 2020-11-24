@@ -1,0 +1,76 @@
+#config_version=5
+
+mode:
+  start_events: multiball_inactive, ball_started
+  stop_events: multiball_active
+  events_when_started:
+  priority: 100
+
+shots:
+  lock_lit_1:
+    switch: s_left_ramp_made
+    profile: lock_lit_profile
+    show_tokens:
+      light: l_lock_lit_1
+  lock_lit_2:
+    switch: s_right_ramp_made
+    profile: lock_lit_profile
+    show_tokens:
+      light: l_lock_lit_2
+
+
+
+shot_profiles:
+  lock_lit_profile:
+        states:
+          - name: unlit
+            show: "flash"
+            speed: 10
+          - name: lit
+            show: "on"
+
+
+shot_groups:
+  lock_lits:
+    shots: lock_lit_1, lock_lit_2
+    restart_events: lock_lit_started, start_hc_multiball
+    disable_events: lock_lit_stopped
+
+
+shows:
+  lock_lit_show:
+      - time: 0
+        lights:
+          l_lock: on
+
+show_player:
+  lock_started:
+    lock_lit_show:
+      action: play
+  lock_stopped:
+    lock_lit_show:
+      action: stop
+
+
+multiball_locks:
+   high_caliber:
+      balls_to_lock: 3
+      balls_to_replace: 2
+      lock_devices: bd_hc_lock
+      enable_events: lock_started #s_right_ramp_made_active
+      disable_events: lock_stopped
+      reset_count_for_current_player_events: jackpot_start, jackpot_stopped, super_jackpot_stopped
+
+event_player:
+  multiball_lock_high_caliber_locked_ball{device.multiball_locks.high_caliber.locked_balls == 3}: start_hc_multiball
+  multiball_lock_high_caliber_locked_ball{device.multiball_locks.high_caliber.locked_balls < 3}: enable_lock_lit_state
+
+multiballs:
+  high_caliber_multiball:
+    ball_count: 3
+    ball_count_type: total
+    replace_balls_in_play: true
+    ball_locks: bd_hc_lock
+    shoot_again: 0s
+    start_events: start_hc_multiball
+    debug: true

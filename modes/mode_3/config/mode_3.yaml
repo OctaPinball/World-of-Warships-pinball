@@ -1,0 +1,43 @@
+#config_version=5
+
+mode:
+    start_events: start_mode_3
+    stop_events: end_mode_3
+    events_when_started: mode_enabled
+    events_when_stopped: mode_disabled
+    priority: 300
+
+event_player:
+ sw_pen_target{current_player.mode_shot_enabled == 1}:
+  - m3calculate
+
+variable_player:
+  m3calculate:
+    m3value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+    modetotal: current_player.m3value
+    score: current_player.m3value
+    m3shotmade: 1
+    mode_shot_made:
+      int: 1
+      action: add
+    m3shotremaining:
+      int: (4 - current_player.m3shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m3shotremaining)
+      action: set
+  player_DMGValue:
+    m3value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+  mode_mode_3_started:
+    m3value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+
+show_player:
+  m3calculate:
+    sh_mode_3_shot_made:
+      loops: 0

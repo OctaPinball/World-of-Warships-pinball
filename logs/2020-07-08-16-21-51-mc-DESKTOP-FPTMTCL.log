@@ -1,0 +1,21 @@
+2020-07-08 16:21:51,616 : kivy : Factory: 184 symbols loaded
+2020-07-08 16:21:51,719 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.1
+2020-07-08 16:21:51,720 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer, img_gif 
+2020-07-08 16:21:51,766 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-07-08 16:21:51,766 : kivy : Video: Provider: gstplayer
+2020-07-08 16:21:51,843 : kivy : Loading MPF-MC controller
+2020-07-08 16:21:51,846 : YamlMultifileConfigLoader : Machine config file #1: config
+2020-07-08 16:21:51,846 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config
+2020-07-08 16:21:51,847 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-07-08 16:21:51,905 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2020-07-08 16:21:51,906 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.
+2020-07-08 16:21:52,088 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config
+2020-07-08 16:21:52,090 : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\051200dc57c22661ccd061bb2017f3a6.mpf_cache
+2020-07-08 16:21:52,091 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-08 16:21:52,091 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-07-08 16:21:52,092 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-08 16:21:52,092 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2020-07-08 16:21:52,093 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\match\config\match.yaml
+2020-07-08 16:21:52,093 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\match\config\match.yaml.
+2020-07-08 16:21:52,094 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\match\config\match.yaml
+2020-07-08 16:21:52,095 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\match\config\match.yaml.

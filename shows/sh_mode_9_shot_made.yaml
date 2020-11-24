@@ -1,0 +1,15 @@
+#show_version=5
+- time: 0
+  slides:
+    mode_9_shot_made_slide_1:
+      - type: image
+        image: mode_9_shot_made
+- time: +1.1
+  slides:
+    mode_9_shot_made_slide_2:
+      - type: text
+        text: (m9value)
+        number_grouping: true
+        min_digits: 2
+        font_size: 30
+- time: +2

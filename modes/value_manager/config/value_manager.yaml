@@ -1,0 +1,19 @@
+#config_version=5
+
+mode:
+  start_events: main_state, ball_starting
+  stop_events: main_state_stopped
+  priority: 100
+
+variable_player:
+  sw_dmg_target:
+    DMGValue:
+      action: add
+      int: 10000000
+  ball_started{current_player.DMGValue != 200000000}:
+    DMGValue:
+      action: set
+      int: 120000000
+
+
+

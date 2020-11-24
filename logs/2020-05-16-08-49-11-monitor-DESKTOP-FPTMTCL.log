@@ -1,0 +1,15 @@
+2020-05-16 08:49:11,700 : INFO : root : Loading MPF Monitor
+2020-05-16 08:49:12,122 : INFO : Core : Looking for MPF at localhost:5051
+2020-05-16 08:49:22,612 : INFO : BCP Client : Connected to MPF
+2020-05-16 08:53:00,613 : INFO : BCP Client : Connected to MPF
+2020-05-16 08:55:25,110 : INFO : BCP Client : Connected to MPF
+2020-05-16 08:56:07,111 : INFO : BCP Client : Connected to MPF
+2020-05-16 08:59:21,110 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:00:43,112 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:02:17,113 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:15:07,113 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:21:44,116 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:27:06,615 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:32:26,613 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:47:31,116 : INFO : BCP Client : Connected to MPF
+2020-05-16 09:49:03,612 : INFO : BCP Client : Connected to MPF

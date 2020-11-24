@@ -1,0 +1,123 @@
+#config_version=5
+
+mode:
+  start_events: main_state, ball_started
+  stop_events: main_state_stopped
+  priority: 100
+
+counters:
+  dreadnaugt_counter:
+    count_events: sw_take_dmg
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 1
+    multiple_hit_window: 0.5s
+    events_when_complete: take_dreadnaught_dmg
+    disable_on_complete: false
+
+variable_player:
+  mode_drednaught_started:
+    take_dmg_score:
+      int: (current_player.DMGValue * 0.3 * 0.5)
+      action: set
+    ReceivedDMGshow:
+      int: (current_player.ReceivedDMG)
+      action: set
+  take_dreadnaught_dmg:
+    ReceivedDMG: 3
+    score: (current_player.DMGValue * 0.3 * 0.5)
+    ReceivedDMGshow:
+      int: (current_player.ReceivedDMG)
+      action: set
+  player_DMGValue:
+    take_dmg_score:
+      int: (current_player.DMGValue * 0.3 * 0.5)
+      action: set
+
+
+
+slides:
+  take_dmg_slide:
+    - type: image
+      image: take_dmg_ship
+      x: left
+      y: top
+      z: 300
+      anchor_x: left
+      anchor_y: top
+
+slide_player:
+  take_dreadnaught_dmg:
+    take_dmg_slide:
+      action: play
+      priority: 300
+      expire: 1.4s
+
+widget_player:
+  slide_take_dmg_slide_active:
+    take_dmg_widget:
+      action: add
+      slide: take_dmg_slide
+    take_dmg_widget_score:
+      action: add
+      slide: take_dmg_slide
+    take_dmg_widget_percent:
+      action: add
+      slide: take_dmg_slide
+
+widgets:
+  take_dmg_widget:
+    - type: image
+      image: take_dmg_explosion
+      x: left
+      y: top
+      z: 310
+      anchor_x: left
+      anchor_y: top
+      loops: 1
+  take_dmg_widget_score:
+    - type: text
+      text: (take_dmg_score)
+      style: medium
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 45
+      y: top-2
+      z: 320
+      anchor_x: middle
+      anchor_y: top
+      number_grouping: true
+      color: FF0000
+      animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.2s
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.2s
+              repeat: true
+  take_dmg_widget_percent:
+    - type: text
+      text: "(ReceivedDMGshow)%"
+      style: medium
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 45
+      y: top-21
+      z: 320
+      anchor_x: middle
+      anchor_y: top
+      color: 0000FF
+    - type: text
+      text: "RECIVED DAMAGE"
+      style: medium
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 45
+      y: top-13
+      z: 320
+      anchor_x: middle
+      anchor_y: top
+

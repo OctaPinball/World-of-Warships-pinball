@@ -1,0 +1,318 @@
+#config_version=5
+
+mode:
+  start_events: ball_started{ball==1}
+  stop_events: ship_crew_finished
+  priority: 100
+
+achievements:
+  des_moines:
+    show_tokens:
+      lights: l_cruiser
+    show_when_selected: flash_modes
+    events_when_started: des_moines
+    show_when_started: off
+
+  stalingrad:
+    show_tokens:
+      lights: l_cruiser
+    show_when_selected: flash_modes
+    events_when_started: stalingrad
+    show_when_started: off
+
+  venezia:
+    show_tokens:
+      lights: l_cruiser
+    show_when_selected: flash_modes
+    events_when_started: venezia
+    show_when_started: off
+
+  conqueror:
+    show_tokens:
+      lights: l_battleship
+    show_when_selected: flash_modes
+    events_when_started: conqueror
+    show_when_started: off
+
+  yamato:
+    show_tokens:
+      lights: l_battleship
+    show_when_selected: flash_modes
+    events_when_started: yamato
+    show_when_started: off
+
+  grosser_kurfurst:
+    show_tokens:
+      lights: l_battleship
+    show_when_selected: flash_modes
+    events_when_started: grosser_kurfurst
+    show_when_started: off
+
+  shimakaze:
+    show_tokens:
+      lights: l_destroyer
+    show_when_selected: flash_modes
+    events_when_started: shimakaze
+    show_when_started: off
+
+  daring:
+    show_tokens:
+      lights: l_destroyer
+    show_when_selected: flash_modes
+    events_when_started: daring
+    show_when_started: off
+
+  haragumo:
+    show_tokens:
+      lights: l_destroyer
+    show_when_selected: flash_modes
+    events_when_started: haragumo
+    show_when_started: off
+
+
+  uk:
+    events_when_started: uk
+  us:
+    events_when_started: us
+  de:
+    events_when_started: de
+  ru:
+    events_when_started: ru
+  fr:
+    events_when_started: fr
+  it:
+    events_when_started: it
+  ja:
+    events_when_started: ja
+
+
+achievement_groups:
+  ship_choose:
+    achievements: des_moines, stalingrad, venezia, yamato, conqueror, grosser_kurfurst, shimakaze, daring, haragumo
+    auto_select: yes
+    rotate_left_events: s_left_flipper_inactive
+    rotate_right_events: s_right_flipper_inactive
+    enable_while_no_achievement_started: no
+    show_when_enabled: on
+    allow_selection_change_while_disabled: no
+    start_selected_events: both_flippers, force_ship_select_started
+    disable_events: des_moines, stalingrad, venezia, yamato, conqueror, grosser_kurfurst, haragumo, daring, shimakaze
+
+  crew_choose:
+    achievements: uk, us, de, ru, fr, it, ja
+    auto_select: yes
+    rotate_left_events: s_left_flipper_inactive
+    rotate_right_events: s_right_flipper_inactive
+    enable_while_no_achievement_started: no
+    show_when_enabled: on
+    allow_selection_change_while_disabled: no
+    start_selected_events: both_flippers, force_crew_select_started
+    disable_events: both_flippers
+    enable_events: crew_active
+
+sequences:
+   crew_code:
+      events:
+         - s_right_flipper_active
+         - s_left_flipper_active
+         - s_right_flipper_active
+         - s_left_flipper_active
+         - s_left_flipper_active
+         - s_right_flipper_active
+         - s_left_flipper_active
+         - s_left_flipper_active
+         - s_left_flipper_active
+         - s_right_flipper_active
+         - s_right_flipper_active
+      events_when_complete: crew_active
+      enable_events: both_flippers
+
+event_player:
+  achievement_des_moines_changed_state{selected==False}: deactivate_ship_lit
+  achievement_stalingrad_changed_state{selected==False}: deactivate_ship_lit
+  achievement_venezia_changed_state{selected==False}: deactivate_ship_lit
+  achievement_yamato_changed_state{selected==False}: deactivate_ship_lit
+  achievement_conqueror_changed_state{selected==False}: deactivate_ship_lit
+  achievement_grosser_kurfurst_changed_state{selected==False}: deactivate_ship_lit
+  achievement_shimakaze_changed_state{selected==False}: deactivate_ship_lit
+  achievement_daring_changed_state{selected==False}: deactivate_ship_lit
+  achievement_haragumo_changed_state{selected==False}: deactivate_ship_lit
+
+  achievement_uk_changed_state{selected==False}: deactivate_crew_lit
+  achievement_us_changed_state{selected==False}: deactivate_crew_lit
+  achievement_de_changed_state{selected==False}: deactivate_crew_lit
+  achievement_ru_changed_state{selected==False}: deactivate_crew_lit
+  achievement_fr_changed_state{selected==False}: deactivate_crew_lit
+  achievement_it_changed_state{selected==False}: deactivate_crew_lit
+  achievement_ja_changed_state{selected==False}: deactivate_crew_lit
+
+  balldevice_bd_plunger_ball_count_changed{balls==0 and device.achievement_groups.ship_choose.enabled == False and device.achievement_groups.crew_choose.enabled == False}: ship_crew_finished
+  balldevice_bd_plunger_ball_count_changed{balls==0 and device.achievement_groups.ship_choose.enabled == False and device.achievement_groups.crew_choose.enabled == True}: force_crew_select
+  balldevice_bd_plunger_ball_count_changed{balls==0 and device.achievement_groups.ship_choose.enabled == True}: force_ship_select
+
+queue_relay_player:
+  force_ship_select_starting:
+    post: force_ship_select_started
+    wait_for: player_ship
+  force_crew_select_starting:
+    post: force_crew_select_started
+    wait_for: player_language
+
+queue_event_player:
+  force_ship_select:
+    queue_event: force_ship_select_starting
+    events_when_finished: ship_crew_finished
+  force_crew_select:
+    queue_event: force_crew_select_starting
+    events_when_finished: ship_crew_finished
+
+show_player:
+  deactivate_ship_lit:
+    sh_ship_highlight_des_moines:
+      action: stop
+    sh_ship_highlight_stalingrad:
+      action: stop
+    sh_ship_highlight_venezia:
+      action: stop
+    sh_ship_highlight_yamato:
+      action: stop
+    sh_ship_highlight_conqueror:
+      action: stop
+    sh_ship_highlight_grosser_kurfurst:
+      action: stop
+    sh_ship_highlight_shimakaze:
+      action: stop
+    sh_ship_highlight_daring:
+      action: stop
+    sh_ship_highlight_haragumo:
+      action: stop
+
+  deactivate_crew_lit:
+    sh_crew_highlight_uk:
+      action: stop
+    sh_crew_highlight_us:
+      action: stop
+    sh_crew_highlight_de:
+      action: stop
+    sh_crew_highlight_ru:
+      action: stop
+    sh_crew_highlight_fr:
+      action: stop
+    sh_crew_highlight_it:
+      action: stop
+    sh_crew_highlight_ja:
+      action: stop
+
+  achievement_des_moines_state_selected: sh_ship_highlight_des_moines
+  achievement_stalingrad_state_selected: sh_ship_highlight_stalingrad
+  achievement_venezia_state_selected: sh_ship_highlight_venezia
+  achievement_yamato_state_selected: sh_ship_highlight_yamato
+  achievement_conqueror_state_selected: sh_ship_highlight_conqueror
+  achievement_grosser_kurfurst_state_selected: sh_ship_highlight_grosser_kurfurst
+  achievement_shimakaze_state_selected: sh_ship_highlight_shimakaze
+  achievement_daring_state_selected: sh_ship_highlight_daring
+  achievement_haragumo_state_selected: sh_ship_highlight_haragumo
+  achievement_uk_state_selected: sh_crew_highlight_uk
+  achievement_us_state_selected: sh_crew_highlight_us
+  achievement_de_state_selected: sh_crew_highlight_de
+  achievement_ru_state_selected: sh_crew_highlight_ru
+  achievement_fr_state_selected: sh_crew_highlight_fr
+  achievement_it_state_selected: sh_crew_highlight_it
+  achievement_ja_state_selected: sh_crew_highlight_ja
+
+
+
+variable_player:
+  des_moines:
+    language:
+      string: us
+      action: set
+    ship:
+      string: des_moines
+      action: set
+  stalingrad:
+    language:
+      string: ru
+      action: set
+    ship:
+      string: stalingrad
+      action: set
+  venezia:
+    language:
+      string: it
+      action: set
+    ship:
+      string: venezia
+      action: set
+  yamato:
+    language:
+      string: ja
+      action: set
+    ship:
+      string: yamato
+      action: set
+  conqueror:
+    language:
+      string: uk
+      action: set
+    ship:
+      string: conqueror
+      action: set
+  grosser_kurfurst:
+    language:
+      string: de
+      action: set
+    ship:
+      string: grosser_kurfurst
+      action: set
+  shimakaze:
+    language:
+      string: ja
+      action: set
+    ship:
+      string: shimakaze
+      action: set
+  daring:
+    language:
+      string: uk
+      action: set
+    ship:
+      string: daring
+      action: set
+  haragumo:
+    language:
+      string: ja
+      action: set
+    ship:
+      string: haragumo
+      action: set
+
+  uk:
+    language:
+      string: uk
+      action: set
+  us:
+    language:
+      string: us
+      action: set
+  de:
+    language:
+      string: de
+      action: set
+  ru:
+    language:
+      string: ru
+      action: set
+  fr:
+    language:
+      string: fr
+      action: set
+  it:
+    language:
+      string: it
+      action: set
+  ja:
+    language:
+      string: ja
+      action: set
+

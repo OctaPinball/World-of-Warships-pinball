@@ -1,0 +1,36 @@
+#config_version=5
+
+mode:
+    start_events: start_mode_5
+    stop_events: end_mode_5
+    events_when_started: mode_enabled
+    events_when_stopped: mode_disabled
+    priority: 300
+
+event_player:
+ s_left_loop_made_active{current_player.mode_shot_enabled == 1}:
+   - m5calculate
+ right_loop_hit{current_player.mode_shot_enabled == 1}:
+   - m5calculate
+
+
+
+variable_player:
+  m5calculate:
+    score: 30000000
+    m5shotmade: 1
+    mode_shot_made:
+      int: 1
+      action: add
+    m5shotremaining:
+      int: (4 - current_player.m5shotmade)
+      action: set
+    modetotal: 30000000
+    modeshotremaining:
+      int: (current_player.m5shotremaining)
+      action: set
+
+show_player:
+  m5calculate:
+    sh_mode_5_shot_made:
+      loops: 0

@@ -1,0 +1,11 @@
+2020-07-08 11:14:18,548 : INFO : root : Loading config.
+2020-07-08 11:14:18,551 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-07-08 11:14:18,552 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-07-08 11:14:18,629 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-08 11:14:18,630 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-07-08 11:14:18,631 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-08 11:14:18,631 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2020-07-08 11:14:18,632 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\match\config\match.yaml
+2020-07-08 11:14:18,632 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\match\config\match.yaml.
+2020-07-08 11:14:18,634 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\match\config\match.yaml
+2020-07-08 11:14:18,634 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\match\config\match.yaml.

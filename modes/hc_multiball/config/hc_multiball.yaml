@@ -1,0 +1,1502 @@
+#config_version=5
+
+mode:
+    start_events: jackpot_start
+    stop_events: lock_lit_started, stop_jackpot
+    priority: 300
+
+shots:
+  jackpot_1:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_1, spot_triple_jackpot_1
+    switch: s_left_loop_made
+    profile: jackpot_profile
+    show_tokens:
+      light: l_left_loop_jackpot
+  jackpot_2:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_2, spot_triple_jackpot_2
+    switch: s_left_ramp_made
+    profile: jackpot_profile
+    show_tokens:
+      light: l_left_ramp_jackpot
+  jackpot_3:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_3, spot_triple_jackpot_3
+    switch: s_torpedo
+    profile: jackpot_profile
+    show_tokens:
+      light: l_torpedo_jackpot
+  jackpot_4:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_4, spot_triple_jackpot_4
+    switch: s_citadel_lock
+    profile: jackpot_profile
+    show_tokens:
+      light: l_citadel_jackpot
+  jackpot_5:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_5, spot_triple_jackpot_5
+    switch: s_center_ramp
+    profile: jackpot_profile
+    show_tokens:
+      light: l_center_ramp_jackpot
+  jackpot_6:
+    hit_events: detonation_jackpot
+    advance_events: spot_double_jackpot_6, spot_triple_jackpot_6
+    switch: s_right_ramp_made
+    profile: jackpot_profile
+    show_tokens:
+      light: l_right_ramp_jackpot
+
+shot_profiles:
+    jackpot_profile:
+        states:
+          - name: unlit
+            show: "flash"
+            speed: 10
+          - name: lit
+            show: "off"
+
+random_event_player:
+  spot_multiple_jackpot_sfx:
+      events:
+        - spot_multiple_jackpot_sfx_1
+        - spot_multiple_jackpot_sfx_2
+        - spot_multiple_jackpot_sfx_3
+  spot_double_jackpot:
+      events:
+        - spot_double_jackpot_1_scan
+        - spot_double_jackpot_2_scan
+        - spot_double_jackpot_3_scan
+        - spot_double_jackpot_4_scan
+        - spot_double_jackpot_5_scan
+        - spot_double_jackpot_6_scan
+  spot_triple_jackpot:
+      events:
+        - spot_triple_jackpot_1_scan
+        - spot_triple_jackpot_2_scan
+        - spot_triple_jackpot_3_scan
+        - spot_triple_jackpot_4_scan
+        - spot_triple_jackpot_5_scan
+        - spot_triple_jackpot_6_scan
+  logicblock_hc_secondary_complete:
+    events:
+      - hc_sc_1
+      - hc_sc_2
+      - hc_sc_3
+      - hc_sc_4
+      - hc_sc_5
+      - hc_sc_6
+      - hc_sc_7
+      - hc_sc_8
+      - hc_sc_9
+      - hc_sc_10
+      - hc_sc_11
+      - hc_sc_12
+  muzzle_flash:
+    events:
+      - spot_muzzle_flash_1
+      - spot_muzzle_flash_2
+      - spot_muzzle_flash_3
+      - spot_muzzle_flash_4
+      - spot_muzzle_flash_5
+      - spot_muzzle_flash_6
+  sw_take_hc_dmg:
+    events:
+      - take_crit_dmg
+      - take_heavy_dmg
+
+sound_player:
+  mode_hc_multiball_started:
+    battle:
+      loops: -1
+
+event_player:
+  spot_double_jackpot: spot_multiple_jackpot_sfx
+  spot_triple_jackpot: spot_multiple_jackpot_sfx
+  spot_double_jackpot_1_scan{device.shots.jackpot_1.state_name == "unlit"}:
+    - spot_double_jackpot_1
+    - overridejackpot
+  spot_double_jackpot_1_scan{device.shots.jackpot_1.state_name == "lit"}: spot_double_jackpot
+  spot_double_jackpot_2_scan{device.shots.jackpot_2.state_name == "unlit"}:
+    - spot_double_jackpot_2
+    - overridejackpot
+  spot_double_jackpot_2_scan{device.shots.jackpot_2.state_name == "lit"}: spot_double_jackpot
+  spot_double_jackpot_3_scan{device.shots.jackpot_3.state_name == "unlit"}:
+    - spot_double_jackpot_3
+    - overridejackpot
+  spot_double_jackpot_3_scan{device.shots.jackpot_3.state_name == "lit"}: spot_double_jackpot
+  spot_double_jackpot_4_scan{device.shots.jackpot_4.state_name == "unlit"}:
+    - spot_double_jackpot_4
+    - overridejackpot
+  spot_double_jackpot_4_scan{device.shots.jackpot_4.state_name == "lit"}: spot_double_jackpot
+  spot_double_jackpot_5_scan{device.shots.jackpot_5.state_name == "unlit"}:
+    - spot_double_jackpot_5
+    - overridejackpot
+  spot_double_jackpot_5_scan{device.shots.jackpot_5.state_name == "lit"}: spot_double_jackpot
+  spot_double_jackpot_6_scan{device.shots.jackpot_6.state_name == "unlit"}:
+    - spot_double_jackpot_6
+    - overridejackpot
+  spot_double_jackpot_6_scan{device.shots.jackpot_6.state_name == "lit"}: spot_double_jackpot
+  spot_triple_jackpot_1_scan{device.shots.jackpot_1.state_name == "unlit"}:
+    - spot_triple_jackpot_1
+    - overridejackpot
+  spot_triple_jackpot_1_scan{device.shots.jackpot_1.state_name == "lit"}: spot_triple_jackpot
+  spot_triple_jackpot_2_scan{device.shots.jackpot_2.state_name == "unlit"}:
+    - spot_triple_jackpot_2
+    - overridejackpot
+  spot_triple_jackpot_2_scan{device.shots.jackpot_2.state_name == "lit"}: spot_triple_jackpot
+  spot_triple_jackpot_3_scan{device.shots.jackpot_3.state_name == "unlit"}:
+    - spot_triple_jackpot_3
+    - overridejackpot
+  spot_triple_jackpot_3_scan{device.shots.jackpot_3.state_name == "lit"}: spot_triple_jackpot
+  spot_triple_jackpot_4_scan{device.shots.jackpot_4.state_name == "unlit"}:
+    - spot_triple_jackpot_4
+    - overridejackpot
+  spot_triple_jackpot_4_scan{device.shots.jackpot_4.state_name == "lit"}: spot_triple_jackpot
+  spot_triple_jackpot_5_scan{device.shots.jackpot_5.state_name == "unlit"}:
+    - spot_triple_jackpot_5
+    - overridejackpot
+  spot_triple_jackpot_5_scan{device.shots.jackpot_5.state_name == "lit"}: spot_triple_jackpot
+  spot_triple_jackpot_6_scan{device.shots.jackpot_6.state_name == "unlit"}:
+    - spot_triple_jackpot_6
+    - overridejackpot
+  spot_jackpot_6_scan{device.shots.jackpot_6.state_name == "lit"}: spot_jackpot
+  overridejackpot{device.shots.jackpot_1.state_name == "lit" and device.shots.jackpot_2.state_name == "lit" and device.shots.jackpot_3.state_name == "lit" and device.shots.jackpot_4.state_name == "lit" and device.shots.jackpot_5.state_name == "lit" and device.shots.jackpot_6.state_name == "lit"}: jackpots_lit_complete
+  s_side_hole_active{device.shots.jackpot_1.state_name == "unlit" or device.shots.jackpot_2.state_name == "unlit" or device.shots.jackpot_3.state_name == "unlit" or device.shots.jackpot_4.state_name == "unlit" or device.shots.jackpot_5.state_name == "unlit" or device.shots.jackpot_6.state_name == "unlit"}:
+    - spot_double_jackpot
+    - award_double_jackpot
+  s_side_ramp_made_active{device.shots.jackpot_1.state_name == "unlit" or device.shots.jackpot_2.state_name == "unlit" or device.shots.jackpot_3.state_name == "unlit" or device.shots.jackpot_4.state_name == "unlit" or device.shots.jackpot_5.state_name == "unlit" or device.shots.jackpot_6.state_name == "unlit"}:
+    - spot_triple_jackpot
+    - award_triple_jackpot
+  jackpot_1_text_removed: jackpot_text_remove
+  jackpot_2_text_removed: jackpot_text_remove
+  jackpot_3_text_removed: jackpot_text_remove
+  jackpot_4_text_removed: jackpot_text_remove
+  jackpot_5_text_removed: jackpot_text_remove
+  jackpot_6_text_removed: jackpot_text_remove
+  sw_take_hc_dmg: muzzle_flash
+  spot_muzzle_flash_1{device.shots.jackpot_1.state_name == "unlit"}: award_muzzle_flash_1
+  spot_muzzle_flash_1{device.shots.jackpot_1.state_name == "lit"}: muzzle_flash
+  spot_muzzle_flash_2{device.shots.jackpot_2.state_name == "unlit"}: award_muzzle_flash_2
+  spot_muzzle_flash_2{device.shots.jackpot_2.state_name == "lit"}: muzzle_flash
+  spot_muzzle_flash_3{device.shots.jackpot_3.state_name == "unlit"}: award_muzzle_flash_3
+  spot_muzzle_flash_3{device.shots.jackpot_3.state_name == "lit"}: muzzle_flash
+  spot_muzzle_flash_4{device.shots.jackpot_4.state_name == "unlit"}: award_muzzle_flash_4
+  spot_muzzle_flash_4{device.shots.jackpot_4.state_name == "lit"}: muzzle_flash
+  spot_muzzle_flash_5{device.shots.jackpot_5.state_name == "unlit"}: award_muzzle_flash_5
+  spot_muzzle_flash_5{device.shots.jackpot_5.state_name == "lit"}: muzzle_flash
+  spot_muzzle_flash_6{device.shots.jackpot_6.state_name == "unlit"}: award_muzzle_flash_6
+  spot_muzzle_flash_6{device.shots.jackpot_6.state_name == "lit"}: muzzle_flash
+
+shot_groups:
+  jackpots:
+    shots: jackpot_1, jackpot_2, jackpot_3, jackpot_4, jackpot_5, jackpot_6
+    restart_events: jackpot_start, lock_lit_started, stop_jackpot
+
+variable_player:
+  jackpots_unlit_hit:
+    score: 40000000
+    hctotal: 40000000
+  award_double_jackpot:
+    score: 80000000
+    hctotal: 80000000
+  award_triple_jackpot:
+    score: 120000000
+    hctotal: 120000000
+
+
+
+show_player:
+  award_muzzle_flash_1:
+    sh_muzzle_flash_1:
+      loops: 0
+  award_muzzle_flash_2:
+    sh_muzzle_flash_2:
+      loops: 0
+  award_muzzle_flash_3:
+    sh_muzzle_flash_3:
+      loops: 0
+  award_muzzle_flash_4:
+    sh_muzzle_flash_4:
+      loops: 0
+  award_muzzle_flash_5:
+    sh_muzzle_flash_5:
+      loops: 0
+  award_muzzle_flash_6:
+    sh_muzzle_flash_6:
+      loops: 0
+  hc_sc_1:
+    sh_sec_shell_1:
+      loops: 0
+  hc_sc_2:
+    sh_sec_shell_2:
+      loops: 0
+  hc_sc_3:
+    sh_sec_shell_3:
+      loops: 0
+  hc_sc_4:
+    sh_sec_shell_4:
+      loops: 0
+  hc_sc_5:
+    sh_sec_shell_5:
+      loops: 0
+  hc_sc_6:
+    sh_sec_shell_6:
+      loops: 0
+  hc_sc_7:
+    sh_sec_shell_7:
+      loops: 0
+  hc_sc_8:
+    sh_sec_shell_8:
+      loops: 0
+  hc_sc_9:
+    sh_sec_shell_9:
+      loops: 0
+  hc_sc_10:
+    sh_sec_shell_10:
+      loops: 0
+  hc_sc_11:
+    sh_sec_shell_11:
+      loops: 0
+  hc_sc_12:
+    sh_sec_shell_12:
+      loops: 0
+  jackpot_1_unlit_hit:
+    sh_jackpot_1:
+      loops: 0
+  jackpot_2_unlit_hit:
+    sh_jackpot_2:
+      loops: 0
+  jackpot_3_unlit_hit:
+    sh_jackpot_3:
+      loops: 0
+  jackpot_4_unlit_hit:
+    sh_jackpot_4:
+      loops: 0
+  jackpot_5_unlit_hit:
+    sh_jackpot_5:
+      loops: 0
+  jackpot_6_unlit_hit:
+    sh_jackpot_6:
+      loops: 0
+  spot_double_jackpot_1:
+    sh_double_jackpot_1:
+      loops: 0
+  spot_double_jackpot_2:
+    sh_double_jackpot_2:
+      loops: 0
+  spot_double_jackpot_3:
+    sh_double_jackpot_3:
+      loops: 0
+  spot_double_jackpot_4:
+    sh_double_jackpot_4:
+      loops: 0
+  spot_double_jackpot_5:
+    sh_double_jackpot_5:
+      loops: 0
+  spot_double_jackpot_6:
+    sh_double_jackpot_6:
+      loops: 0
+  spot_triple_jackpot_1:
+    sh_triple_jackpot_1:
+      loops: 0
+  spot_triple_jackpot_2:
+    sh_triple_jackpot_2:
+      loops: 0
+  spot_triple_jackpot_3:
+    sh_triple_jackpot_3:
+      loops: 0
+  spot_triple_jackpot_4:
+    sh_triple_jackpot_4:
+      loops: 0
+  spot_triple_jackpot_5:
+    sh_triple_jackpot_5:
+      loops: 0
+  spot_triple_jackpot_6:
+    sh_triple_jackpot_6:
+      loops: 0
+  spot_multiple_jackpot_sfx_1:
+    sh_multiple_jackpot_background_sound_1:
+      loops: 0
+  spot_multiple_jackpot_sfx_2:
+    sh_multiple_jackpot_background_sound_2:
+      loops: 0
+  spot_multiple_jackpot_sfx_3:
+    sh_multiple_jackpot_background_sound_3:
+      loops: 0
+  take_crit_dmg:
+    sh_hc_crit_dmg:
+      loops: 0
+  take_heavy_dmg:
+    sh_hc_heavy_dmg:
+      loops: 0
+
+slide_player:
+  mode_hc_multiball_started:
+    high_caliber_slide:
+      action: play
+      priority: 300
+
+
+slides:
+  high_caliber_slide: []
+
+
+counters:
+  hc_secondary:
+    count_events: sw_switch_hit
+    count_complete_value: 3
+    disable_on_complete: false
+
+widget_player:
+  mode_hc_multiball_started:
+    hc_1:
+      slide: high_caliber_slide
+      action: add
+    hc_2:
+      slide: high_caliber_slide
+      action: add
+    hc_3:
+      slide: high_caliber_slide
+      action: add
+    hc_4:
+      slide: high_caliber_slide
+      action: add
+    hc_5:
+      slide: high_caliber_slide
+      action: add
+    hc_6:
+      slide: high_caliber_slide
+      action: add
+    hc_score:
+      slide: high_caliber_slide
+      action: add
+  jackpot_text_remove:
+    hc_score:
+      slide: high_caliber_slide
+      action: add
+  jackpots_unlit_hit:
+    hc_score:
+      slide: high_caliber_slide
+      action: remove
+  spot_double_jackpot:
+    hc_score:
+      slide: high_caliber_slide
+      action: remove
+  spot_triple_jackpot:
+    hc_score:
+      slide: high_caliber_slide
+      action: remove
+  remove_hc_1:
+      hc_1:
+        slide: high_caliber_slide
+        action: remove
+  remove_hc_2:
+      hc_2:
+        slide: high_caliber_slide
+        action: remove
+  remove_hc_3:
+      hc_3:
+        slide: high_caliber_slide
+        action: remove
+  remove_hc_4:
+      hc_4:
+        slide: high_caliber_slide
+        action: remove
+  remove_hc_5:
+      hc_5:
+        slide: high_caliber_slide
+        action: remove
+  remove_hc_6:
+      hc_6:
+        slide: high_caliber_slide
+        action: remove
+
+
+widgets:
+  hc_score:
+    - type: text
+      text: (score)
+      anchor_x: center
+      anchor_y: bottom
+      x: 64
+      y: 1
+      #font_size: 1
+      round_anchor_x: left
+      round_anchor_y: top
+      min_digits: 2
+      style: medium
+      number_grouping: true
+      z: 120
+  hc_1:
+    - type: image
+      image: hc_1
+      anchor_x: left
+      anchor_y: bottom
+      x: 0
+      y: 1
+      z: 100
+      auto_play: true
+  hc_2:
+    - type: image
+      image: hc_2
+      anchor_x: left
+      anchor_y: bottom
+      x: 21
+      y: 1
+      z: 100
+      auto_play: true
+  hc_3:
+    - type: image
+      image: hc_3
+      anchor_x: left
+      anchor_y: bottom
+      x: 42
+      y: 1
+      z: 100
+      auto_play: true
+  hc_4:
+    - type: image
+      image: hc_4
+      anchor_x: left
+      anchor_y: bottom
+      x: 64
+      y: 1
+      z: 100
+      auto_play: true
+  hc_5:
+    - type: image
+      image: hc_5
+      anchor_x: left
+      anchor_y: bottom
+      x: 86
+      y: 1
+      z: 100
+      auto_play: true
+  hc_6:
+    - type: image
+      image: hc_6
+      anchor_x: left
+      anchor_y: bottom
+      x: 107
+      y: 1
+      z: 100
+      auto_play: true
+  sec_shell_1:
+    - type: image
+      image: sec_ap_1_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 60
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_2:
+    - type: image
+      image: sec_he_1_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 57
+      y: -5
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_3:
+    - type: image
+      image: sec_ap_1_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 68
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_4:
+    - type: image
+      image: sec_he_1_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 71
+      y: -5
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_5:
+    - type: image
+      image: sec_he_2_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 18
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_6:
+    - type: image
+      image: sec_ap_2_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 13
+      y: -4
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_7:
+    - type: image
+      image: sec_ap_2_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 42
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_8:
+    - type: image
+      image: sec_he_2_shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 38
+      y: -8
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_9:
+    - type: image
+      image: sec_he_2_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 110
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_10:
+    - type: image
+      image: sec_ap_2_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 115
+      y: -4
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_11:
+    - type: image
+      image: sec_ap_2_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 86
+      y: 0
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  sec_shell_12:
+    - type: image
+      image: sec_he_2_shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 90
+      y: -8
+      z: 110
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_1:
+    - type: image
+      image: fire_start
+      anchor_x: left
+      anchor_y: bottom
+      x: 6
+      y: 10
+      z: 400
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_1:
+    - type: image
+      image: small_explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 1
+      y: 7
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_1:
+    - type: image
+      image: fire
+      anchor_x: left
+      anchor_y: bottom
+      x: 6
+      y: 10
+      z: 400
+      fps: 5
+      auto_play: true
+  shell_1:
+    - type: image
+      image: shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 8
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_1:
+    - type: image
+      image: shell_double
+      anchor_x: left
+      anchor_y: bottom
+      x: 8
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_1:
+    - type: image
+      image: shell_triple
+      anchor_x: left
+      anchor_y: bottom
+      x: 8
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_2:
+    - type: image
+      image: fire_start
+      anchor_x: left
+      anchor_y: bottom
+      x: 27
+      y: 19
+      z: 500
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_2:
+    - type: image
+      image: small_explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 22
+      y: 16
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_2:
+    - type: image
+      image: fire
+      anchor_x: left
+      anchor_y: bottom
+      x: 27
+      y: 19
+      z: 500
+      fps: 5
+      auto_play: true
+  shell_2:
+    - type: image
+      image: shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 29
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_2:
+    - type: image
+      image: shell_double
+      anchor_x: left
+      anchor_y: bottom
+      x: 29
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_2:
+    - type: image
+      image: shell_triple
+      anchor_x: left
+      anchor_y: bottom
+      x: 29
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_3:
+    - type: image
+      image: fire_start
+      anchor_x: left
+      anchor_y: bottom
+      x: 49
+      y: 20
+      z: 500
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_3:
+    - type: image
+      image: small_explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 43
+      y: 17
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_3:
+    - type: image
+      image: fire
+      anchor_x: left
+      anchor_y: bottom
+      x: 49
+      y: 20
+      z: 500
+      fps: 5
+      auto_play: true
+  shell_3:
+    - type: image
+      image: shell
+      anchor_x: left
+      anchor_y: bottom
+      x: 50
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_3:
+    - type: image
+      image: shell_double
+      anchor_x: left
+      anchor_y: bottom
+      x: 50
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_3:
+    - type: image
+      image: shell_triple
+      anchor_x: left
+      anchor_y: bottom
+      x: 50
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_4:
+    - type: image
+      image: fire_start_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 79
+      y: 20
+      z: 500
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_4:
+    - type: image
+      image: small_explosion_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 85
+      y: 17
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_4:
+    - type: image
+      image: fire_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 79
+      y: 20
+      z: 500
+      fps: 5
+      auto_play: true
+  shell_4:
+    - type: image
+      image: shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 78
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_4:
+    - type: image
+      image: shell_double_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 78
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_4:
+    - type: image
+      image: shell_triple_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 78
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_5:
+    - type: image
+      image: fire_start_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 101
+      y: 19
+      z: 500
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_5:
+    - type: image
+      image: small_explosion_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 106
+      y: 16
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_5:
+    - type: image
+      image: fire_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 101
+      y: 19
+      z: 500
+      fps: 5
+      auto_play: true
+  shell_5:
+    - type: image
+      image: shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 99
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_5:
+    - type: image
+      image: shell_double_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 99
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_5:
+    - type: image
+      image: shell_triple_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 99
+      y: 0
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_start_6:
+    - type: image
+      image: fire_start_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 122
+      y: 10
+      z: 400
+      fps: 5
+      auto_play: true
+      loops: 1
+  explosion_6:
+    - type: image
+      image: small_explosion_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 127
+      y: 7
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  fire_6:
+    - type: image
+      image: fire_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 122
+      y: 10
+      z: 400
+      fps: 5
+      auto_play: true
+  shell_6:
+    - type: image
+      image: shell_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 120
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_double_6:
+    - type: image
+      image: shell_double_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 120
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  shell_triple_6:
+    - type: image
+      image: shell_triple_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 120
+      y: -10
+      z: 500
+      fps: 10
+      auto_play: true
+      loops: 1
+  hajotest_1:
+    - type: image
+      image: kulso_hajotest
+      anchor_x: left
+      anchor_y: bottom
+      x: 3
+      y: 3
+      z: 150
+      fps: 10
+      auto_play: true
+  hatso_agyu_1:
+    - type: image
+      image: kulso_hatso_agyu
+      anchor_x: left
+      anchor_y: bottom
+      x: 5
+      y: 12
+      z: 200
+      fps: 10
+      auto_play: true
+  hajotest_izzo_1:
+    - type: image
+      image: kulso_izzo
+      anchor_x: left
+      anchor_y: bottom
+      x: 6
+      y: 6
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_1:
+    - type: image
+      image: kulso_felepitmeny
+      anchor_x: left
+      anchor_y: bottom
+      x: 0
+      y: 10
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_1:
+    - type: image
+      image: explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 0
+      y: 8
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_1:
+    - type: image
+      image: kulso_agyu
+      anchor_x: left
+      anchor_y: bottom
+      x: 12
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_1_marad:
+    - type: image
+      image: kulso_agyu_marad
+      anchor_x: left
+      anchor_y: bottom
+      x: 12
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+  hajotest_2:
+    - type: image
+      image: kozep_hajotest
+      anchor_x: left
+      anchor_y: bottom
+      x: 26
+      y: 10
+      z: 150
+      fps: 10
+      auto_play: true
+  hajotest_izzo_2:
+    - type: image
+      image: kozep_izzo
+      anchor_x: left
+      anchor_y: bottom
+      x: 28
+      y: 14
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_2:
+    - type: image
+      image: kozep_felepitmeny
+      anchor_x: left
+      anchor_y: bottom
+      x: 21
+      y: 19
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_2:
+    - type: image
+      image: explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 20
+      y: 19
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_2:
+    - type: image
+      image: kozep_agyu
+      anchor_x: left
+      anchor_y: bottom
+      x: 28
+      y: 14
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_2_marad:
+    - type: image
+      image: kozep_agyu_marad
+      anchor_x: left
+      anchor_y: bottom
+      x: 28
+      y: 12
+      z: 350
+      fps: 10
+      auto_play: true
+  hajotest_3:
+    - type: image
+      image: belso_hajotest
+      anchor_x: left
+      anchor_y: bottom
+      x: 48
+      y: 13
+      z: 150
+      fps: 10
+      auto_play: true
+  hajotest_izzo_3:
+    - type: image
+      image: belso_izzo
+      anchor_x: left
+      anchor_y: bottom
+      x: 50
+      y: 17
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_3:
+    - type: image
+      image: belso_felepitmeny
+      anchor_x: left
+      anchor_y: bottom
+      x: 43
+      y: 20
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_3:
+    - type: image
+      image: explosion
+      anchor_x: left
+      anchor_y: bottom
+      x: 42
+      y: 20
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_3:
+    - type: image
+      image: belso_agyu
+      anchor_x: left
+      anchor_y: bottom
+      x: 51
+      y: 11
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_3_marad:
+    - type: image
+      image: belso_agyu_marad
+      anchor_x: left
+      anchor_y: bottom
+      x: 51
+      y: 11
+      z: 350
+      fps: 10
+      auto_play: true
+  hajotest_4:
+    - type: image
+      image: belso_hajotest
+      anchor_x: right
+      anchor_y: bottom
+      x: 80
+      y: 13
+      z: 150
+      fps: 10
+      auto_play: true
+  hajotest_izzo_4:
+    - type: image
+      image: belso_izzo_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 78
+      y: 17
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_4:
+    - type: image
+      image: belso_felepitmeny_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 85
+      y: 20
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_4:
+    - type: image
+      image: explosion
+      anchor_x: right
+      anchor_y: bottom
+      x: 85
+      y: 20
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_4:
+    - type: image
+      image: belso_agyu_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 77
+      y: 11
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_4_marad:
+    - type: image
+      image: belso_agyu_marad_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 77
+      y: 11
+      z: 350
+      fps: 10
+      auto_play: true
+  hajotest_5:
+    - type: image
+      image: kozep_hajotest_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 102
+      y: 10
+      z: 150
+      fps: 10
+      auto_play: true
+  hajotest_izzo_5:
+    - type: image
+      image: kozep_izzo_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 100
+      y: 14
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_5:
+    - type: image
+      image: kozep_felepitmeny_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 107
+      y: 19
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_5:
+    - type: image
+      image: explosion_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 108
+      y: 19
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_5:
+    - type: image
+      image: kozep_agyu_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 100
+      y: 14
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_5_marad:
+    - type: image
+      image: kozep_agyu_marad_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 100
+      y: 12
+      z: 350
+      fps: 10
+      auto_play: true
+  hajotest_6:
+    - type: image
+      image: kulso_hajotest_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 125
+      y: 3
+      z: 150
+      fps: 10
+      auto_play: true
+  hatso_agyu_6:
+    - type: image
+      image: kulso_hatso_agyu_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 123
+      y: 12
+      z: 200
+      fps: 10
+      auto_play: true
+  hajotest_izzo_6:
+    - type: image
+      image: kulso_izzo_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 122
+      y: 6
+      z: 320
+      fps: 4
+      auto_play: true
+  felepitmeny_6:
+    - type: image
+      image: kulso_felepitmeny_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 128
+      y: 10
+      z: 300
+      fps: 10
+      auto_play: true
+      loops: 1
+  robbanas_6:
+    - type: image
+      image: explosion
+      anchor_x: right
+      anchor_y: bottom
+      x: 128
+      y: 8
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_6:
+    - type: image
+      image: kulso_agyu_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 116
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  agyu_6_marad:
+    - type: image
+      image: kulso_agyu_marad_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 116
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+  muzzle_flash_1:
+    - type: image
+      image: kulso_muzzle_flash
+      anchor_x: left
+      anchor_y: bottom
+      x: 14
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  muzzle_flash_2:
+    - type: image
+      image: kozep_muzzle_flash
+      anchor_x: left
+      anchor_y: bottom
+      x: 26
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  muzzle_flash_3:
+    - type: image
+      image: belso_muzzle_flash
+      anchor_x: left
+      anchor_y: bottom
+      x: 47
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  muzzle_flash_4:
+    - type: image
+      image: belso_muzzle_flash
+      anchor_x: left
+      anchor_y: bottom
+      x: 68
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  muzzle_flash_5:
+    - type: image
+      image: kozep_muzzle_flash_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 102
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  muzzle_flash_6:
+    - type: image
+      image: kulso_muzzle_flash_2
+      anchor_x: right
+      anchor_y: bottom
+      x: 114
+      y: 0
+      z: 350
+      fps: 10
+      auto_play: true
+      loops: 1
+  jackpot:
+    - type: image
+      image: JACKPOT
+      anchor_x: left
+      anchor_y: bottom
+      x: 43
+      y: 3
+      z: 500
+      fps: 10
+      auto_play: true
+  double_jackpot:
+    - type: image
+      image: DOUBLE JACKPOT
+      anchor_x: left
+      anchor_y: bottom
+      x: 24
+      y: 2
+      z: 500
+      fps: 10
+      auto_play: true
+  triple_jackpot:
+    - type: image
+      image: TRIPLE JACKPOT
+      anchor_x: left
+      anchor_y: bottom
+      x: 25
+      y: 2
+      z: 500
+      fps: 10
+      auto_play: true

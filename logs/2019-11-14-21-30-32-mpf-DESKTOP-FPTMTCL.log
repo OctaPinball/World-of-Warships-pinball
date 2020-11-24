@@ -1,0 +1,262 @@
+2019-11-14 21:30:32,121 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.68
+2019-11-14 21:30:32,122 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-11-14-21-30-32-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-11-14 21:30:32,122 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-11-14 21:30:32,122 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-11-14 21:30:32,122 : INFO : Machine : Platform: win32
+2019-11-14 21:30:32,122 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-11-14 21:30:32,122 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-11-14 21:30:32,122 : INFO : Machine : Machine config file #1: config.yaml
+2019-11-14 21:30:32,123 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-14 21:30:32,125 : INFO : Machine : Initialise MPF.
+2019-11-14 21:30:32,393 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,432 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.68', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,432 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.68, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,432 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-11-14 21:30:32,433 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-11-14 21:30:32,469 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-11-14 21:30:32,474 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-11-14 21:30:32,483 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('2', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('6', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,484 : INFO : SwitchController : Found active switch: ('7', <Platform.SmartVirtual>)
+2019-11-14 21:30:32,485 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2019-11-14 21:30:32,487 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2019-11-14 21:30:34,503 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2019-11-14 21:30:34,503 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2019-11-14 21:30:34,515 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15', 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,515 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15 (config_version=5, BCP v1.1, Requires MPF v0.53.0-dev.51)', 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,516 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,534 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2019-11-14 21:30:34,536 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2019-11-14 21:30:34,537 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,540 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,540 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2019-11-14 21:30:34,540 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2019-11-14 21:30:34,554 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2019-11-14 21:30:34,554 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2019-11-14 21:30:34,564 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2019-11-14 21:30:34,564 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2019-11-14 21:30:34,564 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2019-11-14 21:30:34,565 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2019-11-14 21:30:34,565 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2019-11-14 21:30:34,565 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2019-11-14 21:30:34,565 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2019-11-14 21:30:34,566 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2019-11-14 21:30:34,566 : INFO : Mode.attract : Started. Priority: 10
+2019-11-14 21:30:34,566 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2019-11-14 21:30:34,566 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2019-11-14 21:30:34,587 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2019-11-14 21:30:34,587 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2019-11-14 21:30:34,587 : INFO : Machine : Starting the main run loop.
+2019-11-14 21:30:34,946 : INFO : BcpServer : New client connected.
+2019-11-14 21:32:38,573 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:32:41,571 : INFO : EventManager : Event: ======'flipper_cradle'====== Args={}
+2019-11-14 21:32:42,043 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:32:42,044 : INFO : EventManager : Event: ======'flipper_cradle_release'====== Args={}
+2019-11-14 21:32:42,106 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:32:44,355 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:32:44,432 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:32:44,855 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:32:44,929 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:32:45,215 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:33:32,167 : INFO : SwitchController : <<<<<<< 's_trough6' inactive >>>>>>>
+2019-11-14 21:33:34,817 : INFO : SwitchController : <<<<<<< 's_trough5' inactive >>>>>>>
+2019-11-14 21:33:36,603 : INFO : SwitchController : <<<<<<< 's_trough4' inactive >>>>>>>
+2019-11-14 21:33:37,740 : INFO : SwitchController : <<<<<<< 's_trough4' active >>>>>>>
+2019-11-14 21:33:39,921 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:41,172 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:43,295 : INFO : SwitchController : <<<<<<< 's_trough2' inactive >>>>>>>
+2019-11-14 21:33:44,071 : INFO : SwitchController : <<<<<<< 's_trough2' active >>>>>>>
+2019-11-14 21:33:46,548 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:49,908 : INFO : SwitchController : <<<<<<< 's_trough5' active >>>>>>>
+2019-11-14 21:33:54,647 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:54,728 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:55,411 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 4}
+2019-11-14 21:33:55,411 : WARNING : ball_device.bd_trough : Ball disappeared while idle. This should not normally happen.
+2019-11-14 21:33:55,411 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2019-11-14 21:33:55,411 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2019-11-14 21:33:55,412 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_missing'====== Args={'balls': 1}
+2019-11-14 21:33:55,412 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_trough'}
+2019-11-14 21:33:55,412 : WARNING : ball_device.bd_trough : Ball disappeared while idle. This should not normally happen.
+2019-11-14 21:33:55,413 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2019-11-14 21:33:55,413 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 2, 'change': 1}
+2019-11-14 21:33:55,413 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_missing'====== Args={'balls': 1}
+2019-11-14 21:33:55,414 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_trough'}
+2019-11-14 21:33:55,856 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:55,939 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:56,445 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:56,539 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:56,983 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:57,052 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-11-14 21:33:57,420 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-11-14 21:33:57,925 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 5}
+2019-11-14 21:33:57,925 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2019-11-14 21:33:57,926 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2019-11-14 21:33:57,928 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': -1}
+2019-11-14 21:33:57,930 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_trough>}
+2019-11-14 21:33:57,932 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_trough>, 'balls': 1}
+2019-11-14 21:33:57,933 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2019-11-14 21:33:57,934 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_trough>}
+2019-11-14 21:40:12,903 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:12,967 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:13,394 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:13,479 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:13,808 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:13,915 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:14,551 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:14,628 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:14,937 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:15,017 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:15,335 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:15,825 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:16,462 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:16,549 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:16,850 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:16,928 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:17,416 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:17,512 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:18,743 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:40:18,812 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:40:19,085 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:40:19,186 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:40:19,468 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:40:19,554 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:40:20,382 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2019-11-14 21:40:20,476 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2019-11-14 21:40:39,969 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:40,013 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:40,481 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:40,541 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:40,898 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:40,945 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:41,214 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:41,287 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:41,629 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:41,698 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:42,231 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:42,314 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:44,431 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:40:44,499 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:40:45,219 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:40:45,679 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:40:47,234 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:40:47,313 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:40:49,138 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2019-11-14 21:40:52,135 : INFO : EventManager : Event: ======'flipper_cradle'====== Args={}
+2019-11-14 21:40:53,157 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2019-11-14 21:40:53,158 : INFO : EventManager : Event: ======'flipper_cradle_release'====== Args={}
+2019-11-14 21:40:55,348 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:40:55,834 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 6}
+2019-11-14 21:40:55,835 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2019-11-14 21:40:55,836 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2019-11-14 21:40:55,836 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2019-11-14 21:40:55,838 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_trough>}
+2019-11-14 21:40:55,840 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_trough>, 'balls': 1}
+2019-11-14 21:40:55,842 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2019-11-14 21:40:55,842 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_trough>}
+2019-11-14 21:40:55,965 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:40:58,783 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:40:58,846 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:40:59,761 : INFO : SwitchController : <<<<<<< 's_trough_jam' active >>>>>>>
+2019-11-14 21:41:01,324 : INFO : SwitchController : <<<<<<< 's_trough_jam' inactive >>>>>>>
+2019-11-14 21:41:06,802 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 5}
+2019-11-14 21:41:06,803 : WARNING : ball_device.bd_trough : Ball disappeared while idle. This should not normally happen.
+2019-11-14 21:41:06,803 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2019-11-14 21:41:06,804 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2019-11-14 21:41:06,805 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_missing'====== Args={'balls': 1}
+2019-11-14 21:41:06,805 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_trough'}
+2019-11-14 21:41:16,107 : INFO : SwitchController : <<<<<<< 's_trough5' inactive >>>>>>>
+2019-11-14 21:41:16,191 : INFO : SwitchController : <<<<<<< 's_trough5' active >>>>>>>
+2019-11-14 21:41:18,368 : INFO : SwitchController : <<<<<<< 's_trough5' inactive >>>>>>>
+2019-11-14 21:41:20,179 : INFO : SwitchController : <<<<<<< 's_plunger' active >>>>>>>
+2019-11-14 21:41:20,690 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_count_changed'====== Args={'balls': 1}
+2019-11-14 21:41:20,691 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2019-11-14 21:41:20,692 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2019-11-14 21:41:20,692 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2019-11-14 21:41:20,694 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_plunger>}
+2019-11-14 21:41:20,695 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2019-11-14 21:41:20,696 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2019-11-14 21:41:20,696 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_plunger>}
+2019-11-14 21:41:20,699 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 0}
+2019-11-14 21:41:20,700 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:41:20,701 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 0}
+2019-11-14 21:41:23,861 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 4}
+2019-11-14 21:41:23,862 : WARNING : ball_device.bd_trough : Ball disappeared while idle. This should not normally happen.
+2019-11-14 21:41:23,863 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2019-11-14 21:41:23,865 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2019-11-14 21:41:23,866 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_missing'====== Args={'balls': 1}
+2019-11-14 21:41:23,868 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_trough'}
+2019-11-14 21:41:30,678 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 1}
+2019-11-14 21:41:30,681 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 1}
+2019-11-14 21:41:30,683 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:41:30,683 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 1}
+2019-11-14 21:41:40,683 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 2}
+2019-11-14 21:41:40,687 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 2}
+2019-11-14 21:41:40,688 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:41:40,689 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 2}
+2019-11-14 21:41:50,688 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 3}
+2019-11-14 21:41:50,691 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 3}
+2019-11-14 21:41:50,692 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:41:50,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 3}
+2019-11-14 21:42:00,681 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 4}
+2019-11-14 21:42:00,684 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 4}
+2019-11-14 21:42:00,686 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:00,687 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 4}
+2019-11-14 21:42:10,685 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 5}
+2019-11-14 21:42:10,687 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 5}
+2019-11-14 21:42:10,688 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:10,688 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 5}
+2019-11-14 21:42:20,677 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 6}
+2019-11-14 21:42:20,680 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 6}
+2019-11-14 21:42:20,682 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:20,683 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 6}
+2019-11-14 21:42:30,678 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 7}
+2019-11-14 21:42:30,681 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 7}
+2019-11-14 21:42:30,682 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:30,683 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 7}
+2019-11-14 21:42:40,680 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 8}
+2019-11-14 21:42:40,681 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 8}
+2019-11-14 21:42:40,682 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:40,682 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 8}
+2019-11-14 21:42:50,688 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 9}
+2019-11-14 21:42:50,692 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 9}
+2019-11-14 21:42:50,693 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:42:50,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 9}
+2019-11-14 21:43:00,692 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 10}
+2019-11-14 21:43:00,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 10}
+2019-11-14 21:43:00,693 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:43:00,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 10}
+2019-11-14 21:43:07,659 : INFO : BcpServer : New client connected.
+2019-11-14 21:43:10,677 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 11}
+2019-11-14 21:43:10,678 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 11}
+2019-11-14 21:43:10,678 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:43:10,678 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 11}
+2019-11-14 21:43:20,691 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 12}
+2019-11-14 21:43:20,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 12}
+2019-11-14 21:43:20,693 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:43:20,694 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 12}
+2019-11-14 21:43:30,691 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_failed'====== Args={'target': <playfield.playfield>, 'balls': 1, 'retry': True, 'num_attempts': 13}
+2019-11-14 21:43:30,693 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 13}
+2019-11-14 21:43:30,694 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2019-11-14 21:43:30,694 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 13}
+2019-11-14 21:43:38,041 : INFO : Machine : Shutting down...
+2019-11-14 21:43:38,041 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-11-14 21:43:38,043 : INFO : root : MPF run loop ended.

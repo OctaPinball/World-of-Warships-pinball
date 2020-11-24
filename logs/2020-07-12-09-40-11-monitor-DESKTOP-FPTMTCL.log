@@ -1,0 +1,33 @@
+2020-07-12 09:40:11,649 : INFO : root : Loading MPF Monitor
+2020-07-12 09:40:11,730 : INFO : Core : Looking for MPF at localhost:5051
+2020-07-12 09:40:36,719 : INFO : BCP Client : Connected to MPF
+2020-07-12 09:42:27,727 : INFO : BCP Client : Connected to MPF
+2020-07-12 09:43:30,219 : INFO : BCP Client : Connected to MPF
+2020-07-12 09:57:53,222 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:01:38,223 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:03:09,721 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:03:51,721 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:13:52,724 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:15:06,722 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:17:17,725 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:29:10,725 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:30:23,222 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:32:09,224 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:33:00,225 : INFO : BCP Client : Connected to MPF
+2020-07-12 10:36:04,720 : INFO : BCP Client : Connected to MPF
+2020-07-12 11:34:14,223 : INFO : BCP Client : Connected to MPF
+2020-07-12 11:35:28,722 : INFO : BCP Client : Connected to MPF
+2020-07-12 11:39:19,227 : INFO : BCP Client : Connected to MPF
+2020-07-12 11:40:57,224 : INFO : BCP Client : Connected to MPF
+2020-07-12 11:42:29,722 : INFO : BCP Client : Connected to MPF
+2020-07-12 12:10:29,725 : INFO : BCP Client : Connected to MPF
+2020-07-12 12:11:07,722 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:15:41,719 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:17:11,721 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:18:49,222 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:19:11,724 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:20:31,722 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:26:15,721 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:29:51,223 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:30:57,720 : INFO : BCP Client : Connected to MPF
+2020-07-12 15:40:05,221 : INFO : BCP Client : Connected to MPF

@@ -1,0 +1,4 @@
+2020-01-20 13:35:04,484 : INFO : root : Loading MPF Monitor
+2020-01-20 13:35:04,860 : INFO : Core : Looking for MPF at localhost:5051
+2020-01-20 13:35:37,361 : INFO : BCP Client : Connected to MPF
+2020-01-20 13:39:01,861 : INFO : BCP Client : Connected to MPF

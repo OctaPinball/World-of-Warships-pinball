@@ -1,0 +1,929 @@
+#config_version=5
+
+mode:
+    start_events: super_jackpot_start
+    stop_events: super_jackpot_stopped
+    events_when_started: super_hold_enable
+    events_when_stopped: super_hold_disable
+    priority: 300
+
+timers:
+  super_countdown:
+    max_value: 20
+    start_value: 20
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: increase_super_time
+        action: add
+        value: 5
+      - event: restart_super_time
+        action: restart
+      - event: stop_super_time
+        action: stop
+      - event: start_super_time
+        action: start
+  super_overtime:
+    start_value: 3
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: timer_super_countdown_complete
+        action: restart
+      - event: stop_super_overtime
+        action: stop
+
+variable_player:
+  ball_hold_super_hold_held_ball: 
+    super_lock: 1
+  exit_super_phase:
+    super_lock:
+      int: 0
+      action: set
+  mode_hc_multiball_super_started:
+    super_time:
+      int: current_player.hc_multiball_super_super_countdown_tick
+      action: set
+  player_hc_multiball_super_super_countdown_tick:
+    super_time:
+      int: current_player.hc_multiball_super_super_countdown_tick
+      action: set
+
+
+event_player:
+    s_left_loop_made_active: increase_super_time_check
+    s_left_ramp_made_active: increase_super_time_check
+    s_torpedo_active: increase_super_time_check
+    s_citadel_lock_active: increase_super_time_check
+    s_center_ramp_active: increase_super_time_check
+    s_right_ramp_made_active: increase_super_time_check
+    increase_super_time_check:
+      - increase_super_time
+      - stop_super_overtime
+      - start_super_time
+    timer_super_overtime_complete: award_super_jackpot
+    slide_super_transition_slide_2_removed:
+      - restart_super_time
+    player_super_lock:
+      - scan_super
+      - restart_super_time
+    balls_in_play: scan_super
+    scan_super: check_super_text_locked
+    mode_hc_multiball_super_started: check_super_text_locked
+    scan_super{current_player.super_lock == game.balls_in_play}:
+      - award_super_jackpot
+    award_super_jackpot: stop_super_time
+    #scan_super{playfield_ball_count_change_balls == 0}: award_super_jackpot
+    #playfield_ball_count_change{}: award_super_jackpot
+    award_super_jackpot{current_player.super_lock == 0}: award_no_super_jackpot
+    award_super_jackpot{current_player.super_lock == 1}: award_simple_super_jackpot
+    award_super_jackpot{current_player.super_lock == 2}: award_double_super_jackpot
+    award_super_jackpot{current_player.super_lock == 3}: award_triple_super_jackpot
+    s_side_ramp_made{current_player.super_lock == 3}: award_ultra_jackpot
+    check_super_text_locked{current_player.super_lock == 0}:
+      - update_super_text_0_locked
+      - check_super_text_offline
+    check_super_text_locked{current_player.super_lock == 1}:
+      - update_super_text_1_locked
+      - check_super_text_offline
+    check_super_text_locked{current_player.super_lock == 2}:
+      - update_super_text_2_locked
+      - check_super_text_offline
+    check_super_text_locked{current_player.super_lock == 3}:
+      - update_super_text_3_locked
+      - check_super_text_offline
+    check_super_text_offline{game.balls_in_play == 2}: update_super_text_1_offline
+    check_super_text_offline{game.balls_in_play == 1}: update_super_text_2_offline
+    player_super_lock{value == 1}: super_lock_1
+    player_super_lock{value == 2}: super_lock_2
+    player_super_lock{value == 3}: super_lock_3
+
+
+ball_holds:
+  super_hold:
+      balls_to_hold: 3
+      hold_devices: bd_hc_lock
+      disable_events: super_jackpot_stopped, game_started
+      enable_events: super_hold_enable
+      release_all_events: award_super_jackpot
+      reset_events: super_jackpot_start, super_jackpot_stopped
+
+slides:
+  hc_super_slide: []
+
+show_player:
+  award_simple_super_jackpot:
+    sh_super_1:
+      loops: 0
+  award_double_super_jackpot:
+    sh_super_2:
+      loops: 0
+  award_triple_super_jackpot:
+    sh_super_3:
+      loops: 0
+
+slide_player:
+  mode_hc_multiball_super_started:
+    hc_super_slide:
+      action: play
+  mode_hc_multiball_super_stopped:
+    hc_super_slide:
+      action: remove
+
+widget_player:
+  increase_super_time:
+    super_timer_add_widget:
+      action: add
+      slide: hc_super_slide
+
+  slide_hc_super_slide_active:
+    gun_1_side:
+      action: add
+      slide: hc_super_slide
+    gun_2_side:
+      action: add
+      slide: hc_super_slide
+    gun_3_side:
+      action: add
+      slide: hc_super_slide
+    hc_super_background_base:
+      action: add
+      slide: hc_super_slide
+  super_lock_2:
+    gun_1_side:
+      action: remove
+    gun_1_animation:
+      action: add
+      slide: hc_super_slide
+    gun_1_face:
+      action: add
+      slide: hc_super_slide
+  super_lock_1:
+    gun_2_side:
+      action: remove
+    gun_2_animation:
+      action: add
+      slide: hc_super_slide
+    gun_2_face:
+      action: add
+      slide: hc_super_slide
+  super_lock_3:
+    gun_3_side:
+      action: remove
+    gun_3_animation:
+      action: add
+      slide: hc_super_slide
+    gun_3_face:
+      action: add
+      slide: hc_super_slide
+  update_super_text_0_locked:
+    mb1_aiming:
+      action: add
+      slide: hc_super_slide
+    mb2_aiming:
+      action: add
+      slide: hc_super_slide
+    mb3_aiming:
+      action: add
+      slide: hc_super_slide
+  update_super_text_1_locked:
+    mb1_locked:
+      action: add
+      slide: hc_super_slide
+    mb2_aiming:
+      action: add
+      slide: hc_super_slide
+    mb3_aiming:
+      action: add
+      slide: hc_super_slide
+  update_super_text_2_locked:
+    mb1_locked:
+      action: add
+      slide: hc_super_slide
+    mb2_locked:
+      action: add
+      slide: hc_super_slide
+    mb3_aiming:
+      action: add
+      slide: hc_super_slide
+  update_super_text_3_locked:
+    mb1_locked:
+      action: add
+      slide: hc_super_slide
+    mb2_locked:
+      action: add
+      slide: hc_super_slide
+    mb3_locked:
+      action: add
+      slide: hc_super_slide
+  update_super_text_1_offline:
+    mb3_aiming:
+      action: remove
+    mb3_offline:
+      action: add
+      slide: hc_super_slide
+  update_super_text_2_offline:
+    mb2_aiming:
+      action: remove
+    mb2_offline:
+      action: add
+      slide: hc_super_slide
+    mb3_aiming:
+      action: remove
+    mb3_offline:
+      action: add
+      slide: hc_super_slide
+  check_super_text_locked:
+    mb1_aiming:
+      action: remove
+    mb2_aiming:
+      action: remove
+    mb3_aiming:
+      action: remove
+    mb1_locked:
+      action: remove
+    mb2_locked:
+      action: remove
+    mb3_locked:
+      action: remove
+    mb1_offline:
+      action: remove
+    mb2_offline:
+      action: remove
+    mb3_offline:
+      action: remove
+  remove_super_screen:
+    mb1_aiming:
+      action: remove
+    mb2_aiming:
+      action: remove
+    mb3_aiming:
+      action: remove
+    mb1_locked:
+      action: remove
+    mb2_locked:
+      action: remove
+    mb3_locked:
+      action: remove
+    mb1_offline:
+      action: remove
+    mb2_offline:
+      action: remove
+    mb3_offline:
+      action: remove
+    gun_1_side:
+      action: remove
+    gun_2_side:
+      action: remove
+    gun_3_side:
+      action: remove
+    gun_1_face:
+      action: remove
+    gun_2_face:
+      action: remove
+    gun_3_face:
+      action: remove
+    gun_1_animation:
+      action: remove
+    gun_2_animation:
+      action: remove
+    gun_3_animation:
+      action: remove
+  start_super_muzzle_1:
+    super_muzzle_1:
+      action: add
+      slide: hc_super_slide
+  fade_in_super_1:
+    super_jackpot_1:
+      action: add
+      slide: hc_super_slide
+  remove_super_muzzle_1:
+    super_muzzle_1:
+      action: remove
+  remove_super_text_1:
+    super_jackpot_1:
+      action: remove
+  start_super_muzzle_2:
+    super_muzzle_2:
+      action: add
+      slide: hc_super_slide
+  fade_in_super_2:
+    super_jackpot_2:
+      action: add
+      slide: hc_super_slide
+  remove_super_muzzle_2:
+    super_muzzle_2:
+      action: remove
+  remove_super_text_2:
+    super_jackpot_2:
+      action: remove
+  start_super_muzzle_3:
+    super_muzzle_3:
+      action: add
+      slide: hc_super_slide
+  fade_in_super_3:
+    super_jackpot_3:
+      action: add
+      slide: hc_super_slide
+  remove_super_muzzle_3:
+    super_muzzle_3:
+      action: remove
+  remove_super_text_3:
+    super_jackpot_3:
+      action: remove
+
+
+widgets:
+  hc_super_background_base:
+      - type: image
+        image: hc_super_background
+        anchor_x: left
+        anchor_y: top
+        x: left
+        y: top-3
+        z: 300
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+      - type: text
+        text: (score)
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: top
+        x: left
+        y: top
+        z: 320
+        number_grouping: true
+        min_digits: 2
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+      - type: text
+        text: (super_time)
+        style: medium
+        color: red
+        x: left+1
+        y: top-7
+        z: 120
+        min_digits: 2
+        anchor_y: top
+        anchor_x: left
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  super_timer_add_widget:
+      - type: text
+        text: "+5"
+        font_size: 0
+        style: medium
+        x: left+22
+        y: top-15
+        z: 120
+        min_digits: 2
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  mb1_aiming:
+      - type: text
+        text: "AIMING"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top
+        z: 320
+        color: FFFF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb2_aiming:
+      - type: text
+        text: "AIMING"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-6
+        z: 320
+        color: FFFF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb3_aiming:
+      - type: text
+        text: "AIMING"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-12
+        z: 320
+        color: FFFF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb1_locked:
+      - type: text
+        text: "LOCKED"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top
+        z: 320
+        color: 00FF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.5s
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.5s
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb2_locked:
+      - type: text
+        text: "LOCKED"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-6
+        z: 320
+        color: 00FF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.5s
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.5s
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb3_locked:
+      - type: text
+        text: "LOCKED"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-12
+        z: 320
+        color: 00FF00
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.5s
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.5s
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb1_offline:
+      - type: text
+        text: "OFFLINE"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top
+        z: 320
+        color: FF0000
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb2_offline:
+      - type: text
+        text: "OFFLINE"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-6
+        z: 320
+        color: FF0000
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  mb3_offline:
+      - type: text
+        text: "OFFLINE"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-12
+        z: 320
+        color: FF0000
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_1_side:
+      - type: image
+        image: gun_side_1
+        anchor_x: left
+        anchor_y: bottom
+        x: 74
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_2_side:
+      - type: image
+        image: gun_side_1
+        anchor_x: left
+        anchor_y: bottom
+        x: 83
+        y: top-26
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_3_side:
+      - type: image
+        image: gun_side_2
+        anchor_x: left
+        anchor_y: bottom
+        x: 28
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_1_face:
+      - type: image
+        image: gun_face
+        anchor_x: left
+        anchor_y: bottom
+        x: 74
+        y: top-24
+        z: 105
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_2_face:
+      - type: image
+        image: gun_face
+        anchor_x: left
+        anchor_y: bottom
+        x: 83
+        y: top-26
+        z: 105
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_3_face:
+      - type: image
+        image: gun_face
+        anchor_x: left
+        anchor_y: bottom
+        x: 35
+        y: top-24
+        z: 105
+        round_anchor_y: top
+        round_anchor_x: right
+        animations:
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
+  gun_1_animation:
+      - type: image
+        image: hc_super_gun_1
+        anchor_x: left
+        anchor_y: bottom
+        x: 74
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  gun_2_animation:
+      - type: image
+        image: hc_super_gun_1_2
+        anchor_x: left
+        anchor_y: bottom
+        x: 83
+        y: top-26
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  gun_3_animation:
+      - type: image
+        image: hc_super_gun_2
+        anchor_x: left
+        anchor_y: bottom
+        x: 28
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  super_muzzle_1:
+      - type: image
+        image: super_1_muzzle
+        anchor_x: left
+        anchor_y: bottom
+        x: left
+        y: bottom
+        z: 400
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  super_muzzle_2:
+      - type: image
+        image: super_2_muzzle
+        anchor_x: left
+        anchor_y: bottom
+        x: left
+        y: bottom
+        z: 400
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  super_muzzle_3:
+      - type: image
+        image: super_3_muzzle
+        anchor_x: left
+        anchor_y: bottom
+        x: left
+        y: bottom
+        z: 400
+        round_anchor_y: top
+        round_anchor_x: right
+        loops: 0
+  super_jackpot_1:
+      - type: text
+        text: "SUPER JACKPOT"
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+      - type: text
+        text: "200M"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+  super_jackpot_2:
+      - type: text
+        text: "DOUBLE"
+        x: 64
+        y: top
+        z: 120
+        anchor_y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+      - type: text
+        text: "SUPER JACKPOT"
+        x: 64
+        y: middle
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+      - type: text
+        text: "400M"
+        x: 64
+        y: bottom+1
+        z: 150
+        anchor_y: bottom
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+  super_jackpot_3:
+      - type: text
+        text: "TRIPLE"
+        x: 64
+        y: top
+        z: 150
+        anchor_y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+      - type: text
+        text: "SUPER JACKPOT"
+        x: 64
+        y: middle
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+      - type: text
+        text: "600M"
+        x: 64
+        y: bottom+1
+        z: 150
+        anchor_y: bottom
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: 0.6s
+

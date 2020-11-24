@@ -1,0 +1,48 @@
+#show_version=5
+- time: 0
+  widgets:
+      shell_triple_5:
+        slide: high_caliber_slide
+      triple_jackpot:
+        slide: high_caliber_slide
+- time: +1
+  events:
+    remove_hc_5
+  widgets:
+      shell_triple_5:
+        slide: high_caliber_slide
+        action: remove
+      hc_5:
+        slide: high_caliber_slide
+        action: remove
+      hajotest_5:
+        slide: high_caliber_slide
+      hajotest_izzo_5:
+        slide: high_caliber_slide
+      felepitmeny_5:
+        slide: high_caliber_slide
+      robbanas_5:
+        slide: high_caliber_slide
+      agyu_5:
+        slide: high_caliber_slide
+- time: +0.9
+  widgets:
+      agyu_5:
+        slide: high_caliber_slide
+        action: remove
+- time: +0.1
+  widgets:
+      felepitmeny_5:
+        slide: high_caliber_slide
+        action: remove
+- time: +0.2
+  events:
+    jackpot_5_text_removed
+  widgets:
+      robbanas_5:
+        slide: high_caliber_slide
+        action: remove
+      triple_jackpot:
+        slide: high_caliber_slide
+        action: remove
+  duration: -1

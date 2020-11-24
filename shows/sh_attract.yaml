@@ -1,0 +1,753 @@
+#show_version=5
+
+- time: 0
+  slides:
+    attract_game_over_slide:
+      - type: text
+        text: GAME OVER
+        style: big
+        font_size: 15
+        y: center+0.5
+- time: +2
+  slides:
+    super_jackpot_3:
+      - type: text
+        text: "DOUBLE"
+        x: 64
+        y: top-1
+        z: 120
+        anchor_y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+      - type: text
+        text: "DOUBLE SUPER JACKPOT"
+        x: 64
+        y: middle
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+      - type: text
+        text: "200M"
+        x: 64
+        y: bottom+1
+        z: 120
+        anchor_y: bottom
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+- time: +2
+  slides:
+    super_test:
+      - type: image
+        image: super
+        x: left
+        y: bottom
+        anchor_x: left
+        anchor_y: bottom
+- time: +2
+  slides:
+    super_test_2:
+      - type: image
+        image: super_2
+        x: left
+        y: bottom
+        anchor_x: left
+        anchor_y: bottom
+- time: +2
+  slides:
+    super_test_3:
+      - type: image
+        image: super_3_muzzle
+        x: left
+        y: bottom
+        anchor_x: left
+        anchor_y: bottom
+- time: +2
+  slides:
+    consumable_slide:
+      - type: image
+        image: frozen
+        x: 0
+        y: middle
+        anchor_x: left
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: def_aa_icon
+        x: 48
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: dmg_con_party_icon
+        x: 80
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: engine_icon
+        x: 112
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    consumable_slide1:
+      - type: image
+        image: fighter_icon
+        x: 16
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: hydro_icon
+        x: 48
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: main_icon
+        x: 80
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: radar_icon
+        x: 112
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    consumable_slide2:
+      - type: image
+        image: smokde_icon
+        x: 16
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: torpedo_icon
+        x: 48
+        y: middle
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    hc_test_slide:
+      - type: image
+        image: hc_super_background
+        anchor_x: left
+        anchor_y: top
+        x: left
+        y: top-3
+        z: 105
+        round_anchor_y: top
+        round_anchor_x: right
+      - type: image
+        image: hc_super_gun_1
+        anchor_x: left
+        anchor_y: bottom
+        x: 74
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+      - type: image
+        image: hc_super_gun_1
+        anchor_x: left
+        anchor_y: bottom
+        x: 83
+        y: top-26
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+      - type: image
+        image: hc_super_gun_2
+        anchor_x: left
+        anchor_y: bottom
+        x: 28
+        y: top-24
+        z: 110
+        round_anchor_y: top
+        round_anchor_x: right
+      - type: text
+        text: "AIMING"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top
+        z: 320
+        color: FFFF00
+        animations:
+          slide_hc_test_slide_active:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: text
+        text: "LOCKED"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-6
+        color: 00FF00
+      - type: text
+        text: "OFFLINE"
+        style: small
+        round_anchor_x: right
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: right-17
+        y: top-12
+        color: FF0000
+      - type: text
+        text: "100000000000"
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: top
+        x: left
+        y: top
+        number_grouping: true
+        min_digits: 2
+- time: +2
+  slides:
+    test_slide_1:
+      - type: image
+        image: battle_destroyer
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: bottom
+        y: bottom
+        x: left
+      - type: text
+        text: "CITADEL"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+      - type: text
+        text: "TORPEDO"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+      - type: text
+        text: "100000000000"
+        anchor_y: top
+        anchor_x: right
+        round_anchor_x: right
+        round_anchor_y: top
+        x: right
+        y: top-13
+        style: small
+        number_grouping: true
+      - type: text
+        text: "100%"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 39
+        y: top-2
+        z: 300
+        style: small
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 0.5
+        color: white
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 120
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: black
+- time: +2
+  slides:
+    test_slide_2:
+      - type: image
+        image: battle_cruiser
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: bottom
+        y: bottom
+        x: left
+      - type: text
+        text: "CITADEL"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+      - type: text
+        text: "TORPEDO"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+      - type: text
+        text: "100000000000"
+        anchor_y: top
+        anchor_x: right
+        round_anchor_x: right
+        round_anchor_y: top
+        x: right
+        y: top-13
+        style: small
+        number_grouping: true
+      - type: text
+        text: "100%"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 39
+        y: top-2
+        z: 300
+        style: small
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 0.5
+        color: white
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 120
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: black
+- time: +2
+  slides:
+    test_slide_3:
+      - type: image
+        image: battle_battleship
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: bottom
+        y: bottom
+        x: left
+      - type: text
+        text: "CITADEL"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+      - type: text
+        text: "TORPEDO"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+      - type: text
+        text: "100000000000"
+        anchor_y: top
+        anchor_x: right
+        round_anchor_x: right
+        round_anchor_y: top
+        x: right
+        y: top-13
+        style: small
+        number_grouping: true
+      - type: text
+        text: "100%"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 39
+        y: top-2
+        z: 300
+        style: small
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 0.5
+        color: white
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 120
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: black
+- time: +2
+  slides:
+    test_slide_3:
+      - type: image
+        image: battle_aircraft_carrier
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: left
+        anchor_y: bottom
+        y: bottom
+        x: left
+      - type: text
+        text: "CITADEL"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-1
+        style: small
+      - type: text
+        text: "TORPEDO"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 103
+        y: top-7
+        style: small
+      - type: text
+        text: "100000000000"
+        anchor_y: top
+        anchor_x: right
+        round_anchor_x: right
+        round_anchor_y: top
+        x: right
+        y: top-13
+        style: small
+        number_grouping: true
+      - type: text
+        text: "100%"
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: right
+        round_anchor_y: top
+        x: 39
+        y: top-2
+        z: 300
+        style: small
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 76
+        height: 7
+        opacity: 0.5
+        color: white
+      - type: rectangle
+        x: 2
+        y: top-2
+        z: 120
+        anchor_y: top
+        anchor_x: left
+        width: 74
+        height: 5
+        opacity: 1
+        color: black
+- time: +5
+  slides:
+    attract_slide_1:
+      - type: text
+        text: OCTA PINBALL
+        style: big
+        font_size: 15
+        y: center
+        x: center
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_3:
+      - type: text
+        text: AND
+        style: big
+        font_size: 15
+        y: center
+        x: center
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_1:
+      - type: image
+        image: wargaming_logo
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_3:
+      - type: text
+        text: PRESENTS
+        style: big
+        font_size: 15
+        y: center
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_4:
+      - type: image
+        image: wows_logo
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_5:
+      - type: text
+        text: HIGH SCORES
+        style: big
+        font_size: 15
+        y: center
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    attract_slide_6:
+      widgets:
+        - type: Text
+          text: (machine|score1_label)
+          style: big
+          font_size: 14
+          anchor_x: center
+          anchor_y: top
+          x: center
+          y: top-2
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FFFF00
+        - type: Text
+          text: (machine|score1_name)
+          style: big
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+          x: left+3
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FF0000
+        - type: Text
+          text: (machine|score1_value)
+          style: big
+          font_size: 10
+          anchor_x: right
+          anchor_y: bottom
+          x: right-2
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          number_grouping: true
+          color: 00FF00
+- time: +2
+  slides:
+    attract_slide_7:
+      widgets:
+        - type: Text
+          text: (machine|score2_label)
+          style: big
+          font_size: 14
+          anchor_x: center
+          anchor_y: top
+          x: center
+          y: top-2
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FFFF00
+        - type: Text
+          text: (machine|score2_name)
+          style: big
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+          x: left+3
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FF0000
+        - type: Text
+          text: (machine|score2_value)
+          style: big
+          font_size: 10
+          anchor_x: right
+          anchor_y: bottom
+          x: right-2
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          number_grouping: true
+          color: 00FF00
+- time: +2
+  slides:
+    attract_slide_8:
+        - type: Text
+          text: (machine|score3_label)
+          style: big
+          font_size: 14
+          anchor_x: center
+          anchor_y: top
+          x: center
+          y: top-2
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FFFF00
+        - type: Text
+          text: (machine|score3_name)
+          style: big
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+          x: left+3
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FF0000
+        - type: Text
+          text: (machine|score3_value)
+          style: big
+          font_size: 10
+          anchor_x: right
+          anchor_y: bottom
+          x: right-2
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          number_grouping: true
+          color: 00FF00
+- time: +2
+  slides:
+    attract_slide_9:
+      widgets:
+        - type: Text
+          text: (machine|score4_label)
+          style: big
+          font_size: 14
+          anchor_x: center
+          anchor_y: top
+          x: center
+          y: top-2
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FFFF00
+        - type: Text
+          text: (machine|score4_name)
+          style: big
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+          x: left+3
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FF0000
+        - type: Text
+          text: (machine|score4_value)
+          style: big
+          font_size: 10
+          anchor_x: right
+          anchor_y: bottom
+          x: right-2
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          number_grouping: true
+          color: 00FF00
+- time: +2
+  slides:
+    attract_slide_10:
+      widgets:
+        - type: Text
+          text: (machine|score5_label)
+          style: big
+          font_size: 14
+          anchor_x: center
+          anchor_y: top
+          x: center
+          y: top-2
+          round_anchor_x: left
+          round_anchor_y: top
+          color: FFFF00
+        - type: Text
+          text: (machine|score5_name)
+          style: big
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+          x: left+3
+          y: bottom+3
+          color: FF0000
+          round_anchor_x: left
+          round_anchor_y: top
+        - type: Text
+          text: (machine|score5_value)
+          style: big
+          font_size: 10
+          anchor_x: right
+          anchor_y: bottom
+          x: right-2
+          y: bottom+3
+          round_anchor_x: left
+          round_anchor_y: top
+          number_grouping: true
+          color: 00FF00

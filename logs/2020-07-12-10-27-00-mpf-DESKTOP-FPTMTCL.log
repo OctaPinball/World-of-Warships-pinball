@@ -1,0 +1,13 @@
+2020-07-12 10:27:00,120 : INFO : root : Loading config.
+2020-07-12 10:27:00,123 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-07-12 10:27:00,123 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-07-12 10:27:00,194 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-12 10:27:00,195 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-07-12 10:27:00,195 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-12 10:27:00,196 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2020-07-12 10:27:00,196 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\45b3b9aa5591eaef8a230445e70fa468.mpf_cache
+2020-07-12 10:27:00,197 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\dec453850496132f8dddcdfa0a36feb5.mpf_cache
+2020-07-12 10:27:00,197 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2020-07-12 10:27:00,198 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2020-07-12 10:27:00,198 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\mode_2\config\mode_2.yaml
+2020-07-12 10:27:00,198 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_2\config\mode_2.yaml.

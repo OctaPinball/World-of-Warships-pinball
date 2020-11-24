@@ -1,0 +1,12 @@
+#config_version=5
+
+show_player:
+  mode_attract_started:
+    sh_attract:
+      action: play
+  s_left_flipper_active:
+    sh_attract:
+      action: step_back
+  s_right_flipper_active:
+    sh_attract:
+      action: advance

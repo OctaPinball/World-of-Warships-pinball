@@ -1,0 +1,81 @@
+2020-01-26 17:57:09,833 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.68
+2020-01-26 17:57:09,833 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2020-01-26-17-57-09-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2020-01-26 17:57:09,833 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2020-01-26 17:57:09,833 : INFO : Machine : Machine path: E:\mpf\wows\wows
+2020-01-26 17:57:09,833 : INFO : Machine : Platform: win32
+2020-01-26 17:57:09,833 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2020-01-26 17:57:09,833 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2020-01-26 17:57:09,834 : INFO : Machine : Machine config file #1: config.yaml
+2020-01-26 17:57:09,834 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\a7e9e9e882fa7eca7cb0ba00eaf15121.mpf_cache
+2020-01-26 17:57:09,841 : INFO : Machine : Initialise MPF.
+2020-01-26 17:57:10,075 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.68', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.68, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,111 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,112 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,112 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,112 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2020-01-26 17:57:10,112 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-01-26 17:57:10,144 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4aeaa69609f53d9b71d1dbbedd434b0b.mpf_cache
+2020-01-26 17:57:10,147 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1068177614fe5a40fc2c1e1b0504468c.mpf_cache
+2020-01-26 17:57:10,149 : WARNING : ConfigProcessor : Config file in cache changed: E:\mpf\wows\wows\modes\hc_lock_lit\config\hc_lock_lit.yaml
+2020-01-26 17:57:10,149 : INFO : ConfigProcessor : Loading config from file E:\mpf\wows\wows\modes\hc_lock_lit\config\hc_lock_lit.yaml.
+2020-01-26 17:57:10,158 : INFO : ConfigProcessor : Loading config: E:\mpf\wows\wows\modes\hc_lock_lit\config\hc_lock_lit.yaml
+2020-01-26 17:57:10,158 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\2f7452aae1b2779bb4a1388fc419c0c8.mpf_cache
+2020-01-26 17:57:10,161 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2020-01-26 17:57:10,166 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\a6527a592b6034dbfea56fdf726c3822.mpf_cache
+2020-01-26 17:57:10,168 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f9a57b3955e1480227d6e8589f6567c4.mpf_cache
+2020-01-26 17:57:10,170 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2020-01-26 17:57:10,175 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1e6cc6775e87a3e14ded8d45fd065b10.mpf_cache
+2020-01-26 17:57:10,177 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\6e6d4708a613edd7635d35a6961997f3.mpf_cache
+2020-01-26 17:57:10,204 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-01-26 17:57:10,204 : INFO : SwitchController : Found active switch: ('2', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,205 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,205 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,205 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,205 : INFO : SwitchController : Found active switch: ('6', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,205 : INFO : SwitchController : Found active switch: ('7', <Platform.SmartVirtual>)
+2020-01-26 17:57:10,210 : ERROR : asyncio : Exception in callback EventManager._done(<Task finishe...chine-wide",)>)
+handle: <Handle EventManager._done(<Task finishe...chine-wide",)>)>
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 695, in _done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 612, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 96, in initialise_modes
+    mode.initialise_mode()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 576, in initialise_mode
+    **item.kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\show_controller.py", line 53, in _process_config_shows_section
+    self.register_show(show, settings)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\show_controller.py", line 60, in register_show
+    " shared machine-wide".format(name))
+ValueError: Show named 'flash_modes' was just registered, but there's already a show with that name. Shows are shared machine-wide
+2020-01-26 17:57:10,269 : INFO : Machine : Starting the main run loop.
+2020-01-26 17:57:10,270 : INFO : Machine : Shutting down...
+2020-01-26 17:57:10,273 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2020-01-26 17:57:10,274 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 765, in _run_loop
+    raise self._exception['exception']
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 695, in _done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 612, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 96, in initialise_modes
+    mode.initialise_mode()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 576, in initialise_mode
+    **item.kwargs)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\show_controller.py", line 53, in _process_config_shows_section
+    self.register_show(show, settings)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\show_controller.py", line 60, in register_show
+    " shared machine-wide".format(name))
+ValueError: Show named 'flash_modes' was just registered, but there's already a show with that name. Shows are shared machine-wide
+2020-01-26 17:57:10,275 : INFO : root : MPF run loop ended.

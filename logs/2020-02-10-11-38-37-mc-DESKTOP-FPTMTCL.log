@@ -1,0 +1,322 @@
+2020-02-10 11:38:37,018 : kivy : Factory: 184 symbols loaded
+2020-02-10 11:38:37,114 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2020-02-10 11:38:37,169 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-02-10 11:38:37,169 : kivy : Video: Provider: gstplayer
+2020-02-10 11:38:37,232 : kivy : Loading MPF-MC controller
+2020-02-10 11:38:37,232 : mpfmc : Mission Pinball Framework Media Controller v0.53.0
+2020-02-10 11:38:37,232 : mpfmc : Mission Pinball Framework Game Engine v0.53.2
+2020-02-10 11:38:37,232 : mpfmc : Machine path: E:\mpf\wows\wows
+2020-02-10 11:38:37,233 : ConfigProcessor : Config file in cache changed: E:\mpf\wows\wows\config\config
+2020-02-10 11:38:37,234 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-02-10 11:38:37,270 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2020-02-10 11:38:37,277 : ConfigProcessor : Loading config from file E:\mpf\wows\wows\config\config.
+2020-02-10 11:38:37,359 : ConfigProcessor : Loading config: E:\mpf\wows\wows\config\config
+2020-02-10 11:38:37,361 : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\398a03908486e3c8525902f452489fb5.mpf_cache
+2020-02-10 11:38:37,361 : mpfmc : Starting clock at 60.0Hz
+2020-02-10 11:38:37,373 : kivy : Text: Provider: sdl2
+2020-02-10 11:38:37,408 : kivy : Window: Provider: sdl2
+2020-02-10 11:38:37,807 : kivy : GL: Using the "OpenGL" graphics system
+2020-02-10 11:38:37,813 : kivy : GL: GLEW initialization succeeded
+2020-02-10 11:38:37,813 : kivy : GL: Backend used <glew>
+2020-02-10 11:38:37,813 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 432.00'>
+2020-02-10 11:38:37,813 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2020-02-10 11:38:37,813 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060 6GB/PCIe/SSE2'>
+2020-02-10 11:38:37,813 : kivy : GL: OpenGL parsed version: 4, 6
+2020-02-10 11:38:37,813 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2020-02-10 11:38:37,813 : kivy : GL: Texture max size <32768>
+2020-02-10 11:38:37,813 : kivy : GL: Texture max units <32>
+2020-02-10 11:38:37,831 : kivy : Window: auto add sdl2 input provider
+2020-02-10 11:38:37,831 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2020-02-10 11:38:37,838 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2020-02-10 11:38:38,028 : AudioInterface : Initialized
+2020-02-10 11:38:38,028 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2020-02-10 11:38:38,030 : kivy : Base: Start application main loop
+2020-02-10 11:38:38,030 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2020-02-10 11:38:38,031 : EventManager : Event: ======'display_dmd_initialized'====== Args={}
+2020-02-10 11:38:38,090 : mpfmc : Display: Setting 'dmd' as default display
+2020-02-10 11:38:38,096 : EventManager : Event: ======'displays_initialized'====== Args={}
+2020-02-10 11:38:38,096 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2020-02-10 11:38:38,097 : EventManager : Event: ======'display_window_ready'====== Args={}
+2020-02-10 11:38:38,097 : EventManager : Event: ======'slide_dmd_blank_created'====== Args={}
+2020-02-10 11:38:38,097 : EventManager : Event: ======'display_dmd_ready'====== Args={}
+2020-02-10 11:38:38,106 : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-02-10 11:38:38,109 : EventManager : Event: ======'mc_ready'====== Args={}
+2020-02-10 11:38:38,109 : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-02-10 11:38:38,110 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\a6527a592b6034dbfea56fdf726c3822.mpf_cache
+2020-02-10 11:38:38,111 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4aeaa69609f53d9b71d1dbbedd434b0b.mpf_cache
+2020-02-10 11:38:38,111 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\6e6d4708a613edd7635d35a6961997f3.mpf_cache
+2020-02-10 11:38:38,112 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f9a57b3955e1480227d6e8589f6567c4.mpf_cache
+2020-02-10 11:38:38,112 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\2f7452aae1b2779bb4a1388fc419c0c8.mpf_cache
+2020-02-10 11:38:38,113 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2020-02-10 11:38:38,113 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2020-02-10 11:38:38,113 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5dbeda7d2775496a54d206d506904281.mpf_cache
+2020-02-10 11:38:38,119 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\97f63c0afcbce8d9df7044fccf1035a4.mpf_cache
+2020-02-10 11:38:38,119 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1e6cc6775e87a3e14ded8d45fd065b10.mpf_cache
+2020-02-10 11:38:38,120 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\fbcc5772262340622f93ebd98450e45f.mpf_cache
+2020-02-10 11:38:38,120 : EventManager : Event: ======'init_phase_3'====== Args={}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown100, File: ConsumableCountdown100.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown100.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown101, File: ConsumableCountdown101.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown101.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown102, File: ConsumableCountdown102.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown102.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown103, File: ConsumableCountdown103.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown103.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown104, File: ConsumableCountdown104.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown104.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown105, File: ConsumableCountdown105.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown105.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown106, File: ConsumableCountdown106.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown106.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown107, File: ConsumableCountdown107.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown107.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown108, File: ConsumableCountdown108.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown108.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown109, File: ConsumableCountdown109.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown109.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown110, File: ConsumableCountdown110.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown110.jpg'}
+2020-02-10 11:38:38,121 : AssetManager : Registering Asset: ConsumableCountdown111, File: ConsumableCountdown111.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown111.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown112, File: ConsumableCountdown112.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown112.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown113, File: ConsumableCountdown113.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown113.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown114, File: ConsumableCountdown114.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown114.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown115, File: ConsumableCountdown115.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown115.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown116, File: ConsumableCountdown116.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown116.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown117, File: ConsumableCountdown117.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown117.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown118, File: ConsumableCountdown118.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown118.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown119, File: ConsumableCountdown119.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown119.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown120, File: ConsumableCountdown120.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown120.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown121, File: ConsumableCountdown121.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown121.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown122, File: ConsumableCountdown122.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown122.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown123, File: ConsumableCountdown123.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown123.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown124, File: ConsumableCountdown124.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown124.jpg'}
+2020-02-10 11:38:38,122 : AssetManager : Registering Asset: ConsumableCountdown125, File: ConsumableCountdown125.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown125.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: ConsumableCountdown126, File: ConsumableCountdown126.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown126.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: ConsumableCountdown127, File: ConsumableCountdown127.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown127.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: ConsumableCountdown128, File: ConsumableCountdown128.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown128.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: ConsumableCountdown129, File: ConsumableCountdown129.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown129.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: ConsumableCountdown130, File: ConsumableCountdown130.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\ConsumableCountdown130.jpg'}
+2020-02-10 11:38:38,123 : AssetManager : Registering Asset: C_Prog100, File: C_Prog100.jpg, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\images\\C_Prog100.jpg'}
+2020-02-10 11:38:38,124 : AssetManager : Registering Asset: mode_1_shot_made, File: mode_1_shot_made.gif, Default Group: default, Final Config: {'load': 'preload', 'file': 'E:\\mpf\\wows\\wows\\modes\\mode_1\\images\\mode_1_shot_made.gif'}
+2020-02-10 11:38:38,125 : EventManager : Event: ======'init_phase_4'====== Args={}
+2020-02-10 11:38:38,125 : EventManager : Event: ======'init_phase_5'====== Args={}
+2020-02-10 11:38:38,130 : EventManager : Event: ======'loading_assets'====== Args={'total': 33, 'loaded': 1, 'remaining': 32, 'percent': 3}
+2020-02-10 11:38:38,130 : AssetManager : Loading assets: 1/33 (3%)
+2020-02-10 11:38:38,216 : EventManager : Event: ======'loading_assets'====== Args={'total': 33, 'loaded': 33, 'remaining': 0, 'percent': 100}
+2020-02-10 11:38:38,216 : AssetManager : Asset loading took: 0.18852996826171875
+2020-02-10 11:38:38,216 : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2020-02-10 11:38:38,216 : AssetManager : Loading assets: 33/33 (100%)
+2020-02-10 11:38:38,216 : EventManager : Event: ======'init_done'====== Args={}
+2020-02-10 11:38:38,216 : MPF-MC BCP Server : Starting up on localhost port 5050
+2020-02-10 11:38:38,220 : MPF-MC BCP Server : Waiting for a connection...
+2020-02-10 11:38:38,220 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'target': 'window', 'priority': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2020-02-10 11:38:38,223 : kivy : GL: NPOT texture support is available
+2020-02-10 11:38:38,235 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2020-02-10 11:38:38,244 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2020-02-10 11:38:38,332 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2020-02-10 11:38:39,181 : MPF-MC BCP Server : Received connection from: 127.0.0.1:52697
+2020-02-10 11:38:39,189 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 52697}
+2020-02-10 11:38:39,206 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,206 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,206 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.2', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,206 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.2, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,206 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.0', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.0 (config_version=5, BCP v1.1, Requires MPF v0.53.0)', 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,207 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,256 : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,256 : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 224, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,256 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0], 'total': 1}, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_1'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_2'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_confederate_6'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_jackpot_1'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_jackpot_2'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,257 : EventManager : Event: ======'machine_var_audits_shots_jackpot_3'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_jackpot_4'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_jackpot_5'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_jackpot_6'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lane_A'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lane_B'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lane_C'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lane_D'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lane_E'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lock_lit_1'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,258 : EventManager : Event: ======'machine_var_audits_shots_lock_lit_2'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_shots_ricochet_1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_shots_ricochet_2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_shots_ricochet_3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_shots_ricochet_4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_shots_ricochet_5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_switches_s_bumper_1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_switches_s_bumper_2'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,259 : EventManager : Event: ======'machine_var_audits_switches_s_bumper_3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_center_ramp'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_citadel'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_citadel_lock'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_detonation'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_1'====== Args={'value': 541, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_2'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,260 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_3'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_5'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_6'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_dmg_7'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_drop_target'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_jet_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_jet_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,273 : EventManager : Event: ======'machine_var_audits_switches_s_kickback'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_3'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_kickback_terget_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 71, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_left_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_made'====== Args={'value': 19, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,274 : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_left_mid_inlane'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_made'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_lock_1'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_lock_2'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_lock_3'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_main_hole'====== Args={'value': 86, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_pen_1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_pen_2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_pen_3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,275 : EventManager : Event: ======'machine_var_audits_switches_s_pen_4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_pen_5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_pen_6'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 262, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_plunger_button'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_1'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_2'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_3'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_4'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_5'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,276 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 464, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_hole'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_made'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_side_hole'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_made'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_torpedo'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,277 : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,278 : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,278 : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,278 : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,278 : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,289 : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-02-10 11:38:39,306 : EventManager : Event: ======'slides_play'====== Args={'settings': {'welcome_slide': {'target': 'window', 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'init_done', 'priority': 0}
+2020-02-10 11:38:39,306 : EventManager : Event: ======'mc_reset_phase_1'====== Args={}
+2020-02-10 11:38:39,307 : mpfmc : SlidePlayer: Play called with settings={'welcome_slide': {'target': 'window', 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2020-02-10 11:38:39,308 : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={}
+2020-02-10 11:38:39,318 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2020-02-10 11:38:39,319 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
+2020-02-10 11:38:39,319 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
+2020-02-10 11:38:39,319 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2020-02-10 11:38:39,320 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2020-02-10 11:38:39,330 : EventManager : Event: ======'slides_play'====== Args={'settings': {'attract_started': {'target': 'window', 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'mode_attract_started', 'priority': 0}
+2020-02-10 11:38:39,331 : mpfmc : SlidePlayer: Play called with settings={'attract_started': {'target': 'window', 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2020-02-10 11:38:39,340 : EventManager : Event: ======'slide_attract_started_created'====== Args={}
+2020-02-10 11:38:39,349 : EventManager : Event: ======'slide_attract_started_active'====== Args={}
+2020-02-10 11:38:39,522 : EventManager : Event: ======'game_started'====== Args={}
+2020-02-10 11:38:39,539 : EventManager : Event: ======'player_added'====== Args={'player': <Player 1>, 'num': 1}
+2020-02-10 11:38:39,539 : EventManager : Event: ======'player_index'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_number'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_ReceivedDMG'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_DMGValue'====== Args={'value': 10000000, 'prev_value': 0, 'change': 10000000, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m1shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m2shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m3shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m4shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m5shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m6shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m7shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m8shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m9shotmade'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,540 : EventManager : Event: ======'player_m1_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m2_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m3_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m4_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m5_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m6_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m7_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m8_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_m9_active'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_lock_lit_1_state'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_lock_lit_2_state'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,541 : EventManager : Event: ======'player_frezee_started'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:39,556 : EventManager : Event: ======'player_ball'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,556 : EventManager : Event: ======'player_turn_start'====== Args={'number': 1, 'player': <Player 1>}
+2020-02-10 11:38:39,574 : EventManager : Event: ======'slides_play'====== Args={'settings': {'widgets': {'widgets': [{'type': 'text', 'text': '(score)', 'number_grouping': True, 'min_digits': 2, 'font_size': 30, 'color': [1.0, 0.0, 0.0, 1], '_default_settings': ['type', 'text', 'number_grouping', 'min_digits', 'font_size', 'color'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'PLAYER (number)', 'y': '0', 'x': '0', 'font_size': 8, 'anchor_x': 'left', 'anchor_y': 'bottom', 'color': [0.0, 0.0, 1.0, 1], '_default_settings': ['type', 'text', 'y', 'x', 'font_size', 'anchor_x', 'anchor_y', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'BALL (ball)', 'y': '0', 'x': 'right-10', 'anchor_x': 'right', 'anchor_y': 'bottom', 'font_size': 8, 'color': [0.0, 0.5019607843137255, 0.0, 1], '_default_settings': ['type', 'text', 'y', 'x', 'anchor_x', 'anchor_y', 'font_size', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': 'base', 'calling_context': 'mode_base_started', 'priority': 100, 'queue': '<QueuedEvent>', 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-02-10 11:38:39,574 : mpfmc : SlidePlayer: Play called with settings={'widgets': {'widgets': [{'type': 'text', 'text': '(score)', 'number_grouping': True, 'min_digits': 2, 'font_size': 30, 'color': [1.0, 0.0, 0.0, 1], '_default_settings': ['type', 'text', 'number_grouping', 'min_digits', 'font_size', 'color'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'PLAYER (number)', 'y': '0', 'x': '0', 'font_size': 8, 'anchor_x': 'left', 'anchor_y': 'bottom', 'color': [0.0, 0.0, 1.0, 1], '_default_settings': ['type', 'text', 'y', 'x', 'font_size', 'anchor_x', 'anchor_y', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'BALL (ball)', 'y': '0', 'x': 'right-10', 'anchor_x': 'right', 'anchor_y': 'bottom', 'font_size': 8, 'color': [0.0, 0.5019607843137255, 0.0, 1], '_default_settings': ['type', 'text', 'y', 'x', 'anchor_x', 'anchor_y', 'font_size', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2020-02-10 11:38:39,580 : EventManager : Event: ======'slide_base.slide_player-mode_base_started_created'====== Args={}
+2020-02-10 11:38:39,583 : EventManager : Event: ======'slide_base.slide_player-mode_base_started_active'====== Args={}
+2020-02-10 11:38:39,589 : EventManager : Event: ======'player_shot_ricochet_1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_ricochet_2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_ricochet_3_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_ricochet_4_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_ricochet_5_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_3_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_4_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_5_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_confederate_6_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_lane_A_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,590 : EventManager : Event: ======'player_shot_lane_B_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,591 : EventManager : Event: ======'player_shot_lane_C_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,591 : EventManager : Event: ======'player_shot_lane_D_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,591 : EventManager : Event: ======'player_shot_lane_E_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,591 : EventManager : Event: ======'player_shot_lock_lit_1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,606 : EventManager : Event: ======'player_shot_lock_lit_2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-02-10 11:38:39,722 : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 263, 'prev_value': 262, 'change': 1}
+2020-02-10 11:38:41,189 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 465, 'prev_value': 464, 'change': 1}
+2020-02-10 11:38:41,557 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 466, 'prev_value': 465, 'change': 1}
+2020-02-10 11:38:43,339 : EventManager : Event: ======'machine_var_audits_switches_s_main_hole'====== Args={'value': 87, 'prev_value': 86, 'change': 1}
+2020-02-10 11:38:43,357 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 30, 'prev_value': 0, 'change': 30, 'player_num': 1}
+2020-02-10 11:38:43,357 : EventManager : Event: ======'player_timer_height'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:43,357 : EventManager : Event: ======'player_score'====== Args={'value': 30, 'prev_value': 0, 'change': 30, 'player_num': 1}
+2020-02-10 11:38:43,357 : EventManager : Event: ======'player_timer_text'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-02-10 11:38:43,357 : EventManager : Event: ======'player_score'====== Args={'value': 60, 'prev_value': 30, 'change': 30, 'player_num': 1}
+2020-02-10 11:38:43,856 : EventManager : Event: ======'player_mode_manager_mode_countdown_delay_tick'====== Args={'value': 2, 'prev_value': 0, 'change': 2, 'player_num': 1}
+2020-02-10 11:38:44,823 : EventManager : Event: ======'player_mode_manager_mode_countdown_delay_tick'====== Args={'value': 1, 'prev_value': 2, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:45,840 : EventManager : Event: ======'player_mode_manager_mode_countdown_delay_tick'====== Args={'value': 0, 'prev_value': 1, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:45,840 : EventManager : Event: ======'player_score'====== Args={'value': 90, 'prev_value': 60, 'change': 30, 'player_num': 1}
+2020-02-10 11:38:46,823 : EventManager : Event: ======'player_mode_manager_mode_overtime_tick'====== Args={'value': 4, 'prev_value': 0, 'change': 4, 'player_num': 1}
+2020-02-10 11:38:46,823 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 29, 'prev_value': 30, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:46,823 : EventManager : Event: ======'player_score'====== Args={'value': 119, 'prev_value': 90, 'change': 29, 'player_num': 1}
+2020-02-10 11:38:47,840 : EventManager : Event: ======'player_mode_manager_mode_overtime_tick'====== Args={'value': 3, 'prev_value': 4, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:47,840 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 28, 'prev_value': 29, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:47,841 : EventManager : Event: ======'player_score'====== Args={'value': 147, 'prev_value': 119, 'change': 28, 'player_num': 1}
+2020-02-10 11:38:48,823 : EventManager : Event: ======'player_mode_manager_mode_overtime_tick'====== Args={'value': 2, 'prev_value': 3, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:48,824 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 27, 'prev_value': 28, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:48,824 : EventManager : Event: ======'player_score'====== Args={'value': 174, 'prev_value': 147, 'change': 27, 'player_num': 1}
+2020-02-10 11:38:49,840 : EventManager : Event: ======'player_mode_manager_mode_overtime_tick'====== Args={'value': 1, 'prev_value': 2, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:49,840 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 26, 'prev_value': 27, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:49,841 : EventManager : Event: ======'player_score'====== Args={'value': 200, 'prev_value': 174, 'change': 26, 'player_num': 1}
+2020-02-10 11:38:50,823 : EventManager : Event: ======'player_mode_manager_mode_overtime_tick'====== Args={'value': 0, 'prev_value': 1, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:50,824 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 25, 'prev_value': 26, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:50,824 : EventManager : Event: ======'player_score'====== Args={'value': 225, 'prev_value': 200, 'change': 25, 'player_num': 1}
+2020-02-10 11:38:51,840 : EventManager : Event: ======'player_mode_manager_mode_countdown_tick'====== Args={'value': 24, 'prev_value': 25, 'change': -1, 'player_num': 1}
+2020-02-10 11:38:51,841 : EventManager : Event: ======'player_score'====== Args={'value': 249, 'prev_value': 225, 'change': 24, 'player_num': 1}
+2020-02-10 11:38:52,254 : kivy : WindowSDL: exiting mainloop and closing.
+2020-02-10 11:38:52,334 : kivy : Base: Leaving application in progress...
+2020-02-10 11:38:52,334 : mpfmc : Stopping...
+2020-02-10 11:38:52,334 : EventManager : Event: ======'shutdown'====== Args={}
+2020-02-10 11:38:52,334 : mpfmc : Loop rate 59.0 Hz
+2020-02-10 11:38:52,334 : kivy : MC run loop ended.
+2020-02-10 11:38:52,334 : kivy : Stopping child threads... (3 remaining)
+2020-02-10 11:38:52,831 : mpfmc : Stopping...
+2020-02-10 11:38:52,831 : EventManager : Event: ======'shutdown'====== Args={}
+2020-02-10 11:38:52,831 : mpfmc : Loop rate 57.02 Hz
+2020-02-10 11:38:52,841 : MPF-MC BCP Server : Stopping BCP sending thread
+2020-02-10 11:38:53,237 : kivy : All child threads stopped.

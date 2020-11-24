@@ -1,0 +1,94 @@
+2019-12-13 16:38:15,396 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.68
+2019-12-13 16:38:15,397 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-12-13-16-38-15-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-12-13 16:38:15,397 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-12-13 16:38:15,397 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-12-13 16:38:15,397 : INFO : Machine : Platform: win32
+2019-12-13 16:38:15,397 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-12-13 16:38:15,397 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-12-13 16:38:15,397 : INFO : Machine : Machine config file #1: config.yaml
+2019-12-13 16:38:15,398 : WARNING : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\config\config.yaml
+2019-12-13 16:38:15,398 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2019-12-13 16:38:15,472 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2019-12-13 16:38:15,479 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\config\config.yaml.
+2019-12-13 16:38:15,566 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\config\config.yaml
+2019-12-13 16:38:15,568 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-12-13 16:38:15,569 : INFO : Machine : Initialise MPF.
+2019-12-13 16:38:15,774 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.68', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.68, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,811 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,812 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-12-13 16:38:15,812 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-12-13 16:38:15,843 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\df9e170a78524ceaed7597b0d1fe17fc.mpf_cache
+2019-12-13 16:38:15,843 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_5\config\mode_5.yaml.
+2019-12-13 16:38:15,848 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_5\config\mode_5.yaml
+2019-12-13 16:38:15,848 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\df9e170a78524ceaed7597b0d1fe17fc.mpf_cache
+2019-12-13 16:38:15,851 : WARNING : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\modes\mode_3\config\mode_3.yaml
+2019-12-13 16:38:15,851 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_3\config\mode_3.yaml.
+2019-12-13 16:38:15,857 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_3\config\mode_3.yaml
+2019-12-13 16:38:15,857 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\3146c27d2df8f964854106e27e73ea4a.mpf_cache
+2019-12-13 16:38:15,860 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-12-13 16:38:15,865 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\b28ff93736cbd6305f7655ae7754f408.mpf_cache
+2019-12-13 16:38:15,865 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_6\config\mode_6.yaml.
+2019-12-13 16:38:15,869 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_6\config\mode_6.yaml
+2019-12-13 16:38:15,869 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\b28ff93736cbd6305f7655ae7754f408.mpf_cache
+2019-12-13 16:38:15,871 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e8c0a02b20549d458f541dd443ff3ce4.mpf_cache
+2019-12-13 16:38:15,873 : WARNING : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml
+2019-12-13 16:38:15,873 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml.
+2019-12-13 16:38:15,879 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_1\config\mode_1.yaml
+2019-12-13 16:38:15,880 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\ecc9b395424c2990811feee9ed731d4b.mpf_cache
+2019-12-13 16:38:15,882 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\5af475047e8ce3d8829e2e58027ff422.mpf_cache
+2019-12-13 16:38:15,882 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_9\config\mode_9.yaml.
+2019-12-13 16:38:15,888 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_9\config\mode_9.yaml
+2019-12-13 16:38:15,888 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\5af475047e8ce3d8829e2e58027ff422.mpf_cache
+2019-12-13 16:38:15,890 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\e82875a432dc77a8668657afec25058a.mpf_cache
+2019-12-13 16:38:15,890 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_4\config\mode_4.yaml.
+2019-12-13 16:38:15,894 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_4\config\mode_4.yaml
+2019-12-13 16:38:15,894 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\e82875a432dc77a8668657afec25058a.mpf_cache
+2019-12-13 16:38:15,896 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\580febf89681cf7195a63aa30f5ea8a5.mpf_cache
+2019-12-13 16:38:15,896 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\modes\mode_8\config\mode_8.yaml.
+2019-12-13 16:38:15,900 : INFO : ConfigProcessor : Loading config: D:\mpf\wows\wows\modes\mode_8\config\mode_8.yaml
+2019-12-13 16:38:15,900 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\580febf89681cf7195a63aa30f5ea8a5.mpf_cache
+2019-12-13 16:38:15,903 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-12-13 16:38:15,922 : ERROR : asyncio : Exception in callback EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...verloaded.',)>) at c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py:90
+handle: <Handle EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...verloaded.',)>) at c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py:90>
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 93, in _async_handler_done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\device_manager.py", line 114, in _load_device_modules
+    await self.machine.mode_controller.load_mode_devices()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 90, in load_mode_devices
+    await mode.load_mode_devices()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 442, in load_mode_devices
+    device.overload_config_in_mode(self, settings)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_device.py", line 52, in overload_config_in_mode
+    raise AssertionError("Device {} cannot be overloaded.".format(self))
+AssertionError: Device <timer.mode_countdown> cannot be overloaded.
+2019-12-13 16:38:15,945 : INFO : Machine : Starting the main run loop.
+2019-12-13 16:38:15,948 : INFO : Machine : Shutting down...
+2019-12-13 16:38:15,948 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-12-13 16:38:15,949 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 765, in _run_loop
+    raise self._exception['exception']
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 93, in _async_handler_done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\device_manager.py", line 114, in _load_device_modules
+    await self.machine.mode_controller.load_mode_devices()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 90, in load_mode_devices
+    await mode.load_mode_devices()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode.py", line 442, in load_mode_devices
+    device.overload_config_in_mode(self, settings)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_device.py", line 52, in overload_config_in_mode
+    raise AssertionError("Device {} cannot be overloaded.".format(self))
+AssertionError: Device <timer.mode_countdown> cannot be overloaded.
+2019-12-13 16:38:15,950 : INFO : root : MPF run loop ended.

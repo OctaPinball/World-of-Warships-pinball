@@ -1,0 +1,124 @@
+#config_version=5
+
+mode:
+  start_events: main_state, ball_started
+  stop_events: main_state_stopped
+  priority: 100
+
+achievements:
+  mode_1:
+    show_tokens:
+      lights: l_mode_1
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_1, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_1
+    reset_events: reset_modes
+
+  mode_2:
+    show_tokens:
+      lights: l_mode_2
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_2, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_2
+    reset_events: reset_modes
+
+  mode_3:
+    show_tokens:
+      lights: l_mode_3
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_3, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_3
+    reset_events: reset_modes
+
+  mode_4:
+    show_tokens:
+      lights: l_mode_4
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_4, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_4
+    reset_events: reset_modes
+
+  mode_5:
+    show_tokens:
+      lights: l_mode_5
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_5, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_5
+    reset_events: reset_modes
+
+  mode_6:
+    show_tokens:
+      lights: l_mode_6
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_6, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_6
+    reset_events: reset_modes
+
+  mode_7:
+    show_tokens:
+      lights: l_mode_7
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_7, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_7
+    reset_events: reset_modes
+
+  mode_8:
+    show_tokens:
+      lights: l_mode_8
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_8, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_8
+    reset_events: reset_modes
+
+  mode_9:
+    show_tokens:
+      lights: l_mode_9
+    show_when_selected: flash_modes
+    show_when_started: flash_modes
+    show_when_completed: on
+    events_when_started: start_mode_9, mode_will_enabled  # instant points award & plays shows
+    complete_events: start_mode_9
+    reset_events: reset_modes
+
+achievement_groups:
+  consumable_modes:
+    achievements: mode_1, mode_2, mode_3, mode_4, mode_5, mode_6, mode_7, mode_8, mode_9
+    show_tokens:
+      lights: l_mode_start_lit
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    events_when_all_completed: select_damage_control_party
+    enable_while_no_achievement_started: yes
+    show_when_enabled: on
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: start_mode
+    enable_events: ball_starting
+    #disable_events: 
+
+shows:
+  flash_modes:
+      - time: 0
+        lights:
+          (lights): on
+      - time: +0.1
+        lights:
+          (lights): off
+      - time: +0.1

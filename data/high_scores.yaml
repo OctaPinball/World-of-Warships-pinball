@@ -1,0 +1,16 @@
+score:
+- !!python/tuple
+  - SBA
+  - 1000000000
+- !!python/tuple
+  - OCP
+  - 900000000
+- !!python/tuple
+  - AND
+  - 800000000
+- !!python/tuple
+  - W G
+  - 700000000
+- !!python/tuple
+  - WOW
+  - 600000000

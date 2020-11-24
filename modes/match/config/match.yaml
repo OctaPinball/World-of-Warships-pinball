@@ -1,0 +1,237 @@
+#config_version=5
+
+show_player:
+  has_match:
+    sh_match:
+      priority: 99
+  no_match:
+    sh_match:
+      priority: 99
+
+queue_relay_player:
+  match_no_match:
+    post: no_match
+    wait_for: match_end
+    pass_args: true
+  match_has_match:
+    post: has_match
+    wait_for: match_end
+    pass_args: true
+mode_settings:
+  non_match_number_step: 10
+slide_player:
+  add_match_slide:
+    match_slide:
+      action: play
+  remove_match_slide:
+    match_slide:
+      action: remove
+  no_match:
+    match_slide
+  has_match:
+    match_slide
+
+widgets:
+  match_ship_widget:
+        - type: image
+          image: match_ship
+          anchor_x: right
+          anchor_y: bottom
+          x: left
+          y: bottom
+          z: 500
+          animations:
+            match_ship_move_in:
+              - property: x
+                value: 71
+                relative: True
+                duration: 0.7s
+            match_ship_move_out:
+              - property: x
+                value: -71
+                relative: True
+                duration: 0.7s
+  match_widget:
+    - type: text
+      text: (match_number0)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-2
+      z: 200
+      min_digits: 2
+      color: 00FF00
+    - type: text
+      text: (match_number1)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-8
+      z: 200
+      min_digits: 2
+      color: 00FF00
+    - type: text
+      text: (match_number2)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-14
+      z: 200
+      min_digits: 2
+      color: 00FF00
+    - type: text
+      text: (match_number3)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-20
+      z: 200
+      min_digits: 2
+      color: 00FF00
+  match_score_widget:
+    - type: text
+      text: (player1|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-2
+      z: 150
+      number_grouping: true
+    - type: text
+      text: (player2|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-8
+      z: 150
+      min_digits: 2
+      number_grouping: true
+    - type: text
+      text: (player3|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-14
+      z: 150
+      min_digits: 2
+      number_grouping: true
+    - type: text
+      text: (player4|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      x: center
+      y: top-20
+      z: 150
+      min_digits: 2
+      number_grouping: true
+  match_explosion:
+      - type: image
+        image: match_explosion
+        anchor_x: right
+        anchor_y: top
+        x: right
+        y: top
+        fps: 15
+        z: 600
+        loops: 0
+  match_number_widget:
+    - type: text
+      text: "(winner_number)"
+      style: big
+      anchor_y: top
+      x: 103
+      y: top-2
+      opacity: 0
+      min_digits: 2
+      animations:
+            match_number_in:
+              - property: opacity 
+                value: 1
+                duration: 0.01s
+    - type: text
+      text: MATCH
+      style: big
+      anchor_y: top
+      x: 103.5
+      y: top-18
+
+widget_player:
+  add_match_ship_widget:
+    match_ship_widget:
+      slide: match_slide
+      action: add
+  remove_match_ship_widget:
+    match_ship_widget:
+      slide: match_slide
+      action: remove
+  add_match_explosion_widget:
+    match_explosion:
+      slide: match_slide
+      action: add
+  remove_match_explosion_widget:
+    match_explosion:
+      slide: match_slide
+      action: remove
+  has_match:
+    match_widget:
+      action: add
+      slide: match_slide
+    match_score_widget:
+      action: add
+      slide: match_slide
+    match_number_widget:
+      action: add
+      slide: match_slide
+  no_match:
+    match_widget:
+      action: add
+      slide: match_slide
+    match_score_widget:
+      action: add
+      slide: match_slide
+    match_number_widget:
+      action: add
+      slide: match_slide
+
+sound_player:
+  match_no_match:
+    no_match_sound:
+      action: play
+  match_has_match:
+    match_sound:
+      action: play
+slides:
+  match_slide: []
+  winner_number_slide:
+    - type: text
+      text: "(winner_number)"
+      style: big
+      anchor_y: top
+      x: right-20
+      y: top-11
+  winner_number_blink_slide:
+    - type: text
+      text: "(winner_number)"
+      style: big
+      anchor_y: top
+      x: right-20
+      y: top-11
+      animations:
+          show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.07s
+            easing: in_out_quint
+          - property: opacity
+            value: 0
+            duration: 0.07s
+            repeat: true
+            easing: in_out_quint

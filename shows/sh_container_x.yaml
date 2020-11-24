@@ -1,0 +1,12 @@
+#show_version=5
+- time: 0
+  slides:
+    container_x:
+      - type: image
+        image: container_x
+- time: +1.3
+  slides:
+    container_x_text:
+      - type: image
+        image: container_x_text
+- time: +1

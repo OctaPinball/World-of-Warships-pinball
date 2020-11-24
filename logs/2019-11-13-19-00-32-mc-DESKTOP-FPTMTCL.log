@@ -1,0 +1,277 @@
+2019-11-13 19:00:32,361 : kivy : Factory: 184 symbols loaded
+2019-11-13 19:00:32,364 : kivy : Cache: register <kv.lang> with limit=None, timeout=None
+2019-11-13 19:00:32,440 : kivy : Cache: register <kv.image> with limit=None, timeout=60
+2019-11-13 19:00:32,441 : kivy : Cache: register <kv.atlas> with limit=None, timeout=None
+2019-11-13 19:00:32,458 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2019-11-13 19:00:32,458 : kivy : Cache: register <kv.texture> with limit=1000, timeout=60
+2019-11-13 19:00:32,458 : kivy : Cache: register <kv.shader> with limit=1000, timeout=3600
+2019-11-13 19:00:32,509 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2019-11-13 19:00:32,509 : kivy : Video: Provider: gstplayer
+2019-11-13 19:00:32,576 : kivy : Loading MPF-MC controller
+2019-11-13 19:00:32,576 : mpfmc : Mission Pinball Framework Media Controller v0.53.0-dev.15
+2019-11-13 19:00:32,577 : mpfmc : Mission Pinball Framework Game Engine v0.53.0-dev.67
+2019-11-13 19:00:32,577 : mpfmc : Machine path: D:\mpf\wows\wows
+2019-11-13 19:00:32,578 : ConfigProcessor : Config file in cache changed: D:\mpf\wows\wows\config\config
+2019-11-13 19:00:32,578 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2019-11-13 19:00:32,578 : YAML File Interface : Loading file: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2019-11-13 19:00:32,622 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2019-11-13 19:00:32,629 : ConfigProcessor : Loading config from file D:\mpf\wows\wows\config\config.
+2019-11-13 19:00:32,630 : YAML File Interface : Loading file: D:\mpf\wows\wows\config\config.yaml
+2019-11-13 19:00:32,649 : ConfigProcessor : Loading config: D:\mpf\wows\wows\config\config
+2019-11-13 19:00:32,650 : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\31418c17c7947b0b26bf3ae2a4803514.mpf_cache
+2019-11-13 19:00:32,650 : mpfmc : Starting clock at 60.0Hz
+2019-11-13 19:00:32,661 : kivy : Text: Provider: sdl2
+2019-11-13 19:00:32,695 : kivy : Window: Provider: sdl2
+2019-11-13 19:00:33,036 : kivy : GL: Using the "OpenGL" graphics system
+2019-11-13 19:00:33,039 : kivy : GL: GLEW initialization succeeded
+2019-11-13 19:00:33,039 : kivy : GL: available extensions: b'GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_win32 GL_EXT_win32_keyed_mutex GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_win32 GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_NVX_multigpu_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum GL_WIN_swap_hint WGL_EXT_swap_control '
+2019-11-13 19:00:33,039 : kivy : GL: glShaderBinary is not available
+2019-11-13 19:00:33,039 : kivy : GL: Backend used <glew>
+2019-11-13 19:00:33,039 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 388.13'>
+2019-11-13 19:00:33,039 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2019-11-13 19:00:33,040 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060 6GB/PCIe/SSE2'>
+2019-11-13 19:00:33,040 : kivy : GL: OpenGL parsed version: 4, 6
+2019-11-13 19:00:33,040 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2019-11-13 19:00:33,040 : kivy : GL: Texture max size <32768>
+2019-11-13 19:00:33,040 : kivy : GL: Texture max units <32>
+2019-11-13 19:00:33,052 : kivy : Shader: Fragment compiled successfully
+2019-11-13 19:00:33,052 : kivy : Shader: Vertex compiled successfully
+2019-11-13 19:00:33,053 : kivy : ImageSDL2: Load <c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\data\glsl\default.png>
+2019-11-13 19:00:33,054 : kivy : Window: auto add sdl2 input provider
+2019-11-13 19:00:33,055 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2019-11-13 19:00:33,063 : mpfmc : Machine path: D:\mpf\wows\wows
+2019-11-13 19:00:33,063 : kivy : Resource: add <c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\fonts> in path list
+2019-11-13 19:00:33,063 : SoundSystem : Loading the Sound System
+2019-11-13 19:00:33,063 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2019-11-13 19:00:33,218 : AudioInterface : Initialized
+2019-11-13 19:00:33,219 : AudioInterface : Loaded SDL 2.0.9
+2019-11-13 19:00:33,219 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2019-11-13 19:00:33,219 : AudioInterface : Loaded GStreamer 1.16.0.0
+2019-11-13 19:00:33,219 : AudioInterface : Loaded GLib 2.56.1
+2019-11-13 19:00:33,219 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2019-11-13 19:00:33,219 : AudioInterface : Settings in use - rate: 44100, channels: 2, buffer: 2048 samples (8192 bytes @ 2 bytes per sample)
+2019-11-13 19:00:33,219 : Track : Allocated track audio buffer (8192 bytes)
+2019-11-13 19:00:33,219 : Track.0.TrackStandard.default : Created Track 0 default with the following settings: simultaneous_sounds = 1, volume = 0.500000
+2019-11-13 19:00:33,219 : AudioInterface : The 'default' standard track has successfully been created.
+2019-11-13 19:00:33,219 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2019-11-13 19:00:33,219 : AudioInterface : Enabling audio playback
+2019-11-13 19:00:33,221 : kivy : App: Loading kv <c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mpfmc.kv>
+2019-11-13 19:00:33,221 : kivy : App: kv <c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mpfmc.kv> not found
+2019-11-13 19:00:33,221 : kivy : Base: Create provider from mouse,multitouch_on_demand
+2019-11-13 19:00:33,221 : kivy : Base: Create provider from wm_touch
+2019-11-13 19:00:33,221 : kivy : Base: Create provider from wm_pen
+2019-11-13 19:00:33,221 : kivy : Base: Start application main loop
+2019-11-13 19:00:33,222 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2019-11-13 19:00:33,257 : mpfmc : Display: Setting 'window' as default display
+2019-11-13 19:00:33,264 : EventManager : Event: ======'displays_initialized'====== Args={}
+2019-11-13 19:00:33,265 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2019-11-13 19:00:33,265 : EventManager : Event: ======'display_window_ready'====== Args={}
+2019-11-13 19:00:33,272 : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-11-13 19:00:33,275 : EventManager : Event: ======'mc_ready'====== Args={}
+2019-11-13 19:00:33,275 : EventManager : Event: ======'init_phase_2'====== Args={}
+2019-11-13 19:00:33,276 : ModeController : Found MPF Mode folders: {'attract': 'attract', 'bonus': 'bonus', 'carousel': 'carousel', 'credits': 'credits', 'game': 'game', 'high_score': 'high_score', 'match': 'match', 'service': 'service', 'tilt': 'tilt'}
+2019-11-13 19:00:33,276 : ModeController : Found Machine-specific Mode folders: {}
+2019-11-13 19:00:33,276 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-11-13 19:00:33,277 : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-11-13 19:00:33,277 : EventManager : Event: ======'init_phase_3'====== Args={}
+2019-11-13 19:00:33,277 : mpfmc : Clearing boot hold assets. Holds remaining: {'init'}
+2019-11-13 19:00:33,278 : EventManager : Event: ======'init_phase_4'====== Args={}
+2019-11-13 19:00:33,278 : EventManager : Event: ======'init_phase_5'====== Args={}
+2019-11-13 19:00:33,278 : mpfmc : Clearing boot hold init. Holds remaining: set()
+2019-11-13 19:00:33,278 : EventManager : Event: ======'init_done'====== Args={}
+2019-11-13 19:00:33,278 : MPF-MC BCP Server : Starting up on localhost port 5050
+2019-11-13 19:00:33,281 : MPF-MC BCP Server : Waiting for a connection...
+2019-11-13 19:00:33,281 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'transition': None, 'transition_out': None}}}
+2019-11-13 19:00:33,281 : mpfmc : SlidePlayer: Playing slide 'welcome_slide' on target 'window' (Args={'priority': 0, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'transition': None, 'transition_out': None})
+2019-11-13 19:00:33,283 : kivy : Resource: add <C:\WINDOWS\Fonts> in path list
+2019-11-13 19:00:33,283 : kivy : Resource: add <c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\kivy\data\fonts> in path list
+2019-11-13 19:00:33,285 : kivy : GL: NPOT texture support is available
+2019-11-13 19:00:33,286 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2019-11-13 19:00:33,288 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2019-11-13 19:00:33,323 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2019-11-13 19:00:34,757 : MPF-MC BCP Server : Received connection from: 127.0.0.1:51399
+2019-11-13 19:00:34,757 : MPF-MC BCP Server : Received "hello?version=1.1&controller_name=Mission%20Pinball%20Framework&controller_version=0.53.0-dev.67"
+2019-11-13 19:00:34,759 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 51399}
+2019-11-13 19:00:34,767 : MPF-MC BCP Server : Received "settings?json={"settings": [["flipper_power", "Flipper power", 1000, "flipper_power", 1.0, {"0.8": "Weak", "1.0": "Normal (default)", "1.2": "Strong"}]]}"
+2019-11-13 19:00:34,767 : MPF-MC BCP Server : Received "machine_variable?name=credits_string&value=FREE%20PLAY"
+2019-11-13 19:00:34,767 : MPF-MC BCP Server : Received "machine_variable?name=mpf_version&value=MPF%20v0.53.0-dev.67"
+2019-11-13 19:00:34,767 : MPF-MC BCP Server : Received "machine_variable?name=mpf_extended_version&value=MPF%20v0.53.0-dev.67%2C%20Config%20version%3A5%2C%20Show%20version%3A%205%2C%20BCP%20version%3A1.1"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=python_version&value=3.6.4"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=platform&value=Windows-10-10.0.18362-SP0"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=platform_system&value=Windows"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=platform_release&value=10"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=platform_version&value=10.0.18362"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=platform_machine&value=AMD64"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=mc_version&value=MPF-MC%20v0.53.0-dev.15"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=mc_extended_version&value=MPF-MC%20v0.53.0-dev.15%20%28config_version%3D5%2C%20BCP%20v1.1%2C%20Requires%20MPF%20v0.53.0-dev.51%29"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "mode_list?json={"running_modes": []}"
+2019-11-13 19:00:34,768 : MPF-MC BCP Server : Received "machine_variable?name=master_volume&value=float:0.5&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'credits_string' to: FREE PLAY, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'mpf_version' to: MPF v0.53.0-dev.67, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.67', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'mpf_extended_version' to: MPF v0.53.0-dev.67, Config version:5, Show version: 5, BCP version:1.1, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.67, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'python_version' to: 3.6.4, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'platform' to: Windows-10-10.0.18362-SP0, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'platform_system' to: Windows, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'platform_release' to: 10, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,771 : mpfmc : Setting machine_var 'platform_version' to: 10.0.18362, (prior: None, change: True)
+2019-11-13 19:00:34,771 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,772 : mpfmc : Setting machine_var 'platform_machine' to: AMD64, (prior: None, change: True)
+2019-11-13 19:00:34,772 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,772 : mpfmc : Setting machine_var 'mc_version' to: MPF-MC v0.53.0-dev.15, (prior: None, change: True)
+2019-11-13 19:00:34,772 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,772 : mpfmc : Setting machine_var 'mc_extended_version' to: MPF-MC v0.53.0-dev.15 (config_version=5, BCP v1.1, Requires MPF v0.53.0-dev.51), (prior: None, change: True)
+2019-11-13 19:00:34,772 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15 (config_version=5, BCP v1.1, Requires MPF v0.53.0-dev.51)', 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,772 : mpfmc : Setting machine_var 'master_volume' to: 0.5, (prior: None, change: True)
+2019-11-13 19:00:34,772 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,793 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_left_flipper&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,793 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_right_flipper&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,793 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough1&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough2&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough3&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough4&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough5&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough6&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,794 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_trough_jam&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,795 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_plunger&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,795 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_start&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,795 : MPF-MC BCP Server : Received "machine_variable?name=audits_switches_s_right_inlane&value=int:0&prev_value=NoneType:&change=bool:True"
+2019-11-13 19:00:34,795 : MPF-MC BCP Server : Received "machine_variable?json={"name": "audits_player_score", "value": {"top": [], "average": 0, "total": 0}, "prev_value": null, "change": true}"
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_left_flipper' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_right_flipper' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough1' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough2' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough3' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough4' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough5' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,796 : mpfmc : Setting machine_var 'audits_switches_s_trough6' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,796 : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,797 : mpfmc : Setting machine_var 'audits_switches_s_trough_jam' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,797 : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,797 : mpfmc : Setting machine_var 'audits_switches_s_plunger' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,797 : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,797 : mpfmc : Setting machine_var 'audits_switches_s_start' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,797 : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,797 : mpfmc : Setting machine_var 'audits_switches_s_right_inlane' to: 0, (prior: None, change: True)
+2019-11-13 19:00:34,797 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,797 : mpfmc : Setting machine_var 'audits_player_score' to: {'top': [], 'average': 0, 'total': 0}, (prior: None, change: True)
+2019-11-13 19:00:34,797 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2019-11-13 19:00:34,815 : MPF-MC BCP Server : Received "trigger?json={"name": "slides_play", "settings": {"welcome_slide": {"target": null, "priority": null, "tokens": {}, "expire": null, "show": true, "action": "play", "force": false, "slide": null, "background_color": [0.0, 0.0, 0.0, 1.0]}}, "context": "_global", "calling_context": "init_done", "priority": 0}"
+2019-11-13 19:00:34,815 : MPF-MC BCP Server : Received "reset"
+2019-11-13 19:00:34,821 : EventManager : Event: ======'slides_play'====== Args={'settings': {'welcome_slide': {'target': None, 'priority': None, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]}}, 'context': '_global', 'calling_context': 'init_done', 'priority': 0}
+2019-11-13 19:00:34,821 : EventManager : Event: ======'mc_reset_phase_1'====== Args={}
+2019-11-13 19:00:34,821 : mpfmc : SlidePlayer: Play called with settings={'welcome_slide': {'target': None, 'priority': None, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]}}
+2019-11-13 19:00:34,822 : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={}
+2019-11-13 19:00:34,822 : mpfmc : SlidePlayer: Playing slide 'welcome_slide' on target 'window' (Args={'priority': 0, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]})
+2019-11-13 19:00:34,824 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2019-11-13 19:00:34,824 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
+2019-11-13 19:00:34,824 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
+2019-11-13 19:00:34,824 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2019-11-13 19:00:34,825 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2019-11-13 19:00:34,826 : MPF-MC BCP Server : Received "mode_start?json={"name": "attract", "running_modes": [["attract", 10]], "priority": 10}"
+2019-11-13 19:00:34,826 : MPF-MC BCP Server : Received "trigger?json={"name": "slides_play", "settings": {"attract_started": {"target": null, "priority": null, "tokens": {}, "expire": null, "show": true, "action": "play", "force": false, "slide": null, "background_color": [0.0, 0.0, 0.0, 1.0]}}, "context": "_global", "calling_context": "mode_attract_started", "priority": 0}"
+2019-11-13 19:00:34,832 : Mode.attract : Mode Start. Priority: 10
+2019-11-13 19:00:34,832 : EventManager : Event: ======'slides_play'====== Args={'settings': {'attract_started': {'target': None, 'priority': None, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]}}, 'context': '_global', 'calling_context': 'mode_attract_started', 'priority': 0}
+2019-11-13 19:00:34,832 : mpfmc : SlidePlayer: Play called with settings={'attract_started': {'target': None, 'priority': None, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]}}
+2019-11-13 19:00:34,832 : mpfmc : SlidePlayer: Playing slide 'attract_started' on target 'window' (Args={'priority': 0, 'tokens': {}, 'expire': None, 'show': True, 'action': 'play', 'force': False, 'slide': None, 'background_color': [0.0, 0.0, 0.0, 1.0]})
+2019-11-13 19:00:34,835 : EventManager : Event: ======'slide_attract_started_created'====== Args={}
+2019-11-13 19:00:34,836 : EventManager : Event: ======'slide_attract_started_active'====== Args={}
+2019-11-13 19:00:35,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:36,310 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:36,973 : Keyboard : Processing key stroke for key e-numlock
+2019-11-13 19:00:37,306 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:37,671 : Keyboard : Processing key stroke for key r-numlock
+2019-11-13 19:00:38,314 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:38,330 : Keyboard : Processing key stroke for key e-numlock
+2019-11-13 19:00:38,662 : Keyboard : Processing key stroke for key r-numlock
+2019-11-13 19:00:39,314 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:39,489 : Keyboard : Processing key stroke for key s-numlock
+2019-11-13 19:00:39,829 : Keyboard : Processing key stroke for key s-numlock
+2019-11-13 19:00:40,049 : Keyboard : Processing key stroke for key s-numlock
+2019-11-13 19:00:40,267 : Keyboard : Processing key stroke for key s-numlock
+2019-11-13 19:00:40,301 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:40,821 : Keyboard : Processing key stroke for key e-numlock
+2019-11-13 19:00:41,091 : Keyboard : Processing key stroke for key r-numlock
+2019-11-13 19:00:41,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:41,369 : Keyboard : Processing key stroke for key e-numlock
+2019-11-13 19:00:41,613 : Keyboard : Processing key stroke for key r-numlock
+2019-11-13 19:00:41,809 : Keyboard : Processing key stroke for key e-numlock
+2019-11-13 19:00:42,302 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:43,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:44,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:45,312 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:46,307 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:47,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:48,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:49,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:50,301 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:51,313 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:52,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:53,306 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:54,307 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:55,312 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:56,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:57,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:58,306 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:00:59,307 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:00,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:01,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:02,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:03,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:04,304 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:05,303 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:06,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:07,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:08,310 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:09,307 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:10,303 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:11,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:12,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:13,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:14,304 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:15,303 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:16,314 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:17,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:18,314 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:19,312 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:20,303 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:21,301 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:22,307 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:23,310 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:24,306 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:25,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:26,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:27,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:28,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:29,313 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:30,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:31,312 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:32,310 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:33,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:34,313 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:35,304 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:36,312 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:37,301 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:38,309 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:39,311 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:40,308 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:41,313 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:42,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:43,303 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:44,302 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:45,302 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:46,305 : MPF-MC BCP Server : Received "status_request"
+2019-11-13 19:01:47,142 : kivy : Base: Leaving application in progress...

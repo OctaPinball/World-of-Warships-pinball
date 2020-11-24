@@ -1,0 +1,41 @@
+2020-05-20 16:26:20,198 : INFO : root : Loading config.
+2020-05-20 16:26:20,201 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-05-20 16:26:20,201 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config.yaml
+2020-05-20 16:26:20,202 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2020-05-20 16:26:20,268 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2020-05-20 16:26:20,269 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.
+2020-05-20 16:26:20,404 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config.yaml
+2020-05-20 16:26:20,406 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-05-20 16:26:20,477 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\attract\config\attract.yaml
+2020-05-20 16:26:20,477 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2020-05-20 16:26:20,479 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2020-05-20 16:26:20,479 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\attract\config\attract.yaml.
+2020-05-20 16:26:20,480 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-20 16:26:20,480 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2020-05-20 16:26:20,481 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-20 16:26:20,482 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\dec453850496132f8dddcdfa0a36feb5.mpf_cache
+2020-05-20 16:26:20,482 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2020-05-20 16:26:20,483 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2020-05-20 16:26:20,483 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2020-05-20 16:26:20,484 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2020-05-20 16:26:20,484 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2020-05-20 16:26:20,484 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2020-05-20 16:26:20,485 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2020-05-20 16:26:20,485 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2020-05-20 16:26:20,486 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2020-05-20 16:26:20,486 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2020-05-20 16:26:20,487 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2020-05-20 16:26:20,487 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2020-05-20 16:26:20,487 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2020-05-20 16:26:20,488 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2020-05-20 16:26:20,488 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2020-05-20 16:26:20,489 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2020-05-20 16:26:20,489 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2020-05-20 16:26:20,489 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2020-05-20 16:26:20,490 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2020-05-20 16:26:20,490 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\2f89b2ab1d9f3cef79a660914b2a527a.mpf_cache
+2020-05-20 16:26:20,491 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2020-05-20 16:26:20,491 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\09a80c6d3887bcc7b9c4580b6d9cb499.mpf_cache
+2020-05-20 16:26:20,492 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\6d62665f0d27f04673542af594d4fd9b.mpf_cache
+2020-05-20 16:26:20,493 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\ff8f94bde3fa94916ad1b7409fed77bd.mpf_cache
+2020-05-20 16:26:20,493 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\shows\.\sh_attract.yaml.

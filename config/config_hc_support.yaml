@@ -1,0 +1,153 @@
+#config_version=5
+
+slide_player:
+  multiball_high_caliber_multiball_ended_confirmed:
+    hc_multiball_total_slide:
+      priority: 600
+      expire: 1.5s
+  activate_super_transition_slide_1:
+    super_transition_slide_1:
+      priority: 600
+      expire: 2s
+      transition:
+        type: fade
+        duration: 0.3s
+  activate_super_transition_slide_2:
+    super_transition_slide_2:
+      priority: 610
+      expire: 2s
+      transition:
+        type: fade
+        duration: 0.3s
+  activate_jackpot_to_super:
+    high_caliber_slide:
+      action: remove
+
+slides:
+  hc_multiball_total_slide:
+      - type: text
+        text: HIGH CALIBER TOTAL
+        anchor_y: top
+        x: middle
+        y: top-3
+        z: 200
+        style: big
+        round_anchor_y: top
+        round_anchor_x: left
+      - type: text
+        text: (hctotal)
+        anchor_y: bottom
+        x: middle
+        y: bottom+4
+        z: 200
+        style: big
+        round_anchor_y: top
+        round_anchor_x: left
+        min_digits: 2
+        number_grouping: true
+  super_transition_slide_1:
+      - type: text
+        text: "LOCK BALLS FOR"
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 1
+      - type: text
+        text: "SUPER JACKPOT"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+        opacity: 1
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+  super_transition_slide_2:
+      - type: text
+        text: "SHOOT ARROWS TO"
+        x: 64
+        y: top-9
+        z: 130
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+        opacity: 1
+      - type: text
+        text: "EXTEND TIMER"
+        x: 64
+        y: bottom+9
+        z: 130
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+        opacity: 1
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+
+show_player:
+  activate_jackpot_to_super:
+    sh_jackpot_to_super:
+      loops: 0
+  jackpots_lit_complete:
+    sh_jackpot_to_super_prepare:
+      loops: 0
+
+event_player:
+  multiball_high_caliber_multiball_ended{device.state_machines.hc_multiball.state == "superjackpot"}: wait_for_hc_super
+  multiball_high_caliber_multiball_ended{device.state_machines.hc_multiball.state != "superjackpot"}: multiball_high_caliber_multiball_ended_confirmed
+  exit_super_phase{game.balls_in_play != 1}: exit_super_phase_to_jackpot
+  #exit_super_phase{game.balls_in_play == 1}:
+
+queue_event_player:
+  wait_for_hc_super:
+    queue_event: waiting_for_hc_super
+    events_when_finished: multiball_high_caliber_multiball_ended_confirmed
+
+queue_relay_player:
+  waiting_for_hc_super:
+    post: HAGYDFIGYELMENKIVUL
+    wait_for: exit_super_phase
+
+

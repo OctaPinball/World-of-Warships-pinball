@@ -1,0 +1,15 @@
+#show_version=5
+- time: 0
+  sounds:
+    enemy_shoot_5:
+      loops: 0
+    shell_exit_1:
+      loops: 0
+- time: +0.5
+  sounds:
+    shell_arrive_5:
+      loops: 0
+- time: +2
+  sounds:
+    critical_dmg:
+      loops: 0

@@ -1,0 +1,13 @@
+2020-08-09 22:26:15,861 : kivy : Factory: 184 symbols loaded
+2020-08-09 22:26:15,967 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.1
+2020-08-09 22:26:15,968 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer, img_gif 
+2020-08-09 22:26:16,012 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-08-09 22:26:16,012 : kivy : Video: Provider: gstplayer
+2020-08-09 22:26:16,079 : kivy : Loading MPF-MC controller
+2020-08-09 22:26:16,081 : YamlMultifileConfigLoader : Machine config file #1: config
+2020-08-09 22:26:16,082 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config
+2020-08-09 22:26:16,082 : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-08-09 22:26:16,122 : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2020-08-09 22:26:16,122 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.
+2020-08-09 22:26:16,308 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config
+2020-08-09 22:26:16,345 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_mode_support.yaml

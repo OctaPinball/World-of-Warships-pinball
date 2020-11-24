@@ -1,0 +1,82 @@
+2019-11-20 21:27:47,528 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.68
+2019-11-20 21:27:47,528 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-11-20-21-27-47-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-11-20 21:27:47,528 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-11-20 21:27:47,528 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-11-20 21:27:47,528 : INFO : Machine : Platform: win32
+2019-11-20 21:27:47,528 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-11-20 21:27:47,528 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-11-20 21:27:47,528 : INFO : Machine : Machine config file #1: config.yaml
+2019-11-20 21:27:47,529 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-20 21:27:47,536 : INFO : Machine : Initialise MPF.
+2019-11-20 21:27:47,809 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,846 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,846 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.68', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,846 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.68, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,846 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-11-20 21:27:47,847 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-11-20 21:27:47,920 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-11-20 21:27:47,932 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\bb4559fa659cc8b2de1dccf407dfe109.mpf_cache
+2019-11-20 21:27:47,938 : ERROR : asyncio : Exception in callback EventManager._async_handler_done(<QueuedEvent>)(<Task finishe..._lit.code'",)>) at c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py:90
+handle: <Handle EventManager._async_handler_done(<QueuedEvent>)(<Task finishe..._lit.code'",)>) at c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py:90>
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 93, in _async_handler_done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 110, in load_modes
+    self.machine.modes[mode] = self._load_mode(mode)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 266, in _load_mode
+    mode_class = self._load_mode_code(mode_string, config['mode']['code'])
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 230, in _load_mode_code
+    mode_class = self._load_mode_from_machine_folder(mode_string, code_path)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 208, in _load_mode_from_machine_folder
+    raise e
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 204, in _load_mode_from_machine_folder
+    file_name)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'modes.mode_lit.code'
+2019-11-20 21:27:47,939 : INFO : Machine : Starting the main run loop.
+2019-11-20 21:27:47,943 : INFO : Machine : Shutting down...
+2019-11-20 21:27:47,945 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-11-20 21:27:47,946 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\machine.py", line 765, in _run_loop
+    raise self._exception['exception']
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 93, in _async_handler_done
+    future.result()
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 110, in load_modes
+    self.machine.modes[mode] = self._load_mode(mode)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 266, in _load_mode
+    mode_class = self._load_mode_code(mode_string, config['mode']['code'])
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 230, in _load_mode_code
+    mode_class = self._load_mode_from_machine_folder(mode_string, code_path)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 208, in _load_mode_from_machine_folder
+    raise e
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\core\mode_controller.py", line 204, in _load_mode_from_machine_folder
+    file_name)
+  File "c:\users\schol\appdata\local\programs\python\python36\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'modes.mode_lit.code'
+2019-11-20 21:27:47,947 : INFO : root : MPF run loop ended.

@@ -1,0 +1,83 @@
+2019-11-13 19:02:30,330 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.67
+2019-11-13 19:02:30,330 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-11-13-19-02-30-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': 'virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-11-13 19:02:30,330 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-11-13 19:02:30,330 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-11-13 19:02:30,330 : INFO : Machine : Platform: win32
+2019-11-13 19:02:30,330 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-11-13 19:02:30,330 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-11-13 19:02:30,330 : INFO : Machine : Machine config file #1: config.yaml
+2019-11-13 19:02:30,331 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-13 19:02:30,332 : DEBUG : asyncio : Using selector: SelectSelector
+2019-11-13 19:02:30,333 : INFO : Machine : Initialise MPF.
+2019-11-13 19:02:30,351 : DEBUG : Virtual Platform : Configuring virtual hardware interface.
+2019-11-13 19:02:30,419 : DEBUG : asciimatics.screen : Processing key: d
+2019-11-13 19:02:30,758 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.67', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.67, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,795 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-11-13 19:02:30,796 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-11-13 19:02:30,826 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-11-13 19:02:30,831 : DEBUG : ModeController : Loaded mode attract
+2019-11-13 19:02:30,831 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-11-13 19:02:30,835 : DEBUG : ModeController : Loaded mode game
+2019-11-13 19:02:30,841 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('2', <Platform.Virtual>)
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('3', <Platform.Virtual>)
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('4', <Platform.Virtual>)
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('5', <Platform.Virtual>)
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('6', <Platform.Virtual>)
+2019-11-13 19:02:30,841 : INFO : SwitchController : Found active switch: ('7', <Platform.Virtual>)
+2019-11-13 19:02:30,842 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2019-11-13 19:02:30,844 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2019-11-13 19:02:31,430 : DEBUG : asciimatics.screen : Processing mouse: 142, 40
+2019-11-13 19:02:31,430 : DEBUG : asciimatics.widgets : New event: MouseEvent (29, 6) 0
+2019-11-13 19:02:32,861 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2019-11-13 19:02:32,862 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2019-11-13 19:02:32,886 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15', 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,886 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.0-dev.15 (config_version=5, BCP v1.1, Requires MPF v0.53.0-dev.51)', 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,888 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,907 : DEBUG : Machine : "info_lights:" section not found in machine configuration, so the Info Lights plugin will not be used.
+2019-11-13 19:02:32,908 : DEBUG : Machine : "switch_player:" section not found in machine configuration, so the Switch Playerplugin will not be used.
+2019-11-13 19:02:32,909 : DEBUG : Machine : "osc_plugin:" section not found in machine configuration, so the OSCplugin will not be used.
+2019-11-13 19:02:32,909 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2019-11-13 19:02:32,912 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2019-11-13 19:02:32,913 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,913 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,913 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,913 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,913 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,914 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,915 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2019-11-13 19:02:32,915 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2019-11-13 19:02:32,931 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2019-11-13 19:02:32,932 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2019-11-13 19:02:32,939 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2019-11-13 19:02:32,943 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2019-11-13 19:02:32,944 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2019-11-13 19:02:32,944 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2019-11-13 19:02:32,944 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2019-11-13 19:02:32,945 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2019-11-13 19:02:32,945 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2019-11-13 19:02:32,945 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2019-11-13 19:02:32,946 : INFO : Mode.attract : Started. Priority: 10
+2019-11-13 19:02:32,946 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2019-11-13 19:02:32,946 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2019-11-13 19:02:32,971 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2019-11-13 19:02:32,972 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2019-11-13 19:02:32,972 : INFO : Machine : Starting the main run loop.
+2019-11-13 19:02:45,430 : DEBUG : asciimatics.screen : Processing mouse: 189, 14
+2019-11-13 19:02:45,430 : DEBUG : asciimatics.widgets : New event: MouseEvent (189, 14) 0
+2019-11-13 19:02:46,419 : INFO : Machine : Shutting down...
+2019-11-13 19:02:46,419 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-11-13 19:02:46,421 : INFO : root : MPF run loop ended.

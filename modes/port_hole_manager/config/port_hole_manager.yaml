@@ -1,0 +1,49 @@
+#config_version=5
+
+mode:
+    start_events: ball_starting
+    priority: 100
+
+
+
+queue_relay_player:
+  balldevice_bd_main_hole_ball_eject_attempt:
+    post: start_port_queue
+    wait_for: end_port_queue
+  port_check_phase_1:
+    post: port_check_phase_1_started
+    wait_for: port_check_phase_1_finished
+  port_check_phase_2:
+    post: port_check_phase_2_started
+    wait_for: port_check_phase_2_finished
+  port_check_phase_3:
+    post: port_check_phase_3_started
+    wait_for: port_check_phase_3_finished
+
+
+queue_event_player:
+  start_port_queue:
+    queue_event: port_check_phase_1
+    events_when_finished: port_check_phase_1_end
+  port_check_phase_1_end:
+    queue_event: port_check_phase_2
+    events_when_finished: port_check_phase_2_end
+  port_check_phase_2_end:
+    queue_event: port_check_phase_3
+    events_when_finished: end_port_queue #mozgasd ha máshol akarod lezárni!!
+
+
+event_player:
+  start_port_queue:
+    - start_fire_search
+  port_check_phase_1_started{current_player.m4_active == 1 and current_player.mode_shot_enabled == 1}: m4calculate
+  port_check_phase_1_started{current_player.m4_active == 0 or current_player.mode_shot_enabled == 0}: port_check_phase_1_finished
+  slide_mode_4_shot_made_slide_2_removed: port_check_phase_1_finished
+  port_check_phase_2_started{device.state_machines.global_state.state == "main"}: start_mode
+  port_check_phase_2_started{device.state_machines.global_state.state != "main"}: port_check_phase_2_finished
+  mode_start_slide_end: port_check_phase_2_finished
+  port_check_phase_3_started{current_player.container_lit == 1}: start_container
+  port_check_phase_3_started{current_player.container_lit == 0}: port_check_phase_3_finished
+  container_slide_end: port_check_phase_3_finished
+  slide_container_ball_text_removed: port_check_phase_3_finished
+

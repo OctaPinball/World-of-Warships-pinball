@@ -1,0 +1,29 @@
+#config_version=5
+
+mode:
+    start_events: start_mode_4
+    stop_events: end_mode_4
+    events_when_started: mode_enabled
+    events_when_stopped: mode_disabled
+    priority: 300
+
+
+variable_player:
+  m4calculate:
+    modetotal: 30000000
+    score: 30000000
+    m4shotmade: 1
+    mode_shot_made:
+      int: 1
+      action: add
+    m4shotremaining:
+      int: (4 - current_player.m4shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m4shotremaining)
+      action: set
+
+show_player:
+  m4calculate:
+    sh_mode_4_shot_made:
+      loops: 0

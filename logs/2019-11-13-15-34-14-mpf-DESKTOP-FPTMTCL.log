@@ -1,0 +1,45 @@
+2019-11-13 15:34:14,169 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.0-dev.67
+2019-11-13 15:34:14,170 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\schol\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2019-11-13-15-34-14-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2019-11-13 15:34:14,170 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2019-11-13 15:34:14,170 : INFO : Machine : Machine path: D:\mpf\wows\wows
+2019-11-13 15:34:14,170 : INFO : Machine : Platform: win32
+2019-11-13 15:34:14,170 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2019-11-13 15:34:14,170 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-11-13 15:34:14,170 : INFO : Machine : Machine config file #1: config.yaml
+2019-11-13 15:34:14,172 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-13 15:34:14,172 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2019-11-13 15:34:14,252 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2019-11-13 15:34:14,306 : INFO : ConfigProcessor : Loading config from file D:\mpf\wows\wows\config\config.yaml.
+2019-11-13 15:34:14,308 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\9eb68d3894805241b8cf789ebd176e3c.mpf_cache
+2019-11-13 15:34:14,311 : INFO : Machine : Initialise MPF.
+2019-11-13 15:34:14,728 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,773 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.0-dev.67', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,773 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.0-dev.67, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,773 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,774 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2019-11-13 15:34:14,822 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2019-11-13 15:34:14,834 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d5fd805c5432c1441bf01a6268536a3d.mpf_cache
+2019-11-13 15:34:14,854 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2019-11-13 15:34:14,861 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2019-11-13 15:34:14,864 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2019-11-13 15:34:14,865 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2019-11-13 15:34:14,865 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2019-11-13 15:34:14,879 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2019-11-13 15:34:14,879 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2019-11-13 15:34:14,880 : INFO : Mode.attract : Started. Priority: 10
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2019-11-13 15:34:14,880 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2019-11-13 15:34:14,892 : INFO : Machine : Starting the main run loop.
+2019-11-13 15:38:54,529 : INFO : Machine : Shutting down...
+2019-11-13 15:38:54,530 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2019-11-13 15:38:54,532 : INFO : root : MPF run loop ended.

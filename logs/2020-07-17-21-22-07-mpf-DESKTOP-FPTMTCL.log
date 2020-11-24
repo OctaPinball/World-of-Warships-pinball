@@ -1,0 +1,6 @@
+2020-07-17 21:22:07,251 : INFO : root : Loading config.
+2020-07-17 21:22:07,254 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-07-17 21:22:07,255 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config.yaml
+2020-07-17 21:22:07,255 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2020-07-17 21:22:07,322 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2020-07-17 21:22:07,323 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.

@@ -1,0 +1,8 @@
+2020-05-23 19:16:51,660 : INFO : root : Loading config.
+2020-05-23 19:16:51,663 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-05-23 19:16:51,664 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-05-23 19:16:51,748 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-23 19:16:51,748 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2020-05-23 19:16:51,749 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-23 19:16:51,749 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\base\config\base.yaml
+2020-05-23 19:16:51,749 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\base\config\base.yaml.

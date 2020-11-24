@@ -1,0 +1,45 @@
+#show_version=5
+- time: 0
+  widgets:
+      shell_double_6:
+        slide: high_caliber_slide
+      double_jackpot:
+        slide: high_caliber_slide
+- time: +1
+  events:
+    remove_hc_6
+  widgets:
+      shell_double_6:
+        slide: high_caliber_slide
+        action: remove
+      hc_6:
+        slide: high_caliber_slide
+        action: remove
+      hajotest_6:
+        slide: high_caliber_slide
+      hatso_agyu_6:
+        slide: high_caliber_slide
+      hajotest_izzo_6:
+        slide: high_caliber_slide
+      felepitmeny_6:
+        slide: high_caliber_slide
+      robbanas_6:
+        slide: high_caliber_slide
+      agyu_6_marad:
+        slide: high_caliber_slide
+- time: +1
+  widgets:
+      felepitmeny_6:
+        slide: high_caliber_slide
+        action: remove
+- time: +0.2
+  events:
+    jackpot_6_text_removed
+  widgets:
+      robbanas_6:
+        slide: high_caliber_slide
+        action: remove
+      double_jackpot:
+        slide: high_caliber_slide
+        action: remove
+  duration: -1

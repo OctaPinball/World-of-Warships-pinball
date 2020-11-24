@@ -1,0 +1,235 @@
+#config_version=5
+
+show_player:
+  end_mode:
+    sh_mode_end_sound:
+      loops: 0
+
+slide_player:
+  end_mode_1:
+    mode_1_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_2:
+    mode_2_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_3:
+    mode_3_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_4:
+    mode_4_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_5:
+    mode_5_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_6:
+    mode_6_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_7:
+    mode_7_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_8:
+    mode_8_total:
+      priority: 600
+      expire: 1.5s
+  end_mode_9:
+    mode_9_total:
+      priority: 600
+      expire: 1.5s
+
+slides:
+  mode_1_total:
+    - type: text
+      text: REPAIR PARTY TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_2_total:
+    - type: text
+      text: DEFENSIVE AA TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_3_total:
+    - type: text
+      text: FIGHTER TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_4_total:
+    - type: text
+      text: SMOKE GEN. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_5_total:
+    - type: text
+      text: ENGINE BOOST TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true    
+  mode_6_total:
+    - type: text
+      text: HYDRO. SEARCH TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_7_total:
+    - type: text
+      text: TORPEDO R. B. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_8_total:
+    - type: text
+      text: S. RADAR TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  
+  mode_9_total:
+    - type: text
+      text: MAIN B. R. B. TOTAL
+      anchor_y: top
+      x: middle
+      y: top-3
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+    - type: text
+      text: (modetotal)
+      anchor_y: bottom
+      x: middle
+      y: bottom+4
+      z: 200
+      style: big
+      round_anchor_y: top
+      round_anchor_x: left
+      min_digits: 2
+      number_grouping: true  

@@ -1,0 +1,8 @@
+2020-07-06 19:20:18,939 : INFO : root : Loading config.
+2020-07-06 19:20:18,942 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-07-06 19:20:18,943 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-07-06 19:20:19,018 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-07-06 19:20:19,019 : WARNING : ConfigProcessor : Cache file not found: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-07-06 19:20:19,019 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml.
+2020-07-06 19:20:19,021 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml
+2020-07-06 19:20:19,021 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\game\config\game.yaml.

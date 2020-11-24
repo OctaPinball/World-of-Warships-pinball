@@ -1,0 +1,64 @@
+#show_version=5
+- time: 0
+  events: 
+    - add_match_ship_widget
+  sounds:
+    defeat:
+      loops: 0
+  slides:
+    match_for_free_game_slide:
+      - type: text
+        text: MATCH FOR FREE GAME
+        key: high_score
+        font_size: 10
+        style: big
+        anchor_x: center
+        anchor_y: top
+        x: center
+        y: top-1
+        color: 00FF00
+        animations:
+          show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.07s
+            easing: in_out_quint
+          - property: opacity
+            value: 0
+            duration: 0.07s
+            repeat: true
+            easing: in_out_quint
+- time: +1.5
+  slides:
+    match_for_free_game_slide:
+      action: remove
+  events:
+    - match_ship_move_in
+
+- time: +1
+  events:
+    - add_match_explosion_widget
+  sounds:
+    shoot_18:
+      loops: 0
+
+- time: +0.3
+  events: 
+    - match_ship_move_out
+
+- time: +0.2
+  sounds:
+    far_explosion_3:
+      loops: 0
+
+- time: +0.1
+  events:
+    - match_number_in
+
+- time: +0.2
+  events: 
+    - remove_match_explosion_widget
+
+- time: +4
+  events:
+    - match_end

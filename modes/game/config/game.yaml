@@ -1,0 +1,380 @@
+#config_version=5
+
+slides:
+  base_slide: []
+  multiplayer_slide: []
+  ball_saved_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: "BALL SAVED"
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: "KEEP SHOOTING"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FFFF00
+
+slide_player:
+
+  single_player_ball_started: base_slide
+  multi_player_ball_started: multiplayer_slide
+  # If a second player joins during player1's turn, swap base_slide for multiplayer_slide
+  multiplayer_game:
+    base_slide:
+      action: remove
+    multiplayer_slide:
+      action: play
+  ball_will_end:
+    base_slide:
+      action: remove
+    multiplayer_slide:
+      action: remove
+
+  ball_save_main_ball_save_saving_ball:
+    ball_saved_slide:
+      action: play
+      expire: 1s
+
+show_player:
+  ball_save_main_ball_save_timer_start:
+    flash_color:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_main_ball_save_hurry_up:
+    flash_color:
+      key: ball_save
+      speed: 4
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_main_ball_save_disabled:
+    ball_save: stop
+  ball_save_multiball_ball_save_timer_start:
+    flash_color:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_multiball_ball_save_hurry_up:
+    flash_color:
+      key: ball_save
+      speed: 4
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_multiball_ball_save_disabled:
+    ball_save: stop
+  ball_save_add_a_ball_ball_ball_save_timer_start:
+    flash_color:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_add_a_ball_ball_save_hurry_up:
+    flash_color:
+      key: ball_save
+      speed: 4
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_add_a_ball_ball_save_disabled:
+    ball_save: stop
+
+
+ball_saves:
+  main_ball_save:
+    active_time: 10s
+    balls_to_save: 1
+    early_ball_save_events: s_right_outlane_active, s_left_outlane_active
+    grace_period: 3s
+    hurry_up_time: 3s
+    timer_start_events: balldevice_bd_plunger_ball_eject_success
+    eject_delay: 1s
+    enable_events: ball_started
+  multiball_ball_save:
+    active_time: 10s
+    balls_to_save: -1
+    early_ball_save_events: s_right_outlane_active, s_left_outlane_active
+    grace_period: 3s
+    hurry_up_time: 3s
+    timer_start_events: ball_save_multiball_ball_save_enabled
+    enable_events: activate_multiball
+  add_a_ball_ball_save:
+    active_time: 10s
+    balls_to_save: -1
+    early_ball_save_events: s_right_outlane_active, s_left_outlane_active
+    grace_period: 3s
+    hurry_up_time: 3s
+    timer_start_events: ball_save_add_a_ball_ball_save_enabled
+    enable_events: add_a_ball
+
+widgets:
+
+  base_score_widget:
+    - type: text
+      anchor_y: center
+      anchor_x: center
+      y: center
+      x: center
+      round_anchor_x: left
+      round_anchor_y: top
+      text: (score)
+      style: big
+      font_size: 14
+      min_digits: 2
+      number_grouping: true
+  base_level_widget:
+    - type: text
+      anchor_y: bottom
+      anchor_x: right
+      y: bottom+1
+      x: right-1
+      round_anchor_x: left
+      round_anchor_y: top
+      text: FREE PLAY
+      style: small
+  base_ball_widget:
+    - type: text
+      anchor_y: bottom
+      anchor_x: left
+      y: bottom+1
+      x: left+1
+      round_anchor_x: left
+      round_anchor_y: top
+      text: BALL (ball)
+      style: small
+
+
+  mp_score_widget:
+    - type: text
+      text: (score)
+      style: medium
+      round_anchor_x: left
+      round_anchor_y: top
+      min_digits: 2
+      number_grouping: true
+      anchor_y: top
+      y: top-10
+
+  # Player 1 score, for when they're not playing
+  mp_score_widget_player_1:
+    - type: text
+      text: (player1|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: center-2
+      y: top-2
+      min_digits: 2
+      number_grouping: true
+  # Player 2 score, for when they're not playing
+  mp_score_widget_player_2:
+    - type: text
+      text: (player2|score)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: right-2
+      y: top-2
+      min_digits: 2
+      number_grouping: true
+
+  # Player 1 custom variable, for when they are playing
+  mp_name_widget_player_1:
+    - type: text
+      text: (machine|last_career_player_1)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: center-2
+      y: top-2
+      min_digits: 2
+      number_grouping: true
+  # Player 2 custom variable, for when they are playing
+  mp_name_widget_player_2:
+    - type: text
+      text: (machine|last_career_player_2)
+      style: small
+      anchor_x: right
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: right-2
+      y: top-2
+      min_digits: 2
+      number_grouping: true
+
+  #{ ... single and player_2 widgets .. }
+
+  mp_score_widget_player_3:
+    - type: text
+      text: (player3|score)
+      style: small
+      anchor_x: right
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      x: center-2
+      y: bottom+7
+      min_digits: 2
+      number_grouping: true
+  mp_score_widget_player_4:
+    - type: text
+      text: (player4|score)
+      style: small
+      anchor_x: right
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      x: right-2
+      y: bottom+7
+      min_digits: 2
+  mp_name_widget_player_3:
+    - type: text
+      text: (machine|last_career_player_3)
+      style: small
+      anchor_x: right
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      x: center-2
+      y: bottom+7
+      min_digits: 2
+  mp_name_widget_player_4:
+    - type: text
+      text: (machine|last_career_player_4)
+      style: small
+      anchor_x: right
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      x: right-2
+      y: bottom+7
+      min_digits: 2
+
+
+
+widget_player:
+
+
+  # First event, before additional players have a chance to enter
+  game_started:
+    base_score_widget:
+      slide: base_slide
+    base_level_widget:
+      slide: base_slide
+    base_ball_widget:
+      slide: base_slide
+
+  # Player 2 has entered the game
+  player_added{num==2}:
+    mp_score_widget:
+      slide: multiplayer_slide
+    base_level_widget:
+      slide: multiplayer_slide
+    base_ball_widget:
+      slide: multiplayer_slide
+    # Start with player1 name and player2 score
+    mp_name_widget_player_1:
+      slide: multiplayer_slide
+    mp_score_widget_player_2:
+      slide: multiplayer_slide
+
+
+  # Player 3 has entered the game
+  player_added{num==3}:
+    mp_score_widget_player_3:
+      slide: multiplayer_slide
+    # Remove the "Level" widget and place the player3 score
+
+
+  # Player 4 has entered the game
+  player_added{num==4}:
+    mp_score_widget_player_4:
+      slide: multiplayer_slide
+    # Remove the "Ball" widget and place the player4 score
+
+
+
+  #{ ... base and multi-player widgets ...}
+
+  # Player Turns: Swap scores -> names when turn starts, revert when turn ends
+  player_turn_started{number==1}:
+    mp_score_widget_player_1:
+      action: remove
+    mp_name_widget_player_1:
+      slide: multiplayer_slide
+  player_turn_ended{number==1}:
+    mp_score_widget_player_1:
+      slide: multiplayer_slide
+    mp_name_widget_player_1:
+      action: remove
+  player_turn_started{number==2}:
+    mp_score_widget_player_2:
+      action: remove
+    mp_name_widget_player_2:
+      slide: multiplayer_slide
+  player_turn_ended{number==2}:
+    mp_score_widget_player_2:
+      slide: multiplayer_slide
+    mp_name_widget_player_2:
+      action: remove
+  player_turn_started{number==3}:
+    mp_score_widget_player_3:
+      action: remove
+    mp_name_widget_player_3:
+      slide: multiplayer_slide
+  player_turn_ended{number==3}:
+    mp_score_widget_player_3:
+      slide: multiplayer_slide
+    mp_name_widget_player_3:
+      action: remove
+  player_turn_started{number==4}:
+    mp_score_widget_player_4:
+      action: remove
+    mp_name_widget_player_4:
+      slide: multiplayer_slide
+  player_turn_ended{number==4}:
+    mp_score_widget_player_4:
+      slide: multiplayer_slide
+    mp_name_widget_player_4:
+      action: remove

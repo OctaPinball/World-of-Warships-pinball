@@ -1,0 +1,71 @@
+#config_version=5
+
+mode:
+    start_events: ball_started
+    priority: 100
+
+timers:
+  mode_countdown:
+    start_value: 30
+    end_value: 0
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: pause_countdown
+        action: stop
+      - event: start_countdown
+        action: start
+      - event: mode_enabled
+        action: restart
+  mode_freeze:
+    start_value: 0
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: pause_frezee
+        action: stop
+      - event: start_frezee
+        action: start
+  mode_countdown_delay:
+    start_value: 2
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: all_bumper
+        action: restart
+      - event: s_main_hole_active
+        action: stop
+      - event: s_main_hole_inactive
+        action: restart
+  mode_overtime:
+    start_value: 5
+    end_value: 0
+    start_running: false
+    direction: down
+    control_events:
+      - event: timer_mode_countdown_delay_complete
+        action: start
+
+event_player:
+  timer_mode_countdown_delay_started{current_player.frezee_started == 0}: pause_countdown
+  timer_mode_countdown_delay_started{current_player.frezee_started == 1}: pause_frezee
+  timer_mode_countdown_delay_stopped{current_player.frezee_started == 0}: pause_countdown
+  timer_mode_countdown_delay_stopped{current_player.frezee_started == 1}: pause_frezee
+  timer_mode_countdown_delay_complete{current_player.frezee_started == 0}: start_countdown
+  timer_mode_countdown_delay_complete{current_player.frezee_started == 1}: start_frezee
+  s_bumper_1_active: all_bumper
+  s_bumper_2_active: all_bumper
+  s_bumper_3_active: all_bumper
+
+variable_player:
+  timer_mode_frezee_started:
+    frezee_started:
+      action: set 
+      int: 1
+  timer_mode_frezee_complete:
+    frezee_started:
+      action: set 
+      int: 0

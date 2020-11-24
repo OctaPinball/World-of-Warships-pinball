@@ -1,0 +1,157 @@
+#config_version=5
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+
+counters:
+  battle_counter:
+    count_events: s_drop_target_active
+    starting_count: 5
+    disable_on_complete: true
+    direction: down
+    count_complete_value: 0
+    enable_events: multiball_inactive, mode_battle_manager_started
+    disable_events: multiball_active
+    reset_on_complete: false
+    reset_events: battle_start, machine_reset_phase_3
+    events_when_complete: battle_will_ready
+    events_when_hit: battle_advance
+    persist_state: true
+
+event_player: 
+  battle_will_ready:
+    - enable_citadel_magnet
+    - disable_drop_target
+    - drop_target_knockdown
+  s_citadel_lock_active{device.counters.battle_counter.completed}: battle_will_start
+  slide_hc_start_end_removed:
+    - start_battle
+    - citadel_relase
+
+slide_player:
+  battle_advance{device.counters.battle_counter.value != 0}:
+    battle_advance_slide:
+      action: play
+      expire: 1s
+  battle_advance{device.counters.battle_counter.value == 0}:
+    battle_lit_slide:
+      action: play
+      expire: 1s
+
+variable_player:
+  logicblock_battle_counter_updated:
+    battle_lit_score:
+      action: set
+      int: device.counters.battle_counter.value
+
+
+
+slides:
+  battle_advance_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: (battle_lit_score) MORE
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: "TO ACCESS BATTLE"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FFFF00
+  battle_lit_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: BATTLE
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: "READY"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+
+
+#variable_player:
+#  destroyer_battle_stats:
+#    citadel_dmg:
+#      int:
+#      action: set
+#    torpedo_dmg:
+#      int:
+#      action: set
+#    fire_dmg:
+#      int:
+#      action: set
+#    penetration_dmg:
+#      int:
+#      action: set
+#  cruiser_battle_stats:
+#  battleship_battle_stats:
+#  aircraft_carrier_battle_stats:
+
+multiballs:
+  battle_multiball:
+    ball_count: 3
+    ball_count_type: total
+    start_events: start_battle
+
+show_player:
+  battle_will_start:
+    sh_start_hc_multiball:
+      loops: 0

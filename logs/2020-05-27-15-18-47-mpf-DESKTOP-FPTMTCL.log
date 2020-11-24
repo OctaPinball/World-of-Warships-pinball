@@ -1,0 +1,270 @@
+2020-05-27 15:18:47,017 : INFO : root : Loading config.
+2020-05-27 15:18:47,020 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-05-27 15:18:47,020 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-05-27 15:18:47,096 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-27 15:18:47,096 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5c4497fcd69d1d656c4b69a28e44c490.mpf_cache
+2020-05-27 15:18:47,097 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-05-27 15:18:47,097 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\dec453850496132f8dddcdfa0a36feb5.mpf_cache
+2020-05-27 15:18:47,098 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2020-05-27 15:18:47,098 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2020-05-27 15:18:47,099 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2020-05-27 15:18:47,099 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2020-05-27 15:18:47,100 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2020-05-27 15:18:47,100 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2020-05-27 15:18:47,101 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2020-05-27 15:18:47,101 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2020-05-27 15:18:47,102 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2020-05-27 15:18:47,102 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2020-05-27 15:18:47,103 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2020-05-27 15:18:47,103 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2020-05-27 15:18:47,104 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2020-05-27 15:18:47,104 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2020-05-27 15:18:47,105 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2020-05-27 15:18:47,105 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2020-05-27 15:18:47,105 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2020-05-27 15:18:47,106 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2020-05-27 15:18:47,106 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2020-05-27 15:18:47,107 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\2f89b2ab1d9f3cef79a660914b2a527a.mpf_cache
+2020-05-27 15:18:47,107 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2020-05-27 15:18:47,108 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\6d62665f0d27f04673542af594d4fd9b.mpf_cache
+2020-05-27 15:18:47,108 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\ff8f94bde3fa94916ad1b7409fed77bd.mpf_cache
+2020-05-27 15:18:47,108 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\804b9a1ad2b0368c8378a1697de79431.mpf_cache
+2020-05-27 15:18:47,109 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3f05176740ce9b1ce630d9f26057f472.mpf_cache
+2020-05-27 15:18:47,109 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d75c6855c6bfc342a42171d44ee55d0f.mpf_cache
+2020-05-27 15:18:47,110 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\add867c5df761e1504adb97d6f9bf236.mpf_cache
+2020-05-27 15:18:47,110 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c03af884f77fd2edff48f1f1b29a0001.mpf_cache
+2020-05-27 15:18:47,110 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\125cf4d7d8d0f7b14ac4e9b5c5fc6dd9.mpf_cache
+2020-05-27 15:18:47,111 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e98bbe1017594ac8f5dc55070bdaec1b.mpf_cache
+2020-05-27 15:18:47,111 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\540f9a41a139edc7fb3c0d3fef764d79.mpf_cache
+2020-05-27 15:18:47,112 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\66310f6b7da6aa9e1e12a092b4e5ea1e.mpf_cache
+2020-05-27 15:18:47,112 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e39b84c1f1807716ec310701a6bf0d73.mpf_cache
+2020-05-27 15:18:47,112 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\a3a3c1b8b3198ac6ffa6b5064057ae07.mpf_cache
+2020-05-27 15:18:47,113 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4eebc146e222c8d9b7fa4d2858e69ea1.mpf_cache
+2020-05-27 15:18:47,113 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e126248c44ebfdee710b05c2b7d5fe82.mpf_cache
+2020-05-27 15:18:47,113 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\69ecee52b21d2a851426dcc7135d38ea.mpf_cache
+2020-05-27 15:18:47,114 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\56ece61e32d3cc2ed53dd325a47460b4.mpf_cache
+2020-05-27 15:18:47,114 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d0b1dbeaceec3deef73ab0fce07cd740.mpf_cache
+2020-05-27 15:18:47,114 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3d3afc7fea552c2bae3e6e1d92aa1a26.mpf_cache
+2020-05-27 15:18:47,115 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bd243ad0d8c16d00a837306cf5c3d29.mpf_cache
+2020-05-27 15:18:47,115 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7f312b640f6d5109d8d1be2a05f128e8.mpf_cache
+2020-05-27 15:18:47,115 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\930069940b749f97f86d219b2ddeacf1.mpf_cache
+2020-05-27 15:18:47,116 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\650f26d6333e64d21657a8ef260f5acf.mpf_cache
+2020-05-27 15:18:47,116 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7fe69373349de136ea08d265848ee2de.mpf_cache
+2020-05-27 15:18:47,116 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\24196d5bffa5766d9b4a62f9ae23e660.mpf_cache
+2020-05-27 15:18:47,117 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\5f56171e4007003f2e0029bfa218d47c.mpf_cache
+2020-05-27 15:18:47,117 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9828dc3aacab1158f9e233d43cb3fe1f.mpf_cache
+2020-05-27 15:18:47,117 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9e890f4f58f205d8bba0abd84e3290c7.mpf_cache
+2020-05-27 15:18:47,118 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7e90ab1bc560333dd4b4d9f4aaf6bf62.mpf_cache
+2020-05-27 15:18:47,118 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4398dc713d774371f49c655025259670.mpf_cache
+2020-05-27 15:18:47,118 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\91df8e0ae0e44730ed622ea2efb74e97.mpf_cache
+2020-05-27 15:18:47,119 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\dff6fabdd3c60a7e52618c514c4d53bb.mpf_cache
+2020-05-27 15:18:47,119 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\69fdf32f8b1f00ca71933bfdf818d181.mpf_cache
+2020-05-27 15:18:47,119 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\2ea47c81ed4f8a69c675021c80778e85.mpf_cache
+2020-05-27 15:18:47,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3078b120455821a73c8c6f8a1dceab4f.mpf_cache
+2020-05-27 15:18:47,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d95a17e65a2b41e386a7fc14bcda65fd.mpf_cache
+2020-05-27 15:18:47,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\8d6f9c7ff9c39db68f4d155bf8492fbe.mpf_cache
+2020-05-27 15:18:47,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\155f4ce74e2bf17af8dbff2a4763087f.mpf_cache
+2020-05-27 15:18:47,121 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\58d128190d1d0b57398f3d0bb3d51665.mpf_cache
+2020-05-27 15:18:47,121 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3a392e0f36204bd15fe7f620a9abd8a5.mpf_cache
+2020-05-27 15:18:47,122 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\53b5443f454133ae1b362b3b93db77cb.mpf_cache
+2020-05-27 15:18:47,122 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3931d087bd0a337e7115b05d59ca5799.mpf_cache
+2020-05-27 15:18:47,122 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\92bd7ddb78685ce3872fdffddbf4066b.mpf_cache
+2020-05-27 15:18:47,123 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f17b18f8fc49aa4015f8aaed5fe0310c.mpf_cache
+2020-05-27 15:18:47,123 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\66ee654434268f21d59a1a197a33e84e.mpf_cache
+2020-05-27 15:18:47,123 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\0ad8a8c62d71fd6db5e688e34997c124.mpf_cache
+2020-05-27 15:18:47,124 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\986ed299862bf4d6a9ee043620eb4411.mpf_cache
+2020-05-27 15:18:47,124 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\85def6e32b8790efec9df62810edf89f.mpf_cache
+2020-05-27 15:18:47,124 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\b4b8bbe6eb89ffab7b0a5bdc28aa737c.mpf_cache
+2020-05-27 15:18:47,125 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\234f7aa8fcdaed8506c3f7e3d1434348.mpf_cache
+2020-05-27 15:18:47,125 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\836170f935ca4f3a3c83dd48d4288e22.mpf_cache
+2020-05-27 15:18:47,125 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\0a4bf4f558c6de89fd1636f30c6211d9.mpf_cache
+2020-05-27 15:18:47,126 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3936448b27d8bfc57c517bc3bf9d3aa2.mpf_cache
+2020-05-27 15:18:47,126 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\73d13f131bebf83032dc613efdff3522.mpf_cache
+2020-05-27 15:18:47,126 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\20beca28b497152ca0fd3409b83d4b87.mpf_cache
+2020-05-27 15:18:47,127 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\e816efa2a54094e8cd44dabebc7784df.mpf_cache
+2020-05-27 15:18:47,127 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\ec91b3a5e4d650dc4f7371582fb38eed.mpf_cache
+2020-05-27 15:18:47,127 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\9a1a1c28ae640e16df86b556a2688443.mpf_cache
+2020-05-27 15:18:47,128 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\3463b2a86a39355c183f674ae2b12038.mpf_cache
+2020-05-27 15:18:47,128 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\6e6719c61d3fa021e7d679c2f24e1608.mpf_cache
+2020-05-27 15:18:47,128 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\aa69a2c5c0adb7f9c40b6db4f1ca3483.mpf_cache
+2020-05-27 15:18:47,129 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\971ebba8800a659d7a8e99cb206beff7.mpf_cache
+2020-05-27 15:18:47,129 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\07e13f5cf5882efd50a16f81bcde4606.mpf_cache
+2020-05-27 15:18:47,129 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\48a45c572b20481e47ff005f73695e50.mpf_cache
+2020-05-27 15:18:47,130 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f12c25ef7bc56249cbbfe26e4a8634a0.mpf_cache
+2020-05-27 15:18:47,130 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\7058dd9e75ad4dd97e6d02eda1f8d5f4.mpf_cache
+2020-05-27 15:18:47,130 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\49b862cde9d22907c81f839348639a1f.mpf_cache
+2020-05-27 15:18:47,131 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\21dda72cc57cadcf698e50094b8ee97d.mpf_cache
+2020-05-27 15:18:47,131 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\f9ee12ee8bbd05f85378a9386ceacce5.mpf_cache
+2020-05-27 15:18:47,131 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\0394fc9fe8dda0bc8c420287c11c8aae.mpf_cache
+2020-05-27 15:18:47,132 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\812e1e327d6ef9a51d487328d0586885.mpf_cache
+2020-05-27 15:18:47,132 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\70cf3c9830d27e79cc1fda7cb07bc23d.mpf_cache
+2020-05-27 15:18:47,134 : INFO : Machine : Mission Pinball Framework Core Engine v0.54.0-dev.33
+2020-05-27 15:18:47,134 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2020-05-27-15-18-47-mpf-DESKTOP-FPTMTCL.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2020-05-27 15:18:47,134 : INFO : Machine : MPF path: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf
+2020-05-27 15:18:47,134 : INFO : Machine : Machine path: E:\MPF\wows\wows
+2020-05-27 15:18:47,134 : INFO : Machine : Platform: win32
+2020-05-27 15:18:47,134 : INFO : Machine : Python executable location: c:\users\schol\appdata\local\programs\python\python36\python.exe
+2020-05-27 15:18:47,134 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2020-05-27 15:18:47,135 : INFO : Machine : Initialise MPF.
+2020-05-27 15:18:47,402 : INFO : Pin2DmdDevice : Connecting to Pin2DMD RGB DMD
+2020-05-27 15:18:47,412 : INFO : Pin2DmdDevice : Connected to Pin2DMD
+2020-05-27 15:18:47,412 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.54.0-dev.33', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.54.0-dev.33, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.18362-SP0', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,453 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,454 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,454 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.18362', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,454 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2020-05-27 15:18:47,454 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-05-27 15:18:47,523 : INFO : EventManager : Event: ======'main_state'====== Args={}
+2020-05-27 15:18:47,523 : INFO : EventManager : Event: ======'lock_lit_started'====== Args={}
+2020-05-27 15:18:47,524 : INFO : EventManager : Event: ======'disable_mode'====== Args={}
+2020-05-27 15:18:47,524 : INFO : EventManager : Event: ======'multiball_inactive'====== Args={}
+2020-05-27 15:18:47,524 : INFO : EventManager : Event: ======'lite_detonation_start'====== Args={}
+2020-05-27 15:18:47,524 : WARNING : Mode.mode_lit : Can only start mode mode_lit during a game. Aborting start.
+2020-05-27 15:18:47,524 : WARNING : Mode.value_manager : Can only start mode value_manager during a game. Aborting start.
+2020-05-27 15:18:47,524 : WARNING : Mode.confederate : Can only start mode confederate during a game. Aborting start.
+2020-05-27 15:18:47,524 : WARNING : Mode.battle_manager : Can only start mode battle_manager during a game. Aborting start.
+2020-05-27 15:18:47,524 : WARNING : Mode.hc_lock_lit : Can only start mode hc_lock_lit during a game. Aborting start.
+2020-05-27 15:18:47,525 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-05-27 15:18:47,525 : INFO : SwitchController : Found active switch: ('2', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,526 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,526 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,526 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,526 : INFO : SwitchController : Found active switch: ('6', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,526 : INFO : SwitchController : Found active switch: ('7', <Platform.SmartVirtual>)
+2020-05-27 15:18:47,537 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2020-05-27 15:18:47,539 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2020-05-27 15:18:49,558 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2020-05-27 15:18:49,559 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2020-05-27 15:18:49,568 : INFO : ball_device.bd_trough : State: idle
+2020-05-27 15:18:49,569 : INFO : ball_device.bd_plunger : State: idle
+2020-05-27 15:18:49,569 : INFO : ball_device.bd_main_hole : State: idle
+2020-05-27 15:18:49,570 : INFO : ball_device.bd_hc_lock : State: idle
+2020-05-27 15:18:49,909 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2020-05-27 15:18:49,933 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.54.0-dev.7', 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,933 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.54.0-dev.7 (config_version=5, BCP v1.1, Requires MPF v0.54.0-dev.0)', 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,935 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,935 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2020-05-27 15:18:49,966 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,966 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 653, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,966 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0], 'total': 1}, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,966 : INFO : EventManager : Event: ======'machine_var_audits_shots_battle_shot'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,966 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,967 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_2'====== Args={'value': 202, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,967 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_3'====== Args={'value': 87, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,967 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_4'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,967 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_5'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,968 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_6'====== Args={'value': 249, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,968 : INFO : EventManager : Event: ======'machine_var_audits_shots_detonation'====== Args={'value': 42, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,968 : INFO : EventManager : Event: ======'machine_var_audits_shots_detonation_lit'====== Args={'value': 145, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,968 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_1'====== Args={'value': 75, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,969 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_2'====== Args={'value': 59, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,969 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_3'====== Args={'value': 80, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,969 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_4'====== Args={'value': 40, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,969 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_5'====== Args={'value': 42, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,969 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_6'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,970 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_A'====== Args={'value': 47, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,970 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_B'====== Args={'value': 50, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,970 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_C'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,971 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_D'====== Args={'value': 58, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,971 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_E'====== Args={'value': 56, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,971 : INFO : EventManager : Event: ======'machine_var_audits_shots_lock_lit_1'====== Args={'value': 453, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,971 : INFO : EventManager : Event: ======'machine_var_audits_shots_lock_lit_2'====== Args={'value': 502, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,972 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_1'====== Args={'value': 36, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,972 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_2'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,972 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_3'====== Args={'value': 38, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,972 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,973 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_5'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,973 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_1'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,973 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_2'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,973 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,974 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_center_ramp'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,974 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_citadel'====== Args={'value': 14, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,974 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_citadel_lock'====== Args={'value': 103, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,974 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_detonation'====== Args={'value': 145, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,975 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_1'====== Args={'value': 1074, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,975 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_2'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,975 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_3'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,976 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_4'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,976 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,976 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_6'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,977 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_7'====== Args={'value': 196, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,977 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_target'====== Args={'value': 820, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,977 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,978 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_lane'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,978 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,979 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,979 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,979 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_3'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,980 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_terget_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,980 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 640, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,980 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_made'====== Args={'value': 63, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_pre'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_mid_inlane'====== Args={'value': 50, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 47, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_made'====== Args={'value': 537, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_pre'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_1'====== Args={'value': 209, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_2'====== Args={'value': 211, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,984 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_3'====== Args={'value': 269, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,984 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_magnet_switch'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,984 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_hole'====== Args={'value': 250, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,984 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_1'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,985 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_2'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,985 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,985 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_6'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 1333, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_button'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,987 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_1'====== Args={'value': 60, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,987 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_2'====== Args={'value': 30, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_3'====== Args={'value': 40, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_4'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_5'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2020-05-27 15:18:49,989 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1318, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,001 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_hole'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,004 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 60, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,004 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_loop_made'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,004 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_loop_pre'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,005 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 58, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,005 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_made'====== Args={'value': 595, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,005 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,006 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,006 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_small_ramp'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,007 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_hole'====== Args={'value': 219, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,007 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_made'====== Args={'value': 231, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,008 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_pre'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,008 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,008 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_torpedo'====== Args={'value': 170, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,009 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_torpedo_lane'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,009 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,010 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,010 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,011 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,011 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,011 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,012 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-27 15:18:50,012 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2020-05-27 15:18:50,053 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2020-05-27 15:18:50,059 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2020-05-27 15:18:50,076 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2020-05-27 15:18:50,076 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2020-05-27 15:18:50,076 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2020-05-27 15:18:50,077 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2020-05-27 15:18:50,077 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2020-05-27 15:18:50,077 : INFO : Mode.attract : Started. Priority: 10
+2020-05-27 15:18:50,077 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2020-05-27 15:18:50,077 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2020-05-27 15:18:50,126 : INFO : Machine : Starting the main run loop.
+2020-05-27 15:18:50,345 : INFO : BcpServer : New client connected.
+2020-05-27 15:18:52,197 : INFO : Machine : Shutting down...
+2020-05-27 15:18:52,197 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2020-05-27 15:18:52,200 : INFO : root : MPF run loop ended.

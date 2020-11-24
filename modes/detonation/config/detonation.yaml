@@ -1,0 +1,79 @@
+#config_version=5
+
+mode:
+    start_events: ball_started
+    priority: 100
+
+
+event_player:
+  detonation_detonation_active_hit: detonation_jackpot
+
+shots:
+  detonation_lit:
+    switch: s_detonation
+    profile: detonation_profile
+    show_tokens:
+      light: l_detonation_lit
+  detonation:
+    advance_events: detonation_lit
+    switch: s_torpedo
+    profile: detonation
+    disable_events: lite_detonation_start
+    enable_events: detonation_lit
+    show_tokens:
+      lights: l_detonation
+
+shot_profiles:
+    detonation_profile:
+        states:
+          - name: detonation_state_1
+            show: "sh_blue"
+          - name: detonation_state_2
+            show: "sh_green"
+          - name: detonation_state_3
+            show: "sh_yellow"
+          - name: detonation_state_4
+            show: "sh_orange"
+          - name: detonation_state_5
+            show: "sh_red"
+          - name: detonation_state_6
+            show: "off"
+    detonation:
+      states:
+        - name: unlit
+          show: "off"
+        - name: active
+          show: "flash"
+          speed: 10
+
+shot_groups:
+  detonation_lit_group:
+    shots: detonation_lit, detonation
+    reset_events: lite_detonation_start
+
+shows:
+  blue:
+    - lights:
+        (leds): blue2
+  detonation_show_2:
+    - lights:
+        (leds): green
+  detonation_show_3:
+    - lights:
+        (leds): yellow
+    - lights:
+        (leds): off
+      duration: 1s
+  detonation_show_4:
+    - lights:
+        (leds): orange
+    - lights:
+        (leds): off
+      duration: 1s
+  detonation_show_5:
+    - lights:
+        (leds): red
+    - lights:
+        (leds): off
+      duration: 1s
+

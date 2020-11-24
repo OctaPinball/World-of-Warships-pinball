@@ -1,0 +1,639 @@
+#config_version=5
+
+mode:
+    start_events: s_right_inlane_active
+    #stop_events: end_mode_1
+    #events_when_started: mode_enabled
+    #events_when_stopped: mode_disabled
+    priority: 300
+
+timers:
+  dmg_con_jackpot_timer:
+    start_value: 30
+    end_value: 0
+    tick_interval: 0.1s
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: award_dmg_con_jackpot
+        action: restart
+  dmg_con_timer:
+    start_value: 90
+    max_value: 90
+    end_value: 0
+    tick_interval: 1s
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: mode_dmg_con_party_started
+        action: restart
+      - event: stop_dmg_con_timer
+        action: stop
+      - event: start_dmg_con_timer
+        action: start
+      - event: dmg_con_add_time_shots_unlit_hit
+        action: add
+        value: 5
+
+variable_player:
+  player_dmg_con_jackpot_value{value != 0}:
+    dmg_con_jackpot_display_value:
+      float: (current_player.dmg_con_jackpot_value / 1000000)
+      action: set
+  player_dmg_con_jackpot_value{value == 0}:
+    dmg_con_jackpot_display_value:
+      int: 0
+      action: set
+  sw_switch_hit:
+    score: (current_player.mode_shot_made * 1000000 / 50)
+    dmg_con_jackpot_value: (current_player.mode_shot_made * 1000000 / 50)
+  player_dmg_con_party_dmg_con_timer_tick:
+    dmg_con_timer_display:
+      float: device.timers.dmg_con_timer.ticks * 30 / 90
+      action: set
+    dmg_con_timer_value:
+      int: device.timers.dmg_con_timer.ticks
+      action: set
+  player_dmg_con_party_dmg_con_jackpot_timer_tick:
+    dmg_con_jackpot_timer_value:
+      float: device.timers.dmg_con_jackpot_timer.ticks / 10
+      action: set
+  clear_state_end:
+    dmg_con_multiplier: 1
+  mode_dmg_con_party_started:
+    dmg_con_multiplier:
+      action: set
+      int: 1
+    dmg_con_jackpot_value:
+      int: 0
+      action: set
+    mode_shot_made:
+      int: 36
+      action: set
+  dmg_con_party_shots_unlit_hit:
+    dmg_con_jackpot_value: (current_player.mode_shot_made * 1000000)
+    score: (current_player.mode_shot_made * 1000000)
+  award_dmg_con_jackpot:
+    dmg_con_jackpot_total_value:
+      int: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
+      action: set
+    score: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
+  recive_state_start:
+    dmg_con_jackpot_value:
+      int: 0
+      action: set
+
+
+shots:
+  dmg_con_1:
+    #hit_events: detonation_jackpot
+    switch: s_left_loop_made
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_left_loop_jackpot
+  dmg_con_2:
+    #hit_events: detonation_jackpot
+    switch: s_left_ramp_made
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_left_ramp_jackpot
+  dmg_con_3:
+    #hit_events: detonation_jackpot
+    switch: s_torpedo
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_torpedo_jackpot
+  dmg_con_4:
+    #hit_events: detonation_jackpot
+    switch: s_citadel_lock
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_citadel_jackpot
+  dmg_con_5:
+    #hit_events: detonation_jackpot
+    switch: s_center_ramp
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_center_ramp_jackpot
+  dmg_con_6:
+    #hit_events: detonation_jackpot
+    switch: s_right_ramp_made
+    profile: dmg_con_profile
+    show_tokens:
+      light: l_right_ramp_jackpot
+  dmg_con_add_time_1:
+    switch: s_ricochet_1
+    profile: dmg_con_add_time_profile
+    show_tokens:
+      light: l_ricichet_1
+  dmg_con_add_time_2:
+    switch: s_ricochet_2
+    profile: dmg_con_add_time_profile
+    show_tokens:
+      light: l_ricichet_2
+  dmg_con_add_time_3:
+    switch: s_ricochet_3
+    profile: dmg_con_add_time_profile
+    show_tokens:
+      light: l_ricichet_3
+  dmg_con_add_time_4:
+    switch: s_ricochet_4
+    profile: dmg_con_add_time_profile
+    show_tokens:
+      light: l_ricichet_4
+
+
+shot_groups:
+  dmg_con_party_shots:
+    shots: dmg_con_1, dmg_con_2, dmg_con_3, dmg_con_4, dmg_con_5, dmg_con_6
+    restart_events: recive_state_start
+  dmg_con_add_time_shots:
+    shots: dmg_con_add_time_1, dmg_con_add_time_2, dmg_con_add_time_3, dmg_con_add_time_4
+    restart_events: dmg_con_add_time_shots_lit_complete
+
+shot_profiles:
+    dmg_con_profile:
+        states:
+          - name: unlit
+            show: "flash"
+            speed: 10
+          - name: lit
+            show: "off"
+    dmg_con_add_time_profile:
+        states:
+          - name: unlit
+            show: "flash"
+            speed: 10
+          - name: lit
+            show: "off"
+
+
+event_player:
+  #overridejackpot{device.shots.dmg_con_1.state_name == "lit" and device.shots.dmg_con_2.state_name == "lit" and device.shots.dmg_con_3.state_name == "lit" and device.shots.dmg_con_4.state_name == "lit" and device.shots.dmg_con_5.state_name == "lit" and device.shots.dmg_con_6.state_name == "lit"}: dmg_con_party_shots_lit_complete
+  s_side_ramp_made_active{device.state_machines.dmg_con_state.state == "clear"}: award_dmg_con_jackpot
+  award_dmg_con_jackpot: stop_dmg_con_timer
+  recive_state_start: start_dmg_con_timer
+
+
+state_machines:
+  dmg_con_state:
+    starting_state: recive
+    states:
+      recive:
+        label: Start state
+        events_when_started: recive_state_start
+        events_when_stopped: recive_state_end
+      clear:
+        events_when_started: clear_state_start
+        events_when_stopped: clear_state_end
+    transitions:
+      - source: recive
+        target: clear
+        events: dmg_con_party_shots_lit_complete
+      - source: clear
+        target: recive
+        events: timer_dmg_con_jackpot_timer_complete
+
+slides:
+  dmg_con_party_slide:
+    - type: text
+      text: "DAMAGE.CONTROL.PARTY"
+      style: small
+      anchor_x: middle
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 80
+      y: top
+    - type: rectangle
+      x: 64
+      y: top
+      anchor_x: left
+      anchor_y: top
+      width: 3
+      height: 5
+      color: black
+      z: 110
+    - type: rectangle
+      x: 99
+      y: top
+      anchor_x: left
+      anchor_y: top
+      width: 3
+      height: 5
+      color: black
+      z: 110
+    - type: image
+      image: dmg_con_party_icon
+      x: 16
+      y: middle
+      z: 100
+      opacity: 200
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: text
+      text: (score)
+      style: small
+      anchor_x: middle
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: bottom
+      x: 80
+      y: bottom+1
+      color: 00FF00
+      number_grouping: true
+      min_digits: 2
+
+
+
+slide_player:
+  mode_dmg_con_party_started:
+    dmg_con_party_slide:
+      action: play
+      priority: 500
+
+widget_player:
+  mode_dmg_con_party_started:
+    dmg_con_jackpot_value_widget:
+      action: add
+      slide: dmg_con_party_slide
+    dmg_con_timer_widget:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_1_unlit_hit:
+    flood:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_2_unlit_hit:
+    module_steering_gear:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_3_unlit_hit:
+    module_torpedo:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_4_unlit_hit:
+    module_main_battery:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_5_unlit_hit:
+    fire:
+      action: add
+      slide: dmg_con_party_slide
+  dmg_con_6_unlit_hit:
+    module_engine:
+      action: add
+      slide: dmg_con_party_slide
+  award_dmg_con_jackpot:
+    dmg_con_clear_widget:
+      action: add
+      slide: dmg_con_party_slide
+    flood:
+      action: remove
+    module_steering_gear:
+      action: remove
+    module_torpedo:
+      action: remove
+    module_main_battery:
+      action: remove
+    fire:
+      action: remove
+    module_engine:
+      action: remove
+    dmg_con_jackpot_widget:
+      action: add
+      slide: dmg_con_party_slide
+    dmg_con_jackpot_value_widget:
+      action: remove
+    dmg_con_timer_widget: 
+      action: remove
+  clear_state_end:
+    dmg_con_jackpot_widget:
+      action: remove
+    dmg_con_clear_widget:
+      action: remove
+    dmg_con_jackpot_value_widget:
+      action: add
+      slide: dmg_con_party_slide
+    dmg_con_timer_widget:
+      action: add
+      slide: dmg_con_party_slide
+
+
+widgets:
+  dmg_con_timer_widget:
+    - type: text
+      text: (dmg_con_timer_value)
+      style: big
+      font_size: 16
+      color: FACC2E
+      x: 18
+      y: 16
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      number_grouping: true
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 90
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 1
+      color: black
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 80
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+      opacity: 1
+      color: FACC2E
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 0.3
+      color: FACC2E
+      animations:
+            player_dmg_con_timer_display:
+                - property: height
+                  relative: false
+                  value: (value)
+    - type: rectangle
+      x: 1
+      y: 32
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 1
+      opacity: 0.8
+      color: FACC2E
+      animations:
+            player_dmg_con_timer_display:
+                - property: y
+                  relative: false
+                  value: (value)
+  dmg_con_jackpot_value_widget:
+    - type: text
+      text: "JACKPOT = (dmg_con_jackpot_display_value)M"
+      color: FF8000
+      anchor_x: middle
+      anchor_y: bottom
+      x: 80
+      y: bottom+7
+      round_anchor_x: left
+      round_anchor_y: bottom
+      style: small
+      number_grouping: true
+  dmg_con_jackpot_widget:
+    - type: text
+      text: "(dmg_con_multiplier)X JACKPOT"
+      anchor_x: middle
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 80
+      y: top-8
+      style: medium
+      color: FF0000
+      animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    - type: text
+      text: (dmg_con_jackpot_total_value)
+      anchor_x: middle
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 80
+      y: top-18
+      style: medium
+      color: FF0000
+      number_grouping: true
+      animations:
+          add_to_slide:
+            - property: opacity
+              value: 0.5
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  dmg_con_clear_widget:
+    - type: text
+      text: (dmg_con_jackpot_timer_value)
+      style: big
+      font_size: 16
+      color: 00FFBF
+      x: 18
+      y: 16
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      number_grouping: true
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 90
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 1
+      color: black
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 80
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+      opacity: 1
+      color: 00FF80
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 0.3
+      color: 00FFBF
+      animations:
+            add_to_slide:
+                - property: height
+                  relative: false
+                  value: 0
+                  duration: 3s
+    - type: rectangle
+      x: 1
+      y: 32
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 1
+      opacity: 0.8
+      color: 00FFBF
+      animations:
+            add_to_slide:
+                - property: y
+                  relative: false
+                  value: 0
+                  duration: 3s
+  dmg_con_party_countdown:
+    - type: text
+      text: (countdown_bar_progress)
+      style: big
+      font_size: 16
+      color: red
+      x: 18
+      y: 16
+      z: 120
+      min_digits: 2
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 90
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 1
+      color: black
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 80
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+      opacity: 1
+      color: 00FF80
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            player_countdown_bar_progress:
+                - property: height
+                  relative: false
+                  value: (value)
+    - type: rectangle
+      x: 1
+      y: 32
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            player_countdown_bar_progress:
+                - property: y
+                  relative: false
+                  value: (value)
+  flood:
+    - type: image
+      image: flood
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 32
+      y: top-7
+      z: 110
+  module_steering_gear:
+    - type: image
+      image: module_steering_gear
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 48
+      y: top-7
+      z: 110
+  module_torpedo:
+    - type: image
+      image: module_torpedo
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 64
+      y: top-7
+      z: 110
+  module_main_battery:
+    - type: image
+      image: module_main_battery
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 80
+      y: top-7
+      z: 110
+  fire:
+    - type: image
+      image: module_fire
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 96
+      y: top-7
+      z: 110
+  module_engine:
+    - type: image
+      image: module_engine
+      anchor_x: left
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      x: 112
+      y: top-7
+      z: 110
+
+
