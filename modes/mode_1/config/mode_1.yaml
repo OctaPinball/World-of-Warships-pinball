@@ -45,6 +45,44 @@ variable_player:
       action: set
 
 show_player:
-  m1calculate:
-    sh_mode_1_shot_made:
+  m1calculate{current_player.mode_shot_made == 0}:
+    sh_mode_1_shot_made_1:
       loops: 0
+  m1calculate{current_player.mode_shot_made == 1}:
+    sh_mode_1_shot_made_2:
+      loops: 0
+  m1calculate{current_player.mode_shot_made == 2}:
+    sh_mode_1_shot_made_3:
+      loops: 0
+  m1calculate{current_player.mode_shot_made == 3}:
+    sh_mode_1_shot_made_4:
+      loops: 0
+
+widgets:
+  mode_1_shot_made_score_widget:
+      - type: text
+        text: (m1value)
+        style: small
+        anchor_y: bottom
+        y: bottom+2
+        z: 2
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        min_digits: 2
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+          fade_out_super_screen:
+            - property: opacity
+              value: 0
+              duration: 0.6s
