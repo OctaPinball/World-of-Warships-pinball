@@ -1,0 +1,17 @@
+2020-12-30 18:56:14,003 : INFO : root : Loading config.
+2020-12-30 18:56:14,006 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2020-12-30 18:56:14,006 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config.yaml
+2020-12-30 18:56:14,007 : INFO : ConfigProcessor : Loading config from file c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2020-12-30 18:56:14,072 : INFO : ConfigProcessor : Loading config: c:\users\schol\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2020-12-30 18:56:14,072 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.
+2020-12-30 18:56:14,256 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config.yaml
+2020-12-30 18:56:14,293 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_mode_support.yaml
+2020-12-30 18:56:14,326 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_hc_support.yaml
+2020-12-30 18:56:14,332 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2020-12-30 18:56:14,392 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-12-30 18:56:14,392 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2020-12-30 18:56:14,393 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2020-12-30 18:56:14,394 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2020-12-30 18:56:14,394 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\45b3b9aa5591eaef8a230445e70fa468.mpf_cache
+2020-12-30 18:56:14,395 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\base\config\base.yaml
+2020-12-30 18:56:14,395 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\base\config\base.yaml.

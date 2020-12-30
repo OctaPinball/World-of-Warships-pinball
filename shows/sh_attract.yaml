@@ -10,70 +10,53 @@
         y: center+0.5
 - time: +2
   slides:
+    scores_slide:
+    - type: text
+      text: (machine|player1_score)
+      style: medium
+      anchor_x: right
+      anchor_y: top
+      x: right
+      y: top-1
+      z: 150
+      number_grouping: true
+    - type: text
+      text: (machine|player2_score)
+      style: medium
+      anchor_x: right
+      anchor_y: top
+      x: right
+      y: top-9
+      z: 150
+      min_digits: 2
+      number_grouping: true
+    - type: text
+      text: (machine|player3_score)
+      style: medium
+      anchor_x: right
+      anchor_y: top
+      x: right
+      y: top-17
+      z: 150
+      min_digits: 2
+      number_grouping: true
+    - type: text
+      text: (machine|player4_score)
+      style: medium
+      anchor_x: right
+      anchor_y: top
+      x: right
+      y: top-25
+      z: 150
+      min_digits: 2
+      number_grouping: true
+- time: +2
+  slides:
     cons_test:
       - type: image
-        image: cons_1_test
+        image: cons_7_end
         round_anchor_x: left
         round_anchor_y: top
-- time: +2
-  slides:
-    super_jackpot_3:
-      - type: text
-        text: "DOUBLE"
-        x: 64
-        y: top-1
-        z: 120
-        anchor_y: top
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-        color: 00FF00
-      - type: text
-        text: "DOUBLE SUPER JACKPOT"
-        x: 64
-        y: middle
-        z: 120
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-        color: 00FF00
-      - type: text
-        text: "200M"
-        x: 64
-        y: bottom+1
-        z: 120
-        anchor_y: bottom
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-        color: 00FF00
-- time: +2
-  slides:
-    super_test:
-      - type: image
-        image: super
-        x: left
-        y: bottom
-        anchor_x: left
-        anchor_y: bottom
-- time: +2
-  slides:
-    super_test_2:
-      - type: image
-        image: super_2
-        x: left
-        y: bottom
-        anchor_x: left
-        anchor_y: bottom
-- time: +2
-  slides:
-    super_test_3:
-      - type: image
-        image: super_3_muzzle
-        x: left
-        y: bottom
-        anchor_x: left
-        anchor_y: bottom
 - time: +2
   slides:
     consumable_slide:

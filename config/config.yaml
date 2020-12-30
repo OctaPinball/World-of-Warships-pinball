@@ -171,7 +171,7 @@ switches:
   s_drop_target:
     number: 47
     tags: switch_hit
-  s_citadel_lock:
+  s_conning_tower:
     number: 48
     tags: switch_hit
   s_detonation_lit:
@@ -435,14 +435,21 @@ coils:
 diverters:
   citadel_diverter:
     activation_coil: c_loop_diverter
-    activate_events: activate_citadel_diverter
+    activate_events: activate_citadel_diverter, right_loop_hit
     deactivate_events: deactivate_citadel_diverter
+    deactivation_switches: s_conning_tower
+    enable_events: enable_citadel_diverter
+    disable_events: disable_citadel_diverter
     type: hold
     activation_time: 3s
   torpedo_peg:
     activation_coil: c_torpedo_peg
+    activation_switches: s_torpedo
     activate_events: activate_torpedo_peg
     deactivate_events: deactivate_torpedo_peg
+    deactivation_switches: s_conning_tower
+    enable_events: enable_torpedo_peg
+    disable_events: disable_torpedo_peg
     type: hold
     activation_time: 3s
 
@@ -456,13 +463,13 @@ diverters:
 
 sequence_shots:
   right_loop:
-    switch_sequence: s_right_loop_pre, s_right_loop_made, s_citadel_lock
+    switch_sequence: s_right_loop_pre, s_right_loop_made
     sequence_timeout: 3s
   right_ramp_citadel:
-    switch_sequence: s_right_ramp_pre, s_citadel_lock
+    switch_sequence: s_right_ramp_pre, s_conning_tower
     sequence_timeout: 3s
   torpedo_citadel:
-    switch_sequence: s_torpedo_pre, s_citadel_lock
+    switch_sequence: s_torpedo_pre, s_conning_tower
     sequence_timeout: 3s
 
 
@@ -479,7 +486,7 @@ drop_targets:
 magnets:
   citadel_magnet:
     magnet_coil: c_citadel_magnet
-    grab_switch: s_citadel_lock
+    grab_switch: s_conning_tower
     enable_events: enable_citadel_magnet
     disable_events: disable_citadel_magnet
     reset_events: reset_citadel_magnet
@@ -557,6 +564,9 @@ player_vars:
     value_type: int
   JetValue:
     initial_value: 5000000
+    value_type: int
+  BonusX:
+    initial_value: 0
     value_type: int
   m1shotmade:
     initial_value: 0
@@ -1044,7 +1054,7 @@ flippers:
 
 
 sound_system:
-  master_volume: 0.75
+  master_volume: 1
   tracks:
     music:
       type: standard

@@ -3,13 +3,53 @@
   slides:
     mode_7_shot_made_slide_1:
       - type: image
-        image: mode_7_shot_made
-- time: +1.1
+        image: cons_7_background
+  widgets:
+    m7_torpedo_1:
+      slide: mode_7_shot_made_slide_1
+    m7_torpedo_2:
+      slide: mode_7_shot_made_slide_1
+    m7_torpedo_3:
+      slide: mode_7_shot_made_slide_1
+    m7_foreground:
+      slide: mode_7_shot_made_slide_1
+- time: +0.01
+  events:
+    - refresh_m7_widgets
+- time: +1
   slides:
     mode_7_shot_made_slide_2:
       - type: text
-        text: (m7value)
+        text: TORPEDO AWARD
+        style: big
+        anchor_y: top
+        y: top-4
+        z: 2
+        round_anchor_x: left
+        round_anchor_y: top
         number_grouping: true
         min_digits: 2
-        font_size: 30
+        color: 00FFFF
+      - type: text
+        text: (m7value)
+        style: big
+        anchor_y: bottom
+        y: bottom+4
+        z: 2
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        min_digits: 2
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
 - time: +2

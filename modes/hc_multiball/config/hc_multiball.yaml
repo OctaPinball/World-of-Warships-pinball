@@ -30,7 +30,7 @@ shots:
   jackpot_4:
     hit_events: detonation_jackpot
     advance_events: spot_double_jackpot_4, spot_triple_jackpot_4
-    switch: s_citadel_lock
+    switch: s_citadel
     profile: jackpot_profile
     show_tokens:
       light: l_citadel_jackpot

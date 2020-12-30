@@ -25,7 +25,7 @@ event_player:
     - enable_citadel_magnet
     - disable_drop_target
     - drop_target_knockdown
-  s_citadel_lock_active{device.counters.battle_counter.completed}: battle_will_start
+  s_citadel_active{device.counters.battle_counter.completed}: battle_will_start
   slide_hc_start_end_removed:
     - start_battle
     - citadel_relase

@@ -23,7 +23,7 @@ shots:
     show_tokens:
       light: l_torpedo_confederate
   confederate_4:
-    switch: s_citadel_lock
+    switch: s_citadel # s_drop_target
     profile: confederate_profile
     show_tokens:
       light: l_citadel_confederate

@@ -15,7 +15,7 @@ event_player:
 variable_player:
   m1calculate:
     m1value: 
-      int: (current_player.DMGValue * current_player.ReceivedDMG / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
       action: set
     modetotal: current_player.m1value
     score: current_player.m1value
@@ -33,15 +33,15 @@ variable_player:
       action: set
   player_DMGValue:
     m1value: 
-      int: (current_player.DMGValue * current_player.ReceivedDMG / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
       action: set
   player_RecivedDMG:
     m1value: 
-      int: (current_player.DMGValue * current_player.ReceivedDMG / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
       action: set
   mode_mode_1_started:
     m1value: 
-      int: (current_player.DMGValue * current_player.ReceivedDMG / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
       action: set
 
 show_player:
@@ -82,7 +82,3 @@ widgets:
               duration: 0.1s
               easing: in_out_expo
               repeat: true
-          fade_out_super_screen:
-            - property: opacity
-              value: 0
-              duration: 0.6s
