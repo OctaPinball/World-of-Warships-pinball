@@ -9,10 +9,10 @@ player:
     total: 1
 shots:
   battle_shot: 66
-  confederate_1: 12
+  confederate_1: 13
   confederate_2: 208
   confederate_3: 90
-  confederate_4: 27
+  confederate_4: 29
   confederate_5: 10
   confederate_6: 255
   detonation: 42
@@ -35,34 +35,35 @@ shots:
   jackpot_6: 47
   lane_A: 98
   lane_B: 107
-  lane_C: 175
-  lane_D: 247
-  lane_E: 109
-  lock_lit_1: 892
-  lock_lit_2: 946
-  ricochet_1: 136
-  ricochet_2: 559
-  ricochet_3: 68
+  lane_C: 332
+  lane_D: 305
+  lane_E: 110
+  lock_lit_1: 901
+  lock_lit_2: 955
+  ricochet_1: 137
+  ricochet_2: 588
+  ricochet_3: 72
   ricochet_4: 19
   ricochet_5: 3
 switches:
-  s_bumper_1: 405
-  s_bumper_2: 179
-  s_bumper_3: 108
+  s_action_button: 0
+  s_bumper_1: 502
+  s_bumper_2: 180
+  s_bumper_3: 269
   s_center_ramp: 101
-  s_citadel: 36
+  s_citadel: 44
   s_citadel_lock: 255
-  s_conning_tower: 0
+  s_conning_tower: 3
   s_detonation: 165
-  s_detonation_lit: 11
-  s_dmg_1: 2439
+  s_detonation_lit: 16
+  s_dmg_1: 2551
   s_dmg_2: 60
-  s_dmg_3: 17
-  s_dmg_4: 17
+  s_dmg_3: 19
+  s_dmg_4: 27
   s_dmg_5: 22
   s_dmg_6: 139
   s_dmg_7: 293
-  s_drop_target: 1827
+  s_drop_target: 1943
   s_jet_hole: 0
   s_jet_lane: 1
   s_kickback: 0
@@ -72,52 +73,52 @@ switches:
   s_kickback_terget_1: 0
   s_left_flipper: 795
   s_left_hole: 0
-  s_left_inlane: 175
-  s_left_loop_made: 157
+  s_left_inlane: 333
+  s_left_loop_made: 177
   s_left_loop_pre: 4
   s_left_mid_inlane: 107
   s_left_outlane: 98
-  s_left_ramp_made: 1197
+  s_left_ramp_made: 1206
   s_left_ramp_pre: 204
-  s_left_slingshot: 4
+  s_left_slingshot: 17
   s_lock_1: 370
   s_lock_2: 382
   s_lock_3: 465
   s_magnet_switch: 0
-  s_main_hole: 619
-  s_pen_1: 62
-  s_pen_2: 40
-  s_pen_3: 112
+  s_main_hole: 630
+  s_pen_1: 134
+  s_pen_2: 54
+  s_pen_3: 148
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 2789
+  s_plunger: 2900
   s_plunger_button: 2
-  s_ricochet_1: 160
-  s_ricochet_2: 566
-  s_ricochet_3: 70
+  s_ricochet_1: 161
+  s_ricochet_2: 595
+  s_ricochet_3: 74
   s_ricochet_4: 24
   s_ricochet_5: 8
-  s_right_flipper: 2651
+  s_right_flipper: 2681
   s_right_hole: 26
-  s_right_inlane: 249
-  s_right_loop_made: 49
-  s_right_loop_pre: 48
-  s_right_outlane: 111
-  s_right_ramp_made: 1090
-  s_right_ramp_pre: 5
-  s_right_slingshot: 80
+  s_right_inlane: 307
+  s_right_loop_made: 73
+  s_right_loop_pre: 68
+  s_right_outlane: 112
+  s_right_ramp_made: 1099
+  s_right_ramp_pre: 11
+  s_right_slingshot: 82
   s_right_small_ramp: 0
-  s_side_hole: 288
-  s_side_ramp_made: 950
+  s_side_hole: 298
+  s_side_ramp_made: 962
   s_side_ramp_pre: 21
   s_start: 85
-  s_torpedo: 513
+  s_torpedo: 547
   s_torpedo_lane: 2
   s_torpedo_pre: 0
-  s_trough1: 472
-  s_trough2: 79
-  s_trough3: 69
+  s_trough1: 476
+  s_trough2: 82
+  s_trough3: 71
   s_trough4: 4
   s_trough5: 1
   s_trough6: 1

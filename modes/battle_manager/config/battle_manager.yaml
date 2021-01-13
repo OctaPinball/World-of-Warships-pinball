@@ -15,7 +15,7 @@ counters:
     enable_events: multiball_inactive, mode_battle_manager_started
     disable_events: multiball_active
     reset_on_complete: false
-    reset_events: battle_start, machine_reset_phase_3
+    reset_events: mode_battle_started, machine_reset_phase_3
     events_when_complete: battle_will_ready
     events_when_hit: battle_advance
     persist_state: true

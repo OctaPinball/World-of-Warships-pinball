@@ -1,0 +1,457 @@
+#config_version=5
+
+mode:
+  start_events: main_state, ball_starting
+  stop_events: main_state_stopped
+  priority: 100
+
+counters:
+  bonusX_counter:
+    count_events: s_side_hole_active
+    starting_count: 2
+    direction: down
+    count_complete_value: 0
+    start_enabled: true
+    events_when_complete: advance_bonusX
+    disable_on_complete: false
+  bomb_counter:
+    count_events: sw_pen_target
+    starting_count: 3
+    direction: down
+    count_complete_value: 0
+    start_enabled: true
+    events_when_complete: advance_bomb
+    disable_on_complete: false
+
+variable_player:
+    advance_bonusX:
+      BonusX: 1
+      bonusX_show_number:
+        action: set
+        int: current_player.BonusX
+    advance_bomb:
+      bomb_number: 1
+    sw_dmg_target{current_player.DMGValue != 200000000}:
+        DMGValue:
+          action: add
+          int: 10000000
+    right_loop_hit{current_player.JetValue != 5000000}:
+      JetValue:
+        action: add
+        int: 500000
+    logicblock_bonusX_counter_updated:
+      bonusX_progress_number:
+        action: set
+        int: device.counters.bonusX_counter.value
+    logicblock_bomb_counter_updated:
+      bomb_progress_number:
+        action: set
+        int: device.counters.bomb_counter.value
+
+slide_player:
+  logicblock_bonusX_counter_hit{device.counters.bonusX_counter.value != 3}:
+    bonusX_progress:
+      action: play
+      expire: 1s
+  advance_bonusX:
+    bonusX_advanced:
+      action: play
+      expire: 1s
+  sw_dmg_target{current_player.DMGValue != 200000000}:
+    dmg_value_increase_slide:
+      action: play
+      expire: 1s
+  sw_dmg_target{current_player.DMGValue == 200000000}:
+    dmg_value_maxed_slide:
+      action: play
+      expire: 1s
+  right_loop_hit{current_player.JetValue != 5000000}:
+    jet_value_increase_slide:
+      action: play
+      expire: 1s
+  right_loop_hit{current_player.JetValue == 5000000}:
+    jet_value_maxed_slide:
+      action: play
+      expire: 1s
+
+show_player:
+  logicblock_bomb_counter_hit{device.counters.bomb_counter.value != 3}:
+    sh_bomb_advance:
+      loops: 0
+  logicblock_bomb_counter_hit{device.counters.bomb_counter.value == 3}:
+    sh_bomb_complete:
+      loops: 0
+
+widgets:
+  bomb_advance_widget:
+      - type: text
+        text: (bomb_progress_number) MORE FOR BOMB
+        x: middle
+        y: 14
+        anchor_y: top
+        z: 120
+        style: small
+        #font_size: 15
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FFFF
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: text
+        text: "TOTAL BOMBS: (bomb_number)"
+        x: middle
+        y: 2
+        anchor_y: bottom
+        z: 120
+        style: small
+        #font_size: 15
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 7401DF
+  bomb_complete_widget:
+      - type: text
+        text: BOMB AWARDED
+        x: middle
+        y: 14
+        anchor_y: top
+        z: 120
+        style: small
+        #font_size: 15
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FFFF
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: text
+        text: "TOTAL BOMBS: (bomb_number)"
+        x: middle
+        y: 2
+        anchor_y: bottom
+        z: 120
+        style: small
+        #font_size: 15
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 7401DF
+
+slides:
+    bonusX_progress:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: (bonusX_progress_number) MORE
+        x: 64
+        y: top-9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: "TO ADVANCE BONUS X"
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FFFF00
+    bonusX_advanced:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: BONUS (bonusX_show_number)X
+        x: middle
+        y: middle
+        z: 120
+        style: big
+        font_size: 15
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FFFF
+        animations:
+          show_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    dmg_value_maxed_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: DAMAGE VALUE
+        x: 64
+        y: top-5
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: MAXED
+        x: 64
+        y: top-13
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+      - type: text
+        text: VALUE = (DMGValue)
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        color: 00FFFF
+    dmg_value_increase_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: DAMAGE VALUE
+        x: 64
+        y: top-5
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: INCREASED
+        x: 64
+        y: top-13
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF0000
+      - type: text
+        text: VALUE = (DMGValue)
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        color: 00FFFF
+    jet_value_maxed_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: JET VALUE
+        x: 64
+        y: top-5
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF8000
+      - type: text
+        text: MAXED
+        x: 64
+        y: top-13
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: 00FF00
+      - type: text
+        text: VALUE = (JetValue)
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        color: 00FFFF
+    jet_value_increase_slide:
+      - type: rectangle
+        x: 1
+        y: top-1
+        z: 115
+        anchor_y: top
+        anchor_x: left
+        width: 126
+        height: 30
+        opacity: 1
+        color: black
+      - type: rectangle
+        x: 0
+        y: top
+        z: 110
+        anchor_y: top
+        anchor_x: left
+        width: 128
+        height: 32
+        color: white
+      - type: text
+        text: JET VALUE
+        x: 64
+        y: top-5
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF8000
+      - type: text
+        text: INCREASED
+        x: 64
+        y: top-13
+        z: 120
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+        color: FF8000
+      - type: text
+        text: VALUE = (JetValue)
+        x: 64
+        y: bottom+9
+        z: 120
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+        number_grouping: true
+        color: 00FFFF
+    main_slide:
+      - type: text
+        text: (score)
+        anchor_x: center
+        anchor_y: bottom
+        x: 64
+        y: 1
+        #font_size: 5
+        min_digits: 2
+        z: 120
+        style: small
+        number_grouping: true
+      - type: text
+        text: PLAYER (number)
+        y: 0
+        x: 0
+        font_size: 8
+        anchor_x: left
+        anchor_y: bottom
+        color: blue
+      - type: text
+        text: BALL (ball)
+        y: 0
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 8
+        color: green

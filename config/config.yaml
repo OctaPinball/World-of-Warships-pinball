@@ -224,6 +224,8 @@ switches:
   s_torpedo_pre:
     number: 66
     tags: switch_hit
+  s_action_button:
+    number: 67
 
 combo_switches:
   both_flippers:
@@ -367,6 +369,8 @@ lights:
     number: 68
   l_fire_3:
     number: 69
+  l_action_button:
+    number: 70
 
 coils:
   c_flipper_left_main:
@@ -465,8 +469,11 @@ sequence_shots:
   right_loop:
     switch_sequence: s_right_loop_pre, s_right_loop_made
     sequence_timeout: 3s
+  right_ramp_citadel_pre:
+    switch_sequence: s_right_ramp_pre, s_right_loop_made
+    sequence_timeout: 3s
   right_ramp_citadel:
-    switch_sequence: s_right_ramp_pre, s_conning_tower
+    switch_sequence: s_right_ramp_pre, s_right_loop_made, s_conning_tower
     sequence_timeout: 3s
   torpedo_citadel:
     switch_sequence: s_torpedo_pre, s_conning_tower
@@ -497,7 +504,8 @@ modes:
   - attract
   - high_score
   - match
-  - base
+  - main_play
+  - value_reset
   - mode_lit
   #- skill_shot
   - mode_1
@@ -510,6 +518,7 @@ modes:
   - mode_8
   - mode_9
   #- dmg_con_party
+  - mode_wizard
   - mode_manager
   - container
   - salvo_lit
@@ -733,11 +742,50 @@ player_vars:
   fire_3_active:
     initial_value: 0
     value_type: int
+  m1_shot_need:
+    initial_value: 0
+    value_type: int 
+  m2_shot_need:
+    initial_value: 0
+    value_type: int 
+  m3_shot_need:
+    initial_value: 0
+    value_type: int 
+  m4_shot_need:
+    initial_value: 0
+    value_type: int 
+  m5_shot_need:
+    initial_value: 0
+    value_type: int 
+  m6_shot_need:
+    initial_value: 0
+    value_type: int 
+  m7_shot_need:
+    initial_value: 0
+    value_type: int 
+  m8_shot_need:
+    initial_value: 0
+    value_type: int 
+  m9_shot_need:
+    initial_value: 0
+    value_type: int 
+  m10_shot_need:
+    initial_value: 0
+    value_type: int
+  bomb_number:
+    initial_value: 0
+    value_type: int
+
+
+
 
 queue_event_player:
   ball_drain_phase_1_will_start:
     queue_event: ball_drain_phase_1_starting
     events_when_finished: ball_ending_checked #mozgasd ha máshol akarod lezárni!! ball_drain_phase_1_end
+  secondary_citadel_diverter_will_start:
+    queue_event: secondary_citadel_diverter_starting
+    events_when_finished: activate_citadel_diverter
 
 queue_relay_player:
   ball_ending:
@@ -746,6 +794,9 @@ queue_relay_player:
   ball_drain_phase_1_starting:
     post: ball_drain_phase_1_started
     wait_for: ball_drain_phase_1_checked
+  secondary_citadel_diverter_starting:
+    post: enable_citadel_diverter
+    wait_for: valami
 
 event_player:    #STATE_MACHINES TRANSITION SUPPORT
   enable_drop_target: enable_drop_target
@@ -756,12 +807,16 @@ event_player:    #STATE_MACHINES TRANSITION SUPPORT
   multiball_high_caliber_multiball_ended_confirmed: deactivate_multiball
   multiball_battle_multiball_ended: deactivate_multiball
 
-
-
   #ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "enabled"}: end_mode
   ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "disabled"}: ball_drain_phase_1_checked
   ball_drain_phase_1_checked: mode_state_machine_reset
 
+  right_ramp_citadel_pre_hit{device.state_machines.citadel_diverter_state.state == battle_fire_on}: activate_citadel_diverter
+  right_ramp_citadel_pre_hit{device.state_machines.citadel_diverter_state.state == battle_fire_off}: secondary_citadel_diverter_will_start
+  #right_ramp_citadel_timeout{device.state_machines.citadel_diverter_state.state == battle_fire_off}: 
+  #right_ramp_citadel_hit{device.state_machines.citadel_diverter_state.state == battle_fire_off}: 
+  s_right_slingshot_active: enable_citadel_diverter
+  s_left_slingshot_active: disable_citadel_diverter
 
 
 
@@ -941,6 +996,52 @@ state_machines:
       - source: aircraft_carrier
         target: destroyer
         events: start_battle
+  citadel_diverter_state:
+    starting_state: main
+    states:
+      main:
+        events_when_started: enable_citadel_diverter
+      battle_fire_on:
+        events_when_started: enable_citadel_diverter
+      battle_fire_off:
+        events_when_started: disable_citadel_diverter
+    transitions:
+      - source: main
+        target: battle_fire_off
+        events: mode_battle_started
+      - source: battle_fire_off
+        target: battle_fire_on
+        events: start_fire_3
+      - source: battle_fire_on
+        target: battle_fire_off
+        events: timer_fire_3_timer_complete
+  citadel_diverter_secondary_state:
+    starting_state: main
+    states:
+      main:
+        label: main
+      battle_fire_on:
+        label: fire_2on
+      battle_fire_off:
+        label: fire_2off
+    transitions:
+      - source: main
+        target: battle_fire_off
+        events: mode_battle_started
+      - source: battle_fire_off
+        target: battle_fire_on
+        events: start_fire_2
+      - source: battle_fire_on
+        target: battle_fire_off
+        events: timer_fire_2_timer_complete
+
+counters:
+  m1_delay:
+    count_events: sw_take_dmg
+    count_complete_value: 1
+    multiple_hit_window: 1s
+    disable_on_complete: false
+    events_when_complete: m1calculate_pre
 
 ball_devices:
   bd_trough:

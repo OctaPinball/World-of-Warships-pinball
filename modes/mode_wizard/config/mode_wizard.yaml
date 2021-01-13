@@ -1,0 +1,1241 @@
+#config_version=5
+
+mode:
+    start_events: s_right_inlane_active
+    #stop_events: end_mode_1
+    #events_when_started: mode_enabled
+    #events_when_stopped: mode_disabled
+    priority: 300
+
+slides:
+  wizard_mode_slide:
+      - type: image
+        image: cons_wizard_background
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: DMG. CON. WIZ. MODE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: 14
+        z: 150
+        color: FF8000
+      - type: text
+        text: (score)
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: 7
+        z: 150
+        min_digits: 2
+        number_grouping: true
+
+variable_player:
+  mode_mode_wizard_started:
+    wizard_mode_initation_completed:
+      action: set
+      int: 0
+    m1_shot_need:
+      action: set
+      int: 4
+    m2_shot_need:
+      action: set
+      int: 20
+    m3_shot_need:
+      action: set
+      int: 4
+    m4_shot_need:
+      action: set
+      int: 4
+    m5_shot_need:
+      action: set
+      int: 4
+    m6_shot_need:
+      action: set
+      int: 4
+    m7_shot_need:
+      action: set
+      int: 4
+    m8_shot_need:
+      action: set
+      int: 4
+    m9_shot_need:
+      action: set
+      int: 4
+    m10_shot_need:
+      action: set
+      int: 1
+  player_m2_shot_need:
+    m2_countdown_progress_1:
+      action: set
+      int: current_player.m2_shot_need * 16 / 20 + 16
+    m2_countdown_progress_2:
+      action: set
+      int: current_player.m2_shot_need * 16 / 20
+  m1calculate_pre{current_player.m1_shot_need > 0}:
+    m1_shot_need: -1
+    score: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
+    wizard_mode_value:
+      action: set
+      int: ((current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) / 1000000)
+  m2calculate{current_player.m2_shot_need > 0}:
+    m2_shot_need: -1
+    score: (current_player.JetValue * 4)
+    wizard_mode_value:
+      action: set
+      int: (current_player.JetValue * 4 / 1000000)
+  m3calculate{current_player.m3_shot_need > 0}:
+    m3_shot_need: -1
+    score: (current_player.DMGValue / 4)
+    wizard_mode_value:
+      action: set
+      int: (current_player.DMGValue / 4 / 1000000)
+  m4calculate{current_player.m4_shot_need > 0}:
+    m4_shot_need: -1
+    score: 30000000
+    wizard_mode_value:
+      action: set
+      int: 30
+  m5calculate{current_player.m5_shot_need > 0}:
+    m5_shot_need: -1
+    score: 30000000
+    wizard_mode_value:
+      action: set
+      int: 30
+  m6calculate{current_player.m6_shot_need > 0}:
+    m6_shot_need: -1
+    score: 25000000
+    wizard_mode_value:
+      action: set
+      int: 25
+  m7calculate{current_player.m7_shot_need == 1}:
+    m7_shot_need: -1
+    score: (current_player.DMGValue)
+    wizard_mode_value:
+      action: set
+      int: (current_player.DMGValue) / 1000000
+  m7calculate{current_player.m7_shot_need > 1}:
+    m7_shot_need: -1
+    score: (current_player.DMGValue / 4)
+    wizard_mode_value:
+      action: set
+      int: (current_player.DMGValue / 4) / 1000000
+  m8calculate{current_player.m8_shot_need > 0}:
+    m8_shot_need: -1
+    score: 20000000
+    wizard_mode_value:
+      action: set
+      int: 20
+  m9calculate{current_player.m9_shot_need == 1}:
+    m9_shot_need: -1
+    score: (current_player.DMGValue)
+    wizard_mode_value:
+      action: set
+      int: (current_player.DMGValue) / 1000000
+  m9calculate{current_player.m9_shot_need > 1}:
+    m9_shot_need: -1
+    score: (current_player.DMGValue / 4)
+    wizard_mode_value:
+      action: set
+      int: (current_player.DMGValue / 4) / 1000000
+  m10calculate{current_player.m10_shot_need > 0}:
+    m10_shot_need: -1
+  mode_wizard_values_initiated:
+    wizard_mode_initation_completed:
+      action: set
+      int: 1
+
+queue_event_player:
+  mode_mode_wizard_started:
+    queue_event: mode_wizard_values_initiating
+    events_when_finished: mode_wizard_values_initiated
+
+queue_relay_player:
+  mode_wizard_values_initiating:
+    post: ball_drain_phase_1_will_start
+    wait_for: slide_wizard_mode_slide_active
+
+event_player:
+  player_m1_shot_need{value >= 0}:
+    - advance_m1_progress
+    - update_wizard_value
+  player_m2_shot_need:
+    - update_wizard_value
+  player_m3_shot_need{value >= 0}:
+    - advance_m3_progress
+    - update_wizard_value
+  player_m4_shot_need{value >= 0}:
+    - advance_m4_progress
+    - update_wizard_value
+  player_m5_shot_need{value >= 0}:
+    - advance_m5_progress
+    - update_wizard_value
+  player_m6_shot_need{value >= 0}:
+    - advance_m6_progress
+    - update_wizard_value
+  player_m7_shot_need{value >= 0}:
+    - advance_m7_progress
+    - update_wizard_value
+  player_m8_shot_need{value >= 0}:
+    - advance_m8_progress
+    - update_wizard_value
+  player_m9_shot_need{value >= 0}:
+    - advance_m9_progress
+    - update_wizard_value
+  player_m10_shot_need{value >= 0}:
+    - advance_m10_progress
+    - update_wizard_value
+
+  sw_bumper_hit: m2calculate
+  sw_pen_target: m3calculate
+  s_left_loop_made_active: m5calculate
+  right_loop_hit: m5calculate
+  sw_dmg_target: m6calculate
+  s_torpedo_active: m7calculate
+  s_left_ramp_made_active: m8calculate
+  s_right_ramp_made_active: m8calculate
+  s_drop_target_active: m9calculate
+  s_side_ramp_made_active: m10calculate
+
+slide_player:
+  mode_mode_wizard_started:
+    wizard_mode_slide:
+      action: play
+      priority: 300
+
+widget_player:
+  slide_wizard_mode_slide_active:
+    m1_square:
+      slide: wizard_mode_slide
+    m2_square:
+      slide: wizard_mode_slide
+    m3_square:
+      slide: wizard_mode_slide
+    m4_square:
+      slide: wizard_mode_slide
+    m5_square:
+      slide: wizard_mode_slide
+    m6_square:
+      slide: wizard_mode_slide
+    m7_square:
+      slide: wizard_mode_slide
+    m8_square:
+      slide: wizard_mode_slide
+    m9_square:
+      slide: wizard_mode_slide
+    m10_square:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_1:
+    wizard_value_widget_1:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_2:
+    wizard_value_widget_2:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_3:
+    wizard_value_widget_3:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_4:
+    wizard_value_widget_4:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_5:
+    wizard_value_widget_5:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_6:
+    wizard_value_widget_6:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_7:
+    wizard_value_widget_7:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_8:
+    wizard_value_widget_8:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_9:
+    wizard_value_widget_9:
+      slide: wizard_mode_slide
+  show_wizard_value_widget_10:
+    wizard_value_widget_10:
+      slide: wizard_mode_slide
+  player_m1_shot_need{value == 0}:
+    m1_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m2_shot_need{value == 0}:
+    m2_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m3_shot_need{value == 0}:
+    m3_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m4_shot_need{value == 0}:
+    m4_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m5_shot_need{value == 0}:
+    m5_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m6_shot_need{value == 0}:
+    m6_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m7_shot_need{value == 0}:
+    m7_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m8_shot_need{value == 0}:
+    m8_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m9_shot_need{value == 0}:
+    m9_square:
+      slide: wizard_mode_slide
+      action: remove
+  player_m10_shot_need{value == 0}:
+    m10_square:
+      slide: wizard_mode_slide
+      action: remove
+
+random_event_player:
+  update_wizard_value{current_player.wizard_mode_initation_completed == 1}:
+    events:
+      - show_wizard_value_widget_1
+      - show_wizard_value_widget_2
+      - show_wizard_value_widget_3
+      - show_wizard_value_widget_4
+      - show_wizard_value_widget_5
+      - show_wizard_value_widget_6
+      - show_wizard_value_widget_7
+      - show_wizard_value_widget_8
+      - show_wizard_value_widget_9
+      - show_wizard_value_widget_10
+
+
+widgets:
+  m1_square:
+    - type: text
+      text: (m1_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 24
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 16
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m1_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 16
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m1_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 16
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m2_square:
+    - type: text
+      text: (m2_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 40
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 32
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            player_m2_countdown_progress_2:
+                - property: height
+                  relative: false
+                  value: (value)
+    - type: rectangle
+      x: 32
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            player_m2_countdown_progress_1:
+                - property: y
+                  relative: false
+                  value: (value)
+  m3_square:
+    - type: text
+      text: (m3_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 56
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 48
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m3_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 48
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m3_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 48
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m4_square:
+    - type: text
+      text: (m4_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 72
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 64
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m4_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 64
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m4_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 64
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m5_square:
+    - type: text
+      text: (m5_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 88
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 80
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m5_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 80
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m5_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 80
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m6_square:
+    - type: text
+      text: (m6_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 104
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 96
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m6_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 96
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m6_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 96
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m7_square:
+    - type: text
+      text: (m7_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 120
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 112
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m7_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 112
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m7_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 112
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  m8_square:
+    - type: text
+      text: (m8_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 120
+      y: 8
+      z: 140
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 112
+      y: 0
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m8_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 112
+      y: 15
+      z: 135
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m8_progress:
+                - property: y
+                  relative: true
+                  value: -4
+  m9_square:
+    - type: text
+      text: (m9_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 8
+      y: 8
+      z: 140
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m9_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 0
+      y: 15
+      z: 135
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m9_progress:
+                - property: y
+                  relative: true
+                  value: -4
+  m10_square:
+    - type: text
+      text: (m10_shot_need)
+      style: medium
+      #font_size: 16
+      color: red
+      x: 8
+      y: 24
+      z: 120
+      anchor_y: middle
+      anchor_x: middle
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: rectangle
+      x: 0
+      y: 16
+      z: 110
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 16
+      opacity: 0.3
+      color: 00FF80
+      animations:
+            advance_m10_progress:
+                - property: height
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 0
+      y: 31
+      z: 115
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 0.8
+      color: 00FF80
+      animations:
+            advance_m10_progress:
+                - property: y
+                  relative: true
+                  value: -4
+    - type: rectangle
+      x: 0
+      y: 15
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 16
+      height: 1
+      opacity: 1
+      color: black
+  wizard_value_widget_1:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+22
+        y: top-15
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_2:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+86
+        y: top-20
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_3:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+47
+        y: top-10
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_4:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+100
+        y: top-23
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_5:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+79
+        y: top-24
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_6:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+112
+        y: top-8
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_7:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+69
+        y: top-18
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_8:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+120
+        y: top-28
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_9:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+58
+        y: top-10
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous
+  wizard_value_widget_10:
+      - type: text
+        text: (wizard_mode_value)M
+        font_size: 0
+        style: medium
+        x: left+12
+        y: top-15
+        z: 200
+        anchor_y: middle
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        expire: 0.9s
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 2
+              duration: 0.3s
+              easing: in_cubic
+            - property: y
+              value: 4
+              duration: 0.3s
+              relative: true
+              timing: with_previous
+            - property: font_size
+              value: 12
+              duration: 0.2s
+              timing: with_previous
+            - property: font_size
+              value: 7
+              duration: 0.1s
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 0.6s
+              timing: after_previous
+            - property: y
+              value: 8
+              duration: 0.6s
+              relative: true
+              timing: with_previous

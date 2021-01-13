@@ -1,0 +1,18 @@
+#config_version=5
+mode:
+    start_events: ball_starting
+    priority: 100
+
+
+variable_player:
+    ball_started:
+        DMGValue:
+          action: set
+          int: 120000000
+        JetValue:
+          action: set
+          int: 500000
+        BonusX:
+          action: set
+          int: 1
+

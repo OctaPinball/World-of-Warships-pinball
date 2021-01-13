@@ -1,0 +1,20 @@
+#show_version=5
+
+- time: 0
+  slides:
+    bomb_progress_animation:
+      - type: image
+        image: penetration_fast
+        round_anchor_x: left
+        round_anchor_y: top
+- time: 0.68
+  slides:
+    bomb_progress_animation_2_2:
+      - type: image
+        image: penetration_still
+        round_anchor_x: left
+        round_anchor_y: top
+  widgets:
+    bomb_complete_widget:
+      slide: bomb_progress_animation_2_2
+- time: +2

@@ -14,6 +14,8 @@
     - type: text
       text: (machine|player1_score)
       style: medium
+      round_anchor_x: left
+      round_anchor_y: top
       anchor_x: right
       anchor_y: top
       x: right
@@ -23,6 +25,8 @@
     - type: text
       text: (machine|player2_score)
       style: medium
+      round_anchor_x: left
+      round_anchor_y: top
       anchor_x: right
       anchor_y: top
       x: right
@@ -33,6 +37,8 @@
     - type: text
       text: (machine|player3_score)
       style: medium
+      round_anchor_x: left
+      round_anchor_y: top
       anchor_x: right
       anchor_y: top
       x: right
@@ -43,6 +49,8 @@
     - type: text
       text: (machine|player4_score)
       style: medium
+      round_anchor_x: left
+      round_anchor_y: top
       anchor_x: right
       anchor_y: top
       x: right
@@ -54,9 +62,31 @@
   slides:
     cons_test:
       - type: image
-        image: cons_7_end
+        image: cons_wizard_background
         round_anchor_x: left
         round_anchor_y: top
+      - type: text
+        text: DMG. CON. WIZ. MODE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: 14
+        z: 150
+      - type: text
+        text: 1000000000
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: 7
+        z: 150
+        min_digits: 2
+        number_grouping: true
 - time: +2
   slides:
     consumable_slide:

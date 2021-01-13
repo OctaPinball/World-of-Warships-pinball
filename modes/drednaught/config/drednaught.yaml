@@ -5,15 +5,6 @@ mode:
   stop_events: main_state_stopped
   priority: 100
 
-counters:
-  dreadnaugt_counter:
-    count_events: sw_take_dmg
-    starting_count: 0
-    count_interval: 1
-    count_complete_value: 1
-    multiple_hit_window: 0.5s
-    events_when_complete: take_dreadnaught_dmg
-    disable_on_complete: false
 
 variable_player:
   mode_drednaught_started:
@@ -23,7 +14,7 @@ variable_player:
     ReceivedDMGshow:
       int: (current_player.ReceivedDMG)
       action: set
-  take_dreadnaught_dmg:
+  m1calculate_pre:
     ReceivedDMG: 3
     score: (current_player.DMGValue * 0.3 * 0.5)
     ReceivedDMGshow:
@@ -47,7 +38,7 @@ slides:
       anchor_y: top
 
 slide_player:
-  take_dreadnaught_dmg:
+  m1calculate_pre:
     take_dmg_slide:
       action: play
       priority: 300

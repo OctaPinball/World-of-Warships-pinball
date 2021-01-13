@@ -1,0 +1,8 @@
+#config_version=5
+mode:
+    start_events: ball_started
+    priority: 100
+
+event_player:
+
+

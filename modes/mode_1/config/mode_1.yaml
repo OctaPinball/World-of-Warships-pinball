@@ -7,8 +7,9 @@ mode:
     events_when_stopped: mode_disabled
     priority: 300
 
+
 event_player:
-  sw_take_dmg{current_player.mode_shot_enabled == 1}:
+  m1calculate_pre{current_player.mode_shot_enabled == 1}:
     - m1calculate
 
 
