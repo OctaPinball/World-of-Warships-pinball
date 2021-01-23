@@ -1,0 +1,315 @@
+#config_version=5
+
+mode:
+    start_events: s_left_inlane_active
+    #stop_events: capture_state_stopped
+    priority: 100
+
+slides:
+  capture_award_slide: []
+
+slide_player:
+  mode_capture_award_started:
+    capture_award_slide:
+      action: play
+
+achievements:
+  hold_bonus:
+    events_when_selected: check_capture_award_slides, highlight_hold_bonus
+    events_when_started: award_hold_bonus
+    complete_events: award_hold_bonus
+    reset_events: reset_modes
+
+  hold_jet:
+    events_when_selected: check_capture_award_slides, highlight_hold_jet
+    events_when_started: award_hold_jet
+    complete_events: award_hold_jet
+    reset_events: reset_modes
+
+  hold_dmg:
+    events_when_selected: check_capture_award_slides, highlight_hold_dmg
+    events_when_started: award_hold_dmg
+    complete_events: award_hold_dmg
+    reset_events: reset_modes
+
+  max_jet:
+    events_when_selected: check_capture_award_slides, highlight_max_jet
+    events_when_started: award_max_jet
+    complete_events: award_max_jet
+    reset_events: reset_modes
+
+  max_dmg:
+    events_when_selected: check_capture_award_slides, highlight_max_dmg
+    events_when_started: award_max_dmg
+    complete_events: award_max_dmg
+    reset_events: reset_modes
+
+achievement_groups:
+  capture_awards:
+    achievements: hold_bonus, hold_jet, hold_dmg, max_jet, max_dmg
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    events_when_all_completed: select_damage_control_party
+    enable_while_no_achievement_started: yes
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: s_right_slingshot_active
+    enable_events: ball_starting
+    #disable_events: 
+
+widget_player:
+  check_capture_award_slides:
+    hold_bonus_lit:
+      action: add
+      slide: capture_award_slide
+    hold_jet_lit:
+      action: add
+      slide: capture_award_slide
+    hold_dmg_lit:
+      action: add
+      slide: capture_award_slide
+    max_jet_lit:
+      action: add
+      slide: capture_award_slide
+    max_dmg_lit:
+      action: add
+      slide: capture_award_slide
+    hold_bonus_selected:
+      action: remove
+    hold_jet_selected:
+      action: remove
+    hold_dmg_selected:
+      action: remove
+    max_jet_selected:
+      action: remove
+    max_dmg_selected:
+      action: remove
+  check_capture_award_slides{device.achievements.hold_bonus.state == "completed"}:
+    hold_bonus_lit:
+      action: remove
+    hold_bonus_not_lit:
+      action: add
+      slide: capture_award_slide
+  check_capture_award_slides{device.achievements.hold_jet.state == "completed"}:
+    hold_jet_lit:
+      action: remove
+    hold_jet_not_lit:
+      action: add
+      slide: capture_award_slide
+  check_capture_award_slides{device.achievements.hold_dmg.state == "completed"}:
+    hold_dmg_lit:
+      action: remove
+    hold_dmg_not_lit:
+      action: add
+      slide: capture_award_slide
+  check_capture_award_slides{device.achievements.max_jet.state == "completed"}:
+    max_jet_lit:
+      action: remove
+    max_jet_not_lit:
+      action: add
+      slide: capture_award_slide
+  check_capture_award_slides{device.achievements.max_dmg.state == "completed"}:
+    max_dmg_lit:
+      action: remove
+    max_dmg_not_lit:
+      action: add
+      slide: capture_award_slide
+  highlight_hold_bonus:
+    hold_bonus_selected:
+      action: add
+      slide: capture_award_slide
+  highlight_hold_jet:
+    hold_jet_selected:
+      action: add
+      slide: capture_award_slide
+  highlight_hold_dmg:
+    hold_dmg_selected:
+      action: add
+      slide: capture_award_slide
+  highlight_max_jet:
+    max_jet_selected:
+      action: add
+      slide: capture_award_slide
+  highlight_max_dmg:
+    max_dmg_selected:
+      action: add
+      slide: capture_award_slide
+
+
+widgets:
+    hold_bonus_lit:
+      - type: text
+        text: HOLD BONUS X
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top
+        z: 150
+    hold_bonus_selected:
+      - type: text
+        text: HOLD BONUS X
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top
+        z: 160
+        color: 00FF00
+    hold_bonus_not_lit:
+      - type: text
+        text: HOLD BONUS X
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top
+        z: 150
+        color: FF0000
+    hold_jet_lit:
+      - type: text
+        text: HOLD JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top-7
+        z: 150
+    hold_jet_selected:
+      - type: text
+        text: HOLD JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top-7
+        z: 160
+        color: 00FF00
+    hold_jet_not_lit:
+      - type: text
+        text: HOLD JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: top
+        x: middle
+        y: top-7
+        z: 150
+        color: FF0000
+    hold_dmg_lit:
+      - type: text
+        text: HOLD DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: middle
+        x: middle
+        y: middle
+        z: 150
+    hold_dmg_selected:
+      - type: text
+        text: HOLD DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: middle
+        x: middle
+        y: middle
+        z: 160
+        color: 00FF00
+    hold_dmg_not_lit:
+      - type: text
+        text: HOLD DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: middle
+        x: middle
+        y: middle
+        z: 150
+        color: FF0000
+    max_jet_lit:
+      - type: text
+        text: MAXIMIZE JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+7
+        z: 150
+    max_jet_selected:
+      - type: text
+        text: MAXIMIZE JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+7
+        z: 160
+        color: 00FF00
+    max_jet_not_lit:
+      - type: text
+        text: MAXIMIZE JET VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+7
+        z: 150
+        color: FF0000
+    max_dmg_lit:
+      - type: text
+        text: MAXIMIZE DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+1
+        z: 150
+    max_dmg_selected:
+      - type: text
+        text: MAXIMIZE DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+1
+        z: 160
+        color: 00FF00
+    max_dmg_not_lit:
+      - type: text
+        text: MAXIMIZE DAMAGE VALUE
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+        anchor_x: middle
+        anchor_y: bottom
+        x: middle
+        y: bottom+1
+        z: 150
+        color: FF0000

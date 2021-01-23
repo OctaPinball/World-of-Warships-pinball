@@ -60,6 +60,27 @@
       number_grouping: true
 - time: +2
   slides:
+    capture_1:
+      - type: image
+        image: capture_1
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    capture_2:
+      - type: image
+        image: captured
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
+    capture_3:
+      - type: image
+        image: captured_base
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  slides:
     cons_test:
       - type: image
         image: cons_wizard_background

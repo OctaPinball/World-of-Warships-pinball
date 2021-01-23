@@ -1,0 +1,14 @@
+#show_version=5
+
+- time: 0
+  events:
+    - active_capturing_widget_3_1
+    - check_capturing_letter
+- time: 0.58
+  events:
+    - remove_capturing_widget_3_1
+    - active_capturing_widget_3_2
+- time: +1
+  events:
+    - remove_capturing_widget_3_2
+    - remove_capturing_letter

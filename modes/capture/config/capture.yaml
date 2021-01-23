@@ -1,0 +1,761 @@
+#config_version=5
+
+mode:
+    start_events: main_state, ball_starting
+    stop_events: main_state_stopped
+    priority: 100
+
+
+counters:
+  capture_counter:
+    count_events: sw_capture
+    starting_count: 6
+    direction: down
+    count_complete_value: 0
+    start_enabled: true
+    events_when_complete: activate_capture
+    events_when_hit: advance_capturing
+    disable_on_complete: false
+
+slides:
+  capturing_slide: []
+
+slide_player:
+  advance_capturing:
+    capturing_slide:
+      action: play
+      expire: 1s
+
+show_player:
+  slide_capturing_slide_active{device.counters.capture_counter.value == 5}:
+    sh_capturing_1:
+      loops: 0
+  slide_capturing_slide_active{device.counters.capture_counter.value == 4}:
+    sh_capturing_2:
+      loops: 0
+  slide_capturing_slide_active{device.counters.capture_counter.value == 3}:
+    sh_capturing_3:
+      loops: 0
+  slide_capturing_slide_active{device.counters.capture_counter.value == 2}:
+    sh_capturing_4:
+      loops: 0
+  slide_capturing_slide_active{device.counters.capture_counter.value == 1}:
+    sh_capturing_5:
+      loops: 0
+
+
+
+
+
+widget_player:
+  check_capturing_letter:
+    widget_a:
+      action: remove
+    widget_b:
+      action: remove
+    widget_c:
+      action: remove
+    widget_d:
+      action: remove
+    widget_e:
+      action: remove
+  check_capturing_letter{device.counters.capture_global_counter.value == 5}:
+    widget_a:
+      action: add
+      slide: capturing_slide
+  check_capturing_letter{device.counters.capture_global_counter.value == 4}:
+    widget_b:
+      action: add
+      slide: capturing_slide
+  check_capturing_letter{device.counters.capture_global_counter.value == 3}:
+    widget_c:
+      action: add
+      slide: capturing_slide
+  check_capturing_letter{device.counters.capture_global_counter.value == 2}:
+    widget_d:
+      action: add
+      slide: capturing_slide
+  check_capturing_letter{device.counters.capture_global_counter.value == 1}:
+    widget_e:
+      action: add
+      slide: capturing_slide
+  active_capturing_widget_1_1:
+    capturing_1_widget_1:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_1_1:
+    capturing_1_widget_1:
+      action: remove
+  active_capturing_widget_1_2:
+    capturing_1_widget_2:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_1_2:
+    capturing_1_widget_2:
+      action: remove
+
+  active_capturing_widget_2_1:
+    capturing_2_widget_1:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_2_1:
+    capturing_2_widget_1:
+      action: remove
+  active_capturing_widget_2_2:
+    capturing_2_widget_2:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_2_2:
+    capturing_2_widget_2:
+      action: remove
+
+  active_capturing_widget_3_1:
+    capturing_3_widget_1:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_3_1:
+    capturing_3_widget_1:
+      action: remove
+  active_capturing_widget_3_2:
+    capturing_3_widget_2:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_3_2:
+    capturing_3_widget_2:
+      action: remove
+
+  active_capturing_widget_4_1:
+    capturing_4_widget_1:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_4_1:
+    capturing_4_widget_1:
+      action: remove
+  active_capturing_widget_4_2:
+    capturing_4_widget_2:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_4_2:
+    capturing_4_widget_2:
+      action: remove
+
+  active_capturing_widget_5_1:
+    capturing_5_widget_1:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_5_1:
+    capturing_5_widget_1:
+      action: remove
+  active_capturing_widget_5_2:
+    capturing_5_widget_2:
+      action: add
+      slide: capturing_slide
+  remove_capturing_widget_5_2:
+    capturing_5_widget_2:
+      action: remove
+
+
+#  remove_capturing_letter:
+#    widget_a:
+#      action: remove
+#    widget_b:
+#      action: remove
+#    widget_c:
+#      action: remove
+#    widget_d:
+#      action: remove
+#    widget_e:
+#      action: remove
+
+widgets:
+    widget_a:
+      - type: image
+        image: A
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    widget_b:
+      - type: image
+        image: B
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    widget_c:
+      - type: image
+        image: C
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    widget_d:
+      - type: image
+        image: D
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    widget_e:
+      - type: image
+        image: E
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_1_widget_1:
+      - type: image
+        image: capture_1
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 5 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_1_widget_2:
+      - type: image
+        image: capturing_1_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 5 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    capturing_2_widget_1:
+      - type: image
+        image: capture_2
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 4 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_2_widget_2:
+      - type: image
+        image: capturing_2_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 4 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    capturing_3_widget_1:
+      - type: image
+        image: capture_3
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 3 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_3_widget_2:
+      - type: image
+        image: capturing_3_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 3 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    capturing_4_widget_1:
+      - type: image
+        image: capture_4
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 2 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_4_widget_2:
+      - type: image
+        image: capturing_4_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 2 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    capturing_5_widget_1:
+      - type: image
+        image: capture_5
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 1 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_5_widget_2:
+      - type: image
+        image: capturing_5_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: 1 MORE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+    capturing_6_widget_1:
+      - type: image
+        image: capture_6
+        round_anchor_x: left
+        round_anchor_y: top
+        z: 120
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: CAPTURE KEY AREA
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: capture_bracket
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
+    capturing_6_widget_2:
+      - type: image
+        image: capturing_6_still
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: CAPTURING BASE
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: top-2
+        z: 130
+        style: big
+        anchor_x: middle
+        anchor_y: top
+        color: 00FFFF
+      - type: text
+        text: CAPTURE KEY AREA
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: 16
+        z: 130
+        style: medium
+        anchor_x: middle
+        anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: text
+        text: SHOOT FLASHING SHOTS
+        round_anchor_x: left
+        round_anchor_y: top
+        x: 80
+        y: bottom+2
+        z: 130
+        style: small
+        anchor_x: middle
+        anchor_y: bottom
+        color: FF0000
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+

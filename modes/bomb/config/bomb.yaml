@@ -4,5 +4,59 @@ mode:
     priority: 100
 
 event_player:
+  player_bomb_number: check_bomb
+  s_action_button_active{current_player.bomb_number > 0 and device.state_machines.global_state.state == "main"}:
+    - bomb_battle_advance
+  s_action_button_active{current_player.bomb_number > 1 and device.state_machines.global_state.state == "mode"}:
+    - mglobalcalculate
+  s_action_button_active{current_player.bomb_number > 1 and device.state_machines.hc_multiball.state == "jackpot"}:
+    - spot_triple_jackpot
+    - award_triple_jackpot
+  s_action_button_active{current_player.bomb_number > 0 and device.state_machines.hc_multiball.state == "superjackpot"}:
+    - increase_super_time_check
+  s_action_button_active: check_bomb
 
+
+variable_player:
+  s_action_button_active{current_player.bomb_number > 0 and device.state_machines.global_state.state == "main"}:
+    bomb_number: -1
+  s_action_button_active{current_player.bomb_number > 1 and device.state_machines.global_state.state == "mode"}:
+    bomb_number: -2
+  s_action_button_active{current_player.bomb_number > 1 and device.state_machines.hc_multiball.state == "jackpot"}:
+    bomb_number: -2
+  s_action_button_active{current_player.bomb_number > 0 and device.state_machines.hc_multiball.state == "superjackpot"}:
+    bomb_number: -1
+
+
+show_player:
+  check_bomb:
+    flash_color:
+      action: stop
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+  check_bomb{current_player.bomb_number > 0 and device.state_machines.global_state.state == "main"}:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: 00FFFF #cyan
+  check_bomb{current_player.bomb_number > 1 and device.state_machines.global_state.state == "mode"}:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: 00FF00 #green
+  check_bomb{current_player.bomb_number > 1 and device.state_machines.hc_multiball.state == "jackpot"}:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: FF0000 #red
+  check_bomb{current_player.bomb_number > 0 and device.state_machines.hc_multiball.state == "superjackpot"}:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: orange
 

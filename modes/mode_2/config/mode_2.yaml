@@ -35,6 +35,24 @@ event_player:
     - add_aa_slide
 
 variable_player:
+  mglobalcalculate:
+    m2value: 
+      int: (current_player.JetValue * 4)
+      action: set
+    modetotal: current_player.m2value * 4
+    score: current_player.m2value * 4
+    m2shotmade:
+      int: 4
+      action: add
+    modeshotmade:
+      int: 4
+      action: add
+    m2shotremaining:
+      int: (20 - current_player.m2shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m2shotremaining)
+      action: set
   logicblock_mode_2_counter_complete:
     mode_shot_made:
       int: 1

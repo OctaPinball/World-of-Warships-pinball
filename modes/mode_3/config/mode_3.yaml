@@ -10,6 +10,7 @@ mode:
 event_player:
  sw_pen_target{current_player.mode_shot_enabled == 1}:
   - m3calculate
+ mglobalcalculate: m3calculate
 
 variable_player:
   m3calculate:

@@ -1,0 +1,118 @@
+#config_version=5
+
+mode:
+    start_events: capture_state
+    stop_events: capture_state_stopped
+    priority: 100
+
+timers:
+  capture_timer:
+    start_value: 5
+    end_value: 0
+    tick_interval: 1s
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: sw_switch_hit
+        action: restart
+      - event: stop_dmg_con_timer
+        action: stop
+
+variable_player:
+  player_capture_hurryup_capture_timer_tick:
+    capture_timer_number:
+      int: device.timers.capture_timer.ticks
+      action: set
+  mode_capture_hurryup_started:
+    capture_timer_number:
+      action: set
+      int: 5
+
+slides:
+  capturing_slide_6: []
+
+slide_player:
+  mode_capture_hurryup_started:
+    capturing_slide_6:
+      action: play
+
+show_player:
+  slide_capturing_slide_6_active:
+    sh_capturing_6:
+      loops: 0
+
+event_player:
+  check_capturing_letter: check_capturing_letter_hurryup
+
+widget_player:
+  check_capturing_letter_hurryup:
+    widget_a:
+      action: remove
+    widget_b:
+      action: remove
+    widget_c:
+      action: remove
+    widget_d:
+      action: remove
+    widget_e:
+      action: remove
+  check_capturing_letter_hurryup{device.counters.capture_global_counter.value == 5}:
+    widget_a:
+      action: add
+      slide: capturing_slide_6
+  check_capturing_letter_hurryup{device.counters.capture_global_counter.value == 4}:
+    widget_b:
+      action: add
+      slide: capturing_slide_6
+  check_capturing_letter_hurryup{device.counters.capture_global_counter.value == 3}:
+    widget_c:
+      action: add
+      slide: capturing_slide_6
+  check_capturing_letter_hurryup{device.counters.capture_global_counter.value == 2}:
+    widget_d:
+      action: add
+      slide: capturing_slide_6
+  check_capturing_letter_hurryup{device.counters.capture_global_counter.value == 1}:
+    widget_e:
+      action: add
+      slide: capturing_slide_6
+
+
+  active_capturing_widget_6_1:
+    capturing_6_widget_1:
+      action: add
+      slide: capturing_slide_6
+  remove_capturing_widget_6_1:
+    capturing_6_widget_1:
+      action: remove
+    widget_a:
+      action: remove
+    widget_b:
+      action: remove
+    widget_c:
+      action: remove
+    widget_d:
+      action: remove
+    widget_e:
+      action: remove
+  active_capturing_widget_6_2:
+    capturing_6_widget_2:
+      action: add
+      slide: capturing_slide_6
+    capture_counter_widget:
+      action: add
+      slide: capturing_slide_6
+
+widgets:
+  capture_counter_widget:
+    - type: text
+      text: (capture_timer_number)
+      x: 17
+      y: 16
+      z: 150
+      style: big
+      round_anchor_x: left
+      round_anchor_y: top
+      font_size: 14
+

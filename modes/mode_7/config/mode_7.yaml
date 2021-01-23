@@ -29,6 +29,7 @@ event_player:
   - show_m7_normal_value
  player_DMGValue{current_player.m7shotmade == 3}:
   - show_m7_final_value
+ mglobalcalculate: m7calculate
 
 slides:
     mode_7_shot_made_slide_1:

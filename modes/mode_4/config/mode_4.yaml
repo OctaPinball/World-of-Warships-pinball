@@ -7,6 +7,8 @@ mode:
     events_when_stopped: mode_disabled
     priority: 300
 
+event_player:
+  mglobalcalculate: m4calculate
 
 variable_player:
   m4calculate:

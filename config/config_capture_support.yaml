@@ -1,0 +1,11 @@
+#config_version=5
+
+counters:
+  capture_global_counter:
+    count_events: area_captured
+    starting_count: 5
+    direction: down
+    count_complete_value: 0
+    start_enabled: true
+    events_when_complete: super_capture_lit
+    disable_on_complete: false

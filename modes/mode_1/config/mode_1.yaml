@@ -11,6 +11,7 @@ mode:
 event_player:
   m1calculate_pre{current_player.mode_shot_enabled == 1}:
     - m1calculate
+  mglobalcalculate: m1calculate
 
 
 variable_player:

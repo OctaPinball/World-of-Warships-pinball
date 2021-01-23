@@ -7,7 +7,7 @@ mode:
 
 counters:
   battle_counter:
-    count_events: s_drop_target_active
+    count_events: s_drop_target_active, bomb_battle_advance
     starting_count: 5
     disable_on_complete: true
     direction: down

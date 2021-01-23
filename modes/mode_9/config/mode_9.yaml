@@ -20,6 +20,7 @@ event_player:
     - show_m9_normal_value
   player_DMGValue{current_player.m9shotmade == 3}:
     - show_m9_final_value
+  mglobalcalculate: m9calculate
 
 variable_player:
   m9calculate:

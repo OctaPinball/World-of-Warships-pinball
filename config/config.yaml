@@ -3,6 +3,7 @@
 config:
   - config_mode_support.yaml
   - config_hc_support.yaml
+  - config_capture_support.yaml
 
 
 
@@ -188,7 +189,7 @@ switches:
     tags: switch_hit
   s_left_ramp_made:
     number: 53
-    tags: switch_hit
+    tags: capture, switch_hit
   s_side_ramp_pre:
     number: 54
     tags: switch_hit
@@ -203,7 +204,7 @@ switches:
     tags: switch_hit
   s_right_ramp_made:
     number: 58
-    tags: switch_hit
+    tags: capture, switch_hit
   s_right_loop_made:
     number: 60
     tags: switch_hit
@@ -507,6 +508,9 @@ modes:
   - main_play
   - value_reset
   - mode_lit
+  - capture
+  - capture_hurryup
+  - capture_award
   #- skill_shot
   - mode_1
   - mode_2
@@ -533,6 +537,7 @@ modes:
   #- value_manager  ÁTNEVEZÉS MAJD MAINRE (HASZNÁLHATATLAN PILLANATNYILAG!!!!!)
   - port_hole_manager
   #- ship_crew
+  - bomb
 
 named_colors:
   blue2: [0, 0, 255]
@@ -835,6 +840,9 @@ state_machines:
         events_when_stopped: mode_state_stopped
       modeandmultiball:
         events_when_started: modeandmultiball_state
+      capture:
+        events_when_started: capture_state
+        events_when_stopped: capture_state_stopped
     transitions:
       - source: main
         target: multiball
@@ -860,6 +868,12 @@ state_machines:
       - source: multiball, mode, main
         target: main
         events: state_machine_reset
+      - source: main
+        target: capture
+        events: activate_capture
+      - source: capture
+        target: main
+        events: deactivate_capture
   mode_total_state:
     starting_state: disabled
     states:

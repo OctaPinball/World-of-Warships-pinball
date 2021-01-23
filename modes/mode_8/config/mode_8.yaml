@@ -12,6 +12,7 @@ event_player:
    - m8calculate
  s_right_ramp_made_active{current_player.mode_shot_enabled == 1}:
    - m8calculate
+ mglobalcalculate: m8calculate
 
 variable_player:
   m8calculate:

@@ -9,6 +9,7 @@ mode:
 
 event_player:
  sw_dmg_target{current_player.mode_shot_enabled == 1}: m6calculate
+ mglobalcalculate: m6calculate
 
 variable_player:
   m6calculate:

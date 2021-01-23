@@ -1,0 +1,14 @@
+2021-01-22 17:24:06,569 : INFO : root : Loading config.
+2021-01-22 17:24:06,569 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2021-01-22 17:24:06,569 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
+2021-01-22 17:24:06,647 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2021-01-22 17:24:06,648 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\cd9adc04f71a18563c8a43d82180f6f2.mpf_cache
+2021-01-22 17:24:06,648 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\d7d60495530237b374578b281bb65f31.mpf_cache
+2021-01-22 17:24:06,649 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\4bea832e3562a43fbe38f9764d71c298.mpf_cache
+2021-01-22 17:24:06,649 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\45b3b9aa5591eaef8a230445e70fa468.mpf_cache
+2021-01-22 17:24:06,650 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c96ee90647ae5b034e2dd42c348c42ad.mpf_cache
+2021-01-22 17:24:06,651 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\ca0415bb38fd20ce1ae72b2592ece46e.mpf_cache
+2021-01-22 17:24:06,651 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2021-01-22 17:24:06,652 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\c22c03646c3330fed25ec0d2c1900176.mpf_cache
+2021-01-22 17:24:06,652 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\capture_hurryup\config\capture_hurryup.yaml
+2021-01-22 17:24:06,652 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\capture_hurryup\config\capture_hurryup.yaml.

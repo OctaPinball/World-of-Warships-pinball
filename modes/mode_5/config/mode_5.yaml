@@ -12,6 +12,7 @@ event_player:
    - m5calculate
  right_loop_hit{current_player.mode_shot_enabled == 1}:
    - m5calculate
+ mglobalcalculate: m5calculate
 
 
 
