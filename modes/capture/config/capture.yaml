@@ -59,24 +59,30 @@ widget_player:
       action: remove
     widget_e:
       action: remove
-  check_capturing_letter{device.counters.capture_global_counter.value == 5}:
+    widget_flag:
+      action: remove
+  check_capturing_letter{device.counters.capture_global_counter.value == 6}:
     widget_a:
       action: add
       slide: capturing_slide
-  check_capturing_letter{device.counters.capture_global_counter.value == 4}:
+  check_capturing_letter{device.counters.capture_global_counter.value == 5}:
     widget_b:
       action: add
       slide: capturing_slide
-  check_capturing_letter{device.counters.capture_global_counter.value == 3}:
+  check_capturing_letter{device.counters.capture_global_counter.value == 4}:
     widget_c:
       action: add
       slide: capturing_slide
-  check_capturing_letter{device.counters.capture_global_counter.value == 2}:
+  check_capturing_letter{device.counters.capture_global_counter.value == 3}:
     widget_d:
       action: add
       slide: capturing_slide
-  check_capturing_letter{device.counters.capture_global_counter.value == 1}:
+  check_capturing_letter{device.counters.capture_global_counter.value == 2}:
     widget_e:
+      action: add
+      slide: capturing_slide
+  check_capturing_letter{device.counters.capture_global_counter.value == 1}:
+    widget_flag:
       action: add
       slide: capturing_slide
   active_capturing_widget_1_1:
@@ -168,6 +174,16 @@ widget_player:
 #      action: remove
 
 widgets:
+    widget_flag:
+      - type: image
+        image: flag
+        anchor_x: left
+        anchor_y: top
+        round_anchor_x: left
+        round_anchor_y: top
+        x: left
+        y: top
+        z: 140
     widget_a:
       - type: image
         image: A
@@ -225,7 +241,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -272,7 +288,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -311,7 +327,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -358,7 +374,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -397,7 +413,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -444,7 +460,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -483,7 +499,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -530,7 +546,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -569,7 +585,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -616,7 +632,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -655,7 +671,7 @@ widgets:
         round_anchor_y: top
         z: 120
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80
@@ -702,7 +718,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: CAPTURING BASE
+        text: CAPTURING AREA
         round_anchor_x: left
         round_anchor_y: top
         x: 80

@@ -60,6 +60,903 @@
       number_grouping: true
 - time: +2
   slides:
+    commander:
+    - type: image
+      image: commanders
+      round_anchor_x: left
+      round_anchor_y: top
+- time: +2
+  slides:
+    commander_2:
+    - type: image
+      image: commanders_2
+      round_anchor_x: left
+      round_anchor_y: top
+- time: +2
+  slides:
+    red:
+    - type: image
+      image: commander_skill_1
+      round_anchor_x: left
+      round_anchor_y: top
+#LESS TO LIGHT BATTLE
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BATTLE
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#BETTER DMG BASE
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BETTER
+      x: 48
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BASE
+      x: 48
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#INCREASE BALL SAVE TIME
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: INC.
+      x: 80
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BALL
+      x: 80
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: SAVE
+      x: 80
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TIME
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#LESS TO LIGHT BATTLE
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+- time: +2
+  slides:
+    blue:
+    - type: image
+      image: commander_skill_2
+      round_anchor_x: left
+      round_anchor_y: top
+#LESS TO LIGHT TORP
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TORP.
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#BETTER DMG INCREASE
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BETTER
+      x: 48
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: INC.
+      x: 48
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#BONUSX WHEN LIGHT CONTAINER
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BONUS
+      x: 80
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: X
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WHEN
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: CONT.
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#LESS TO LIGHT DETONATION
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DETON.
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+- time: +2
+  slides:
+    green:
+    - type: image
+      image: commander_skill_3
+      round_anchor_x: left
+      round_anchor_y: top
+#LESS TO LIGHT CITADEL
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: CITAD.
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#HOLD 1/2 DMG VALUE
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: HOLD
+      x: 48
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: 1/2
+      x: 48
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: VALUE
+      x: 48
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#FREEZE TIME WHEN START MODE
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: FREZEE
+      x: 81
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TIME
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WHEN
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: START
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: MODE
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#CONTAINER ALWAYS DROP BOMB
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: CONT.
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: ALWAYS
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DROPS
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+- time: +2
+  slides:
+    yellow:
+    - type: image
+      image: commander_skill_4
+      round_anchor_x: left
+      round_anchor_y: top
+#START ALL FIRE
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: START
+      x: 16
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: ALL
+      x: 16
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: FIRE
+      x: 16
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#HOLD 1/2 DMG VALUE
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: HOLD
+      x: 48
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: 1/2
+      x: 48
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: VALUE
+      x: 48
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#ADD-A-BALL WITH BOMB
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: ADD
+      x: 81
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: A
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BALL
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WITH
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+#LESS BOMB COST
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: middle
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: COST
+      x: 112
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+- time: +2
+  slides:
     capture_1:
       - type: image
         image: capture_1

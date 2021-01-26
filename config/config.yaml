@@ -512,6 +512,7 @@ modes:
   - capture_hurryup
   - capture_award
   #- skill_shot
+  - commander_skill
   - mode_1
   - mode_2
   - mode_3
@@ -1287,11 +1288,13 @@ sounds:
 
 keyboard:
   debug: yes
-  s:
+  numlock+s:
     switch: s_start
-  q:
+  numlock+q:
     switch: s_right_inlane
-  e:
+  numlock+e:
     switch: s_left_flipper
-  r:
+  numlock+r:
     switch: s_right_flipper
+  numlock+t:
+    switch: s_right_slingshot

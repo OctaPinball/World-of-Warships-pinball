@@ -3,7 +3,7 @@
 counters:
   capture_global_counter:
     count_events: area_captured
-    starting_count: 5
+    starting_count: 6
     direction: down
     count_complete_value: 0
     start_enabled: true

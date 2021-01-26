@@ -1,0 +1,1237 @@
+#config_version=5
+
+mode:
+    start_events: s_left_mid_inlane_active
+    #stop_events: capture_state_stopped
+    priority: 100
+
+achievements:
+  t_1_1_a:
+    events_when_selected: check_t_1_widgets, highlight_t_1_1
+    events_when_started: award_t_1_1
+    complete_events: award_t_1_1
+    reset_events: reset_modes
+
+  t_1_2_a:
+    events_when_selected: check_t_1_widgets, highlight_t_1_2
+    events_when_started: award_t_1_2
+    complete_events: award_t_1_2
+    reset_events: reset_modes
+
+  t_1_3_a:
+    events_when_selected: check_t_1_widgets, highlight_t_1_3
+    events_when_started: award_t_1_3
+    complete_events: award_t_1_3
+    reset_events: reset_modes
+
+  t_1_4_a:
+    events_when_selected: check_t_1_widgets, highlight_t_1_4
+    events_when_started: award_t_1_4
+    complete_events: award_t_1_4
+    reset_events: reset_modes
+
+
+  t_2_1_a:
+    events_when_selected: check_t_2_widgets, highlight_t_2_1
+    events_when_started: award_t_2_1
+    complete_events: award_t_2_1
+    reset_events: reset_modes
+
+  t_2_2_a:
+    events_when_selected: check_t_2_widgets, highlight_t_2_2
+    events_when_started: award_t_2_2
+    complete_events: award_t_2_2
+    reset_events: reset_modes
+
+  t_2_3_a:
+    events_when_selected: check_t_2_widgets, highlight_t_2_3
+    events_when_started: award_t_2_3
+    complete_events: award_t_2_3
+    reset_events: reset_modes
+
+  t_2_4_a:
+    events_when_selected: check_t_2_widgets, highlight_t_2_4
+    events_when_started: award_t_2_4
+    complete_events: award_t_2_4
+    reset_events: reset_modes
+
+
+  t_3_1_a:
+    events_when_selected: check_t_3_widgets, highlight_t_3_1
+    events_when_started: award_t_3_1
+    complete_events: award_t_3_1
+    reset_events: reset_modes
+
+  t_3_2_a:
+    events_when_selected: check_t_3_widgets, highlight_t_3_2
+    events_when_started: award_t_3_2
+    complete_events: award_t_3_2
+    reset_events: reset_modes
+
+  t_3_3_a:
+    events_when_selected: check_t_3_widgets, highlight_t_3_3
+    events_when_started: award_t_3_3
+    complete_events: award_t_3_3
+    reset_events: reset_modes
+
+  t_3_4_a:
+    events_when_selected: check_t_3_widgets, highlight_t_3_4
+    events_when_started: award_t_3_4
+    complete_events: award_t_3_4
+    reset_events: reset_modes
+
+
+  t_4_1_a:
+    events_when_selected: check_t_4_widgets, highlight_t_4_1
+    events_when_started: award_t_4_1
+    complete_events: award_t_4_1
+    reset_events: reset_modes
+
+  t_4_2_a:
+    events_when_selected: check_t_4_widgets, highlight_t_4_2
+    events_when_started: award_t_4_2
+    complete_events: award_t_4_2
+    reset_events: reset_modes
+
+  t_4_3_a:
+    events_when_selected: check_t_4_widgets, highlight_t_4_3
+    events_when_started: award_t_4_3
+    complete_events: award_t_4_3
+    reset_events: reset_modes
+
+  t_4_4_a:
+    events_when_selected: check_t_4_widgets, highlight_t_4_4
+    events_when_started: award_t_4_4
+    complete_events: award_t_4_4
+    reset_events: reset_modes
+
+achievement_groups:
+  t_1_ag:
+    achievements: t_1_1_a, t_1_2_a, t_1_3_a, t_1_4_a
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    #events_when_all_completed:
+    enable_while_no_achievement_started: yes
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: s_right_slingshot_active
+    enable_events: ball_starting
+    #disable_events: 
+
+  t_2_ag:
+    achievements: t_2_1_a, t_2_2_a, t_2_3_a, t_2_4_a
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    #events_when_all_completed:
+    enable_while_no_achievement_started: yes
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: s_right_slingshot_active
+    enable_events: ball_starting
+    #disable_events:
+
+  t_3_ag:
+    achievements: t_3_1_a, t_3_2_a, t_3_3_a, t_3_4_a
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    #events_when_all_completed:
+    enable_while_no_achievement_started: yes
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: s_right_slingshot_active
+    enable_events: ball_starting
+    #disable_events:
+
+  t_4_ag:
+    achievements: t_4_1_a, t_4_2_a, t_4_3_a, t_4_4_a
+    auto_select: yes
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
+    #events_when_all_completed:
+    enable_while_no_achievement_started: yes
+    allow_selection_change_while_disabled: yes
+    #disable_while_achievement_started: yes
+    start_selected_events: s_right_slingshot_active
+    enable_events: ball_starting
+    #disable_events:
+
+slides:
+  commander_skill_slide:
+    - type: image
+      image: commander_skill_1
+      round_anchor_x: left
+      round_anchor_y: top
+
+
+slide_player:
+  mode_commander_skill_started:
+    commander_skill_slide:
+      action: play
+
+widget_player:
+  check_t_1_widgets:
+    t_1_1_widget:
+      action: remove
+    t_1_2_widget:
+      action: remove
+    t_1_3_widget:
+      action: remove
+    t_1_4_widget:
+      action: remove
+    t_1_o_widget:
+      action: remove
+    t_2_o_widget:
+      action: remove
+    t_3_o_widget:
+      action: remove
+    t_4_o_widget:
+      action: remove
+  check_t_2_widgets:
+    t_2_1_widget:
+      action: remove
+    t_2_2_widget:
+      action: remove
+    t_2_3_widget:
+      action: remove
+    t_2_4_widget:
+      action: remove
+    t_1_o_widget:
+      action: remove
+    t_2_o_widget:
+      action: remove
+    t_3_o_widget:
+      action: remove
+    t_4_o_widget:
+      action: remove
+  check_t_3_widgets:
+    t_3_1_widget:
+      action: remove
+    t_3_2_widget:
+      action: remove
+    t_3_3_widget:
+      action: remove
+    t_3_4_widget:
+      action: remove
+    t_1_o_widget:
+      action: remove
+    t_2_o_widget:
+      action: remove
+    t_3_o_widget:
+      action: remove
+    t_4_o_widget:
+      action: remove
+  check_t_4_widgets:
+    t_4_1_widget:
+      action: remove
+    t_4_2_widget:
+      action: remove
+    t_4_3_widget:
+      action: remove
+    t_4_4_widget:
+      action: remove
+    t_1_o_widget:
+      action: remove
+    t_2_o_widget:
+      action: remove
+    t_3_o_widget:
+      action: remove
+    t_4_o_widget:
+      action: remove
+
+  check_t_1_widgets{device.achievements.t_1_1_a.state == "completed"}:
+    t_1_o_widget:
+      action: add
+      slide: commander_skill_slide
+  check_t_1_widgets{device.achievements.t_1_2_a.state == "completed"}:
+    t_2_o_widget:
+      action: add
+      slide: commander_skill_slide
+  check_t_1_widgets{device.achievements.t_1_3_a.state == "completed"}:
+    t_3_o_widget:
+      action: add
+      slide: commander_skill_slide
+  check_t_1_widgets{device.achievements.t_1_4_a.state == "completed"}:
+    t_4_o_widget:
+      action: add
+      slide: commander_skill_slide
+
+  highlight_t_1_1:
+    t_1_1_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_1_2:
+    t_1_2_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_1_3:
+    t_1_3_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_1_4:
+    t_1_4_widget:
+      action: add
+      slide: commander_skill_slide
+
+  highlight_t_2_1:
+    t_2_1_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_2_2:
+    t_2_2_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_2_3:
+    t_2_3_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_2_4:
+    t_2_4_widget:
+      action: add
+      slide: commander_skill_slide
+
+  highlight_t_3_1:
+    t_3_1_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_3_2:
+    t_3_2_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_3_3:
+    t_3_3_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_3_4:
+    t_3_4_widget:
+      action: add
+      slide: commander_skill_slide
+
+  highlight_t_4_1:
+    t_4_1_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_4_2:
+    t_4_2_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_4_3:
+    t_4_3_widget:
+      action: add
+      slide: commander_skill_slide
+  highlight_t_4_4:
+    t_4_4_widget:
+      action: add
+      slide: commander_skill_slide
+
+widgets:
+  t_1_o_widget:
+    - type: image
+      image: obtained
+      x: 0
+      y: 0
+      z: 160
+      anchor_y: bottom
+      anchor_x: left
+  t_2_o_widget:
+    - type: image
+      image: obtained
+      x: 32
+      y: 0
+      z: 160
+      anchor_y: bottom
+      anchor_x: left
+  t_3_o_widget:
+    - type: image
+      image: obtained
+      x: 64
+      y: 0
+      z: 160
+      anchor_y: bottom
+      anchor_x: left
+  t_4_o_widget:
+    - type: image
+      image: obtained
+      x: 96
+      y: 0
+      z: 160
+      anchor_y: bottom
+      anchor_x: left
+  t_1_skills:
+    - type: image
+      image: commander_skill_1
+      round_anchor_x: left
+      round_anchor_y: top
+  t_2_skills:
+    - type: image
+      image: commander_skill_3
+      round_anchor_x: left
+      round_anchor_y: top
+  t_3_skills:
+    - type: image
+      image: commander_skill_3
+      round_anchor_x: left
+      round_anchor_y: top
+  t_4_skills:
+    - type: image
+      image: commander_skill_4
+      round_anchor_x: left
+      round_anchor_y: top
+  t_1_1_widget:
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BATTLE
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_1_2_widget:
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BETTER
+      x: 48
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BASE
+      x: 48
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_1_3_widget:
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: INC.
+      x: 80
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BALL
+      x: 80
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: SAVE
+      x: 80
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TIME
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_1_4_widget:
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_2_1_widget:
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TORP.
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_2_2_widget:
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BETTER
+      x: 48
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: INC.
+      x: 48
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_2_3_widget:
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: BONUS
+      x: 80
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: X
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WHEN
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: CONT.
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_2_4_widget:
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DETON.
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_3_1_widget:
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 16
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TO
+      x: 16
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: LIGHT
+      x: 16
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: CITAD.
+      x: 16
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_3_2_widget:
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: HOLD
+      x: 48
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: 1/2
+      x: 48
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: VALUE
+      x: 48
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_3_3_widget:
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: FREZEE
+      x: 81
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: TIME
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WHEN
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: START
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: MODE
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_3_4_widget:
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: CONT.
+      x: 112
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: ALWAYS
+      x: 112
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DROPS
+      x: 112
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_4_1_widget:
+    - type: rectangle
+      x: 0
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 1
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: START
+      x: 16
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: ALL
+      x: 16
+      y: 16
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: FIRE
+      x: 16
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_4_2_widget:
+    - type: rectangle
+      x: 32
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 33
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: HOLD
+      x: 48
+      y: top-2
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: 1/2
+      x: 48
+      y: top-10
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: DMG
+      x: 48
+      y: bottom+11
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: VALUE
+      x: 48
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_4_3_widget:
+    - type: rectangle
+      x: 64
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 65
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: ADD
+      x: 81
+      y: top-1
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: A
+      x: 80
+      y: top-7
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BALL
+      x: 80
+      y: 17
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: WITH
+      x: 80
+      y: bottom+9
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 80
+      y: bottom+3
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+  t_4_4_widget:
+    - type: rectangle
+      x: 96
+      y: 0
+      z: 120
+      anchor_y: bottom
+      anchor_x: left
+      width: 32
+      height: 32
+    - type: rectangle
+      x: 97
+      y: 1
+      z: 130
+      anchor_y: bottom
+      anchor_x: left
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: LESS
+      x: 112
+      y: top-5
+      z: 150
+      anchor_y: top
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: BOMB
+      x: 112
+      y: middle
+      z: 150
+      anchor_y: middle
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+    - type: text
+      text: COST
+      x: 112
+      y: bottom+5
+      z: 150
+      anchor_y: bottom
+      round_anchor_x: left
+      round_anchor_y: top
+      style: small
+

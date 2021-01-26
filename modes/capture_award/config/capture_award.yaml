@@ -50,7 +50,7 @@ achievement_groups:
     auto_select: yes
     rotate_left_events: s_left_flipper_active
     rotate_right_events: s_right_flipper_active
-    events_when_all_completed: select_damage_control_party
+    #events_when_all_completed:
     enable_while_no_achievement_started: yes
     allow_selection_change_while_disabled: yes
     #disable_while_achievement_started: yes
