@@ -228,6 +228,7 @@ switches:
   s_action_button:
     number: 67
 
+
 combo_switches:
   both_flippers:
     tag_1: left_flipper
@@ -513,6 +514,7 @@ modes:
   - capture_award
   #- skill_shot
   - commander_skill
+  - commander_skill_manager
   - mode_1
   - mode_2
   - mode_3
@@ -781,9 +783,66 @@ player_vars:
   bomb_number:
     initial_value: 0
     value_type: int
-
-
-
+  t_1_1_commander:
+    initial_value: 0
+    value_type: int
+  t_1_2_commander:
+    initial_value: 0
+    value_type: int
+  t_1_3_commander:
+    initial_value: 0
+    value_type: int
+  t_1_4_commander:
+    initial_value: 0
+    value_type: int
+  t_2_1_commander:
+    initial_value: 0
+    value_type: int
+  t_2_2_commander:
+    initial_value: 0
+    value_type: int
+  t_2_3_commander:
+    initial_value: 0
+    value_type: int
+  t_2_4_commander:
+    initial_value: 0
+    value_type: int
+  t_3_1_commander:
+    initial_value: 0
+    value_type: int
+  t_3_2_commander:
+    initial_value: 0
+    value_type: int
+  t_3_3_commander:
+    initial_value: 0
+    value_type: int
+  t_3_4_commander:
+    initial_value: 0
+    value_type: int
+  t_4_1_commander:
+    initial_value: 0
+    value_type: int
+  t_4_2_commander:
+    initial_value: 0
+    value_type: int
+  t_4_3_commander:
+    initial_value: 0
+    value_type: int
+  t_4_4_commander:
+    initial_value: 0
+    value_type: int
+  current_commander:
+    initial_value: 1
+    value_type: int
+  current_skill_points:
+    initial_value: 0
+    value_type: int
+  current_skill_level:
+    initial_value: 0
+    value_type: int
+  skill_lit:
+    initial_value: 0
+    value_type: int
 
 queue_event_player:
   ball_drain_phase_1_will_start:
@@ -1298,3 +1357,9 @@ keyboard:
     switch: s_right_flipper
   numlock+t:
     switch: s_right_slingshot
+  numlock+up:
+    event: increase_commander_skill
+  numlock+left:
+    event: start_commander_skill
+  numlock+right:
+    event: select_commander_skill

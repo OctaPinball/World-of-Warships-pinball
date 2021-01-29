@@ -34,7 +34,7 @@ shots:
   jackpot_5: 42
   jackpot_6: 47
   lane_A: 98
-  lane_B: 123
+  lane_B: 124
   lane_C: 342
   lane_D: 307
   lane_E: 110
@@ -71,12 +71,12 @@ switches:
   s_kickback_target_2: 0
   s_kickback_target_3: 4
   s_kickback_terget_1: 0
-  s_left_flipper: 931
+  s_left_flipper: 1031
   s_left_hole: 0
   s_left_inlane: 343
   s_left_loop_made: 179
   s_left_loop_pre: 4
-  s_left_mid_inlane: 123
+  s_left_mid_inlane: 124
   s_left_outlane: 98
   s_left_ramp_made: 1482
   s_left_ramp_pre: 205
@@ -92,14 +92,14 @@ switches:
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 3052
+  s_plunger: 3075
   s_plunger_button: 2
   s_ricochet_1: 163
   s_ricochet_2: 601
   s_ricochet_3: 74
   s_ricochet_4: 27
   s_ricochet_5: 8
-  s_right_flipper: 2888
+  s_right_flipper: 2941
   s_right_hole: 26
   s_right_inlane: 309
   s_right_loop_made: 73

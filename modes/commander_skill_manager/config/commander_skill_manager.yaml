@@ -1,0 +1,244 @@
+#config_version=5
+
+mode:
+    start_events: ball_started
+    priority: 100
+
+variable_player:
+  increase_commander_skill:
+      current_skill_points: 1
+  player_current_skill_points{value >= 1 and current_player.current_skill_level == 0}:
+    skill_lit:
+      action: set
+      int: 1
+  player_current_skill_points{value >= 3 and current_player.current_skill_level == 1}:
+    skill_lit:
+      action: set
+      int: 1
+  player_current_skill_points{value >= 6 and current_player.current_skill_level == 2}:
+    skill_lit:
+      action: set
+      int: 1
+  player_current_skill_points{value >= 10 and current_player.current_skill_level == 3}:
+    skill_lit:
+      action: set
+      int: 1
+
+widgets:
+  c_1_widget_r:
+    - type: image
+      image: c_red
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_1_widget_b:
+    - type: image
+      image: c_blue
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_1_widget_g:
+    - type: image
+      image: c_green
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_1_widget_y:
+    - type: image
+      image: c_yellow
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_1_widget_w:
+    - type: image
+      image: c_white
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_1_widget_bl:
+    - type: image
+      image: c_black
+      x: 0
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_r:
+    - type: image
+      image: c_red
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_b:
+    - type: image
+      image: c_blue
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_g:
+    - type: image
+      image: c_green
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_y:
+    - type: image
+      image: c_yellow
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_w:
+    - type: image
+      image: c_white
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_2_widget_bl:
+    - type: image
+      image: c_black
+      x: 32
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_r:
+    - type: image
+      image: c_red
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_b:
+    - type: image
+      image: c_blue
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_g:
+    - type: image
+      image: c_green
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_y:
+    - type: image
+      image: c_yellow
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_w:
+    - type: image
+      image: c_white
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_3_widget_bl:
+    - type: image
+      image: c_black
+      x: 64
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_r:
+    - type: image
+      image: c_red
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_b:
+    - type: image
+      image: c_blue
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_g:
+    - type: image
+      image: c_green
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_y:
+    - type: image
+      image: c_yellow
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_w:
+    - type: image
+      image: c_white
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  c_4_widget_bl:
+    - type: image
+      image: c_black
+      x: 96
+      y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+

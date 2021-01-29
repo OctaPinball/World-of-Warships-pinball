@@ -42,6 +42,8 @@ slides:
         round_anchor_y: top
         color: FFFF00
 
+
+
 slide_player:
 
   single_player_ball_started: base_slide
