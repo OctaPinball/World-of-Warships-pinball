@@ -1,0 +1,87 @@
+#config_version=5
+mode:
+  code: mpf.modes.high_score.code.high_score.HighScore
+  priority: 1500
+  start_events: game_ending, start_high_score
+  game_mode: False
+  use_wait_queue: true
+
+# Instructions on how to use this mode:
+# http://docs.missionpinball.org/en/latest/game_logic/high_scores/index.html
+
+high_score:
+  enter_initials_timeout: 60
+  award_slide_display_time: 4s
+  categories: !!omap
+  - score:
+      - GRAND CHAMPION
+      - HIGH SCORE 1
+      - HIGH SCORE 2
+      - HIGH SCORE 3
+      - HIGH SCORE 4
+  defaults:
+    score:
+      - BRI: 4242
+      - GHK: 2323
+      - JK: 1337
+      - QC: 42
+      - MPF: 23
+
+slide_player:
+  high_score_enter_initials: high_score_enter_initials
+  high_score_award_display:
+    high_score_award_display:
+        action: play
+    high_score_enter_initials:
+        action: remove
+
+slides:
+  high_score_enter_initials:
+  - type: text
+    text: PLAYER (player_num)
+    style: medium
+    y: center + 40%
+  - type: text
+    text: (award)
+    style: small
+    y: center + 20%
+  - type: text_input
+    key: high_score
+    style: medium
+    y: center - 40%
+    max_chars: 3
+    animations:
+      show_slide:
+      - property: opacity
+        value: 1
+        duration: 0.3s
+        easing: in_out_quint
+      - property: opacity
+        value: 0
+        duration: 0.3s
+        repeat: true
+        easing: in_out_quint
+
+  - type: text
+    text: ""
+    y: center - 20%
+    key: high_score
+    style: big
+
+  high_score_award_display:
+  - type: text
+    text: (player_name)
+    color: ffffff
+    style: big
+    y: center + 33%
+  - type: text
+    text: (award)
+    color: ffffff
+    style: medium
+    y: center
+  - type: text
+    text: (value)
+    color: ffffff
+    number_grouping: true
+    style: medium
+    y: center - 33%

@@ -1,0 +1,39 @@
+#config_version=5
+mode:
+    start_events: start_mode3
+    stop_events: stop_mode3
+    priority: 400
+
+variable_player:
+    score_player1:
+        score:
+            int: 42
+            player: 1
+    score_player2:
+        score:
+            int: 23
+            player: 2
+    reset_player2:
+        score:
+            int: 10
+            player: 2
+            action: set
+    score_float2:
+        score:
+            float: 2.0
+    score_float3:
+        score: 100 * current_player.multiplier
+    set_float:
+        multiplier:
+            float: 1.5
+            action: set
+    set_player7:
+        score:
+            int: 10
+            player: 7
+            action: set
+    add_player7:
+        score:
+            int: 10
+            player: 7
+            action: add

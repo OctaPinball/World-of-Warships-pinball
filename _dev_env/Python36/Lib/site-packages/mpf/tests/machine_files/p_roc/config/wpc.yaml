@@ -1,0 +1,42 @@
+#config_version=5
+
+hardware:
+    platform: p_roc
+
+p_roc:
+    driverboards: wpc
+
+switches:
+    s_test_fliptronics:
+        number: sf1
+    s_test_direct:
+        number: sd1
+    s_test_matrix:
+        number: s26
+    s_slingshot_test:
+        number: s20
+
+coils:
+    c_test_direct:
+        number: c01
+        default_pulse_ms: 23
+    c_test_fliptronics:
+        number: fllm
+        default_pulse_ms: 23
+    test_gi:
+        number: g01
+        default_pulse_ms: 0
+    c_slingshot_test:
+        number: c02
+lights:
+  test_light:
+    number: l11
+    subtype: matrix
+  test_gi:
+    platform: drivers
+    number: test_gi
+
+autofire_coils:
+    ac_slingshot_test:
+        coil: c_slingshot_test
+        switch: s_slingshot_test

@@ -1,0 +1,114 @@
+#config_version=5
+
+modes:
+    - attract
+    - mode1
+    - mode2
+    - mode3
+    - mode4
+    - mode5
+    - mode6
+    - mode7
+    - Upper_Case_Mode
+
+dmds:
+  default:
+    shades: 16
+    fps: 24
+
+window:
+  width: 600
+  height: 200
+  title: Widgets and Slides Test
+  resizable: true
+  fullscreen: false
+  borderless: false
+  exit_on_escape: true
+  source_display: window
+
+player_vars:
+  test_int:
+    value_type: int
+    initial_value: 7
+  test_str:
+    value_type: str
+    initial_value: "Test"
+  test_float:
+    value_type: float
+    initial_value: 1.75
+
+displays:
+  window:
+    width: 600
+    height: 200
+  dmd:
+    width: 128
+    height: 32
+    default: true
+  frame_mode2:
+    width: 800
+    height: 600
+  content_frame:
+    width: 400
+    height: 300
+
+slides:
+  slide_with_var:
+  - type: text
+    text: SLIDE WITH VAR (test)
+  window_slide_1:
+  - type: display
+    width: 512
+    height: 128
+    effects:
+      - type: dmd
+        dot_color: ff5500
+        background_color: 220000
+    z: 3
+  - type: text
+    text: MISSION PINBALL FRAMEWORK
+    anchor_y: top
+    y: top-3
+    font_size: 30
+    z: 1
+    color: white
+  - type: rectangle
+    width: 514
+    height: 130
+    z: 2
+    color: 444444
+
+  waiting_for_connection:
+  - type: text
+    text: WAITING FOR MPF CONNECTION
+
+  asset_status:
+  - type: text
+    text: "LOADING ASSETS: (percent)%"
+
+slide_player:
+  mc_ready:
+    window_slide_1:
+      target: window
+  loading_assets: asset_status
+
+widget_styles:
+  text_default:
+    font_size: 10
+    adjust_top: 2
+    adjust_bottom: 3
+  medium:
+    font_size: 8
+    adjust_top: 1
+    adjust_bottom: 1
+  small:
+    font_size: 9
+    adjust_top: 2
+    adjust_bottom: 3
+
+show_player:
+  play_show_with_var:
+    slide_show:
+      show_tokens:
+        my_show_var: Test123
+  play_animation_show: animation_show

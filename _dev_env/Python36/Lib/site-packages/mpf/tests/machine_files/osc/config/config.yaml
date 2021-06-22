@@ -1,0 +1,33 @@
+#config_version=5
+
+hardware:
+    platform: osc
+
+osc:
+  remote_ip: 127.0.0.1
+  remote_port: 8000
+
+  events_to_send:
+    - my_test_event
+    - my_other_test_event
+    - player_turn_started
+
+lights:
+  test_light1:
+    channels:
+      red:
+        - number: light1/red
+      blue:
+        - number: light1/blue
+      green:
+        - number: light1/green
+  test_light2:
+    number: light2
+
+
+switches:
+  switch_1:
+    number: 1
+    type: NO
+  switch_abc:
+    number: abc

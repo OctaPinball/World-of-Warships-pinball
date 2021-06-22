@@ -1,0 +1,15 @@
+#config_version=5
+
+modes:
+    - carousel
+    - second_carousel
+    - conditional_carousel
+    - blocking_carousel
+
+machine:
+    min_balls: 0
+
+switches:
+    s_start:
+        number:
+        tags: start

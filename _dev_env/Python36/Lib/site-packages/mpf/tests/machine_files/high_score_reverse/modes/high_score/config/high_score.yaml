@@ -1,0 +1,29 @@
+#config_version=5
+high_score:
+  _overwrite: True
+  categories: !!omap
+  - score:
+      - GRAND CHAMPION
+      - HIGH SCORE 1
+      - HIGH SCORE 2
+      - HIGH SCORE 3
+      - HIGH SCORE 4
+  - loops:
+      - LOOP CHAMP
+  - time_to_wizard:
+      - FASTEST WIZARD
+      - ALMOST FASTEST WIZARD
+  defaults:
+    score:
+      - BRI: 4242
+      - GHK: 2323
+      - JK: 1337
+      - QC: 42
+      - MPF: 23
+    loops:
+      - JK: 42
+    time_to_wizard:
+      - JK: 300
+      - BM: 350
+  reverse_sort:
+    - time_to_wizard

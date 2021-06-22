@@ -1,0 +1,446 @@
+#config_version=5
+# This file contains configuration options for the MPF itself, including
+# default settings for your machine-wide game-specific config files.
+
+# You should create specific subfolders for each game you want to make and put
+# config files there to override these defaults.
+
+mpf:
+    core_modules: !!omap
+        - events: mpf.core.events.EventManager
+        - text_ui: mpf.core.text_ui.TextUi
+        - mode_controller: mpf.core.mode_controller.ModeController
+        - device_manager: mpf.core.device_manager.DeviceManager
+        - switch_controller: mpf.core.switch_controller.SwitchController
+        - ball_controller: mpf.core.ball_controller.BallController
+        - show_controller: mpf.core.show_controller.ShowController
+        - bcp: mpf.core.bcp.bcp.Bcp
+        - service: mpf.core.service_controller.ServiceController
+        - settings: mpf.core.settings_controller.SettingsController
+        - placeholder_manager: mpf.core.placeholder_manager.PlaceholderManager
+        - light_controller: mpf.core.light_controller.LightController
+        - platform_controller: mpf.core.platform_controller.PlatformController
+
+    config_players:
+        coil: mpf.config_players.coil_player.CoilPlayer
+        event: mpf.config_players.event_player.EventPlayer
+        blocking: mpf.config_players.block_event_player.BlockEventPlayer
+        queue_event: mpf.config_players.queue_event_player.QueueEventPlayer
+        queue_relay: mpf.config_players.queue_relay_player.QueueRelayPlayer
+        flasher: mpf.config_players.flasher_player.FlasherPlayer
+        light: mpf.config_players.light_player.LightPlayer
+        random_event: mpf.config_players.random_event_player.RandomEventPlayer
+        show: mpf.config_players.show_player.ShowPlayer
+        variable: mpf.config_players.variable_player.VariablePlayer
+        segment_display_player: mpf.config_players.segment_display_player.SegmentDisplayPlayer
+        hardware_sound_player: mpf.config_players.hardware_sound_player.HardwareSoundPlayer
+        score_queue_player: mpf.config_players.score_queue_player.ScoreQueuePlayer
+
+    device_modules:
+        - mpf.devices.driver.Driver
+        - mpf.devices.digital_output.DigitalOutput
+        - mpf.devices.dual_wound_coil.DualWoundCoil
+        - mpf.devices.switch.Switch
+        - mpf.devices.light.Light
+        - mpf.devices.autofire.AutofireCoil
+        - mpf.devices.ball_device.ball_device.BallDevice
+        - mpf.devices.playfield.Playfield
+        - mpf.devices.drop_target.DropTarget
+        - mpf.devices.drop_target.DropTargetBank
+        - mpf.devices.extra_ball.ExtraBall
+        - mpf.devices.extra_ball_group.ExtraBallGroup
+        - mpf.devices.shot_profile.ShotProfile
+        - mpf.devices.shot.Shot
+        - mpf.devices.shot_group.ShotGroup
+        - mpf.devices.flipper.Flipper
+        - mpf.devices.diverter.Diverter
+        - mpf.devices.score_reel.ScoreReel
+        - mpf.devices.score_reel_group.ScoreReelGroup
+        - mpf.devices.playfield_transfer.PlayfieldTransfer
+        - mpf.devices.multiball.Multiball
+        - mpf.devices.motor.Motor
+        - mpf.devices.ball_save.BallSave
+        - mpf.devices.accelerometer.Accelerometer
+        - mpf.devices.servo.Servo
+        - mpf.devices.achievement.Achievement
+        - mpf.devices.achievement_group.AchievementGroup
+        - mpf.devices.dmd.Dmd
+        - mpf.devices.rgb_dmd.RgbDmd
+        - mpf.devices.light_group.LightStrip
+        - mpf.devices.light_group.LightRing
+        - mpf.devices.magnet.Magnet
+        - mpf.devices.kickback.Kickback
+        - mpf.devices.combo_switch.ComboSwitch
+        - mpf.devices.ball_hold.BallHold
+        - mpf.devices.multiball_lock.MultiballLock
+        - mpf.devices.timed_switch.TimedSwitch
+        - mpf.devices.power_supply_unit.PowerSupplyUnit
+        - mpf.devices.logic_blocks.Counter
+        - mpf.devices.logic_blocks.Accrual
+        - mpf.devices.logic_blocks.Sequence
+        - mpf.devices.timer.Timer
+        - mpf.devices.segment_display.SegmentDisplay
+        - mpf.devices.sequence_shot.SequenceShot
+        - mpf.devices.hardware_sound_system.HardwareSoundSystem
+        - mpf.devices.stepper.Stepper
+        - mpf.devices.state_machine.StateMachine
+        - mpf.devices.score_queue.ScoreQueue
+        - mpf.devices.ball_routing.BallRouting
+        - mpf.devices.show_queue.ShowQueue
+
+    plugins:
+        - mpf.plugins.auditor.Auditor
+        - mpf.plugins.info_lights.InfoLights
+        - mpf.plugins.switch_player.SwitchPlayer
+        - mpf.plugins.twitch_bot.TwitchBot
+
+    platforms:
+        fadecandy: mpf.platforms.fadecandy.FadecandyHardwarePlatform
+        fast: mpf.platforms.fast.fast.FastHardwarePlatform
+        i2c_servo_controller: mpf.platforms.i2c_servo_controller.I2CServoControllerHardwarePlatform
+        mypinballs: mpf.platforms.mypinballs.mypinballs.MyPinballsHardwarePlatform
+        lisy: mpf.platforms.lisy.lisy.LisyHardwarePlatform
+        openpixel: mpf.platforms.openpixel.OpenpixelHardwarePlatform
+        opp: mpf.platforms.opp.opp.OppHardwarePlatform
+        p_roc:  mpf.platforms.p_roc.PRocHardwarePlatform
+        p3_roc:  mpf.platforms.p3_roc.P3RocHardwarePlatform
+        pololu_maestro: mpf.platforms.pololu_maestro.PololuMaestroHardwarePlatform
+        rpi: mpf.platforms.rpi.rpi.RaspberryPiHardwarePlatform
+        smart_virtual: mpf.platforms.smart_virtual.SmartVirtualHardwarePlatform
+        smartmatrix: mpf.platforms.smartmatrix.SmartMatrixHardwarePlatform
+        snux: mpf.platforms.snux.SnuxHardwarePlatform
+        system11: mpf.platforms.system11.System11OverlayPlatform
+        virtual: mpf.platforms.virtual.VirtualHardwarePlatform
+        spike: mpf.platforms.spike.spike.SpikePlatform
+        trinamics_steprocker: mpf.platforms.trinamics_steprocker.TrinamicsStepRocker
+        pololu_tic: mpf.platforms.pololu.pololu_tic.PololuTICHardwarePlatform
+        smbus2: mpf.platforms.smbus2.Smbus2
+        mma8451: mpf.platforms.mma8451.MMA8451Platform
+        virtual_pinball: mpf.platforms.virtual_pinball.virtual_pinball.VirtualPinballPlatform
+        drivers: mpf.platforms.driver_light_platform.DriverLightPlatform
+        step_stick: mpf.platforms.step_stick.StepStickDigitalOutputPlatform
+        osc: mpf.platforms.osc.OscPlatform
+        rpi_dmd: mpf.platforms.rpi_dmd.RpiDmdPlatform
+        spi_bit_bang: mpf.platforms.spi_bit_bang.SpiBitBangPlatform
+        light_segment_displays: mpf.platforms.light_segment_displays.LightSegmentDisplaysPlatform
+        pin2dmd: mpf.platforms.pin2dmd.Pin2DmdHardwarePlatform
+
+    paths:
+        scriptlets: scriptlets
+        shows: shows
+        audits: data/audits.yaml
+        machine_vars: data/machine_vars.yaml
+        high_scores: data/high_scores.yaml
+        earnings: data/earnings.yaml
+        machine_files: examples
+        modes: modes
+
+    allow_invalid_config_sections: false
+
+# Default settings for machines. All can be overridden
+
+logging:
+    console:
+      asset_manager: none
+      ball_controller: none
+      ball_search: basic
+      bcp: basic
+      bcp_client: basic
+      bcp_interface: basic
+      bcp_server: basic
+      clock: none
+      config_players: none  # todo
+      data_manager: none  # todo subclasses
+      delay_manager: none
+      device_manager: none
+      event_manager: none
+      extra_balls: none
+      file_manager: none  # todo
+      light_controller: none
+      logic_blocks: none
+      machine_controller: basic
+      machine_vars: basic
+      mode_controller: basic
+      placeholder_manager: none
+      platforms: none  # todo
+      platform_controller: none
+      players: basic  # todo
+      plugins: none  # todo
+      score_reel_controller: none
+      service_controller: basic
+      settings_controller: none
+      show_controller: none
+      switch_controller: basic
+      text_ui: none
+      timers: none
+
+    file:
+      asset_manager: basic
+      ball_controller: basic
+      ball_search: basic
+      bcp: basic
+      bcp_client: basic
+      bcp_interface: basic
+      bcp_server: basic
+      clock: none
+      config_players: basic
+      data_manager: basic
+      delay_manager: none
+      device_manager: basic
+      event_manager: basic
+      extra_balls: basic
+      file_manager: basic
+      light_controller: basic
+      logic_blocks: basic
+      machine_controller: basic
+      machine_vars: basic
+      mode_controller: basic
+      placeholder_manager: basic
+      platforms: basic
+      platform_controller: basic
+      players: full
+      plugins: basic
+      score_reel_controller: basic
+      service_controller: basic
+      settings_controller: basic
+      show_controller: basic
+      switch_controller: basic
+      text_ui: none
+      timers: none
+
+p_roc:
+    lamp_matrix_strobe_time: 100ms
+    watchdog_time: 1s
+    use_watchdog: True
+
+fast:
+    ports: com3, com4, com5
+    baud: 921600
+    watchdog: 1s
+    default_normal_debounce_close: 4ms
+    default_normal_debounce_open: 4ms
+    default_quick_debounce_close: 2ms
+    default_quick_debounce_open: 2ms
+    net_buffer: 10
+    rgb_buffer: 3
+    dmd_buffer: 3
+
+spike:
+    wait_times:
+      20: 100   # setnumledsinputs (init only)
+      65: 25    # rules (runtime)
+      68: 100   # set ove current (init only)
+      70: 100   # set coil mask (init only)
+      72: 100   # set overcurrent time (init only)
+      112: 10   # configure input (init only)
+      114: 100  # set led mask (init only)
+      240: 100  # settraffic (init only)
+      241: 100  # reset bus (init only)
+
+fadecandy:
+    gamma: 2.5
+    whitepoint: [1.0, 1.0, 1.0]
+    linear_slope: 1.0
+    linear_cutoff: 0.0
+    keyframe_interpolation: True
+    dithering: True
+
+modes:
+    - attract
+    - game
+
+auditor:
+    save_events:
+        game_started
+        ball_ended
+        game_ended
+    num_player_top_records: 10
+    audit:
+        shots
+        switches
+        events
+        player
+    events:
+        game_started
+        game_ended
+    player:
+        score
+
+sound_system:
+    tracks:
+        music:
+            volume: 0.5
+            simultaneous_sounds: 1
+        sfx:
+            volume: 0.5
+            simultaneous_sounds: 8
+        voice:
+            volume: 0.5
+            simultaneous_sounds: 1
+
+assets:
+#    default:
+#        load: preload
+    file_shows:
+        default:
+            load: preload
+        preload:
+            load: preload
+        on_demand:
+            load: on_demand
+        mode_start:
+            load: mode_start
+    sounds:
+        default:
+             track: sfx
+        music:
+             track: music
+        sfx:
+             track: sfx
+        voice:
+             track: voice
+
+bcp:
+    connections:
+        local_display:
+            host: localhost
+            port: 5050
+            type: mpf.core.bcp.bcp_socket_client.BCPClientSocket
+            required: True
+            exit_on_close: True
+
+    servers:
+        url_style:
+            ip: 127.0.0.1
+            port: 5051
+            type: mpf.core.bcp.bcp_socket_client.BCPClientSocket
+
+    debug: false
+
+open_pixel_control:
+    host: localhost
+    port: 7890
+
+shot_profiles:
+    default:
+        states:
+          - name: unlit
+            show: "off"
+          - name: lit
+            show: "on"
+
+shows:
+    flash:
+        - time: 0
+          lights:
+            (light):
+              color: on
+            (lights):
+              color: on
+            (led):
+              color: on
+            (leds):
+              color: on
+        - time: 1
+          lights:
+            (light):
+              color: off
+            (lights):
+              color: off
+            (led):
+              color: off
+            (leds):
+              color: off
+        - time: 2
+    on:
+        - time: 0
+          duration: -1
+          lights:
+            (light):
+              color: on
+            (lights):
+              color: on
+            (led):
+              color: on
+            (leds):
+              color: on
+    off:
+        - time: 0
+          duration: -1
+          lights:
+            (light):
+              color: off
+            (lights):
+              color: off
+            (led):
+              color: off
+            (leds):
+              color: off
+    led_color:
+        - time: 0
+          duration: -1
+          lights:
+            (led): (color)
+            (leds): (color)
+            (light): (color)
+            (lights): (color)
+    flash_color:
+        - duration: 1
+          lights:
+            (light):
+              color: (color)
+            (lights):
+              color: (color)
+            (led):
+              color: (color)
+            (leds):
+              color: (color)
+        - duration: 1
+          lights:
+            (light):
+              color: off
+            (lights):
+              color: off
+            (led):
+              color: off
+            (leds):
+              color: off
+
+settings:
+  flipper_power:
+    label: Flipper power
+    sort: 1000
+    values:
+      0.8: Weak
+      1.0: Normal (default)
+      1.2: Strong
+    key_type: float
+    default: 1.0
+
+psus:
+  default:
+    voltage: 48
+
+hardware:
+  platform: smart_virtual
+  coils: default
+  switches: default
+  lights: default
+  dmd: default
+  accelerometers: default
+  servo_controllers: default
+  i2c: default
+  stepper_controllers: default
+
+combo_switches:
+  both_flippers:
+    tag_1: left_flipper
+    tag_2: right_flipper
+    events_when_both: flipper_cancel
+
+timed_switches:
+  flipper_cradle:
+    switch_tags: left_flipper, right_flipper
+    time: 3s
+    events_when_active: flipper_cradle
+    events_when_released: flipper_cradle_release

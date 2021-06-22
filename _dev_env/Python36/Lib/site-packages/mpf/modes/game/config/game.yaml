@@ -1,0 +1,8 @@
+#config_version=5
+mode:
+  start_events: game_start
+  stop_events: game_ended, service_mode_entered
+  priority: 20
+  code: mpf.modes.game.code.game.Game
+  game_mode: False  # this is the game so it is started outside of a game
+  stop_on_ball_end: False

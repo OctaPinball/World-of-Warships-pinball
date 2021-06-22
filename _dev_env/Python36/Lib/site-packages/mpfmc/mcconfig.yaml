@@ -1,0 +1,257 @@
+#config_version=5
+
+mpf-mc:
+    config_players:
+        slide: mpfmc.config_players.slide_player
+        widget: mpfmc.config_players.widget_player
+        sound: mpfmc.config_players.sound_player
+        track: mpfmc.config_players.track_player
+        sound_loop: mpfmc.config_players.sound_loop_player
+        playlist: mpfmc.config_players.playlist_player
+        display_light: mpfmc.config_players.display_light_player
+
+    config_collections:
+        slide: mpfmc.config_collections.slide
+        widget: mpfmc.config_collections.widget
+        animation: mpfmc.config_collections.animation
+        widget_styles: mpfmc.config_collections.widget_styles
+        sound_loop_set: mpfmc.config_collections.sound_loop_set
+        playlist: mpfmc.config_collections.playlist
+
+    widgets:
+        image: mpfmc.widgets.image
+        text: mpfmc.widgets.text
+        video: mpfmc.widgets.video
+        line: mpfmc.widgets.line
+        triangle: mpfmc.widgets.triangle
+        quad: mpfmc.widgets.quad
+        rectangle: mpfmc.widgets.rectangle
+        ellipse: mpfmc.widgets.ellipse
+        bezier: mpfmc.widgets.bezier
+        points: mpfmc.widgets.point
+        display: mpfmc.widgets.display
+        text_input: mpfmc.widgets.text_input
+#        camera: mpfmc.widgets.camera
+
+    mpf_effect_modules:
+        - color_dmd
+        - colorize
+        - dmd
+        - dot_filter
+        - flip_vertical
+        - gain
+        - gamma
+        - glow
+        - monochrome
+        - reduce
+
+    mpf_transition_modules:
+        - push
+        - move_in
+        - move_out
+
+    bcp_port: 5050
+    bcp_interface: localhost
+
+    paths:
+        shows: shows
+        sounds: sounds
+        machine_files: examples
+        fonts: fonts
+        images: images
+        animations: animations
+        movies: movies
+        modes: modes
+        scriptlets: scriptlets
+
+    allow_invalid_config_sections: true
+    fps: 30
+
+    zip_lazy_loading: True
+
+
+
+logging:
+    console:
+      asset_manager: none
+      placeholder_manager: none  # todo
+      settings_controller: none  # todo
+      event_manager: none
+    file:
+      asset_manager: basic
+      placeholder_manager: basic
+      settings_controller: basic
+      event_manager: basic
+
+bcp:
+    debug: false
+
+modes:
+    - attract
+    - game
+
+assets:
+    sounds:
+        default:
+            load: preload
+    videos:
+        default:
+            load: preload
+        preload:
+            load: preload
+        on_demand:
+            load: on_demand
+        mode_start:
+            load: mode_start
+    images:
+        default:
+            load: preload
+        preload:
+            load: preload
+        on_demand:
+            load: on_demand
+        mode_start:
+            load: mode_start
+    bitmap_fonts:
+        default:
+            load: preload
+
+mpf:
+  allow_invalid_config_sections: false
+  config_versions_file: tools/config_versions.yaml
+
+kivy_config:
+  kivy:
+    desktop: 1
+    exit_on_escape: true
+    pause_on_minimize: 0
+    log_dir:
+    window_icon:
+  graphics:
+    borderless: false
+    window_state: visible  # visible, hidden, maximized, minimized
+    fbo: hardware  # hardware, software, force-hardware
+    fullscreen: false
+    height: 600
+#    left: 0
+#    maxfps: 60
+    multisamples: 2
+    position: auto  # auto, custom
+    show_cursor: true
+#    top: 0
+    resizable: true
+    rotation: 0
+    width: 800
+    minimum_width: 100
+    minimum_height: 100
+  input:
+    mouse: mouse,multitouch_on_demand  # disable multi-touch mouse simulation
+
+widget_styles:
+  text_default:
+    font_size: 20
+  big:
+      font_name: Quadrit
+      font_size: 10
+      adjust_bottom: 5
+      adjust_top: 2
+  medium:
+      font_name: pixelmix
+      font_size: 8
+      adjust_bottom: 1
+      adjust_top: 1
+  small:
+      font_name: smallest_pixel-7
+      font_size: 9
+      adjust_bottom: 3
+      adjust_top: 2
+
+slides:
+  dmd_gamma_test:
+    widgets:
+      - type: text
+        text: DMD GAMMA TEST
+        style: small
+        y: 4
+        anchor_x: left
+        x: 2
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 000000
+        x: 4
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 1f1f1f
+        x: 12
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 2f2f2f
+        x: 20
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 3f3f3f
+        x: 28
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 4f4f4f
+        x: 36
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 5f5f5f
+        x: 44
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 6f6f6f
+        x: 52
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 7f7f7f
+        x: 60
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 8f8f8f
+        x: 68
+      - type: rectangle
+        width: 8
+        height: 32
+        color: 9f9f9f
+        x: 76
+      - type: rectangle
+        width: 8
+        height: 32
+        color: afafaf
+        x: 84
+      - type: rectangle
+        width: 8
+        height: 32
+        color: bfbfbf
+        x: 92
+      - type: rectangle
+        width: 8
+        height: 32
+        color: cfcfcf
+        x: 100
+      - type: rectangle
+        width: 8
+        height: 32
+        color: dfdfdf
+        x: 108
+      - type: rectangle
+        width: 8
+        height: 32
+        color: efefef
+        x: 116
+      - type: rectangle
+        width: 8
+        height: 32
+        color: ffffff
+        x: 124

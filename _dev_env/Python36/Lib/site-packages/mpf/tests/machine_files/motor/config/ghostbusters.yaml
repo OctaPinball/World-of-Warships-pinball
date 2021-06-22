@@ -1,0 +1,28 @@
+#config_version=5
+
+switches:
+    s_slimer_home:
+        number: 8-1
+    s_slimer_away:
+        number: 8-2
+
+digital_outputs:
+    c_slimer_motor_forward:
+        number: 8-3
+        type: light
+    c_slimer_motor_backward:
+        number: 8-4
+        type: light
+
+motors:
+    ghostbusters_slimer:
+        debug: True
+        motor_left_output: c_slimer_motor_forward
+        motor_right_output: c_slimer_motor_backward
+        position_switches:  !!omap
+            - home: s_slimer_home
+            - away: s_slimer_away
+        reset_position: home
+        go_to_position:
+            slimer_home: home
+            slimer_away: away

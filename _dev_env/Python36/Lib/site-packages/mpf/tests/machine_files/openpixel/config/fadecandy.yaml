@@ -1,0 +1,32 @@
+#config_version=5
+
+config:
+- config.yaml
+
+lights:
+  test_rgbw:
+    channels:
+      red:
+        - number: 2-0
+      green:
+        - number: 2-1
+      blue:
+        - number: 2-2
+      white:
+        - number: 2-3
+  test_rgbw2:
+    channels:
+      red:
+        - number: 2-4
+      green:
+        - number: 2-5
+      blue:
+        - number: 2-6
+      white:
+        - number: 2-7
+  test_led_serial:
+    previous: test_led2
+    type: rgb
+  test_led_serial2:
+    previous: test_led_serial
+    type: rgbw

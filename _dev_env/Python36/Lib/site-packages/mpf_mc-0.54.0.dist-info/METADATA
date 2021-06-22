@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: mpf-mc
+Version: 0.54.0
+Summary: Mission Pinball Framework Media Controller
+Home-page: http://missionpinball.org
+Author: The Mission Pinball Framework Team
+Author-email: brian@missionpinball.org
+License: MIT
+Keywords: pinball
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Games/Entertainment :: Arcade
+Requires-Dist: ruamel.yaml (==0.15.100)
+Requires-Dist: mpf (>=0.54.0)
+Requires-Dist: kivy (==1.11.1)
+Requires-Dist: psutil (==5.7.0)
+Requires-Dist: Pygments (==2.3.1)
+Requires-Dist: ffpyplayer (==4.3.1)
+Requires-Dist: pypiwin32 (==223) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.sdl2 (==0.1.23) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.sdl2-dev (==0.1.23) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.glew (==0.1.12) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.glew-dev (==0.1.12) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.gstreamer (==0.1.18) ; platform_system == "Windows"
+Requires-Dist: kivy-deps.gstreamer-dev (==0.1.18) ; platform_system == "Windows"
+
+Graphics, video, and audio engine for the
+Mission Pinball Framework.
+
+The Mission Pinball Framework Media Controller (MPF-MC) is a component
+of the Mission Pinball Framework (MPF) that controls graphics and
+sound, including dot matrix displays (DMDs), LCD displays, and color
+RGB LED displays.
+
+(The MPF media controller architecture is modular, so you can use this
+MPF-MC package or another one.)
+
+The MPF-MC is built on Kivy and leverages SDL2, OpenGL, and
+GPU-accelerated hardware.
+
+MPF is a work-in-progress that is not yet complete, though we're
+actively developing it and checking in several commits a week. It's
+MIT licensed, actively developed by fun people, and supported by a
+vibrant pinball-loving community.
+

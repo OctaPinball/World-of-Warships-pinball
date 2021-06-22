@@ -1,0 +1,22 @@
+#config_version=5
+
+switches:
+  start:
+    number:
+    tags: start
+  drain:
+    number:
+
+coils:
+  drain:
+    number:
+
+playfields:
+  playfield:
+    default_source_device: bd_drain
+
+ball_devices:
+  bd_drain:
+    eject_coil: drain
+    ball_switches: drain
+    tags: trough, drain

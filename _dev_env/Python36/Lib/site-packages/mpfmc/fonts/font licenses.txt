@@ -1,0 +1,221 @@
+This folder contains fonts which MPF uses with the DMD.
+Individual games can add their own fonts in their machine folders. (Or use
+system fonts.)
+
+License information for the fonts included in the MPF package:
+
+================================================================================
+DSEG14Classic-Italic.ttf 
+================================================================================
+This font was downloaded from https://www.keshikan.net/fonts-e.html
+
+The license included with the font is as follows 
+
+Copyright (c) 2020, keshikan (https://www.keshikan.net),
+with Reserved Font Name "DSEG".
+
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+================================================================================
+pixelmix.ttf (renamed to dmd7.ttf in the mpfmc/fonts folder)
+================================================================================
+
+This font was downloaded from http://www.dafont.com/pixelmix.font
+The license included with it is as follows:
+
+The font file in this archive was created by Andrew Tyler www.AndrewTyler.net
+and font@andrewtyler.net
+?--
+You are free:
+
+to Share � to copy, distribute and transmit the work
+Under the following conditions:
+
+Attribution � You must attribute the work in the manner specified by the author
+or licensor (but not in any way that suggests that they endorse you or your use
+of the work).
+Noncommercial � You may not use this work for commercial purposes.
+No Derivative Works � You may not alter, transform, or build upon this work.
+
+--
+
+http://creativecommons.org/licenses/by-nc-nd/3.0/us/
+
+--
+
+================================================================================
+smallest_pixel-7.ttf (5-pixel tall DMD font)
+================================================================================
+
+This font was downloaded from http://www.dafont.com/smallest-pixel-7.font
+The license included with it is as follows:
+
+True Type Font: Smallest Pixel-7 version 1.0
+
+
+EULA
+-==-
+The font Smallest Pixel-7 is freeware for home using only.
+
+
+DESCRIPTION
+-=========-
+Smallest pixel font. Base size is 4*5 pixels. Latin and Cyrillic code pages are
+supported.
+
+Files in smallest_pixel-7.zip:
+    readme.txt                    this file;
+    smallest_pixel-7.ttf          regular font;
+    smallest_pixel-7_screen.png   preview image.
+
+Please visit http://www.styleseven.com/ for download our other products as
+freeware as shareware. We will welcome any useful suggestions and comments;
+please send them to ms-7@styleseven.com
+
+
+FREEWARE USE (NOTES)
+-==================-
+Also you may:
+ * Use the font in freeware software (credit needed);
+ * Use the font for your education process.
+
+
+COMMERCIAL OR BUSINESS USE
+-========================-
+Please contact us ($24.95).
+You may:
+ * Include the font to your installation;
+ * Use one license up to 100 computers in your office.
+
+
+AUTHOR
+-====-
+Sizenko Alexander
+Style-7
+http://www.styleseven.com
+Created: January 24 2013
+
+
+================================================================================
+Quadrit.ttf (10-pixel tall DMD font)
+================================================================================
+
+This font was downloaded from http://www.dafont.com/quadrit.font
+The license included with it is as follows:
+
+Thanks for downloading Pixietype fonts!!
+________________________________________
+
+You may use these fonts for personal and non commercial use only. These fonts
+may be freely redistributed, provided that you do not alter them in any way and
+that you credit Pixietype for this.
+
+These fonts are distributed free and may not be sold or resold for any purposes.
+
+
+Pixietype does not take any responsibility for any damage caused through use of
+these fonts, be it indirect, special, incidental or consequential damages
+(including damages for loss of business, loss of profits, interruption or the
+like).
+
+To use these fonts in Flash�, place the text on exact X and Y integers (whole
+numbers). The fonts size must be set at 10 pixels only. Do not use bold or
+italic settings. When publishing, ensure that you set to publish at pixels or
+"match movie" only.
+
+In Photoshop�/Fireworks�, turn OFF anti-aliasing to make sure no blurring
+occurs.
+
+visit www.pixitype.com
+

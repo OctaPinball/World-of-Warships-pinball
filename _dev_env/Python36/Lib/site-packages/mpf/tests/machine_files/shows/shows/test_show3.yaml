@@ -1,0 +1,11 @@
+#show_version=5
+- time: 0
+  flashers: flasher_01
+- time: 1
+  coils:
+      coil_01: pulse
+- time: 2
+  coils:
+      coil_01:
+          pulse_power: .45
+- time: 3

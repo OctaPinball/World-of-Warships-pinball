@@ -1,0 +1,14 @@
+#config_version=5
+
+switches:
+    s_counter_target:
+        number:
+    s_kills_counter_target:
+        number:
+
+modes:
+  - mode1
+  - mode2
+  - mode3
+  - mode_for_logic_block
+  - non_game_mode
