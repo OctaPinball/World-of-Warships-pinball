@@ -4,6 +4,7 @@ config:
   - config_mode_support.yaml
   - config_hc_support.yaml
   - config_capture_support.yaml
+  - config_commander_support.yaml
 
 
 
@@ -1131,7 +1132,7 @@ ball_devices:
     entrance_count_delay: 300ms
     eject_timeouts: 3s
     eject_coil: c_plunger
-    player_controlled_eject_event: s_plunger_button
+    player_controlled_eject_event: s_plunger_button_active
   bd_main_hole:
     ball_switches: s_main_hole
     eject_coil: c_scoop_eject
@@ -1363,3 +1364,7 @@ keyboard:
     event: start_commander_skill
   numlock+right:
     event: select_commander_skill
+  numlock+m:
+    event: activate_commander_slide
+  numlock+n:
+    event: deactivate_commander_slide

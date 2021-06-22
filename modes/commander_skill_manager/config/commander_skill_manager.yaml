@@ -24,6 +24,130 @@ variable_player:
       action: set
       int: 1
 
+event_player:
+  slide_commander_slide_active: refresh_commander_slide
+
+slides:
+  commander_slide: []
+
+slide_player:
+  activate_commander_slide:
+    commander_slide:
+      action: play
+  deactivate_commander_slide:
+    commander_slide:
+      action: remove
+
+
+widget_player:
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "white"}:
+    c_1_widget_w:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_r"}:
+    c_1_widget_r:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_y"}:
+    c_1_widget_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_b"}:
+    c_1_widget_b:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_g"}:
+    c_1_widget_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_r_locked"}:
+    c_1_widget_r:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_y_locked"}:
+    c_1_widget_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_b_locked"}:
+    c_1_widget_b:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "c_g_locked"}:
+    c_1_widget_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{device.state_machines.commander_1_state.state == "black"}:
+    c_1_widget_bl:
+      action: add
+      slide: commander_slide
+
+  refresh_commander_slide{current_player.t_1_1_commander == 1}:
+    ca_1_1_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_1_2_commander == 1}:
+    ca_1_1_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_1_3_commander == 1}:
+    ca_1_1_bl:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_1_4_commander == 1}:
+    ca_1_1_r:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_2_1_commander == 1}:
+    ca_1_2_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_2_2_commander == 1}:
+    ca_1_2_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_2_3_commander == 1}:
+    ca_1_2_bl:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_2_4_commander == 1}:
+    ca_1_2_r:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_3_1_commander == 1}:
+    ca_1_3_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_3_2_commander == 1}:
+    ca_1_3_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_3_3_commander == 1}:
+    ca_1_3_bl:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_3_4_commander == 1}:
+    ca_1_3_r:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_4_1_commander == 1}:
+    ca_1_4_y:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_4_2_commander == 1}:
+    ca_1_4_g:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_4_3_commander == 1}:
+    ca_1_4_bl:
+      action: add
+      slide: commander_slide
+  refresh_commander_slide{current_player.t_4_4_commander == 1}:
+    ca_1_4_r:
+      action: add
+      slide: commander_slide
+
+
+
 widgets:
   c_1_widget_r:
     - type: image
@@ -237,6 +361,649 @@ widgets:
       image: c_black
       x: 96
       y: bottom
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_1_bl:
+    - type: image
+      image: ca_blue
+      x: 27
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_1_r:
+    - type: image
+      image: ca_red
+      x: 27
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_1_g:
+    - type: image
+      image: ca_green
+      x: 27
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_1_y:
+    - type: image
+      image: ca_yellow
+      x: 27
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_2_bl:
+    - type: image
+      image: ca_blue
+      x: 27
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_2_r:
+    - type: image
+      image: ca_red
+      x: 27
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_2_g:
+    - type: image
+      image: ca_green
+      x: 27
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_2_y:
+    - type: image
+      image: ca_yellow
+      x: 27
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_3_bl:
+    - type: image
+      image: ca_blue
+      x: 27
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_3_r:
+    - type: image
+      image: ca_red
+      x: 27
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_3_g:
+    - type: image
+      image: ca_green
+      x: 27
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_3_y:
+    - type: image
+      image: ca_yellow
+      x: 27
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_4_bl:
+    - type: image
+      image: ca_blue
+      x: 27
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_4_r:
+    - type: image
+      image: ca_red
+      x: 27
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_4_g:
+    - type: image
+      image: ca_green
+      x: 27
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_1_4_y:
+    - type: image
+      image: ca_yellow
+      x: 27
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+
+  ca_2_1_bl:
+    - type: image
+      image: ca_blue
+      x: 59
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_1_r:
+    - type: image
+      image: ca_red
+      x: 59
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_1_g:
+    - type: image
+      image: ca_green
+      x: 59
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_1_y:
+    - type: image
+      image: ca_yellow
+      x: 59
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_2_bl:
+    - type: image
+      image: ca_blue
+      x: 59
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_2_r:
+    - type: image
+      image: ca_red
+      x: 59
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_2_g:
+    - type: image
+      image: ca_green
+      x: 59
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_2_y:
+    - type: image
+      image: ca_yellow
+      x: 59
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_3_bl:
+    - type: image
+      image: ca_blue
+      x: 59
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_3_r:
+    - type: image
+      image: ca_red
+      x: 59
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_3_g:
+    - type: image
+      image: ca_green
+      x: 59
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_3_y:
+    - type: image
+      image: ca_yellow
+      x: 59
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_4_bl:
+    - type: image
+      image: ca_blue
+      x: 59
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_4_r:
+    - type: image
+      image: ca_red
+      x: 59
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_4_g:
+    - type: image
+      image: ca_green
+      x: 59
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_2_4_y:
+    - type: image
+      image: ca_yellow
+      x: 59
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+
+  ca_3_1_bl:
+    - type: image
+      image: ca_blue
+      x: 91
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_1_r:
+    - type: image
+      image: ca_red
+      x: 91
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_1_g:
+    - type: image
+      image: ca_green
+      x: 91
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_1_y:
+    - type: image
+      image: ca_yellow
+      x: 91
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_2_bl:
+    - type: image
+      image: ca_blue
+      x: 91
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_2_r:
+    - type: image
+      image: ca_red
+      x: 91
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_2_g:
+    - type: image
+      image: ca_green
+      x: 91
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_2_y:
+    - type: image
+      image: ca_yellow
+      x: 91
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_3_bl:
+    - type: image
+      image: ca_blue
+      x: 91
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_3_r:
+    - type: image
+      image: ca_red
+      x: 91
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_3_g:
+    - type: image
+      image: ca_green
+      x: 91
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_3_y:
+    - type: image
+      image: ca_yellow
+      x: 91
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_4_bl:
+    - type: image
+      image: ca_blue
+      x: 91
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_4_r:
+    - type: image
+      image: ca_red
+      x: 91
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_4_g:
+    - type: image
+      image: ca_green
+      x: 91
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_3_4_y:
+    - type: image
+      image: ca_yellow
+      x: 91
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+
+  ca_4_1_bl:
+    - type: image
+      image: ca_blue
+      x: 123
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_1_r:
+    - type: image
+      image: ca_red
+      x: 123
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_1_g:
+    - type: image
+      image: ca_green
+      x: 123
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_1_y:
+    - type: image
+      image: ca_yellow
+      x: 123
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_2_bl:
+    - type: image
+      image: ca_blue
+      x: 123
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_2_r:
+    - type: image
+      image: ca_red
+      x: 123
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_2_g:
+    - type: image
+      image: ca_green
+      x: 123
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_2_y:
+    - type: image
+      image: ca_yellow
+      x: 123
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_3_bl:
+    - type: image
+      image: ca_blue
+      x: 123
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_3_r:
+    - type: image
+      image: ca_red
+      x: 123
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_3_g:
+    - type: image
+      image: ca_green
+      x: 123
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_3_y:
+    - type: image
+      image: ca_yellow
+      x: 123
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_4_bl:
+    - type: image
+      image: ca_blue
+      x: 123
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_4_r:
+    - type: image
+      image: ca_red
+      x: 123
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_4_g:
+    - type: image
+      image: ca_green
+      x: 123
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+  ca_4_4_y:
+    - type: image
+      image: ca_yellow
+      x: 123
+      z: 110
+      y: 16
       anchor_y: bottom
       anchor_x: left
       round_anchor_x: left

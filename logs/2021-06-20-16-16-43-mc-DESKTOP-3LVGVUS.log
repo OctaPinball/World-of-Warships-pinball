@@ -1,0 +1,185 @@
+2021-06-20 16:16:43,215 : kivy : Factory: 186 symbols loaded
+2021-06-20 16:16:43,567 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.2
+2021-06-20 16:16:43,568 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2021-06-20 16:16:43,662 : kivy : VideoGstplayer: Using Gstreamer 1.18.0.0
+2021-06-20 16:16:43,662 : kivy : Video: Provider: gstplayer
+2021-06-20 16:16:43,735 : kivy : Loading MPF-MC controller
+2021-06-20 16:16:44,116 : ConfigProcessor : Config spec file cache created: C:\Users\SCHOLT~1\AppData\Local\Temp\config_spec.mpf_cache
+2021-06-20 16:16:44,117 : YamlMultifileConfigLoader : Machine config file #1: config
+2021-06-20 16:16:44,117 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config
+2021-06-20 16:16:44,118 : ConfigProcessor : Loading config from file c:\users\scholtz_balint\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2021-06-20 16:16:44,155 : ConfigProcessor : Loading config: c:\users\scholtz_balint\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2021-06-20 16:16:44,156 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.
+2021-06-20 16:16:44,377 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config
+2021-06-20 16:16:44,419 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_mode_support.yaml
+2021-06-20 16:16:44,446 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_hc_support.yaml
+2021-06-20 16:16:44,451 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_capture_support.yaml
+2021-06-20 16:16:44,464 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config_commander_support.yaml
+2021-06-20 16:16:44,471 : ConfigProcessor : Config file cache created: C:\Users\SCHOLT~1\AppData\Local\Temp\31cdb3616eadb192a937c9afde929487.mpf_cache
+2021-06-20 16:16:44,471 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\3dd0efc3fc2458bb25a941f6d23e6a9c.mpf_cache
+2021-06-20 16:16:44,472 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\c7e3f646a6ae875a07a0c3d1323c1c71.mpf_cache
+2021-06-20 16:16:44,473 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\3dd0efc3fc2458bb25a941f6d23e6a9c.mpf_cache
+2021-06-20 16:16:44,473 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\3a8cfb4ac342a25cc8f91711ea4bafc2.mpf_cache
+2021-06-20 16:16:44,474 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\479d7318d211ad46f9f0d828c96341f2.mpf_cache
+2021-06-20 16:16:44,474 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\c96ee90647ae5b034e2dd42c348c42ad.mpf_cache
+2021-06-20 16:16:44,475 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\ca0415bb38fd20ce1ae72b2592ece46e.mpf_cache
+2021-06-20 16:16:44,475 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2021-06-20 16:16:44,476 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\c22c03646c3330fed25ec0d2c1900176.mpf_cache
+2021-06-20 16:16:44,476 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\4f40b51a2a6ab6b3327b174347355c6f.mpf_cache
+2021-06-20 16:16:44,477 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\39fabcdae38f081491893b3f9bf3922e.mpf_cache
+2021-06-20 16:16:44,477 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\943ecf72a5798e3efec3d4f70c6ce1d2.mpf_cache
+2021-06-20 16:16:44,478 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\04d9c03061fa17a1f6b23081f79db9ab.mpf_cache
+2021-06-20 16:16:44,479 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2021-06-20 16:16:44,479 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\f0ffd5ecaddfe34035bf3b1779215a88.mpf_cache
+2021-06-20 16:16:44,480 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2021-06-20 16:16:44,480 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2021-06-20 16:16:44,481 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2021-06-20 16:16:44,481 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2021-06-20 16:16:44,482 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2021-06-20 16:16:44,482 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2021-06-20 16:16:44,483 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2021-06-20 16:16:44,483 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\47da5935da57327449007069e0d0551c.mpf_cache
+2021-06-20 16:16:44,484 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2021-06-20 16:16:44,485 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2021-06-20 16:16:44,485 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2021-06-20 16:16:44,485 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2021-06-20 16:16:44,486 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2021-06-20 16:16:44,487 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2021-06-20 16:16:44,487 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2021-06-20 16:16:44,488 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2021-06-20 16:16:44,488 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2021-06-20 16:16:44,489 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2021-06-20 16:16:44,489 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\78980531363184480bbd7075661ced33.mpf_cache
+2021-06-20 16:16:44,490 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2021-06-20 16:16:44,490 : ConfigProcessor : Loading config from cache: C:\Users\SCHOLT~1\AppData\Local\Temp\44231afd4be159e8c99041e8eb88670e.mpf_cache
+2021-06-20 16:16:44,491 : mpfmc : Mission Pinball Framework Media Controller v0.55.0-dev.11
+2021-06-20 16:16:44,491 : mpfmc : Mission Pinball Framework Game Engine v0.55.0-dev.58
+2021-06-20 16:16:44,491 : mpfmc : Machine path: E:\MPF\wows\wows
+2021-06-20 16:16:44,491 : mpfmc : Starting clock at 60.0Hz
+2021-06-20 16:16:44,537 : kivy : Text: Provider: sdl2
+2021-06-20 16:16:44,577 : kivy : Window: Provider: sdl2
+2021-06-20 16:16:45,049 : kivy : GL: Using the "OpenGL" graphics system
+2021-06-20 16:16:45,055 : kivy : GL: GLEW initialization succeeded
+2021-06-20 16:16:45,056 : kivy : GL: Backend used <glew>
+2021-06-20 16:16:45,056 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 391.35'>
+2021-06-20 16:16:45,056 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2021-06-20 16:16:45,056 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060 6GB/PCIe/SSE2'>
+2021-06-20 16:16:45,056 : kivy : GL: OpenGL parsed version: 4, 6
+2021-06-20 16:16:45,056 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2021-06-20 16:16:45,056 : kivy : GL: Texture max size <32768>
+2021-06-20 16:16:45,056 : kivy : GL: Texture max units <32>
+2021-06-20 16:16:45,083 : kivy : Window: auto add sdl2 input provider
+2021-06-20 16:16:45,083 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2021-06-20 16:16:52,584 : AudioInterface : Initialized
+2021-06-20 16:16:52,584 : AudioInterface : Loaded SDL 2.0.12
+2021-06-20 16:16:52,585 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2021-06-20 16:16:52,585 : AudioInterface : Loaded GStreamer 1.18.0.0
+2021-06-20 16:16:52,585 : AudioInterface : Loaded GLib 2.62.6
+2021-06-20 16:16:52,585 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2021-06-20 16:16:52,585 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2021-06-20 16:16:52,585 : AudioInterface : Enabling audio playback
+2021-06-20 16:16:52,587 : kivy : Base: Start application main loop
+2021-06-20 16:16:52,587 : EventManager : Event: ======'display_dmd_initialized'====== Args={}
+2021-06-20 16:16:52,600 : mpfmc : Display: Setting 'dmd' as default display
+2021-06-20 16:16:52,643 : kivy : GL: NPOT texture support is available
+2021-06-20 16:16:52,654 : EventManager : Event: ======'displays_initialized'====== Args={}
+2021-06-20 16:16:52,654 : EventManager : Event: ======'slide_dmd_blank_created'====== Args={}
+2021-06-20 16:16:52,655 : EventManager : Event: ======'display_dmd_ready'====== Args={}
+2021-06-20 16:16:52,664 : EventManager : Event: ======'init_phase_1'====== Args={}
+2021-06-20 16:16:52,671 : EventManager : Event: ======'mc_ready'====== Args={}
+2021-06-20 16:16:52,671 : EventManager : Event: ======'init_phase_2'====== Args={}
+2021-06-20 16:16:52,759 : EventManager : Event: ======'init_phase_3'====== Args={}
+2021-06-20 16:16:52,781 : EventManager : Event: ======'init_phase_4'====== Args={}
+2021-06-20 16:16:52,782 : EventManager : Event: ======'init_phase_5'====== Args={}
+2021-06-20 16:16:52,791 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 1, 'remaining': 269, 'percent': 0}
+2021-06-20 16:16:52,791 : AssetManager : Loading assets: 1/270 (0%)
+2021-06-20 16:16:53,481 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 5, 'remaining': 265, 'percent': 2}
+2021-06-20 16:16:53,481 : AssetManager : Loading assets: 5/270 (2%)
+2021-06-20 16:16:53,798 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 6, 'remaining': 264, 'percent': 2}
+2021-06-20 16:16:53,798 : AssetManager : Loading assets: 6/270 (2%)
+2021-06-20 16:16:54,091 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 27, 'remaining': 243, 'percent': 10}
+2021-06-20 16:16:54,092 : AssetManager : Loading assets: 27/270 (10%)
+2021-06-20 16:16:54,448 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 90, 'remaining': 180, 'percent': 33}
+2021-06-20 16:16:54,448 : AssetManager : Loading assets: 90/270 (33%)
+2021-06-20 16:16:54,780 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 92, 'remaining': 178, 'percent': 34}
+2021-06-20 16:16:54,780 : AssetManager : Loading assets: 92/270 (34%)
+2021-06-20 16:16:55,030 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 93, 'remaining': 177, 'percent': 34}
+2021-06-20 16:16:55,030 : AssetManager : Loading assets: 93/270 (34%)
+2021-06-20 16:16:55,263 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 98, 'remaining': 172, 'percent': 36}
+2021-06-20 16:16:55,263 : AssetManager : Loading assets: 98/270 (36%)
+2021-06-20 16:16:55,697 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 101, 'remaining': 169, 'percent': 37}
+2021-06-20 16:16:55,698 : AssetManager : Loading assets: 101/270 (37%)
+2021-06-20 16:16:56,249 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 102, 'remaining': 168, 'percent': 38}
+2021-06-20 16:16:56,249 : AssetManager : Loading assets: 102/270 (38%)
+2021-06-20 16:16:56,781 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 104, 'remaining': 166, 'percent': 39}
+2021-06-20 16:16:56,781 : AssetManager : Loading assets: 104/270 (39%)
+2021-06-20 16:16:57,516 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 105, 'remaining': 165, 'percent': 39}
+2021-06-20 16:16:57,516 : AssetManager : Loading assets: 105/270 (39%)
+2021-06-20 16:16:58,081 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 106, 'remaining': 164, 'percent': 39}
+2021-06-20 16:16:58,082 : AssetManager : Loading assets: 106/270 (39%)
+2021-06-20 16:16:58,931 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 107, 'remaining': 163, 'percent': 40}
+2021-06-20 16:16:58,931 : AssetManager : Loading assets: 107/270 (40%)
+2021-06-20 16:16:59,282 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 111, 'remaining': 159, 'percent': 41}
+2021-06-20 16:16:59,283 : AssetManager : Loading assets: 111/270 (41%)
+2021-06-20 16:16:59,498 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 112, 'remaining': 158, 'percent': 41}
+2021-06-20 16:16:59,498 : AssetManager : Loading assets: 112/270 (41%)
+2021-06-20 16:17:00,016 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 116, 'remaining': 154, 'percent': 43}
+2021-06-20 16:17:00,016 : AssetManager : Loading assets: 116/270 (43%)
+2021-06-20 16:17:00,314 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 118, 'remaining': 152, 'percent': 44}
+2021-06-20 16:17:00,314 : AssetManager : Loading assets: 118/270 (44%)
+2021-06-20 16:17:00,631 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 120, 'remaining': 150, 'percent': 44}
+2021-06-20 16:17:00,631 : AssetManager : Loading assets: 120/270 (44%)
+2021-06-20 16:17:00,864 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 121, 'remaining': 149, 'percent': 45}
+2021-06-20 16:17:00,864 : AssetManager : Loading assets: 121/270 (45%)
+2021-06-20 16:17:01,131 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 122, 'remaining': 148, 'percent': 45}
+2021-06-20 16:17:01,131 : AssetManager : Loading assets: 122/270 (45%)
+2021-06-20 16:17:01,447 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 123, 'remaining': 147, 'percent': 46}
+2021-06-20 16:17:01,447 : AssetManager : Loading assets: 123/270 (46%)
+2021-06-20 16:17:01,831 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 125, 'remaining': 145, 'percent': 46}
+2021-06-20 16:17:01,831 : AssetManager : Loading assets: 125/270 (46%)
+2021-06-20 16:17:02,097 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 127, 'remaining': 143, 'percent': 47}
+2021-06-20 16:17:02,098 : AssetManager : Loading assets: 127/270 (47%)
+2021-06-20 16:17:02,481 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 129, 'remaining': 141, 'percent': 48}
+2021-06-20 16:17:02,481 : AssetManager : Loading assets: 129/270 (48%)
+2021-06-20 16:17:02,714 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 130, 'remaining': 140, 'percent': 48}
+2021-06-20 16:17:02,714 : AssetManager : Loading assets: 130/270 (48%)
+2021-06-20 16:17:02,997 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 134, 'remaining': 136, 'percent': 50}
+2021-06-20 16:17:02,997 : AssetManager : Loading assets: 134/270 (50%)
+2021-06-20 16:17:03,348 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 135, 'remaining': 135, 'percent': 50}
+2021-06-20 16:17:03,348 : AssetManager : Loading assets: 135/270 (50%)
+2021-06-20 16:17:03,564 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 136, 'remaining': 134, 'percent': 50}
+2021-06-20 16:17:03,565 : AssetManager : Loading assets: 136/270 (50%)
+2021-06-20 16:17:03,797 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 147, 'remaining': 123, 'percent': 54}
+2021-06-20 16:17:03,797 : AssetManager : Loading assets: 147/270 (54%)
+2021-06-20 16:17:04,398 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 150, 'remaining': 120, 'percent': 56}
+2021-06-20 16:17:04,398 : AssetManager : Loading assets: 150/270 (56%)
+2021-06-20 16:17:05,098 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 152, 'remaining': 118, 'percent': 56}
+2021-06-20 16:17:05,098 : AssetManager : Loading assets: 152/270 (56%)
+2021-06-20 16:17:05,714 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 154, 'remaining': 116, 'percent': 57}
+2021-06-20 16:17:05,714 : AssetManager : Loading assets: 154/270 (57%)
+2021-06-20 16:17:06,444 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 156, 'remaining': 114, 'percent': 58}
+2021-06-20 16:17:06,444 : AssetManager : Loading assets: 156/270 (58%)
+2021-06-20 16:17:06,698 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 166, 'remaining': 104, 'percent': 61}
+2021-06-20 16:17:06,698 : AssetManager : Loading assets: 166/270 (61%)
+2021-06-20 16:17:07,332 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 168, 'remaining': 102, 'percent': 62}
+2021-06-20 16:17:07,332 : AssetManager : Loading assets: 168/270 (62%)
+2021-06-20 16:17:07,548 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 171, 'remaining': 99, 'percent': 63}
+2021-06-20 16:17:07,548 : AssetManager : Loading assets: 171/270 (63%)
+2021-06-20 16:17:07,915 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 173, 'remaining': 97, 'percent': 64}
+2021-06-20 16:17:07,915 : AssetManager : Loading assets: 173/270 (64%)
+2021-06-20 16:17:08,131 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 176, 'remaining': 94, 'percent': 65}
+2021-06-20 16:17:08,131 : AssetManager : Loading assets: 176/270 (65%)
+2021-06-20 16:17:08,448 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 178, 'remaining': 92, 'percent': 66}
+2021-06-20 16:17:08,448 : AssetManager : Loading assets: 178/270 (66%)
+2021-06-20 16:17:08,697 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 180, 'remaining': 90, 'percent': 67}
+2021-06-20 16:17:08,697 : AssetManager : Loading assets: 180/270 (67%)
+2021-06-20 16:17:08,897 : EventManager : Event: ======'loading_assets'====== Args={'total': 270, 'loaded': 184, 'remaining': 86, 'percent': 68}
+2021-06-20 16:17:08,898 : AssetManager : Loading assets: 184/270 (68%)
+2021-06-20 16:17:09,198 : kivy : Base: Leaving application in progress...
+2021-06-20 16:17:09,199 : mpfmc : Stopping...
+2021-06-20 16:17:09,199 : EventManager : Event: ======'shutdown'====== Args={}
+2021-06-20 16:17:09,199 : AudioInterface : Disabling audio playback
+2021-06-20 16:17:09,358 : mpfmc : Loop rate 58.5 Hz
+2021-06-20 16:17:09,358 : kivy : MC run loop ended.
+2021-06-20 16:17:09,358 : kivy : Stopping child threads... (1 remaining)
+2021-06-20 16:17:10,261 : kivy : All child threads stopped.

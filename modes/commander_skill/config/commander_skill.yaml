@@ -8,100 +8,100 @@ mode:
 achievements:
   t_1_1_a:
     events_when_selected: check_t_1_widgets, highlight_t_1_1
-    events_when_started: award_t_1_1, increase_skill_level
+    events_when_started: award_t_1_1, increase_skill_level, c_y
     complete_events: award_t_1_1
     reset_events: reset_modes
 
   t_1_2_a:
     events_when_selected: check_t_1_widgets, highlight_t_1_2
-    events_when_started: award_t_1_2, increase_skill_level
+    events_when_started: award_t_1_2, increase_skill_level, c_g
     complete_events: award_t_1_2
     reset_events: reset_modes
 
   t_1_3_a:
     events_when_selected: check_t_1_widgets, highlight_t_1_3
-    events_when_started: award_t_1_3, increase_skill_level
+    events_when_started: award_t_1_3, increase_skill_level, c_b
     complete_events: award_t_1_3
     reset_events: reset_modes
 
   t_1_4_a:
     events_when_selected: check_t_1_widgets, highlight_t_1_4
-    events_when_started: award_t_1_4, increase_skill_level
+    events_when_started: award_t_1_4, increase_skill_level, c_r
     complete_events: award_t_1_4
     reset_events: reset_modes
 
 
   t_2_1_a:
     events_when_selected: check_t_2_widgets, highlight_t_2_1
-    events_when_started: award_t_2_1, increase_skill_level
+    events_when_started: award_t_2_1, increase_skill_level, c_y
     complete_events: award_t_2_1
     reset_events: reset_modes
 
   t_2_2_a:
     events_when_selected: check_t_2_widgets, highlight_t_2_2
-    events_when_started: award_t_2_2, increase_skill_level
+    events_when_started: award_t_2_2, increase_skill_level, c_g
     complete_events: award_t_2_2
     reset_events: reset_modes
 
   t_2_3_a:
     events_when_selected: check_t_2_widgets, highlight_t_2_3
-    events_when_started: award_t_2_3, increase_skill_level
+    events_when_started: award_t_2_3, increase_skill_level, c_b
     complete_events: award_t_2_3
     reset_events: reset_modes
 
   t_2_4_a:
     events_when_selected: check_t_2_widgets, highlight_t_2_4
-    events_when_started: award_t_2_4, increase_skill_level
+    events_when_started: award_t_2_4, increase_skill_level, c_r
     complete_events: award_t_2_4
     reset_events: reset_modes
 
 
   t_3_1_a:
     events_when_selected: check_t_3_widgets, highlight_t_3_1
-    events_when_started: award_t_3_1, increase_skill_level
+    events_when_started: award_t_3_1, increase_skill_level, c_y
     complete_events: award_t_3_1
     reset_events: reset_modes
 
   t_3_2_a:
     events_when_selected: check_t_3_widgets, highlight_t_3_2
-    events_when_started: award_t_3_2, increase_skill_level
+    events_when_started: award_t_3_2, increase_skill_level, c_g
     complete_events: award_t_3_2
     reset_events: reset_modes
 
   t_3_3_a:
     events_when_selected: check_t_3_widgets, highlight_t_3_3
-    events_when_started: award_t_3_3, increase_skill_level
+    events_when_started: award_t_3_3, increase_skill_level, c_b
     complete_events: award_t_3_3
     reset_events: reset_modes
 
   t_3_4_a:
     events_when_selected: check_t_3_widgets, highlight_t_3_4
-    events_when_started: award_t_3_4, increase_skill_level
+    events_when_started: award_t_3_4, increase_skill_level, c_r
     complete_events: award_t_3_4
     reset_events: reset_modes
 
 
   t_4_1_a:
     events_when_selected: check_t_4_widgets, highlight_t_4_1
-    events_when_started: award_t_4_1, increase_skill_level
+    events_when_started: award_t_4_1, increase_skill_level, c_y_end
     complete_events: award_t_4_1
     reset_events: reset_modes
 
   t_4_2_a:
     events_when_selected: check_t_4_widgets, highlight_t_4_2
-    events_when_started: award_t_4_2, increase_skill_level
+    events_when_started: award_t_4_2, increase_skill_level, c_g_end
     complete_events: award_t_4_2
     reset_events: reset_modes
 
   t_4_3_a:
     events_when_selected: check_t_4_widgets, highlight_t_4_3
-    events_when_started: award_t_4_3, increase_skill_level
+    events_when_started: award_t_4_3, increase_skill_level, c_b_end
     complete_events: award_t_4_3
     reset_events: reset_modes
 
   t_4_4_a:
     events_when_selected: check_t_4_widgets, highlight_t_4_4
-    events_when_started: award_t_4_4, increase_skill_level
+    events_when_started: award_t_4_4, increase_skill_level, c_r_end
     complete_events: award_t_4_4
     reset_events: reset_modes
 
@@ -164,6 +164,22 @@ event_player:
   mode_commander_skill_started{current_player.current_skill_level == 2}: activate_t_3_ag
   mode_commander_skill_started{current_player.current_skill_level == 3}: activate_t_4_ag
   slide_t_1_1_slide_removed: exit_commader_skill
+  slide_t_1_2_slide_removed: exit_commader_skill
+  slide_t_1_3_slide_removed: exit_commader_skill
+  slide_t_1_4_slide_removed: exit_commader_skill
+  slide_t_2_1_slide_removed: exit_commader_skill
+  slide_t_2_2_slide_removed: exit_commader_skill
+  slide_t_2_3_slide_removed: exit_commader_skill
+  slide_t_2_4_slide_removed: exit_commader_skill
+  slide_t_3_1_slide_removed: exit_commader_skill
+  slide_t_3_2_slide_removed: exit_commader_skill
+  slide_t_3_3_slide_removed: exit_commader_skill
+  slide_t_3_4_slide_removed: exit_commader_skill
+  slide_t_4_1_slide_removed: exit_commader_skill
+  slide_t_4_2_slide_removed: exit_commader_skill
+  slide_t_4_3_slide_removed: exit_commader_skill
+  slide_t_4_4_slide_removed: exit_commader_skill
+
 
 variable_player:
   increase_skill_level:
@@ -184,7 +200,6 @@ variable_player:
     t_1_4_commander:
       action: set
       int: current_player.current_commander
-    current_commander: 1
   award_t_2_1:
     t_2_1_commander:
       action: set
@@ -201,7 +216,6 @@ variable_player:
     t_2_4_commander:
       action: set
       int: current_player.current_commander
-    current_commander: 1
   award_t_3_1:
     t_3_1_commander:
       action: set
@@ -218,19 +232,21 @@ variable_player:
     t_3_4_commander:
       action: set
       int: current_player.current_commander
-    current_commander: 1
   award_t_4_1:
     t_4_1_commander:
       action: set
       int: current_player.current_commander
+    current_commander: 1
   award_t_4_2:
     t_4_2_commander:
       action: set
       int: current_player.current_commander
+    current_commander: 1
   award_t_4_3:
     t_4_3_commander:
       action: set
       int: current_player.current_commander
+    current_commander: 1
   award_t_4_4:
     t_4_4_commander:
       action: set
@@ -245,6 +261,70 @@ slide_player:
     t_1_1_slide:
       action: play
       expire: 1.5s
+  award_t_1_2:
+    t_1_2_slide:
+      action: play
+      expire: 1.5s
+  award_t_1_3:
+    t_1_3_slide:
+      action: play
+      expire: 1.5s
+  award_t_1_4:
+    t_1_4_slide:
+      action: play
+      expire: 1.5s
+
+  award_t_2_1:
+    t_2_1_slide:
+      action: play
+      expire: 1.5s
+  award_t_2_2:
+    t_2_2_slide:
+      action: play
+      expire: 1.5s
+  award_t_2_3:
+    t_2_3_slide:
+      action: play
+      expire: 1.5s
+  award_t_2_4:
+    t_2_4_slide:
+      action: play
+      expire: 1.5s
+
+  award_t_3_1:
+    t_3_1_slide:
+      action: play
+      expire: 1.5s
+  award_t_3_2:
+    t_3_2_slide:
+      action: play
+      expire: 1.5s
+  award_t_3_3:
+    t_3_3_slide:
+      action: play
+      expire: 1.5s
+  award_t_3_4:
+    t_3_4_slide:
+      action: play
+      expire: 1.5s
+
+  award_t_4_1:
+    t_4_1_slide:
+      action: play
+      expire: 1.5s
+  award_t_4_2:
+    t_4_2_slide:
+      action: play
+      expire: 1.5s
+  award_t_4_3:
+    t_4_3_slide:
+      action: play
+      expire: 1.5s
+  award_t_4_4:
+    t_4_4_slide:
+      action: play
+      expire: 1.5s
+
 
 
 
@@ -1032,7 +1112,7 @@ widgets:
       round_anchor_y: top
   t_2_skills:
     - type: image
-      image: commander_skill_3
+      image: commander_skill_2
       round_anchor_x: left
       round_anchor_y: top
   t_3_skills:

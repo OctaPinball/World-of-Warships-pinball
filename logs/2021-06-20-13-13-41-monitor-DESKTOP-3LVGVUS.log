@@ -1,0 +1,15 @@
+2021-06-20 13:13:41,799 : INFO : root : Loading MPF Monitor
+2021-06-20 13:13:42,377 : INFO : Core : Looking for MPF at localhost:5051
+2021-06-20 13:14:27,373 : INFO : BCP Client : Connected to MPF
+2021-06-20 13:16:50,396 : INFO : BCP Client : Connected to MPF
+2021-06-20 13:21:34,926 : INFO : BCP Client : Connected to MPF
+2021-06-20 13:23:33,136 : WARNING : Core : Invalid device dragged.
+2021-06-20 13:26:27,428 : INFO : BCP Client : Connected to MPF
+2021-06-20 13:36:43,586 : INFO : Core : Quitting due to quit on close
+2021-06-20 13:36:43,602 : INFO : Core : Quitting due to quit on close
+2021-06-20 13:36:43,602 : INFO : Core : Quitting due to quit on close
+2021-06-20 13:36:43,602 : INFO : Core : Quitting due to quit on close
+2021-06-20 13:36:43,617 : INFO : Core : Quitting due to quit on close
+2021-06-20 13:36:43,617 : INFO : root : MPF Monitor run loop ended.
+2021-06-20 13:36:43,617 : INFO : root : Stopping child threads... (0 remaining)
+2021-06-20 13:36:43,617 : INFO : root : All child threads stopped.

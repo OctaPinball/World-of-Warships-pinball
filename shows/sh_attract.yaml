@@ -74,6 +74,42 @@
       anchor_x: left
       round_anchor_x: left
       round_anchor_y: top
+    - type: image
+      image: ca_blue
+      x: 123
+      z: 110
+      y: 28
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: image
+      image: ca_red
+      x: 123
+      z: 110
+      y: 24
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: image
+      image: ca_green
+      x: 123
+      z: 110
+      y: 20
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
+    - type: image
+      image: ca_yellow
+      x: 123
+      z: 110
+      y: 16
+      anchor_y: bottom
+      anchor_x: left
+      round_anchor_x: left
+      round_anchor_y: top
 - time: +2
   slides:
     medals:
