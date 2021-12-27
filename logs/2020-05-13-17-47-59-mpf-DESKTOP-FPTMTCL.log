@@ -1,4 +1,0 @@
-2020-05-13 17:47:59,400 : INFO : root : Loading config.
-2020-05-13 17:47:59,737 : INFO : ConfigProcessor : Config spec file cache created: C:\Users\schol\AppData\Local\Temp\config_spec.mpf_cache
-2020-05-13 17:47:59,737 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2020-05-13 17:47:59,738 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\1ed54315bc874a19390ba34e1a0f1800.mpf_cache
