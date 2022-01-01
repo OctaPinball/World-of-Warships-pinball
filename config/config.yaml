@@ -542,6 +542,7 @@ modes:
   - port_hole_manager
   #- ship_crew
   - bomb
+  - aircraft_carrier
 
 named_colors:
   blue2: [0, 0, 255]
@@ -842,6 +843,57 @@ player_vars:
     initial_value: 0
     value_type: int
   skill_lit:
+    initial_value: 0
+    value_type: int
+  bomb_1_active:
+    initial_value: 0
+    value_type: int
+  bomb_2_active:
+    initial_value: 0
+    value_type: int
+  bomb_3_active:
+    initial_value: 0
+    value_type: int
+  bomb_4_active:
+    initial_value: 0
+    value_type: int
+  bomb_5_active:
+    initial_value: 0
+    value_type: int
+  bomb_6_active:
+    initial_value: 0
+    value_type: int
+  bomb_7_active:
+    initial_value: 0
+    value_type: int
+  bomb_8_active:
+    initial_value: 0
+    value_type: int
+  bomb_9_active:
+    initial_value: 0
+    value_type: int
+  bomb_10_active:
+    initial_value: 0
+    value_type: int
+  bomb_11_active:
+    initial_value: 0
+    value_type: int
+  bomb_animation_queue:
+    initial_value: 0
+    value_type: int
+  bomb_animation_in_progress:
+    initial_value: 0
+    value_type: int
+  bomb_animation_completed:
+    initial_value: 0
+    value_type: int
+  bomb_animation_no_more:
+    initial_value: 0
+    value_type: int
+  aircraft_carrier_in_engage:
+    initial_value: 0
+    value_type: int
+  aircraft_carrier_torpedo_dropped:
     initial_value: 0
     value_type: int
 

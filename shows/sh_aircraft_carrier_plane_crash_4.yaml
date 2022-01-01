@@ -1,0 +1,28 @@
+#show_version=5
+
+- time: 0
+  events: start_aircraft_carrier_aa_shell_4
+
+
+- time: 0.2
+  events:
+    - start_aircraft_carrier_plane_explosion_4
+    - end_aircraft_carrier_aa_shell_4
+
+- time: 0.3
+  events: start_aircraft_carrier_crash_4
+
+- time: 0.7
+  events: end_aircraft_carrier_plane_explosion_4
+
+- time: 1.3
+  events:
+    - start_aircraft_carrier_splash_4
+
+- time: 1.4
+  events:
+#    - start_aircraft_carrier_splash_1
+    - end_aircraft_carrier_crash_4
+
+- time: 2
+  events: end_aircraft_carrier_splash_4
