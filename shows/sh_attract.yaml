@@ -137,6 +137,11 @@
       color: FFFF00
 - time: +2
   slides:
+    aircraft_slide:
+      - type: image
+        image: aircraft_carrier
+- time: +2
+  slides:
     t_1_1_slide:
     - type: image
       image: cm_1_1

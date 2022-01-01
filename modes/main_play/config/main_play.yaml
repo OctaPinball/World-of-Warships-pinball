@@ -22,6 +22,25 @@ counters:
     start_enabled: true
     events_when_complete: advance_bomb
     disable_on_complete: false
+  bomb_animation_counter:
+    count_events: start_advance_bomb_animation
+    starting_count: 3
+    direction: down
+    count_complete_value: 0
+    start_enabled: true
+    events_when_complete: bomb_animation_counter_completed
+    disable_on_complete: false
+    control_events:
+      - event: set_bomb_animation_counter_3
+        action: jump
+        value: 3
+      - event: set_bomb_animation_counter_2
+        action: jump
+        value: 2
+      - event: set_bomb_animation_counter_1
+        action: jump
+        value: 1
+
 
 variable_player:
     advance_bonusX:
@@ -31,6 +50,9 @@ variable_player:
         int: current_player.BonusX
     advance_bomb:
       bomb_number: 1
+      bomb_animation_no_more:
+        action: set
+        int: 1
     sw_dmg_target{current_player.DMGValue != 200000000}:
         DMGValue:
           action: add
@@ -47,6 +69,51 @@ variable_player:
       bomb_progress_number:
         action: set
         int: device.counters.bomb_counter.value
+    logicblock_bomb_counter_hit{current_player.bomb_animation_no_more == 0}:
+      bomb_animation_queue: 1
+    end_advance_bomb_animation:
+      bomb_animation_queue: -1
+      bomb_animation_in_progress:
+        action: set
+        int: 0
+    start_advance_bomb_animation:
+      bomb_animation_in_progress:
+        action: set
+        int: 1
+    bomb_animation_counter_completed:
+      bomb_animation_completed:
+        action: set
+        int: 1
+      bomb_animation_queue:
+        action: set
+        int: 1
+    end_advance_bomb_animation_slide{current_player.bomb_animation_queue == 0}:
+      bomb_animation_completed:
+        action: set
+        int: 0
+      bomb_animation_no_more:
+        action: set
+        int: 0
+
+event_player:
+  logicblock_bomb_counter_hit: advance_bomb_animation
+  end_advance_bomb_animation_slide{device.counters.bomb_counter.value == 3 and current_player.bomb_animation_queue == 0}: set_bomb_animation_counter_3
+  end_advance_bomb_animation_slide{device.counters.bomb_counter.value == 2 and current_player.bomb_animation_queue == 0}: set_bomb_animation_counter_2
+  end_advance_bomb_animation_slide{device.counters.bomb_counter.value == 1 and current_player.bomb_animation_queue == 0}: set_bomb_animation_counter_1
+
+
+
+queue_relay_player:
+  advance_bomb_animation_progress:
+    post: start_advance_bomb_animation
+    wait_for: end_advance_bomb_animation
+
+
+queue_event_player:
+  advance_bomb_animation{current_player.bomb_animation_queue > 0 and current_player.bomb_animation_in_progress == 0 and current_player.bomb_animation_completed == 0}:
+    queue_event: advance_bomb_animation_progress
+    events_when_finished: advance_bomb_animation
+
 
 slide_player:
   logicblock_bonusX_counter_hit{device.counters.bonusX_counter.value != 3}:
@@ -73,16 +140,142 @@ slide_player:
     jet_value_maxed_slide:
       action: play
       expire: 1s
+  logicblock_bomb_animation_counter_hit:
+    bomb_advance_slide:
+      action: play
+  end_advance_bomb_animation_slide{current_player.bomb_animation_queue == 0}:
+    bomb_advance_slide:
+      action: remove
+
+widget_player:
+  logicblock_bomb_counter_hit{current_player.bomb_animation_no_more == 0}:
+    bomb_complete_widget:
+      action: remove
+    bomb_advance_widget:
+      action: remove
+  logicblock_bomb_counter_hit{device.counters.bomb_counter.value == 3 and current_player.bomb_animation_no_more == 0}:
+    bomb_complete_widget:
+      action: add
+      slide: bomb_advance_slide
+  logicblock_bomb_counter_hit{device.counters.bomb_counter.value != 3 and current_player.bomb_animation_no_more == 0}:
+    bomb_advance_widget:
+      action: add
+      slide: bomb_advance_slide
+  start_advance_bomb_animation:
+    bomb_1_advance_widget:
+      action: remove
+    bomb_2_advance_widget:
+      action: remove
+    bomb_3_advance_widget:
+      action: remove
+  start_advance_bomb_animation_1:
+    bomb_1_advance_widget:
+      slide: bomb_advance_slide
+      action: add
+  start_advance_bomb_animation_2:
+    bomb_2_advance_widget:
+      slide: bomb_advance_slide
+      action: add
+  start_advance_bomb_animation_3:
+    bomb_3_advance_widget:
+      slide: bomb_advance_slide
+      action: add
 
 show_player:
-  logicblock_bomb_counter_hit{device.counters.bomb_counter.value != 3}:
-    sh_bomb_advance:
+  player_bomb_animation_queue{current_player.bomb_animation_queue == 0}:
+    sh_bomb_advance_animation_end:
       loops: 0
-  logicblock_bomb_counter_hit{device.counters.bomb_counter.value == 3}:
-    sh_bomb_complete:
+  start_advance_bomb_animation{device.counters.bomb_animation_counter.value == 3}:
+    sh_bomb_advance_animation_1:
+      loops: 0
+  start_advance_bomb_animation{device.counters.bomb_animation_counter.value == 2}:
+    sh_bomb_advance_animation_2:
+      loops: 0
+  start_advance_bomb_animation{device.counters.bomb_animation_counter.value == 1}:
+    sh_bomb_advance_animation_3:
       loops: 0
 
 widgets:
+  bomb_1_advance_widget:
+      - type: image
+        image: consumable_bomb_mover
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        y: top
+        x: 12
+        z: 110
+      - type: image
+        image: consumable_bomb_container
+        anchor_y: bottom
+        anchor_x: middle
+        y: bottom+2
+        x: 12
+        z: 105
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: y
+              value: 17
+              duration: 0.5s
+  bomb_2_advance_widget:
+      - type: image
+        image: consumable_bomb_mover
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        y: top
+        x: 12
+        z: 110
+        animations:
+          add_to_slide:
+            - property: x
+              value: 115.5
+              duration: 1s
+              easing: in_out_quad
+      - type: image
+        image: consumable_bomb_container
+        anchor_y: bottom
+        anchor_x: middle
+        y: 17
+        x: 12
+        z: 105
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: x
+              value: 115.5
+              duration: 1s
+              easing: in_out_quad
+  bomb_3_advance_widget:
+      - type: image
+        image: consumable_bomb_mover
+        anchor_y: top
+        anchor_x: middle
+        round_anchor_x: left
+        round_anchor_y: top
+        y: top
+        x: 116
+        z: 110
+      - type: image
+        image: consumable_bomb_container
+        anchor_y: bottom
+        anchor_x: middle
+        y: 17
+        x: 116
+        z: 105
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: y
+              value: 4
+              duration: 0.5s
+
   bomb_advance_widget:
       - type: text
         text: (bomb_progress_number) MORE FOR BOMB
@@ -110,7 +303,7 @@ widgets:
       - type: text
         text: "TOTAL BOMBS: (bomb_number)"
         x: middle
-        y: 2
+        y: 3
         anchor_y: bottom
         z: 120
         style: small
@@ -145,7 +338,7 @@ widgets:
       - type: text
         text: "TOTAL BOMBS: (bomb_number)"
         x: middle
-        y: 2
+        y: 3
         anchor_y: bottom
         z: 120
         style: small
@@ -455,3 +648,7 @@ slides:
         anchor_y: bottom
         font_size: 8
         color: green
+    bomb_advance_slide:
+      - type: image
+        image: consumable_bomb_background
+        z: 100

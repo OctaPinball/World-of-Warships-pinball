@@ -1,0 +1,22 @@
+#show_version=5
+
+- time: 0
+  events: aircarft_carrier_background_1_start
+
+- time: 0.5
+  events: aircarft_carrier_background_2_remove
+
+- time: 5
+  events: aircarft_carrier_background_2_start
+
+- time: 5.5
+  events: aircarft_carrier_background_3_remove
+
+- time: 10
+  events: aircarft_carrier_background_3_start
+
+- time: 10.5
+  events: aircarft_carrier_background_1_remove
+
+- time: 15
+  events: aircarft_carrier_background_restart

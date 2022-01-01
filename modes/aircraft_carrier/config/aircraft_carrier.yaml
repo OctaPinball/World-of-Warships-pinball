@@ -1,0 +1,927 @@
+#config_version=5
+
+mode:
+  start_events: s_side_ramp_pre_active
+  stop_events: main_state_stopped
+  priority: 100
+
+slides:
+  aircraft_carrier_slide: []
+
+slide_player:
+  mode_aircraft_carrier_started:
+    aircraft_carrier_slide:
+      action: play
+
+timers:
+  aircarft_carrier_island_timer:
+    end_value: 1
+    tick_interval: 0.75s
+    restart_on_complete: true
+    control_events:
+      - event: slide_aircraft_carrier_slide_active
+        action: start
+  aircarft_carrier_ship_timer:
+    end_value: 1
+    tick_interval: 3.89s
+    restart_on_complete: false
+    control_events:
+      - event: aircraft_carrier_engage
+        action: restart
+
+variable_player:
+  aircraft_carrier_engage:
+    aircraft_carrier_in_engage:
+      action: set
+      int: 1
+  timer_aircarft_carrier_ship_timer_complete:
+    aircraft_carrier_in_engage:
+      action: set
+      int: 0
+  aircarft_carrier_drop_torpedo:
+    aircraft_carrier_torpedo_dropped:
+      action: set
+      int: 1
+  aircraft_carrier_jackpot:
+    aircraft_carrier_torpedo_dropped:
+      action: set
+      int: 0
+
+event_player:
+  s_left_ramp_pre_active: aircraft_carrier_engage
+  s_right_ramp_pre_active: aircarft_carrier_drop_torpedo
+  timer_aircarft_carrier_ship_timer_complete{current_player.aircraft_carrier_torpedo_dropped == 1}: aircraft_carrier_jackpot
+
+
+show_player:
+  slide_aircraft_carrier_slide_active:
+    sh_aircraft_carrier_background:
+      loops: 0
+  aircarft_carrier_background_restart:
+    sh_aircraft_carrier_background:
+      loops: 0
+  aircarft_carrier_drop_torpedo:
+    sh_aircraft_carrier_torpedo_drop:
+      loops: 0
+  s_left_loop_pre_active:
+    sh_aircraft_carrier_plane_crash_1:
+      loops: 0
+    sh_aircraft_carrier_plane_crash_2:
+      loops: 0
+    sh_aircraft_carrier_plane_crash_3:
+      loops: 0
+    sh_aircraft_carrier_plane_crash_4:
+      loops: 0
+
+random_event_player:
+  timer_aircarft_carrier_island_timer_complete:
+    events:
+      - start_aircraft_carrier_island_1
+      - start_aircraft_carrier_island_2
+      - start_aircraft_carrier_island_3
+      - start_aircraft_carrier_island_4
+      - start_aircraft_carrier_island_5
+      - start_aircraft_carrier_island_6
+      - start_aircraft_carrier_island_7
+      - start_aircraft_carrier_island_8
+      - start_aircraft_carrier_island_9
+      - start_aircraft_carrier_island_11
+      - start_aircraft_carrier_island_12
+      - start_aircraft_carrier_island_13
+      - start_aircraft_carrier_island_14
+      - start_aircraft_carrier_island_15
+      - start_aircraft_carrier_island_16
+
+widget_player:
+  aircraft_carrier_middle_planes_remove:
+    aircarft_carrier_plane_drop_1:
+      action: remove
+    aircarft_carrier_plane_drop_4:
+      action: remove
+  aircraft_carrier_side_planes_remove:
+    aircarft_carrier_plane_drop_2:
+      action: remove
+    aircarft_carrier_plane_drop_3:
+      action: remove
+    aircarft_carrier_plane_drop_5:
+      action: remove
+    aircarft_carrier_plane_drop_6:
+      action: remove
+  aircarft_carrier_plane_drop_1_check:
+    aircarft_carrier_plane_drop_1:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_1:
+      action: remove
+  aircarft_carrier_plane_drop_2_check:
+    aircarft_carrier_plane_drop_2:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_2:
+      action: remove
+  aircarft_carrier_plane_drop_3_check:
+    aircarft_carrier_plane_drop_3:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_3:
+      action: remove
+  aircarft_carrier_plane_drop_4_check:
+    aircarft_carrier_plane_drop_4:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_4:
+      action: remove
+  aircarft_carrier_plane_drop_5_check:
+    aircarft_carrier_plane_drop_5:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_5:
+      action: remove
+  aircarft_carrier_plane_drop_6_check:
+    aircarft_carrier_plane_drop_6:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_6:
+      action: remove
+  aircraft_carrier_torpedo_1_check:
+    aircraft_carrier_torpedo_1:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_torpedo_2_check:
+    aircraft_carrier_torpedo_2:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_torpedo_3_check:
+    aircraft_carrier_torpedo_3:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_torpedo_4_check:
+    aircraft_carrier_torpedo_4:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_torpedo_5_check:
+    aircraft_carrier_torpedo_5:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_torpedo_6_check:
+    aircraft_carrier_torpedo_6:
+      action: add
+      slide: aircraft_carrier_slide
+
+  aircraft_carrier_jackpot:
+    aircarft_carrier_explosion:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_1:
+    aircarft_carrier_island_1_1:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_2:
+    aircarft_carrier_island_1_2:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_3:
+    aircarft_carrier_island_1_3:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_4:
+    aircarft_carrier_island_1_4:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_5:
+    aircarft_carrier_island_2_1:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_6:
+    aircarft_carrier_island_2_2:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_7:
+    aircarft_carrier_island_2_3:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_8:
+    aircarft_carrier_island_2_4:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_9:
+    aircarft_carrier_island_3_1:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_10:
+    aircarft_carrier_island_3_2:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_11:
+    aircarft_carrier_island_3_3:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_12:
+    aircarft_carrier_island_3_4:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_13:
+    aircarft_carrier_island_4_1:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_14:
+    aircarft_carrier_island_4_2:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_15:
+    aircarft_carrier_island_4_3:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_island_16:
+    aircarft_carrier_island_4_4:
+      action: add
+      slide: aircraft_carrier_slide
+  aircraft_carrier_engage:
+    aircarft_carrier_ship:
+      action: add
+      slide: aircraft_carrier_slide
+  slide_aircraft_carrier_slide_active:
+    aircarft_carrier_plane_1:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_2:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_3:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_4:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_5:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_6:
+      action: add
+      slide: aircraft_carrier_slide
+  aircarft_carrier_background_1_start:
+    aircarft_carrier_background_1:
+      action: add
+      slide: aircraft_carrier_slide
+  aircarft_carrier_background_2_remove:
+    aircarft_carrier_background_2:
+      action: remove
+  aircarft_carrier_background_2_start:
+    aircarft_carrier_background_2:
+      action: add
+      slide: aircraft_carrier_slide
+  aircarft_carrier_background_3_remove:
+    aircarft_carrier_background_3:
+      action: remove
+  aircarft_carrier_background_3_start:
+    aircarft_carrier_background_3:
+      action: add
+      slide: aircraft_carrier_slide
+  aircarft_carrier_background_1_remove:
+    aircarft_carrier_background_1:
+      action: remove
+
+
+  start_aircraft_carrier_plane_explosion_1:
+    aircraft_carrier_plane_explosion_1:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_crash_1:
+    aircraft_carrier_crash_1:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_1:
+      action: remove
+  end_aircraft_carrier_plane_explosion_1:
+    aircraft_carrier_plane_explosion_1:
+      action: remove
+  start_aircraft_carrier_splash_1:
+    aircraft_carrier_splash_1:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_crash_1:
+    aircraft_carrier_crash_1:
+      action: remove
+  end_aircraft_carrier_splash_1:
+    aircraft_carrier_splash_1:
+      action: remove
+  start_aircraft_carrier_aa_shell_1:
+    aircraft_carrier_aa_shell_1:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_aa_shell_1:
+    aircraft_carrier_aa_shell_1:
+      action: remove
+
+
+  start_aircraft_carrier_plane_explosion_2:
+    aircraft_carrier_plane_explosion_2:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_crash_2:
+    aircraft_carrier_crash_2:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_2:
+      action: remove
+  end_aircraft_carrier_plane_explosion_2:
+    aircraft_carrier_plane_explosion_2:
+      action: remove
+  start_aircraft_carrier_splash_2:
+    aircraft_carrier_splash_2:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_crash_2:
+    aircraft_carrier_crash_2:
+      action: remove
+  end_aircraft_carrier_splash_2:
+    aircraft_carrier_splash_2:
+      action: remove
+  start_aircraft_carrier_aa_shell_2:
+    aircraft_carrier_aa_shell_2:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_aa_shell_2:
+    aircraft_carrier_aa_shell_2:
+      action: remove
+
+
+  start_aircraft_carrier_plane_explosion_3:
+    aircraft_carrier_plane_explosion_3:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_crash_3:
+    aircraft_carrier_crash_3:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_3:
+      action: remove
+  end_aircraft_carrier_plane_explosion_3:
+    aircraft_carrier_plane_explosion_3:
+      action: remove
+  start_aircraft_carrier_splash_3:
+    aircraft_carrier_splash_3:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_crash_3:
+    aircraft_carrier_crash_3:
+      action: remove
+  end_aircraft_carrier_splash_3:
+    aircraft_carrier_splash_3:
+      action: remove
+  start_aircraft_carrier_aa_shell_3:
+    aircraft_carrier_aa_shell_3:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_aa_shell_3:
+    aircraft_carrier_aa_shell_3:
+      action: remove
+
+
+  start_aircraft_carrier_plane_explosion_4:
+    aircraft_carrier_plane_explosion_4:
+      action: add
+      slide: aircraft_carrier_slide
+  start_aircraft_carrier_crash_4:
+    aircraft_carrier_crash_4:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_4:
+      action: remove
+  end_aircraft_carrier_plane_explosion_4:
+    aircraft_carrier_plane_explosion_4:
+      action: remove
+  start_aircraft_carrier_splash_4:
+    aircraft_carrier_splash_4:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_crash_4:
+    aircraft_carrier_crash_4:
+      action: remove
+  end_aircraft_carrier_splash_4:
+    aircraft_carrier_splash_4:
+      action: remove
+  start_aircraft_carrier_aa_shell_4:
+    aircraft_carrier_aa_shell_4:
+      action: add
+      slide: aircraft_carrier_slide
+  end_aircraft_carrier_aa_shell_4:
+    aircraft_carrier_aa_shell_4:
+      action: remove
+
+
+  s_left_loop_made_active:
+    aircarft_carrier_plane_1:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_2:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_3:
+      action: add
+      slide: aircraft_carrier_slide
+    aircarft_carrier_plane_4:
+      action: add
+      slide: aircraft_carrier_slide
+
+
+widgets:
+  aircraft_carrier_aa_shell_1:
+    - type: image
+      image: aircraft_carrier_aa_shell_1
+      z: 103
+      x: 0
+      anchor_x: left
+  aircraft_carrier_splash_1:
+    - type: image
+      image: aircraft_carrier_splash
+      z: 103
+      x: -30
+      anchor_x: left
+  aircraft_carrier_plane_explosion_1:
+    - type: image
+      image: aircraft_carrier_plane_explosion
+      z: 112
+      x: -28
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -235
+              duration: 10.5s
+  aircraft_carrier_crash_1:
+    - type: image
+      image: aircraft_carrier_crash
+      z: 111
+      x: -33
+      anchor_x: left
+
+
+  aircraft_carrier_aa_shell_2:
+    - type: image
+      image: aircraft_carrier_aa_shell_2
+      z: 103
+      x: -6
+      y: 27
+      anchor_x: left
+  aircraft_carrier_splash_2:
+    - type: image
+      image: aircraft_carrier_splash
+      z: 103
+      x: -36
+      y: 27
+      anchor_x: left
+  aircraft_carrier_plane_explosion_2:
+    - type: image
+      image: aircraft_carrier_plane_explosion
+      z: 112
+      x: -34
+      y: 27
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -235
+              duration: 10.5s
+  aircraft_carrier_crash_2:
+    - type: image
+      image: aircraft_carrier_crash
+      z: 111
+      x: -39
+      y: 27
+      anchor_x: left
+
+
+  aircraft_carrier_aa_shell_3:
+    - type: image
+      image: aircraft_carrier_aa_shell_3
+      z: 103
+      x: -6
+      y: 5
+      anchor_x: left
+  aircraft_carrier_splash_3:
+    - type: image
+      image: aircraft_carrier_splash
+      z: 103
+      x: -36
+      y: 5
+      anchor_x: left
+  aircraft_carrier_plane_explosion_3:
+    - type: image
+      image: aircraft_carrier_plane_explosion
+      z: 112
+      x: -34
+      y: 5
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -235
+              duration: 10.5s
+  aircraft_carrier_crash_3:
+    - type: image
+      image: aircraft_carrier_crash
+      z: 111
+      x: -39
+      y: 5
+      anchor_x: left
+
+  aircraft_carrier_aa_shell_4:
+    - type: image
+      image: aircraft_carrier_aa_shell_4
+      z: 103
+      x: -16
+      anchor_x: left
+  aircraft_carrier_splash_4:
+    - type: image
+      image: aircraft_carrier_splash
+      z: 103
+      x: -46
+      anchor_x: left
+  aircraft_carrier_plane_explosion_4:
+    - type: image
+      image: aircraft_carrier_plane_explosion
+      z: 112
+      x: -44
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -235
+              duration: 10.5s
+  aircraft_carrier_crash_4:
+    - type: image
+      image: aircraft_carrier_crash
+      z: 111
+      x: -49
+      anchor_x: left
+
+  aircarft_carrier_plane_drop_1:
+    - type: image
+      image: aircraft_carrier_center_up
+      z: 110
+  aircarft_carrier_plane_drop_2:
+    - type: image
+      image: aircraft_carrier_up
+      z: 110
+  aircarft_carrier_plane_drop_3:
+    - type: image
+      image: aircraft_carrier_down
+      z: 110
+  aircarft_carrier_plane_drop_4:
+    - type: image
+      image: aircraft_carrier_center_down
+      z: 110
+      x: -16
+      anchor_x: left
+  aircarft_carrier_plane_drop_5:
+    - type: image
+      image: aircraft_carrier_up
+      z: 110
+      x: -16
+      anchor_x: left
+  aircarft_carrier_plane_drop_6:
+    - type: image
+      image: aircraft_carrier_down
+      z: 110
+      x: -16
+      anchor_x: left
+  aircarft_carrier_explosion:
+    - type: image
+      image: aircraft_carrier_explosion
+      x: 21
+      z: 108
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -235
+              duration: 10.5s
+  aircraft_carrier_torpedo_1:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -13
+      anchor_x: left
+      z: 104
+  aircraft_carrier_torpedo_2:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -13
+      y: 27
+      anchor_x: left
+      z: 104
+  aircraft_carrier_torpedo_3:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -13
+      y: 5
+      anchor_x: left
+      z: 104
+  aircraft_carrier_torpedo_4:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -29
+      anchor_x: left
+      z: 104
+  aircraft_carrier_torpedo_5:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -29
+      y: 27
+      anchor_x: left
+      z: 104
+  aircraft_carrier_torpedo_6:
+    - type: image
+      image: aircraft_carrier_torpedo
+      x: -29
+      y: 5
+      anchor_x: left
+      z: 104
+  aircarft_carrier_island_1_1:
+    - type: image
+      image: aircraft_carrier_island_1
+      x: right
+      z: 105
+      y: top-1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_1_2:
+    - type: image
+      image: aircraft_carrier_island_2
+      x: right
+      z: 105
+      y: top-1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_1_3:
+    - type: image
+      image: aircraft_carrier_island_3
+      x: right
+      z: 105
+      y: top-1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_1_4:
+    - type: image
+      image: aircraft_carrier_island_4
+      x: right
+      z: 105
+      y: top-1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+
+  aircarft_carrier_island_2_1:
+    - type: image
+      image: aircraft_carrier_island_1
+      x: right
+      z: 105
+      y: top-10
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_2_2:
+    - type: image
+      image: aircraft_carrier_island_2
+      x: right
+      z: 105
+      y: top-10
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_2_3:
+    - type: image
+      image: aircraft_carrier_island_3
+      x: right
+      z: 105
+      y: top-10
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_2_4:
+    - type: image
+      image: aircraft_carrier_island_4
+      x: right
+      z: 105
+      y: top-10
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+
+  aircarft_carrier_island_3_1:
+    - type: image
+      image: aircraft_carrier_island_1
+      x: right
+      z: 105
+      y: top-21
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_3_2:
+    - type: image
+      image: aircraft_carrier_island_2
+      x: right
+      z: 105
+      y: top-21
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_3_3:
+    - type: image
+      image: aircraft_carrier_island_3
+      x: right
+      z: 105
+      y: top-21
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_3_4:
+    - type: image
+      image: aircraft_carrier_island_4
+      x: right
+      z: 105
+      y: top-21
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+
+  aircarft_carrier_island_4_1:
+    - type: image
+      image: aircraft_carrier_island_1
+      x: right
+      z: 105
+      y: bottom+1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_4_2:
+    - type: image
+      image: aircraft_carrier_island_2
+      x: right
+      z: 105
+      y: bottom+1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_4_3:
+    - type: image
+      image: aircraft_carrier_island_3
+      x: right
+      z: 105
+      y: bottom+1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_island_4_4:
+    - type: image
+      image: aircraft_carrier_island_4
+      x: right
+      z: 105
+      y: bottom+1
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+
+  aircarft_carrier_plane_1:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 23
+      y: top-12
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_plane_2:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 17
+      y: top-1
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_plane_3:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 17
+      y: top-23
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_plane_4:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 7
+      y: top-12
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_plane_5:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 1
+      y: top-1
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_plane_6:
+    - type: image
+      image: aircraft_carrier_plane
+      x: 1
+      y: top-23
+      z: 110
+      anchor_x: left
+      anchor_y: top
+  aircarft_carrier_ship:
+    - type: image
+      image: aircraft_carrier_ship
+      x: right
+      z: 105
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_background_1:
+    - type: image
+      image: aircraft_carrier_background
+      x: right
+      z: 100
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_background_2:
+    - type: image
+      image: aircraft_carrier_background
+      x: right
+      z: 100
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s
+  aircarft_carrier_background_3:
+    - type: image
+      image: aircraft_carrier_background
+      x: right
+      z: 100
+      anchor_x: left
+      animations: 
+          add_to_slide:
+            - property: x
+              value: -128
+              duration: 10.5s

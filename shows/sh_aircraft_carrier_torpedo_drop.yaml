@@ -1,0 +1,24 @@
+#show_version=5
+
+- time: 0
+  events:
+    - aircarft_carrier_plane_drop_1_check
+    - aircarft_carrier_plane_drop_2_check
+    - aircarft_carrier_plane_drop_3_check
+    - aircarft_carrier_plane_drop_4_check
+    - aircarft_carrier_plane_drop_5_check
+    - aircarft_carrier_plane_drop_6_check
+    - aircraft_carrier_torpedo_1_check
+    - aircraft_carrier_torpedo_4_check
+- time: 0.2
+  events:
+    - aircraft_carrier_torpedo_2_check
+    - aircraft_carrier_torpedo_3_check
+    - aircraft_carrier_torpedo_5_check
+    - aircraft_carrier_torpedo_6_check
+- time: 1
+  events:
+    - aircraft_carrier_side_planes_remove
+- time: 1.15
+  events:
+    - aircraft_carrier_middle_planes_remove
