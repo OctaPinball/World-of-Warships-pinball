@@ -9,18 +9,21 @@ mode:
 
 event_player:
   s_drop_target_active{current_player.mode_shot_enabled == 1}:
-    - m9calculate
+    - m9calculate_choice
   s_drop_target_active{current_player.m9shotmade == 2}:
     - c_drop_target_knockdown
     - enable_citadel_magnet
-    - show_m9_final_value
-  s_citadel_lock_active{current_player.mode_shot_enabled == 1}:
-    - m9calculatefinal
+  s_citadel_active{current_player.mode_shot_enabled == 1}:
+    - m9calculate_choice
   player_DMGValue{current_player.m9shotmade < 3}:
     - show_m9_normal_value
   player_DMGValue{current_player.m9shotmade == 3}:
     - show_m9_final_value
   mglobalcalculate: m9calculate
+  slide_mode_slide_active{current_player.m9shotmade == 3}:
+    - show_m9_final_value
+  m9calculate_choice{current_player.m9shotmade < 3}: m9calculate
+  m9calculate_choice{current_player.m9shotmade == 3}: m9calculatefinal
 
 variable_player:
   m9calculate:
@@ -37,8 +40,9 @@ variable_player:
       int: (4 - current_player.m9shotmade)
       action: set
     modeshotremaining:
-      int: (current_player.m1shotremaining)
+      int: (current_player.m9shotremaining)
       action: set
+
   m9calculatefinal:
     m9value:
       int: (current_player.DMGValue)
@@ -53,17 +57,26 @@ variable_player:
       int: (4 - current_player.m9shotmade)
       action: set
     modeshotremaining:
-      int: (current_player.m1shotremaining)
+      int: (current_player.m9shotremaining)
       action: set
+
   show_m9_normal_value:
     m9value: 
       int: (current_player.DMGValue / 4)
       action: set
+
   show_m9_final_value:
     m9value: 
       int: (current_player.DMGValue)
       action: set
+
   mode_mode_9_started:
+    m9_phase_1_active:
+      int: 1
+      action: set
+    m9_phase_2_active:
+      int: 0
+      action: set
     m9value: 
       int: (current_player.DMGValue / 4)
       action: set

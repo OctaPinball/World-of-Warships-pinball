@@ -34,36 +34,36 @@ shots:
   jackpot_5: 42
   jackpot_6: 47
   lane_A: 99
-  lane_B: 129
-  lane_C: 343
-  lane_D: 309
+  lane_B: 130
+  lane_C: 345
+  lane_D: 310
   lane_E: 111
-  lock_lit_1: 1215
-  lock_lit_2: 1397
-  ricochet_1: 139
-  ricochet_2: 605
+  lock_lit_1: 1219
+  lock_lit_2: 1404
+  ricochet_1: 141
+  ricochet_2: 614
   ricochet_3: 72
   ricochet_4: 23
   ricochet_5: 3
 switches:
   s_action_button: 44
-  s_bumper_1: 653
-  s_bumper_2: 181
-  s_bumper_3: 394
-  s_center_ramp: 101
-  s_citadel: 46
+  s_bumper_1: 674
+  s_bumper_2: 182
+  s_bumper_3: 443
+  s_center_ramp: 102
+  s_citadel: 57
   s_citadel_lock: 255
-  s_conning_tower: 3
+  s_conning_tower: 4
   s_detonation: 172
   s_detonation_lit: 23
-  s_dmg_1: 2570
+  s_dmg_1: 2578
   s_dmg_2: 60
   s_dmg_3: 20
   s_dmg_4: 27
   s_dmg_5: 22
   s_dmg_6: 139
   s_dmg_7: 293
-  s_drop_target: 1955
+  s_drop_target: 1998
   s_jet_hole: 0
   s_jet_lane: 1
   s_kickback: 0
@@ -71,49 +71,49 @@ switches:
   s_kickback_target_2: 0
   s_kickback_target_3: 4
   s_kickback_terget_1: 0
-  s_left_flipper: 1138
+  s_left_flipper: 1142
   s_left_hole: 0
-  s_left_inlane: 344
-  s_left_loop_made: 201
-  s_left_loop_pre: 154
-  s_left_mid_inlane: 129
+  s_left_inlane: 346
+  s_left_loop_made: 205
+  s_left_loop_pre: 164
+  s_left_mid_inlane: 130
   s_left_outlane: 99
-  s_left_ramp_made: 1565
-  s_left_ramp_pre: 269
-  s_left_slingshot: 27
-  s_lock_1: 389
-  s_lock_2: 401
-  s_lock_3: 484
+  s_left_ramp_made: 1577
+  s_left_ramp_pre: 272
+  s_left_slingshot: 31
+  s_lock_1: 391
+  s_lock_2: 403
+  s_lock_3: 486
   s_magnet_switch: 0
-  s_main_hole: 671
-  s_pen_1: 668
+  s_main_hole: 694
+  s_pen_1: 683
   s_pen_2: 96
-  s_pen_3: 314
+  s_pen_3: 315
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 3315
+  s_plunger: 3339
   s_plunger_button: 4
-  s_ricochet_1: 163
-  s_ricochet_2: 612
+  s_ricochet_1: 165
+  s_ricochet_2: 621
   s_ricochet_3: 74
   s_ricochet_4: 28
   s_ricochet_5: 8
-  s_right_flipper: 3054
+  s_right_flipper: 3125
   s_right_hole: 26
-  s_right_inlane: 311
+  s_right_inlane: 312
   s_right_loop_made: 73
   s_right_loop_pre: 69
   s_right_outlane: 113
-  s_right_ramp_made: 1563
+  s_right_ramp_made: 1570
   s_right_ramp_pre: 82
-  s_right_slingshot: 127
+  s_right_slingshot: 131
   s_right_small_ramp: 0
-  s_side_hole: 300
-  s_side_ramp_made: 1014
-  s_side_ramp_pre: 111
+  s_side_hole: 303
+  s_side_ramp_made: 1027
+  s_side_ramp_pre: 112
   s_start: 89
-  s_torpedo: 635
+  s_torpedo: 652
   s_torpedo_lane: 2
   s_torpedo_pre: 0
   s_trough1: 485

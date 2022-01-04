@@ -53,6 +53,7 @@ variable_player:
     modeshotremaining:
       int: (current_player.m2shotremaining)
       action: set
+
   logicblock_mode_2_counter_complete:
     mode_shot_made:
       int: 1
@@ -75,18 +76,22 @@ variable_player:
     modeshotremaining:
       int: (current_player.m2shotremaining)
       action: set
+
   player_JetValue:
     m2value: 
       int: (current_player.JetValue * 4)
       action: set
+
   mode_mode_2_started:
     m2value: 
       int: (current_player.JetValue * 4)
       action: set
+
   add_aa_slide:
     aa_fire_timer_active:
       int: 1
       action: set
+      
   timer_aa_fire_expire_timer_complete:
     aa_fire_timer_active:
       int: 0
