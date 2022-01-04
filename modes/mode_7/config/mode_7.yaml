@@ -23,13 +23,71 @@ event_player:
   - m7_torpedo_1_instant
   - m7_torpedo_2_instant
   - m7_torpedo_3_instant
- s_torpedo_active{current_player.m7shotmade == 2}:
+ slide_mode_slide_active{current_player.m7shotmade == 3}:
   - show_m7_final_value
  player_DMGValue{current_player.m7shotmade < 3}:
   - show_m7_normal_value
  player_DMGValue{current_player.m7shotmade == 3}:
   - show_m7_final_value
  mglobalcalculate: m7calculate
+ m7calculate{current_player.m7shotmade < 3}: m7calculate_normal
+ m7calculate{current_player.m7shotmade == 3}: m7calculate_final
+
+
+variable_player:
+  m7calculate_normal:
+    m7value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+    score: current_player.m7value
+    modetotal: current_player.m7value
+    m7shotmade: 1
+    mode_shot_made:
+      int: 1
+      action: add
+    m7shotremaining:
+      int: (4 - current_player.m7shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m1shotremaining)
+      action: set
+
+  m7calculate_final:
+    m7value: 
+      int: (current_player.DMGValue)
+      action: set
+    score: current_player.m7value
+    modetotal: current_player.m7value
+    m7shotmade: 1
+    mode_shot_made:
+      int: 1
+      action: add
+    m7shotremaining:
+      int: (4 - current_player.m7shotmade)
+      action: set
+    modeshotremaining:
+      int: (current_player.m7shotremaining)
+      action: set
+
+  show_m7_normal_value:
+    m7value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+
+  show_m7_final_value:
+    m7value: 
+      int: (current_player.DMGValue)
+      action: set
+
+  mode_mode_7_started:
+    m7value: 
+      int: (current_player.DMGValue / 4)
+      action: set
+
+show_player:
+  m7calculate:
+    sh_mode_7_shot_made:
+      loops: 0
 
 slides:
     mode_7_shot_made_slide_1:
@@ -70,56 +128,9 @@ slides:
               easing: in_out_expo
               repeat: true
 
-show_player:
-  m7calculate:
-    sh_mode_7_shot_made:
-      loops: 0
 
-variable_player:
-  m7calculate{current_player.m7shotmade < 4}:
-    m7value: 
-      int: (current_player.DMGValue / 4)
-      action: set
-    score: current_player.m7value
-    modetotal: current_player.m7value
-    m7shotmade: 1
-    mode_shot_made:
-      int: 1
-      action: add
-    m7shotremaining:
-      int: (4 - current_player.m7shotmade)
-      action: set
-    modeshotremaining:
-      int: (current_player.m1shotremaining)
-      action: set
-  m7calculate{current_player.m7shotmade == 4}:
-    m7value: 
-      int: (current_player.DMGValue)
-      action: set
-    score: current_player.m7value
-    modetotal: current_player.m7value
-    m7shotmade: 1
-    mode_shot_made:
-      int: 1
-      action: add
-    m7shotremaining:
-      int: (4 - current_player.m7shotmade)
-      action: set
-    modeshotremaining:
-      int: (current_player.m7shotremaining)
-      action: set
-  show_m7_normal_value:
-    m7value: 
-      int: (current_player.DMGValue / 4)
-      action: set
-  show_m7_final_value:
-    m7value: 
-      int: (current_player.DMGValue)
-      action: set
-  mode_mode_7_started:
-    m7value: 
-      int: (current_player.DMGValue / 4)
-      action: set
+
+
 
 widgets:
   m7_torpedo_1:

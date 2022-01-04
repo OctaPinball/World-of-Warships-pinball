@@ -27,7 +27,7 @@ window:
     fullscreen: no
     exit_on_escape: True
     source_display: dmd
-    left: 903
+    left: 660           #903 original or 660 new
     top: 30
     effects:
         - type: color_dmd
@@ -780,6 +780,12 @@ player_vars:
     initial_value: 0
     value_type: int 
   m10_shot_need:
+    initial_value: 0
+    value_type: int
+  m9_phase_1_active:
+    initial_value: 0
+    value_type: int
+  m9_phase_2_active:
     initial_value: 0
     value_type: int
   bomb_number:
