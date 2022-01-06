@@ -89,8 +89,6 @@ event_player:
     - total_mode_timer_stop
     - mode_state_machine_reset
     - disable_mode_shots
-  s_main_hole_inactive: mode_timer_pause_event
-  sw_bumper_hit: mode_timer_pause_event
   timer_mode_finish_complete: end_mode
   timer_mode_overtime_complete: end_mode
   end_mode{current_player.m1_active == 1}: end_mode_1
@@ -109,93 +107,7 @@ event_player:
 
 
 
-state_machines:
-  mode_timer_state:
-    starting_state: mode_timer_disabled
-    states:
-      mode_countdown_run:
-        events_when_started: mode_countdown_run_enabled
-        events_when_stopped: mode_countdown_run_disabled
-      mode_countdown_pause:
-        events_when_started: start_delay
-        events_when_stopped: stop_delay
-      mode_freeze_run:
-        events_when_started: mode_freeze_run_enabled
-        events_when_stopped: mode_freeze_run_disabled
-      mode_freeze_pause:
-        events_when_started: start_delay
-        events_when_stopped: stop_delay
-      mode_overtime_run:
-        events_when_started: mode_overtime_run_enabled
-        events_when_stopped: mode_overtime_run_disabled
-      mode_overtime_pause:
-        events_when_started: start_delay
-        events_when_stopped: stop_delay
-      mode_overtime_freeze_run:
-        events_when_started: mode_overtime_freeze_run_enabled
-        events_when_stopped: mode_overtime_freeze_run_disabled
-      mode_overtime_freeze_pause:
-        events_when_started: start_delay
-        events_when_stopped: stop_delay
-      mode_timer_disabled:
-        label: Start state
-        events_when_started: mode_timer_disable
-        events_when_stopped: mode_timer_enabled
-    transitions:
-      - source: mode_countdown_run
-        target: mode_countdown_pause
-        events: mode_timer_pause_event
-      - source: mode_countdown_pause
-        target: mode_countdown_run
-        events: timer_mode_countdown_delay_complete
-      - source: mode_freeze_run
-        target: mode_freeze_pause
-        events: mode_timer_pause_event
-      - source: mode_freeze_pause
-        target: mode_freeze_run
-        events: timer_mode_countdown_delay_complete
-      - source: mode_overtime_run
-        target: mode_overtime_pause
-        events: mode_timer_pause_event
-      - source: mode_overtime_pause
-        target: mode_overtime_run
-        events: timer_mode_countdown_delay_complete
-      - source: mode_overtime_freeze_run
-        target: mode_overtime_freeze_pause
-        events: mode_timer_pause_event
-      - source: mode_overtime_freeze_pause
-        target: mode_overtime_freeze_run
-        events: timer_mode_countdown_delay_complete
-                                                      #INNETŐL KÜLSŐ VÁLTÁSOK, NEM CSAK RUN/STOP KAPCSOLAT
-      - source: mode_countdown_pause
-        target: mode_freeze_pause
-        events: more_time
-      - source: mode_freeze_run
-        target: mode_countdown_run
-        events: timer_mode_freeze_complete
-      - source: mode_countdown_run
-        target: mode_overtime_run
-        events: timer_mode_countdown_complete
-                                                      #MODE OVERTIME ÉS FREEZE KAPCSOLAT
-      - source: mode_overtime_pause
-        target: mode_overtime_freeze_pause
-        events: more_time
-      - source: mode_overtime_freeze_run
-        target: mode_overtime_run
-        events: timer_mode_freeze_complete
-                                                      #MODE DISABLED KAPCSOLAT
-      - source: mode_timer_disabled
-        target: mode_freeze_pause
-        events: more_time
-      - source: mode_timer_disabled
-        target: mode_countdown_pause
-        events: start_mode_countdown
-      - source: mode_overtime_run
-        target: mode_timer_disabled
-        events: timer_mode_overtime_complete
-      - source: mode_countdown_run, mode_countdown_pause, mode_freeze_run, mode_freeze_pause, mode_overtime_run, mode_overtime_pause, mode_overtime_freeze_run, mode_overtime_freeze_pause
-        target: mode_timer_disabled
-        events: mode_state_machine_reset
+
 
 show_player:
   start_mode_1:
@@ -275,10 +187,14 @@ variable_player:
     mode_shot_enabled:
       action: set
       int: 1
-  player_mode_manager_mode_countdown_tick:
+  player_mode_manager_mode_countdown_tick{value != 0}:
     countdown_bar_progress:
       action: set 
       int: current_player.mode_manager_mode_countdown_tick - 1
+  player_mode_manager_mode_countdown_tick{value == 0}:
+    countdown_bar_progress:
+      action: set 
+      int: current_player.mode_manager_mode_countdown_tick
   start_mode_1:
     m1_active:
       action: set 
