@@ -4,80 +4,6 @@ mode:
     start_events: ball_will_start
     priority: 300
 
-timers:
-  mode_countdown:
-    start_value: 31
-    end_value: 0
-    direction: down
-    start_running: false
-    bcp: true
-    control_events:
-      - event: mode_countdown_run_disabled
-        action: stop
-      - event: mode_countdown_run_enabled
-        action: start
-      - event: mode_will_enabled
-        action: reset
-      - event: s_main_hole_active
-        action: stop
-      - event: total_mode_timer_stop
-        action: stop
-      - event: total_mode_timer_reset
-        action: reset
-  mode_freeze:
-    start_value: 15
-    end_value: 0
-    start_running: false
-    direction: down
-    control_events:
-      - event: mode_freeze_run_disabled
-        action: stop
-      - event: mode_freeze_run_enabled
-        action: start
-      - event: mode_enabled
-        action: reset
-      - event: total_mode_timer_stop
-        action: stop
-      - event: total_mode_timer_reset
-        action: reset
-  mode_countdown_delay:
-    start_value: 2
-    end_value: 0
-    start_running: false
-    direction: down
-    control_events:
-      - event: s_main_hole_active
-        action: stop
-      - event: start_delay
-        action: restart
-      - event: total_mode_timer_stop
-        action: stop
-      - event: total_mode_timer_reset
-        action: reset
-  mode_overtime:
-    start_value: 5
-    end_value: 0
-    start_running: false
-    direction: down
-    control_events:
-      - event: mode_overtime_run_enabled
-        action: start
-      - event: mode_overtime_run_disabled
-        action: stop
-      - event: mode_overtime_reset
-        action: reset
-      - event: total_mode_timer_stop
-        action: stop
-      - event: total_mode_timer_reset
-        action: reset
-  mode_finish:
-    start_value: 2
-    end_value: 0
-    start_running: false
-    direction: down
-    control_events:
-      - event: mode_finish_timer_restart
-        action: restart
 
 event_player:
   ball_will_end{device.state_machines.global_state.state == "mode"}:
@@ -104,10 +30,6 @@ event_player:
     - mode_base_started
     - pause_countdown
     - pause_delay
-
-
-
-
 
 show_player:
   start_mode_1:
@@ -175,7 +97,7 @@ variable_player:
     score: 100000
     countdown_bar_progress:
       action: set 
-      int: current_player.mode_manager_mode_countdown_tick - 1
+      int: current_player.mode_timer_mode_countdown_tick - 1
   end_mode:
     more_time_lit:
       int: 1
@@ -183,18 +105,18 @@ variable_player:
   mode_will_enabled:
     countdown_bar_progress:
       action: set 
-      int: current_player.mode_manager_mode_countdown_tick - 1
+      int: current_player.mode_timer_mode_countdown_tick - 1
     mode_shot_enabled:
       action: set
       int: 1
-  player_mode_manager_mode_countdown_tick{value != 0}:
+  player_mode_timer_mode_countdown_tick{value != 0}:
     countdown_bar_progress:
       action: set 
-      int: current_player.mode_manager_mode_countdown_tick - 1
-  player_mode_manager_mode_countdown_tick{value == 0}:
+      int: current_player.mode_timer_mode_countdown_tick - 1
+  player_mode_timer_mode_countdown_tick{value == 0}:
     countdown_bar_progress:
       action: set 
-      int: current_player.mode_manager_mode_countdown_tick
+      int: current_player.mode_timer_mode_countdown_tick
   start_mode_1:
     m1_active:
       action: set 
@@ -1012,7 +934,7 @@ widget_player:
       action: remove
     frozen_widget_15:
       action: remove
-  player_mode_manager_mode_freeze_tick{value != 15}:
+  player_mode_timer_mode_freeze_tick{value != 16}:
     frozen_widget:
       slide: mode_slide
       action: add
@@ -1048,63 +970,63 @@ widget_player:
       action: remove
     frozen_widget_15:
       action: remove
-  player_mode_manager_mode_freeze_tick{value == 0}:
+  player_mode_timer_mode_freeze_tick{value == 1}:
     frozen_widget_0:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 1}:
+  player_mode_timer_mode_freeze_tick{value == 2}:
     frozen_widget_1:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 2}:
+  player_mode_timer_mode_freeze_tick{value == 3}:
     frozen_widget_2:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 3}:
+  player_mode_timer_mode_freeze_tick{value == 4}:
     frozen_widget_3:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 4}:
+  player_mode_timer_mode_freeze_tick{value == 5}:
     frozen_widget_4:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 5}:
+  player_mode_timer_mode_freeze_tick{value == 6}:
     frozen_widget_5:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 6}:
+  player_mode_timer_mode_freeze_tick{value == 7}:
     frozen_widget_6:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 7}:
+  player_mode_timer_mode_freeze_tick{value == 8}:
     frozen_widget_7:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 8}:
+  player_mode_timer_mode_freeze_tick{value == 9}:
     frozen_widget_8:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 9}:
+  player_mode_timer_mode_freeze_tick{value == 10}:
     frozen_widget_9:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 10}:
+  player_mode_timer_mode_freeze_tick{value == 11}:
     frozen_widget_10:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 11}:
+  player_mode_timer_mode_freeze_tick{value == 12}:
     frozen_widget_11:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 12}:
+  player_mode_timer_mode_freeze_tick{value == 13}:
     frozen_widget_12:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 13}:
+  player_mode_timer_mode_freeze_tick{value == 14}:
     frozen_widget_13:
       slide: mode_slide
       action: add
-  player_mode_manager_mode_freeze_tick{value == 14}:
+  player_mode_timer_mode_freeze_tick{value == 15}:
     frozen_widget_14:
       slide: mode_slide
       action: add
