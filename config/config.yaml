@@ -528,6 +528,7 @@ modes:
   #- dmg_con_party
   - mode_wizard
   - mode_manager
+  - mode_timer
   - container
   - salvo_lit
   - hc_lock_lit
