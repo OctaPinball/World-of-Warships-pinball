@@ -37,7 +37,7 @@ event_player:
 variable_player:
   mglobalcalculate:
     m2value: 
-      int: (current_player.JetValue * 4)
+      int: (current_player.JetValue * 4) * current_player.entry_modification
       action: set
     modetotal: current_player.m2value * 4
     score: current_player.m2value * 4
@@ -60,7 +60,7 @@ variable_player:
       action: add
   award_aa_fire:
     m2value: 
-      int: (current_player.JetValue * 4)
+      int: (current_player.JetValue * 4) * current_player.entry_modification
       action: set
     modetotal: current_player.m2value
     score: current_player.m2value
@@ -79,12 +79,28 @@ variable_player:
 
   player_JetValue:
     m2value: 
-      int: (current_player.JetValue * 4)
+      int: (current_player.JetValue * 4) * current_player.entry_modification
       action: set
 
+  player_m2entrynumber{current_player.m2entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m2entrynumber) / 4
+  player_m2entrynumber{current_player.m2entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
   mode_mode_2_started:
+    m2entrynumber:
+      int: 1
+      action: add
     m2value: 
-      int: (current_player.JetValue * 4)
+      int: (current_player.JetValue * 4) * current_player.entry_modification
+      action: set
+
+  player_entry_modification:
+    m2value: 
+      int: (current_player.JetValue * 4) * current_player.entry_modification
       action: set
 
   add_aa_slide:

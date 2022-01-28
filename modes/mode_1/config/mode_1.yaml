@@ -17,7 +17,7 @@ event_player:
 variable_player:
   m1calculate:
     m1value: 
-      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
       action: set
     modetotal: current_player.m1value
     score: current_player.m1value
@@ -35,15 +35,30 @@ variable_player:
       action: set
   player_DMGValue:
     m1value: 
-      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
       action: set
   player_RecivedDMG:
     m1value: 
-      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
       action: set
+  player_m1entrynumber{current_player.m1entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m1entrynumber) / 4
+  player_m1entrynumber{current_player.m1entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
   mode_mode_1_started:
+    m1entrynumber:
+      int: 1
+      action: add
     m1value: 
-      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200)
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
+      action: set
+  player_entry_modification:
+    m1value: 
+      int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
       action: set
 
 show_player:
