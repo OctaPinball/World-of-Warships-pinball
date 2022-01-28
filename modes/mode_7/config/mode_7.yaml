@@ -32,12 +32,15 @@ event_player:
  mglobalcalculate: m7calculate
  m7calculate{current_player.m7shotmade < 3}: m7calculate_normal
  m7calculate{current_player.m7shotmade == 3}: m7calculate_final
-
+ player_entry_modification{current_player.m7shotmade < 3}:
+  - show_m7_normal_value
+ player_entry_modification{current_player.m7shotmade == 3}:
+  - show_m7_final_value
 
 variable_player:
   m7calculate_normal:
     m7value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
     score: current_player.m7value
     modetotal: current_player.m7value
@@ -54,7 +57,7 @@ variable_player:
 
   m7calculate_final:
     m7value: 
-      int: (current_player.DMGValue)
+      int: (current_player.DMGValue) * current_player.entry_modification
       action: set
     score: current_player.m7value
     modetotal: current_player.m7value
@@ -63,7 +66,7 @@ variable_player:
       int: 1
       action: add
     m7shotremaining:
-      int: (4 - current_player.m7shotmade)
+      int: (4 - current_player.m7shotmade) * current_player.entry_modification
       action: set
     modeshotremaining:
       int: (current_player.m7shotremaining)
@@ -71,18 +74,30 @@ variable_player:
 
   show_m7_normal_value:
     m7value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
 
   show_m7_final_value:
     m7value: 
-      int: (current_player.DMGValue)
+      int: (current_player.DMGValue) * current_player.entry_modification
       action: set
 
-  mode_mode_7_started:
-    m7value: 
-      int: (current_player.DMGValue / 4)
+  player_m7entrynumber{current_player.m7entrynumber < 4}:
+    entry_modification:
       action: set
+      float: (5 - current_player.m7entrynumber) / 4
+  player_m7entrynumber{current_player.m7entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
+  mode_mode_7_started:
+    m7entrynumber:
+      int: 1
+      action: add
+    m7value: 
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
+      action: set
+
 
 show_player:
   m7calculate:

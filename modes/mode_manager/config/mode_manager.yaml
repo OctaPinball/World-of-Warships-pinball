@@ -15,7 +15,7 @@ event_player:
     - total_mode_timer_stop
     - mode_state_machine_reset
     - disable_mode_shots
-  timer_mode_finish_complete: end_mode
+  timer_mode_finish_complete: mode_completed
   timer_mode_overtime_complete: end_mode
   end_mode{current_player.m1_active == 1}: end_mode_1
   end_mode{current_player.m2_active == 1}: end_mode_2
@@ -30,6 +30,35 @@ event_player:
     - mode_base_started
     - pause_countdown
     - pause_delay
+  mode_completed{current_player.m1_active == 1}:
+    - mode_1_completed
+    - end_mode_1
+  mode_completed{current_player.m2_active == 1}:
+    - mode_2_completed
+    - end_mode_2
+  mode_completed{current_player.m3_active == 1}:
+    - mode_3_completed
+    - end_mode_3
+  mode_completed{current_player.m4_active == 1}:
+    - mode_4_completed
+    - end_mode_4
+  mode_completed{current_player.m5_active == 1}:
+    - mode_5_completed
+    - end_mode_5
+  mode_completed{current_player.m6_active == 1}:
+    - mode_6_completed
+    - end_mode_6
+  mode_completed{current_player.m7_active == 1}:
+    - mode_7_completed
+    - end_mode_7
+  mode_completed{current_player.m8_active == 1}:
+    - mode_8_completed
+    - end_mode_8
+  mode_completed{current_player.m9_active == 1}:
+    - mode_9_completed
+    - end_mode_9
+  mode_completed:
+    - mode_base_started
 
 show_player:
   start_mode_1:
@@ -546,7 +575,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: VALUE = 30000000
+        text: VALUE = (m5value)
         number_grouping: true
         x: 38
         anchor_y: top
@@ -651,7 +680,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: VALUE = 25000000
+        text: VALUE = (m6value)
         number_grouping: true
         x: 38
         anchor_y: top
@@ -756,7 +785,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: VALUE = 20000000
+        text: VALUE = (m8value)
         number_grouping: true
         x: 38
         anchor_y: top
@@ -809,7 +838,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: VALUE = 30000000
+        text: VALUE = (m4value)
         number_grouping: true
         x: 38
         anchor_y: top

@@ -16,8 +16,8 @@ event_player:
 
 variable_player:
   m8calculate:
-    score: 20000000
-    modetotal: 20000000
+    score: m8value
+    modetotal: m8value
     m8shotmade: 1
     mode_shot_made:
       int: 1
@@ -27,6 +27,25 @@ variable_player:
       action: set
     modeshotremaining:
       int: (current_player.m8shotremaining)
+      action: set
+  player_m8entrynumber{current_player.m8entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m8entrynumber) / 4
+  player_m8entrynumber{current_player.m8entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
+  mode_mode_8_started:
+    m8entrynumber:
+      int: 1
+      action: add
+    m8value: 
+      int: 20000000 * current_player.entry_modification
+      action: set
+  player_entry_modification:
+    m8value: 
+      int: 20000000 * current_player.entry_modification
       action: set
 
 show_player:

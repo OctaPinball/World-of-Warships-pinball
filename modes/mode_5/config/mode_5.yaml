@@ -18,7 +18,7 @@ event_player:
 
 variable_player:
   m5calculate:
-    score: 30000000
+    score: current_player.m5value
     m5shotmade: 1
     mode_shot_made:
       int: 1
@@ -26,9 +26,28 @@ variable_player:
     m5shotremaining:
       int: (4 - current_player.m5shotmade)
       action: set
-    modetotal: 30000000
+    modetotal: current_player.m5value
     modeshotremaining:
       int: (current_player.m5shotremaining)
+      action: set
+  player_m5entrynumber{current_player.m5entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m5entrynumber) / 4
+  player_m5entrynumber{current_player.m5entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
+  mode_mode_5_started:
+    m5entrynumber:
+      int: 1
+      action: add
+    m5value: 
+      int: 30000000 * current_player.entry_modification
+      action: set
+  player_entry_modification:
+    m5value: 
+      int: 30000000 * current_player.entry_modification
       action: set
 
 show_player:

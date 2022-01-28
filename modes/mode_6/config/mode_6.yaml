@@ -13,17 +13,36 @@ event_player:
 
 variable_player:
   m6calculate:
-    score: 25000000
+    score: m6value
     m6shotmade: 1
     mode_shot_made:
       int: 1
       action: add
-    modetotal: 25000000
+    modetotal: m6value
     m6shotremaining:
       int: (4 - current_player.m6shotmade)
       action: set
     modeshotremaining:
       int: (current_player.m6shotremaining)
+      action: set
+  player_m6entrynumber{current_player.m6entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m6entrynumber) / 4
+  player_m6entrynumber{current_player.m6entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
+  mode_mode_6_started:
+    m6entrynumber:
+      int: 1
+      action: add
+    m6value: 
+      int: 25000000 * current_player.entry_modification
+      action: set
+  player_entry_modification:
+    m6value: 
+      int: 25000000 * current_player.entry_modification
       action: set
 
 show_player:

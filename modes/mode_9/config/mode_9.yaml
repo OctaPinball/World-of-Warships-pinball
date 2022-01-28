@@ -24,11 +24,15 @@ event_player:
     - show_m9_final_value
   m9calculate_choice{current_player.m9shotmade < 3}: m9calculate
   m9calculate_choice{current_player.m9shotmade == 3}: m9calculatefinal
+  player_entry_modification{current_player.m9shotmade < 3}:
+    - show_m9_normal_value
+  player_entry_modification{current_player.m9shotmade == 3}:
+    - show_m9_final_value
 
 variable_player:
   m9calculate:
     m9value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
     score: current_player.m9value
     modetotal: current_player.m9value
@@ -45,7 +49,7 @@ variable_player:
 
   m9calculatefinal:
     m9value:
-      int: (current_player.DMGValue)
+      int: (current_player.DMGValue) * current_player.entry_modification
       action: set
     score: current_player.m9value
     modetotal: current_player.m9value
@@ -62,15 +66,26 @@ variable_player:
 
   show_m9_normal_value:
     m9value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
 
   show_m9_final_value:
     m9value: 
-      int: (current_player.DMGValue)
+      int: (current_player.DMGValue) * current_player.entry_modification
       action: set
 
+  player_m9entrynumber{current_player.m9entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m9entrynumber) / 4
+  player_m9entrynumber{current_player.m9entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
   mode_mode_9_started:
+    m9entrynumber:
+      int: 1
+      action: add
     m9_phase_1_active:
       int: 1
       action: set
@@ -78,8 +93,10 @@ variable_player:
       int: 0
       action: set
     m9value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
+
+
 
 show_player:
   m9calculate:

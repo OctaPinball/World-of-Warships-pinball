@@ -669,6 +669,33 @@ player_vars:
   m9shotremaining:
     initial_value: 4
     value_type: int
+  m1entrynumber:
+    initial_value: 0
+    value_type: int
+  m2entrynumber:
+    initial_value: 0
+    value_type: int
+  m3entrynumber:
+    initial_value: 0
+    value_type: int
+  m4entrynumber:
+    initial_value: 0
+    value_type: int
+  m5entrynumber:
+    initial_value: 0
+    value_type: int
+  m6entrynumber:
+    initial_value: 0
+    value_type: int
+  m7entrynumber:
+    initial_value: 0
+    value_type: int
+  m8entrynumber:
+    initial_value: 0
+    value_type: int
+  m9entrynumber:
+    initial_value: 0
+    value_type: int
   mode_shot_enabled:
     initial_value: 0
     value_type: int
@@ -984,7 +1011,7 @@ state_machines:
         events: multiball_inactive #változtatás szükséges NEM KONFIGURÁLT!!!!!
       - source: mode
         target: main
-        events: end_mode
+        events: end_mode, mode_completed
       - source: multiball, mode, main
         target: main
         events: state_machine_reset

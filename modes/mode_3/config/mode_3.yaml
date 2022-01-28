@@ -15,7 +15,7 @@ event_player:
 variable_player:
   m3calculate:
     m3value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
     modetotal: current_player.m3value
     score: current_player.m3value
@@ -31,11 +31,27 @@ variable_player:
       action: set
   player_DMGValue:
     m3value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
+
+  player_m3entrynumber{current_player.m3entrynumber < 4}:
+    entry_modification:
+      action: set
+      float: (5 - current_player.m3entrynumber) / 4
+  player_m3entrynumber{current_player.m3entrynumber >= 4}:
+    entry_modification:
+      action: set
+      float: 1 / 4
   mode_mode_3_started:
+    m3entrynumber:
+      int: 1
+      action: add
     m3value: 
-      int: (current_player.DMGValue / 4)
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
+      action: set
+  player_entry_modification:
+    m3value: 
+      int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set
 
 show_player:
