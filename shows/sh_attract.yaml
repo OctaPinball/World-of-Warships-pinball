@@ -10,6 +10,165 @@
         y: center+0.5
 - time: +2
   slides:
+    end_mode_8_co:
+      - type: text
+        text: SURV. RADAR
+        x: 80
+        anchor_y: top
+        y: top-1
+        color: FFFF00
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: UNLOCKED
+        x: 80
+        anchor_y: top
+        y: top-9
+        color: FFFF00
+        style: medium
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: USE DURING BATTLE
+        x: 80
+        anchor_y: top
+        y: top-19
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TO SPOT ENEMY
+        x: 80
+        anchor_y: top
+        y: top-25
+        style: small
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: radar_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          left_to_right_mode_end_icon:
+                - property: x
+                  relative: true
+                  value: 96
+                  duration: 0.2s
+- time: +2
+  slides:
+    end_mode_8_com:
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: 120000000
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +3 CONSUMEABLE
+        x: 48
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: radar_icon
+        x: 112
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          left_to_right_mode_end_icon:
+                - property: x
+                  relative: true
+                  value: 96
+                  duration: 0.2s
+- time: +2
+  slides:
+    end_mode_8_completed:
+      - type: text
+        text: SURVEILLENCE
+        x: 80
+        anchor_y: top
+        y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: RADAR
+        x: 80
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 80
+        anchor_y: top
+        y: top-22
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+      - type: image
+        image: radar_icon
+        x: 16
+        y: middle
+        z: 100
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          left_to_right_mode_end_icon:
+                - property: x
+                  relative: true
+                  value: 96
+                  duration: 0.2s
+- time: +2
+  slides:
     scores_slide:
     - type: text
       text: (machine|player1_score)
