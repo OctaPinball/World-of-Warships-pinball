@@ -1,7 +1,7 @@
 #config_version=5
 
 config:
-  - config_mode_support.yaml
+  #- config_mode_support.yaml
   - config_hc_support.yaml
   - config_capture_support.yaml
   - config_commander_support.yaml

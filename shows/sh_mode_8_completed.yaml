@@ -2,12 +2,14 @@
 
 - time: 0
   events:
-    - activate_mode_end_
-- time: 0.58
+    - mode_8_end_completed_slide_assemble
+- time: +2
   events:
-    - remove_captured_widget_1
-    - active_captured_widget_2
-- time: +1
+    - mode_8_end_completed_slide_disassemble
+    - mode_total
+    - left_to_right_mode_end_icon
+    - mode_8_end_total_slide_assemble
+- time: +10
   events:
     - remove_captured_widget_2
     - remove_capturing_letter
