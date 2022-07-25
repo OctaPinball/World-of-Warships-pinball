@@ -232,4 +232,4 @@ slides:
       round_anchor_y: top
       round_anchor_x: left
       min_digits: 2
-      number_grouping: true  
+      number_grouping: true

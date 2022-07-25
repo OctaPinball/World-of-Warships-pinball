@@ -89,6 +89,10 @@ show_player:
     sh_mode_9_start:
       loops: 0
 
+  mode_8_completed:
+    sh_mode_8_completed:
+      loops: 0
+
 queue_relay_player:
   mode_starting:
     post: pause_delay
@@ -232,16 +236,16 @@ widgets:
       opacity: 1
       color: black
       animations:
-            right_to_left_mode_end_icon:
+            left_to_right_mode_end_icon:
                 - property: x
                   relative: true
                   value: -96
-                  duration: 0.2s
+                  duration: 2s
   mode_end_mask_1:
     - type: rectangle
-      x: 0
+      x: 128
       y: 0
-      z: 110
+      z: 120
       anchor_y: bottom
       anchor_x: left
       width: 128
@@ -253,7 +257,7 @@ widgets:
                 - property: x
                   relative: true
                   value: 96
-                  duration: 0.2s
+                  duration: 2s
   end_mode_8_description:
       - type: text
         text: SURV. RADAR
@@ -296,7 +300,7 @@ widgets:
   end_mode_8_total:
       - type: text
         text: TOTAL
-        x: 48
+        x: 176
         anchor_y: top
         number_grouping: true
         y: top-1
@@ -305,9 +309,15 @@ widgets:
         style: big
         round_anchor_x: left
         round_anchor_y: top
+        animations:
+          add_to_slide:
+                - property: x
+                  relative: true
+                  value: -128
+                  duration: 2s
       - type: text
         text: 120000000
-        x: 48
+        x: 176
         z: 115
         anchor_y: top
         number_grouping: true
@@ -315,9 +325,15 @@ widgets:
         style: big
         round_anchor_x: left
         round_anchor_y: top
+        animations:
+          add_to_slide:
+                - property: x
+                  relative: true
+                  value: -128
+                  duration: 2s
       - type: text
         text: +3 CONSUMEABLE
-        x: 48
+        x: 176
         z: 115
         anchor_y: top
         y: top-25
@@ -327,6 +343,11 @@ widgets:
         round_anchor_y: top
         animations:
           add_to_slide:
+            - property: x
+              relative: true
+              value: -128
+              duration: 2s
+          mode_8_end_total_slide_assemble:
             - property: opacity
               value: 0
               duration: 0.1s
@@ -432,12 +453,26 @@ widgets:
                 - property: x
                   relative: true
                   value: 96
-                  duration: 0.2s
+                  duration: 2s
           right_to_left_mode_end_icon:
                 - property: x
                   relative: true
                   value: -96
-                  duration: 0.2s
+                  duration: 2s
+  end_mode_8_total_icon:
+      - type: image
+        image: radar_icon
+        x: 128
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+            left_to_right_mode_end_icon:
+                - property: x
+                  relative: true
+                  value: 96
+                  duration: 2s
   frozen_widget:
     - type: image
       image: frozen
@@ -1360,17 +1395,47 @@ widget_player:
     mode_time_widget:
       slide: mode_slide
       action: add
+  mode_8_end_completed_slide_assemble:
+    end_mode_8_completed:
+      slide: mode_end_completed_slide
+      action: add
+    end_mode_8_icon:
+      slide: mode_end_completed_slide
+      action: add
+  mode_8_end_completed_slide_disassemble:
+    end_mode_8_total:
+      slide: mode_end_total_slide
+      action: add
+    mode_end_mask_1:
+      slide: mode_end_total_slide
+      action: add
+    end_mode_8_total_icon:
+      slide: mode_end_total_slide
+      action: add
 
 slides:
   mode_slide: []
-  mode_end_slide: []
+  mode_end_completed_slide: []
+  mode_end_progress_slide: []
+  mode_end_total_slide: []
+  mode_end_bomb_slide: []
  
 
 slide_player:
+  mode_completed:
+    mode_end_completed_slide:
+      priority: 600
+  mode_total:
+    mode_end_total_slide:
+      priority: 600
+      transition:
+        type: move_in
+        duration: 2s
+        direction: right
   mode_slide_can_start: mode_slide
   mode_state_stopped:
     mode_slide:
-         action: remove
+      action: remove
 
 
 
