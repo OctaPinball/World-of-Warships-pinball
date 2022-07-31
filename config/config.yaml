@@ -27,7 +27,7 @@ window:
     fullscreen: no
     exit_on_escape: True
     source_display: dmd
-    left: 660           #903 original or 660 new
+    left: 903           #903 original or 660 new
     top: 30
     effects:
         - type: color_dmd
