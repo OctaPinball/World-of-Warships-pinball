@@ -38,7 +38,7 @@ shots:
   lane_C: 346
   lane_D: 311
   lane_E: 138
-  lock_lit_1: 1394
+  lock_lit_1: 1459
   lock_lit_2: 1429
   ricochet_1: 144
   ricochet_2: 638
@@ -71,35 +71,35 @@ switches:
   s_kickback_target_2: 0
   s_kickback_target_3: 4
   s_kickback_terget_1: 0
-  s_left_flipper: 1180
+  s_left_flipper: 1186
   s_left_hole: 0
   s_left_inlane: 347
   s_left_loop_made: 208
   s_left_loop_pre: 164
   s_left_mid_inlane: 144
   s_left_outlane: 125
-  s_left_ramp_made: 1760
+  s_left_ramp_made: 1825
   s_left_ramp_pre: 272
   s_left_slingshot: 31
   s_lock_1: 400
   s_lock_2: 412
   s_lock_3: 495
   s_magnet_switch: 0
-  s_main_hole: 795
+  s_main_hole: 810
   s_pen_1: 698
   s_pen_2: 96
   s_pen_3: 315
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 3473
+  s_plunger: 3487
   s_plunger_button: 4
   s_ricochet_1: 168
   s_ricochet_2: 645
   s_ricochet_3: 74
   s_ricochet_4: 29
   s_ricochet_5: 8
-  s_right_flipper: 3452
+  s_right_flipper: 3492
   s_right_hole: 26
   s_right_inlane: 313
   s_right_loop_made: 73

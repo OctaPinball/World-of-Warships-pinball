@@ -2,15 +2,24 @@
 
 - time: 0
   events:
-    - mode_8_end_completed_slide_assemble
+    - mode_8_end_completed_slide_add
 - time: +2
   events:
-    - mode_8_end_completed_slide_disassemble
-    - mode_total
-    - left_to_right_mode_end_icon
-    - mode_8_end_total_slide_assemble
-- time: +10
+    - mode_8_end_completed_slide_transition_add
+    - mode_8_end_completed_slide_remove
+    - mode_8_end_total_slide_add
+- time: +1.35
   events:
-    - remove_captured_widget_2
-    - remove_capturing_letter
-    - remove_captured_slide
+    - mode_8_end_completed_slide_transition_remove
+- time: +2
+  events:
+    - mode_8_end_desc_slide_transition_add
+- time: +1.6
+  events:
+    - mode_8_end_desc_slide_add
+    - mode_8_end_desc_slide_transition_remove
+    - mode_8_end_total_slide_remove
+- time: +2
+  events:
+    - mode_8_end_desc_slide_remove
+    - mode_completed_finished
