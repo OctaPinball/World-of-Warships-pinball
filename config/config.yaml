@@ -1,7 +1,7 @@
 #config_version=5
 
 config:
-  #- config_mode_support.yaml
+  - config_mode_end_support.yaml
   - config_hc_support.yaml
   - config_capture_support.yaml
   - config_commander_support.yaml
@@ -934,7 +934,7 @@ player_vars:
 queue_event_player:
   ball_drain_phase_1_will_start:
     queue_event: ball_drain_phase_1_starting
-    events_when_finished: ball_ending_checked #mozgasd ha máshol akarod lezárni!! ball_drain_phase_1_end
+    events_when_finished: ball_ending_checked                 #mozgasd ha máshol akarod lezárni!! ball_drain_phase_1_end
   secondary_citadel_diverter_will_start:
     queue_event: secondary_citadel_diverter_starting
     events_when_finished: activate_citadel_diverter
@@ -959,7 +959,7 @@ event_player:    #STATE_MACHINES TRANSITION SUPPORT
   multiball_high_caliber_multiball_ended_confirmed: deactivate_multiball
   multiball_battle_multiball_ended: deactivate_multiball
 
-  #ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "enabled"}: end_mode
+  #ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "enabled"}:           #end_mode #MODE MANAGERBEN HÍVÓDIK!!!
   ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "disabled"}: ball_drain_phase_1_checked
   ball_drain_phase_1_checked: mode_state_machine_reset
 
