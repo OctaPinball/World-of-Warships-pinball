@@ -1,0 +1,18 @@
+#show_version=5
+
+- time: 0
+  events:
+    - mode_1_end_progress_slide_add
+- time: +2
+  events:
+    - mode_1_end_progress_slide_transition_add
+    - mode_1_end_progress_slide_remove
+    - mode_1_end_total_progress_slide_add
+- time: +1.35
+  events:
+    - mode_1_end_progress_slide_transition_remove
+- time: +2
+  events:
+    - mode_1_end_total_progress_slide_remove
+    - mode_completed_finished
+    #- ball_drain_phase_1_checked       #EZT MINDIG A MODE SOUND SHOWBAN KELL MEGHÍVNI!!!

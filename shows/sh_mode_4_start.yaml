@@ -4,7 +4,7 @@
     mode_4_start_slide:
       - type: image
         image: mode_4_start
-- time: +1.5
+- time: +1.4
   slides:
     mode_4_start_slide_text:
       - type: image

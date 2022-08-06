@@ -1,9 +1,8 @@
 #show_version=5
 
 - time: 0
-- time: +1.5
+- time: +5.35
   events:
     - ball_drain_phase_1_checked
     - disable_mode_total
     - VALAMI
-- time: +0.1

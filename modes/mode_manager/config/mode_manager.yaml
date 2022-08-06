@@ -4,7 +4,6 @@ mode:
     start_events: ball_will_start
     priority: 300
 
-
 event_player:
   ball_will_end{device.state_machines.global_state.state == "mode"}:
     - end_mode
@@ -17,15 +16,33 @@ event_player:
     - disable_mode_shots
   timer_mode_finish_complete: mode_completed
   timer_mode_overtime_complete: end_mode
-  end_mode{current_player.m1_active == 1}: end_mode_1
-  end_mode{current_player.m2_active == 1}: end_mode_2
-  end_mode{current_player.m3_active == 1}: end_mode_3
-  end_mode{current_player.m4_active == 1}: end_mode_4
-  end_mode{current_player.m5_active == 1}: end_mode_5
-  end_mode{current_player.m6_active == 1}: end_mode_6
-  end_mode{current_player.m7_active == 1}: end_mode_7
-  end_mode{current_player.m8_active == 1}: end_mode_8
-  end_mode{current_player.m9_active == 1}: end_mode_9
+  end_mode{current_player.m1_active == 1}:
+    - end_mode_1
+    - mode_1_unfinished
+  end_mode{current_player.m2_active == 1}:
+    - end_mode_2
+    - mode_2_unfinished
+  end_mode{current_player.m3_active == 1}:
+    - end_mode_3
+    - mode_3_unfinished
+  end_mode{current_player.m4_active == 1}:
+    - end_mode_4
+    - mode_4_unfinished
+  end_mode{current_player.m5_active == 1}:
+    - end_mode_5
+    - mode_5_unfinished
+  end_mode{current_player.m6_active == 1}:
+    - end_mode_6
+    - mode_6_unfinished
+  end_mode{current_player.m7_active == 1}:
+    - end_mode_7
+    - mode_7_unfinished
+  end_mode{current_player.m8_active == 1}:
+    - end_mode_8
+    - mode_8_unfinished
+  end_mode{current_player.m9_active == 1}:
+    - end_mode_9
+    - mode_9_unfinished
   end_mode:
     - mode_base_started
     - pause_countdown
@@ -110,6 +127,23 @@ queue_event_player:
     events_when_finished: start_mode_countdown
 
 variable_player:
+  end_mode:
+    more_time_lit:
+      int: 1
+      action: set
+    bomb_number_adv:
+      action: set
+      int: 0
+  mode_completed{current_player.modeentrynumber < 5}:
+    bomb_number_adv:
+      action: set
+      int: 5 - current_player.modeentrynumber
+    bomb_number: current_player.bomb_number_adv
+  mode_completed{current_player.modeentrynumber > 4}:
+    bomb_number_adv:
+      action: set
+      int: 1
+    bomb_number: current_player.bomb_number_adv
   disable_mode_shots:
     mode_shot_enabled:
       int: 0
@@ -131,10 +165,6 @@ variable_player:
     countdown_bar_progress:
       action: set 
       int: current_player.mode_timer_mode_countdown_tick - 1
-  end_mode:
-    more_time_lit:
-      int: 1
-      action: set
   mode_will_enabled:
     countdown_bar_progress:
       action: set 
@@ -224,174 +254,6 @@ variable_player:
       int: 0
 
 widgets:
-  end_mode_8_completed_transition:
-      - type: image
-        image: mode_8_completed
-        x: 0
-        y: 0
-        z: 200
-        loops: 0
-        anchor_x: left
-        anchor_y: bottom
-        fps: 20
-  end_mode_8_description_transition:
-      - type: image
-        image: mode_8_desc_rev
-        x: 0
-        y: 0
-        z: 200
-        loops: 0
-        anchor_x: left
-        anchor_y: bottom
-        fps: 20
-  end_mode_8_description:
-      - type: image
-        image: mode_8_desc_still
-        x: 0
-        y: 0
-        z: 200
-        anchor_x: left
-        anchor_y: bottom
-  end_mode_8_total:
-      - type: image
-        image: radar_icon
-        x: 112
-        y: middle
-        z: 150
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: TOTAL
-        x: 48
-        anchor_y: top
-        number_grouping: true
-        y: top-1
-        z: 115
-        color: 00FF00
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: 120000000
-        x: 48
-        z: 115
-        anchor_y: top
-        number_grouping: true
-        y: top-12
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: +3 CONSUMEABLE
-        x: 48
-        z: 115
-        anchor_y: top
-        y: top-25
-        style: medium
-        color: FF0000
-        round_anchor_x: left
-        round_anchor_y: top
-        animations:
-          add_to_slide:
-            - property: opacity
-              value: 0
-              duration: 0.1s
-              easing: in_out_expo
-            - property: opacity
-              timing: after_previous
-              value: 1
-              duration: 0.1s
-              easing: in_out_expo
-              repeat: true
-  end_mode_8_in_progress:
-      - type: text
-        text: SURVEILLENCE
-        x: 80
-        z: 105
-        anchor_y: top
-        y: top
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: RADAR
-        x: 80
-        z: 105
-        anchor_y: top
-        y: top-11
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: IN PROGRESS
-        x: 80
-        z: 105
-        anchor_y: top
-        y: top-22
-        style: big
-        color: FF0000
-        round_anchor_x: left
-        round_anchor_y: top
-        animations:
-          add_to_slide:
-            - property: opacity
-              value: 0
-              duration: 0.1s
-              easing: in_out_expo
-            - property: opacity
-              timing: after_previous
-              value: 1
-              duration: 0.1s
-              easing: in_out_expo
-              repeat: true
-  end_mode_8_completed:
-      - type: text
-        text: SURVEILLENCE
-        x: 81
-        anchor_y: top
-        y: top
-        z: 105
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: RADAR
-        x: 81
-        z: 105
-        anchor_y: top
-        y: top-11
-        style: big
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: image
-        image: radar_icon
-        x: 16
-        y: middle
-        z: 150
-        round_anchor_x: left
-        round_anchor_y: top
-      - type: text
-        text: COMPLETED
-        x: 81
-        z: 105
-        anchor_y: top
-        y: top-22
-        style: big
-        color: 00FF00
-        round_anchor_x: left
-        round_anchor_y: top
-        animations:
-          add_to_slide:
-            - property: opacity
-              value: 0
-              duration: 0.1s
-              easing: in_out_expo
-            - property: opacity
-              timing: after_previous
-              value: 1
-              duration: 0.1s
-              easing: in_out_expo
-              repeat: true
   frozen_widget:
     - type: image
       image: frozen
@@ -1314,62 +1176,16 @@ widget_player:
     mode_time_widget:
       slide: mode_slide
       action: add
-  mode_8_end_completed_slide_add:
-    end_mode_8_completed:
-      slide: mode_end_completed_slide
-      action: add
-  mode_8_end_completed_slide_transition_add:
-    end_mode_8_completed_transition:
-      slide: mode_end_completed_slide
-      action: add
-  mode_8_end_completed_slide_remove:
-    end_mode_8_completed:
-      slide: mode_end_completed_slide
-      action: remove
-  mode_8_end_total_slide_add:
-    end_mode_8_total:
-      slide: mode_end_completed_slide
-      action: add
-  mode_8_end_completed_slide_transition_remove:
-    end_mode_8_completed_transition:
-      slide: mode_end_completed_slide
-      action: remove
-  mode_8_end_desc_slide_transition_add:
-    end_mode_8_description_transition:
-      slide: mode_end_completed_slide
-      action: add
-  mode_8_end_desc_slide_add:
-    end_mode_8_description:
-      slide: mode_end_completed_slide
-      action: add
-  mode_8_end_desc_slide_transition_remove:
-    end_mode_8_description_transition:
-      slide: mode_end_completed_slide
-      action: remove
-  mode_8_end_total_slide_remove:
-    end_mode_8_total:
-      slide: mode_end_completed_slide
-      action: remove
-  mode_8_end_desc_slide_remove:
-    end_mode_8_description:
-      slide: mode_end_completed_slide
-      action: remove
+
   
 
 slides:
   mode_slide: []
-  mode_end_completed_slide: []
 
 
  
 
 slide_player:
-  mode_completed:
-    mode_end_completed_slide:
-      priority: 600
-  mode_completed_finished:
-    mode_end_completed_slide:
-      action: remove
   mode_slide_can_start: mode_slide
   mode_state_stopped:
     mode_slide:
