@@ -7,8 +7,29 @@ show_player:
   mode_1_unfinished:
     sh_mode_1_progress:
       loops: 0
+  mode_2_unfinished:
+    sh_mode_2_progress:
+      loops: 0
+  mode_3_unfinished:
+    sh_mode_3_progress:
+      loops: 0
+  mode_4_unfinished:
+    sh_mode_4_progress:
+      loops: 0
+  mode_5_unfinished:
+    sh_mode_5_progress:
+      loops: 0
+  mode_6_unfinished:
+    sh_mode_6_progress:
+      loops: 0
+  mode_7_unfinished:
+    sh_mode_7_progress:
+      loops: 0
   mode_8_unfinished:
     sh_mode_8_progress:
+      loops: 0
+  mode_9_unfinished:
+    sh_mode_9_progress:
       loops: 0
 
 slides:
@@ -55,7 +76,7 @@ widgets:
         loops: 0
         anchor_x: left
         anchor_y: bottom
-        fps: 20
+        fps: 33
   end_mode_1_description:
       - type: image
         image: mode_1_desc_still
@@ -207,7 +228,1133 @@ widgets:
               repeat: true
   end_mode_1_completed:
       - type: text
-        text: SURVEILLENCE
+        text: REPAIR PARTY
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: repair_party_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+  end_mode_2_progress_transition:
+      - type: image
+        image: mode_2_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_2_completed_transition:
+      - type: image
+        image: mode_2_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_2_description_transition:
+      - type: image
+        image: mode_2_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_2_description:
+      - type: image
+        image: mode_2_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_2_total:
+      - type: image
+        image: def_aa_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_2_total_progress:
+      - type: image
+        image: def_aa_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_2_progress:
+      - type: image
+        image: def_aa_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: DEFENSIVE AA
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_2_completed:
+      - type: text
+        text: DEFENSIVE AA
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: def_aa_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+  end_mode_3_progress_transition:
+      - type: image
+        image: mode_3_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_3_completed_transition:
+      - type: image
+        image: mode_3_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_3_description_transition:
+      - type: image
+        image: mode_3_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_3_description:
+      - type: image
+        image: mode_3_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_3_total:
+      - type: image
+        image: fighter_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_3_total_progress:
+      - type: image
+        image: fighter_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_3_progress:
+      - type: image
+        image: fighter_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: FIGHTER
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_3_completed:
+      - type: text
+        text: FIGHTER
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: fighter_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+
+  end_mode_4_progress_transition:
+      - type: image
+        image: mode_4_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_4_completed_transition:
+      - type: image
+        image: mode_4_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_4_description_transition:
+      - type: image
+        image: mode_4_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_4_description:
+      - type: image
+        image: mode_4_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_4_total:
+      - type: image
+        image: smokde_icon
+        x: 111
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_4_total_progress:
+      - type: image
+        image: smokde_icon
+        x: 111
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_4_progress:
+      - type: image
+        image: smokde_icon
+        x: 15
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SMOKE
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: GENERATOR
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_4_completed:
+      - type: text
+        text: SMOKE
+        x: 82
+        anchor_y: top
+        y: top
+        z: 105
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: GENERATOR
+        x: 82
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: smokde_icon
+        x: 15
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+
+
+  end_mode_5_progress_transition:
+      - type: image
+        image: mode_5_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_5_completed_transition:
+      - type: image
+        image: mode_5_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_5_description_transition:
+      - type: image
+        image: mode_5_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_5_description:
+      - type: image
+        image: mode_5_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_5_total:
+      - type: image
+        image: engine_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_5_total_progress:
+      - type: image
+        image: engine_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_5_progress:
+      - type: image
+        image: engine_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: ENGINE BOOST
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_5_completed:
+      - type: text
+        text: ENGINE BOOST
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-4
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: engine_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-18
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+
+  end_mode_6_progress_transition:
+      - type: image
+        image: mode_6_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_6_completed_transition:
+      - type: image
+        image: mode_6_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_6_description_transition:
+      - type: image
+        image: mode_6_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_6_description:
+      - type: image
+        image: mode_6_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_6_total:
+      - type: image
+        image: hydro_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_6_total_progress:
+      - type: image
+        image: hydro_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_6_progress:
+      - type: image
+        image: hydro_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: HYDROACOUSTIC
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: SEARCH
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_6_completed:
+      - type: text
+        text: HYDROACOUSTIC
         x: 81
         anchor_y: top
         y: top
@@ -216,7 +1363,7 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: RADAR
+        text: SEARCH
         x: 81
         z: 105
         anchor_y: top
@@ -225,7 +1372,245 @@ widgets:
         round_anchor_x: left
         round_anchor_y: top
       - type: image
-        image: repair_party_icon
+        image: hydro_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
+
+  end_mode_7_progress_transition:
+      - type: image
+        image: mode_7_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_7_completed_transition:
+      - type: image
+        image: mode_7_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_7_description_transition:
+      - type: image
+        image: mode_7_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_7_description:
+      - type: image
+        image: mode_7_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_7_total:
+      - type: image
+        image: torpedo_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_7_total_progress:
+      - type: image
+        image: torpedo_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_7_progress:
+      - type: image
+        image: torpedo_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TORPEDO RELOAD
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: BOOSTER
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_7_completed:
+      - type: text
+        text: TORPEDO RELOAD
+        x: 81
+        anchor_y: top
+        y: top
+        z: 105
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: BOOSTER
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: torpedo_icon
         x: 16
         y: middle
         z: 150
@@ -284,7 +1669,7 @@ widgets:
         loops: 0
         anchor_x: left
         anchor_y: bottom
-        fps: 20
+        fps: 33
   end_mode_8_description:
       - type: image
         image: mode_8_desc_still
@@ -491,6 +1876,245 @@ widgets:
               duration: 0.1s
               easing: in_out_expo
               repeat: true
+
+
+  end_mode_9_progress_transition:
+      - type: image
+        image: mode_9_progress
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_9_completed_transition:
+      - type: image
+        image: mode_9_completed
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 20
+  end_mode_9_description_transition:
+      - type: image
+        image: mode_9_desc_rev
+        x: 0
+        y: 0
+        z: 200
+        loops: 0
+        anchor_x: left
+        anchor_y: bottom
+        fps: 33
+  end_mode_9_description:
+      - type: image
+        image: mode_9_desc_still
+        x: 0
+        y: 0
+        z: 200
+        anchor_x: left
+        anchor_y: bottom
+  end_mode_9_total:
+      - type: image
+        image: main_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: +(bomb_number_adv) CONSUMEABLE
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_9_total_progress:
+      - type: image
+        image: main_icon
+        x: 112
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: TOTAL
+        x: 48
+        anchor_y: top
+        number_grouping: true
+        y: top-1
+        z: 115
+        color: 00FF00
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modetotal)
+        x: 48
+        z: 115
+        anchor_y: top
+        number_grouping: true
+        y: top-12
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: (modeshotremaining) REMAINING
+        x: 48
+        z: 115
+        anchor_y: top
+        y: top-25
+        style: medium
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_9_progress:
+      - type: image
+        image: main_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: MAIN BATTERY
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: RELOAD BOOSTER
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: IN PROGRESS
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: FF0000
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+  end_mode_9_completed:
+      - type: text
+        text: MAIN BATTERY
+        x: 81
+        anchor_y: top
+        y: top
+        z: 105
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: RELOAD BOOSTER
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-11
+        style: big
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: image
+        image: main_icon
+        x: 16
+        y: middle
+        z: 150
+        round_anchor_x: left
+        round_anchor_y: top
+      - type: text
+        text: COMPLETED
+        x: 81
+        z: 105
+        anchor_y: top
+        y: top-22
+        style: big
+        color: 00FF00
+        round_anchor_x: left
+        round_anchor_y: top
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 0.1s
+              easing: in_out_expo
+            - property: opacity
+              timing: after_previous
+              value: 1
+              duration: 0.1s
+              easing: in_out_expo
+              repeat: true
+
 
 widget_player:
   mode_1_end_completed_slide_add:

@@ -1,0 +1,26 @@
+#show_version=5
+
+- time: 0
+  events:
+    - mode_5_end_completed_slide_add
+- time: +2
+  events:
+    - mode_5_end_completed_slide_transition_add
+    - mode_5_end_completed_slide_remove
+    - mode_5_end_total_slide_add
+- time: +1.35
+  events:
+    - mode_5_end_completed_slide_transition_remove
+- time: +2
+  events:
+    - mode_5_end_desc_slide_transition_add
+- time: +1.6
+  events:
+    - mode_5_end_desc_slide_add
+    - mode_5_end_desc_slide_transition_remove
+    - mode_5_end_total_slide_remove
+- time: +2
+  events:
+    - mode_5_end_desc_slide_remove
+    - mode_completed_finished
+    #- ball_drain_phase_1_checked       #EZT MINDIG A MODE SOUND SHOWBAN KELL MEGHÍVNI!!!

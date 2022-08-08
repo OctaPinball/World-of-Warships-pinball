@@ -106,8 +106,32 @@ show_player:
     sh_mode_9_start:
       loops: 0
 
+  mode_1_completed:
+    sh_mode_1_completed:
+      loops: 0
+  mode_2_completed:
+    sh_mode_2_completed:
+      loops: 0
+  mode_3_completed:
+    sh_mode_3_completed:
+      loops: 0
+  mode_4_completed:
+    sh_mode_4_completed:
+      loops: 0
+  mode_5_completed:
+    sh_mode_5_completed:
+      loops: 0
+  mode_6_completed:
+    sh_mode_6_completed:
+      loops: 0
+  mode_7_completed:
+    sh_mode_7_completed:
+      loops: 0
   mode_8_completed:
     sh_mode_8_completed:
+      loops: 0
+  mode_9_completed:
+    sh_mode_9_completed:
       loops: 0
 
 queue_relay_player:
