@@ -42,7 +42,10 @@ variable_player:
     m5entrynumber:
       int: 1
       action: add
-    m5value: 
+    modeentrynumber:
+      int: current_player.m5entrynumber
+      action: set
+    m5value:
       int: 30000000 * current_player.entry_modification
       action: set
   player_entry_modification:

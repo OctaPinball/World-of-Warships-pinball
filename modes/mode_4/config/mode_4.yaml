@@ -36,6 +36,9 @@ variable_player:
     m4entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m4entrynumber
+      action: set
     m4value: 
       int: 30000000 * current_player.entry_modification
       action: set

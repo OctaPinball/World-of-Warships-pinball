@@ -704,7 +704,6 @@ widgets:
               easing: in_out_expo
               repeat: true
 
-
   end_mode_4_progress_transition:
       - type: image
         image: mode_4_progress
@@ -942,8 +941,6 @@ widgets:
               easing: in_out_expo
               repeat: true
 
-
-
   end_mode_5_progress_transition:
       - type: image
         image: mode_5_progress
@@ -1162,7 +1159,6 @@ widgets:
               duration: 0.1s
               easing: in_out_expo
               repeat: true
-
 
   end_mode_6_progress_transition:
       - type: image
@@ -1401,7 +1397,6 @@ widgets:
               easing: in_out_expo
               repeat: true
 
-
   end_mode_7_progress_transition:
       - type: image
         image: mode_7_progress
@@ -1444,7 +1439,7 @@ widgets:
       - type: image
         image: torpedo_icon
         x: 112
-        y: middle
+        y: middle-1
         z: 150
         round_anchor_x: left
         round_anchor_y: top
@@ -1495,7 +1490,7 @@ widgets:
       - type: image
         image: torpedo_icon
         x: 112
-        y: middle
+        y: middle-1
         z: 150
         round_anchor_x: left
         round_anchor_y: top
@@ -1546,13 +1541,13 @@ widgets:
       - type: image
         image: torpedo_icon
         x: 16
-        y: middle
+        y: middle-1
         z: 150
         round_anchor_x: left
         round_anchor_y: top
       - type: text
         text: TORPEDO RELOAD
-        x: 81
+        x: 80
         z: 105
         anchor_y: top
         y: top
@@ -1561,7 +1556,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: BOOSTER
-        x: 81
+        x: 82
         z: 105
         anchor_y: top
         y: top-11
@@ -1593,7 +1588,7 @@ widgets:
   end_mode_7_completed:
       - type: text
         text: TORPEDO RELOAD
-        x: 81
+        x: 80
         anchor_y: top
         y: top
         z: 105
@@ -1602,7 +1597,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: BOOSTER
-        x: 81
+        x: 82
         z: 105
         anchor_y: top
         y: top-11
@@ -1612,7 +1607,7 @@ widgets:
       - type: image
         image: torpedo_icon
         x: 16
-        y: middle
+        y: middle-1
         z: 150
         round_anchor_x: left
         round_anchor_y: top
@@ -1638,7 +1633,6 @@ widgets:
               duration: 0.1s
               easing: in_out_expo
               repeat: true
-
 
   end_mode_8_progress_transition:
       - type: image
@@ -1877,7 +1871,6 @@ widgets:
               easing: in_out_expo
               repeat: true
 
-
   end_mode_9_progress_transition:
       - type: image
         image: mode_9_progress
@@ -2028,7 +2021,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: MAIN BATTERY
-        x: 81
+        x: 82
         z: 105
         anchor_y: top
         y: top
@@ -2037,7 +2030,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: RELOAD BOOSTER
-        x: 81
+        x: 80
         z: 105
         anchor_y: top
         y: top-11
@@ -2069,7 +2062,7 @@ widgets:
   end_mode_9_completed:
       - type: text
         text: MAIN BATTERY
-        x: 81
+        x: 82
         anchor_y: top
         y: top
         z: 105
@@ -2078,7 +2071,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: RELOAD BOOSTER
-        x: 81
+        x: 80
         z: 105
         anchor_y: top
         y: top-11

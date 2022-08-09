@@ -92,6 +92,9 @@ variable_player:
     m9_phase_2_active:
       int: 0
       action: set
+    modeentrynumber:
+      int: current_player.m9entrynumber
+      action: set
     m9value: 
       int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set

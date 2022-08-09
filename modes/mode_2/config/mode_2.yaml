@@ -94,6 +94,9 @@ variable_player:
     m2entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m2entrynumber
+      action: set
     m2value: 
       int: (current_player.JetValue * 4) * current_player.entry_modification
       action: set
