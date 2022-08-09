@@ -1,11 +1,11 @@
 #config_version=5
 
 mode:
-    start_events: s_right_inlane_active
-    #stop_events: end_mode_1
-    #events_when_started: mode_enabled
-    #events_when_stopped: mode_disabled
-    priority: 300
+    start_events: start_mode_10
+    stop_events: end_mode_10
+    events_when_started: activate_wizard
+    events_when_stopped: deactivate_wizard
+    priority: 600
 
 timers:
   dmg_con_jackpot_timer:
@@ -47,8 +47,8 @@ variable_player:
       int: 0
       action: set
   sw_switch_hit:
-    score: (current_player.mode_shot_made * 1000000 / 50)
-    dmg_con_jackpot_value: (current_player.mode_shot_made * 1000000 / 50)
+    score: (current_player.dmg_con_value / 50)
+    dmg_con_jackpot_value: (current_player.dmg_con_value / 50)
   player_dmg_con_party_dmg_con_timer_tick:
     dmg_con_timer_display:
       float: device.timers.dmg_con_timer.ticks * 30 / 90
@@ -62,6 +62,42 @@ variable_player:
       action: set
   clear_state_end:
     dmg_con_multiplier: 1
+  mode_dmg_con_party_started{current_player.m1entrynumber > 0}:
+    m1entrynumber_m:
+      int: current_player.m1entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m2entrynumber > 0}:
+    m2entrynumber_m:
+      int: current_player.m2entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m3entrynumber > 0}:
+    m3entrynumber_m:
+      int: current_player.m3entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m4entrynumber > 0}:
+    m4entrynumber_m:
+      int: current_player.m4entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m5entrynumber > 0}:
+    m5entrynumber_m:
+      int: current_player.m5entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m6entrynumber > 0}:
+    m6entrynumber_m:
+      int: current_player.m6entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m7entrynumber > 0}:
+    m7entrynumber_m:
+      int: current_player.m7entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m8entrynumber > 0}:
+    m8entrynumber_m:
+      int: current_player.m8entrynumber
+      action: set
+  mode_dmg_con_party_started{current_player.m9entrynumber > 0}:
+    m9entrynumber_m:
+      int: current_player.m9entrynumber
+      action: set
   mode_dmg_con_party_started:
     dmg_con_multiplier:
       action: set
@@ -69,12 +105,16 @@ variable_player:
     dmg_con_jackpot_value:
       int: 0
       action: set
-    mode_shot_made:
-      int: 36
+    dmg_con_value:
+      int: (current_player.m1shotmade / current_player.m1entrynumber_m + current_player.m2shotmade / current_player.m2entrynumber_m + current_player.m3shotmade / current_player.m3entrynumber_m + current_player.m4shotmade / current_player.m4entrynumber_m + current_player.m5shotmade / current_player.m5entrynumber_m + current_player.m6shotmade / current_player.m6entrynumber_m + current_player.m7shotmade / current_player.m7entrynumber_m + current_player.m8shotmade / current_player.m8entrynumber_m + current_player.m9shotmade / current_player.m9entrynumber_m) * 1000000
+      action: set
+  calculate_dmg_con_value{current_player.m1entrynumber_m != 0 and current_player.m2entrynumber_m != 0 and current_player.m3entrynumber_m != 0 and current_player.m4entrynumber_m != 0 and current_player.m5entrynumber_m != 0 and current_player.m6entrynumber_m != 0 and current_player.m7entrynumber_m != 0 and current_player.m8entrynumber_m != 0 and current_player.m9entrynumber_m != 0}:
+    dmg_con_value:
+      int: (current_player.m1shotmade / current_player.m1entrynumber_m + current_player.m2shotmade / current_player.m2entrynumber_m + current_player.m3shotmade / current_player.m3entrynumber_m + current_player.m4shotmade / current_player.m4entrynumber_m + current_player.m5shotmade / current_player.m5entrynumber_m + current_player.m6shotmade / current_player.m6entrynumber_m + current_player.m7shotmade / current_player.m7entrynumber_m + current_player.m8shotmade / current_player.m8entrynumber_m + current_player.m9shotmade / current_player.m9entrynumber_m) * 1000000
       action: set
   dmg_con_party_shots_unlit_hit:
-    dmg_con_jackpot_value: (current_player.mode_shot_made * 1000000)
-    score: (current_player.mode_shot_made * 1000000)
+    dmg_con_jackpot_value: (current_player.dmg_con_value)
+    score: (current_player.dmg_con_value)
   award_dmg_con_jackpot:
     dmg_con_jackpot_total_value:
       int: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
@@ -107,7 +147,7 @@ shots:
       light: l_torpedo_jackpot
   dmg_con_4:
     #hit_events: detonation_jackpot
-    switch: s_citadel_lock
+    switch: s_citadel, s_drop_target
     profile: dmg_con_profile
     show_tokens:
       light: l_citadel_jackpot
@@ -171,6 +211,15 @@ shot_profiles:
 
 
 event_player:
+  player_m1entrynumber_m: calculate_dmg_con_value
+  player_m2entrynumber_m: calculate_dmg_con_value
+  player_m3entrynumber_m: calculate_dmg_con_value
+  player_m4entrynumber_m: calculate_dmg_con_value
+  player_m5entrynumber_m: calculate_dmg_con_value
+  player_m6entrynumber_m: calculate_dmg_con_value
+  player_m7entrynumber_m: calculate_dmg_con_value
+  player_m8entrynumber_m: calculate_dmg_con_value
+  player_m9entrynumber_m: calculate_dmg_con_value
   #overridejackpot{device.shots.dmg_con_1.state_name == "lit" and device.shots.dmg_con_2.state_name == "lit" and device.shots.dmg_con_3.state_name == "lit" and device.shots.dmg_con_4.state_name == "lit" and device.shots.dmg_con_5.state_name == "lit" and device.shots.dmg_con_6.state_name == "lit"}: dmg_con_party_shots_lit_complete
   s_side_ramp_made_active{device.state_machines.dmg_con_state.state == "clear"}: award_dmg_con_jackpot
   award_dmg_con_jackpot: stop_dmg_con_timer

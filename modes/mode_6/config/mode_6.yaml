@@ -37,6 +37,9 @@ variable_player:
     m6entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m6entrynumber
+      action: set
     m6value: 
       int: 25000000 * current_player.entry_modification
       action: set

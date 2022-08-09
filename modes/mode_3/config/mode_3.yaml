@@ -46,6 +46,9 @@ variable_player:
     m3entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m3entrynumber
+      action: set
     m3value: 
       int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set

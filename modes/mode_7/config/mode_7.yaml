@@ -94,6 +94,9 @@ variable_player:
     m7entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m7entrynumber
+      action: set
     m7value: 
       int: (current_player.DMGValue / 4) * current_player.entry_modification
       action: set

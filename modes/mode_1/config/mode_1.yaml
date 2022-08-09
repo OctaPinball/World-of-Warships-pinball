@@ -53,6 +53,9 @@ variable_player:
     m1entrynumber:
       int: 1
       action: add
+    modeentrynumber:
+      int: current_player.m1entrynumber
+      action: set
     m1value: 
       int: (current_player.DMGValue * (current_player.ReceivedDMG + 1) / 200) * current_player.entry_modification
       action: set
@@ -62,16 +65,16 @@ variable_player:
       action: set
 
 show_player:
-  m1calculate{current_player.mode_shot_made == 0}:
+  m1calculate{current_player.m1shotmade == 0}:
     sh_mode_1_shot_made_1:
       loops: 0
-  m1calculate{current_player.mode_shot_made == 1}:
+  m1calculate{current_player.m1shotmade == 1}:
     sh_mode_1_shot_made_2:
       loops: 0
-  m1calculate{current_player.mode_shot_made == 2}:
+  m1calculate{current_player.m1shotmade == 2}:
     sh_mode_1_shot_made_3:
       loops: 0
-  m1calculate{current_player.mode_shot_made == 3}:
+  m1calculate{current_player.m1shotmade == 3}:
     sh_mode_1_shot_made_4:
       loops: 0
 

@@ -525,7 +525,7 @@ modes:
   - mode_7
   - mode_8
   - mode_9
-  #- dmg_con_party
+  - dmg_con_party
   - mode_wizard
   - mode_manager
   - mode_timer
@@ -668,6 +668,33 @@ player_vars:
     value_type: int
   m9shotremaining:
     initial_value: 4
+    value_type: int
+  m1entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m2entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m3entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m4entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m5entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m6entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m7entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m8entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m9entrynumber_m:
+    initial_value: 1
     value_type: int
   m1entrynumber:
     initial_value: 0
@@ -990,7 +1017,16 @@ state_machines:
       capture:
         events_when_started: capture_state
         events_when_stopped: capture_state_stopped
+      wizard:
+        events_when_started: wizard_state
+        events_when_stopped: wizard_state_stopped
     transitions:
+      - source: main
+        target: wizard
+        events: activate_wizard
+      - source: wizard
+        target: main
+        events: deactivate_wizard
       - source: main
         target: multiball
         events: activate_multiball #PLUSZ MULTIBALLOKAT BEÍRNI!!!!!
@@ -1094,10 +1130,10 @@ state_machines:
     transitions:
       - source: inactive
         target: active
-        events: activate_multiball
+        events: activate_multiball, activate_wizard
       - source: active
         target: inactive
-        events: deactivate_multiball
+        events: deactivate_multiball, deactivate_wizard
   detonation_states:
     starting_state: lite
     states:
