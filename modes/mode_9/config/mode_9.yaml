@@ -105,3 +105,4 @@ show_player:
   m9calculate:
     sh_mode_9_shot_made:
       loops: 0
+      priority: 400

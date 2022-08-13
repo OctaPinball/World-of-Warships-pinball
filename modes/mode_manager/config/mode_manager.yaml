@@ -81,30 +81,39 @@ show_player:
   start_mode_1:
     sh_mode_1_start:
       loops: 0
+      priority: 700
   start_mode_2:
     sh_mode_2_start:
       loops: 0
+      priority: 700
   start_mode_3:
     sh_mode_3_start:
       loops: 0
+      priority: 700
   start_mode_4:
     sh_mode_4_start:
       loops: 0
+      priority: 700
   start_mode_5:
     sh_mode_5_start:
       loops: 0
+      priority: 700
   start_mode_6:
     sh_mode_6_start:
       loops: 0
+      priority: 700
   start_mode_7:
     sh_mode_7_start:
       loops: 0
+      priority: 700
   start_mode_8:
     sh_mode_8_start:
       loops: 0
+      priority: 700
   start_mode_9:
     sh_mode_9_start:
       loops: 0
+      priority: 700
 
   mode_1_completed:
     sh_mode_1_completed:
@@ -151,6 +160,8 @@ queue_event_player:
     events_when_finished: start_mode_countdown
 
 variable_player:
+  mode_completed:
+    completed_modes: 1
   end_mode:
     more_time_lit:
       int: 1
@@ -1210,7 +1221,9 @@ slides:
  
 
 slide_player:
-  mode_slide_can_start: mode_slide
+  mode_slide_can_start:
+    mode_slide:
+      priority: 200
   mode_state_stopped:
     mode_slide:
       action: remove

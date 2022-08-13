@@ -1,0 +1,6 @@
+#config_version=5
+
+machine_vars:
+  mv_dmg_con_time:
+    initial_value: 90
+    value_type: int

@@ -154,7 +154,7 @@ slides:
 slide_player:
   add_aa_slide:
     mode_2_shot_made_slide:
-      priority: 200
+      priority: 400
   timer_aa_fire_expire_timer_complete:
     mode_2_shot_made_slide:
       action: remove

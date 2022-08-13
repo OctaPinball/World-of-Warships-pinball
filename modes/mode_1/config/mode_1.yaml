@@ -68,15 +68,19 @@ show_player:
   m1calculate{current_player.m1shotmade == 0}:
     sh_mode_1_shot_made_1:
       loops: 0
+      priority: 400
   m1calculate{current_player.m1shotmade == 1}:
     sh_mode_1_shot_made_2:
       loops: 0
+      priority: 400
   m1calculate{current_player.m1shotmade == 2}:
     sh_mode_1_shot_made_3:
       loops: 0
+      priority: 400
   m1calculate{current_player.m1shotmade == 3}:
     sh_mode_1_shot_made_4:
       loops: 0
+      priority: 400
 
 widgets:
   mode_1_shot_made_score_widget:

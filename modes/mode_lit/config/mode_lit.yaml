@@ -140,7 +140,7 @@ achievements:
     show_when_stopped: slow_flash_modes
     #stop_events: end_mode_10
     events_when_started: start_mode_10, mode_will_enabled  # instant points award & plays shows
-    complete_events: end_mode_10
+    complete_events: start_mode_10
     reset_events: reset_modes
     enable_events: mode_mode_lit_started, main_state
     disable_events: stop_mode_select

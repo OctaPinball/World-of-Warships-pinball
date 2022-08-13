@@ -57,3 +57,4 @@ show_player:
   m5calculate:
     sh_mode_5_shot_made:
       loops: 0
+      priority: 400

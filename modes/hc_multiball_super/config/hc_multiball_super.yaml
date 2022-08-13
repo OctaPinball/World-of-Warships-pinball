@@ -119,17 +119,21 @@ show_player:
   award_simple_super_jackpot:
     sh_super_1:
       loops: 0
+      priority: 300
   award_double_super_jackpot:
     sh_super_2:
       loops: 0
+      priority: 300
   award_triple_super_jackpot:
     sh_super_3:
       loops: 0
+      priority: 300
 
 slide_player:
   mode_hc_multiball_super_started:
     hc_super_slide:
       action: play
+      priority: 300
   mode_hc_multiball_super_stopped:
     hc_super_slide:
       action: remove
