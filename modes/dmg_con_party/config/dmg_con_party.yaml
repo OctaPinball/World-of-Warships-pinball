@@ -4,7 +4,7 @@ mode:
     start_events: start_mode_10
     stop_events: end_mode_10
     events_when_started: activate_wizard
-    events_when_stopped: deactivate_wizard
+    #events_when_stopped: deactivate_wizard
     priority: 600
 
 timers:
@@ -19,8 +19,8 @@ timers:
       - event: award_dmg_con_jackpot
         action: restart
   dmg_con_timer:
-    start_value: 90
-    max_value: 90
+    start_value: machine.mv_dmg_con_time
+    max_value: machine.mv_dmg_con_time
     end_value: 0
     tick_interval: 1s
     direction: down
@@ -28,6 +28,9 @@ timers:
     bcp: true
     control_events:
       - event: mode_dmg_con_party_started
+        action: jump
+        value: machine.mv_dmg_con_time      #EZEKNEK AZ ÉRTÉKEKNEK MINDIG MEG KELL EGYEZNIÜK!!
+      - event: mode_countdown_run_enabled
         action: restart
       - event: stop_dmg_con_timer
         action: stop
@@ -36,6 +39,22 @@ timers:
       - event: dmg_con_add_time_shots_unlit_hit
         action: add
         value: 5
+      - event: dmg_con_add_time_shots_unlit_hit
+        action: start
+  dmg_con_overtime:
+    start_value: 5
+    end_value: 0
+    tick_interval: 1s
+    direction: down
+    start_running: false
+    bcp: true
+    control_events:
+      - event: start_dmg_con_overtime
+        action: restart
+      - event: dmg_con_add_time_shots_unlit_hit
+        action: reset
+      - event: dmg_con_add_time_shots_unlit_hit
+        action: stop
 
 variable_player:
   player_dmg_con_jackpot_value{value != 0}:
@@ -48,6 +67,7 @@ variable_player:
       action: set
   sw_switch_hit:
     score: (current_player.dmg_con_value / 50)
+    dmg_con_total: (current_player.dmg_con_value / 50)
     dmg_con_jackpot_value: (current_player.dmg_con_value / 50)
   player_dmg_con_party_dmg_con_timer_tick:
     dmg_con_timer_display:
@@ -60,7 +80,7 @@ variable_player:
     dmg_con_jackpot_timer_value:
       float: device.timers.dmg_con_jackpot_timer.ticks / 10
       action: set
-  clear_state_end:
+  clear_state_end{(current_player.dmg_con_multiplier - 1) * 2 + 1 < current_player.completed_modes}:
     dmg_con_multiplier: 1
   mode_dmg_con_party_started{current_player.m1entrynumber > 0}:
     m1entrynumber_m:
@@ -99,6 +119,9 @@ variable_player:
       int: current_player.m9entrynumber
       action: set
   mode_dmg_con_party_started:
+    dmg_con_total:
+      action: set
+      int: 0
     dmg_con_multiplier:
       action: set
       int: 1
@@ -115,16 +138,26 @@ variable_player:
   dmg_con_party_shots_unlit_hit:
     dmg_con_jackpot_value: (current_player.dmg_con_value)
     score: (current_player.dmg_con_value)
+    dmg_con_total: (current_player.dmg_con_value)
   award_dmg_con_jackpot:
+    m10_finished:
+      int: 1
+      action: set
     dmg_con_jackpot_total_value:
       int: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
       action: set
     score: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
+    dmg_con_total: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
   recive_state_start:
     dmg_con_jackpot_value:
       int: 0
       action: set
 
+show_player:
+  mode_dmg_con_party_started:
+    sh_mode_10_start:
+      loops: 0
+      priority: 700
 
 shots:
   dmg_con_1:
@@ -211,6 +244,7 @@ shot_profiles:
 
 
 event_player:
+  mode_countdown_run_enabled: mode_state_machine_reset
   player_m1entrynumber_m: calculate_dmg_con_value
   player_m2entrynumber_m: calculate_dmg_con_value
   player_m3entrynumber_m: calculate_dmg_con_value
@@ -224,6 +258,10 @@ event_player:
   s_side_ramp_made_active{device.state_machines.dmg_con_state.state == "clear"}: award_dmg_con_jackpot
   award_dmg_con_jackpot: stop_dmg_con_timer
   recive_state_start: start_dmg_con_timer
+  timer_dmg_con_timer_complete: start_dmg_con_overtime
+  timer_dmg_con_overtime_complete:
+    - end_mode_10
+    - mode_10_will_end
 
 
 state_machines:

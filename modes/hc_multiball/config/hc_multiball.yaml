@@ -196,6 +196,10 @@ shot_groups:
     restart_events: jackpot_start, lock_lit_started, stop_jackpot
 
 variable_player:
+  mode_hc_multiball_started:
+    hctotal:
+      action: set
+      int: 0
   jackpots_unlit_hit:
     score: 40000000
     hctotal: 40000000
@@ -207,131 +211,173 @@ variable_player:
     hctotal: 120000000
 
 
-
+      
 show_player:
   award_muzzle_flash_1:
     sh_muzzle_flash_1:
       loops: 0
+      priority: 300
   award_muzzle_flash_2:
     sh_muzzle_flash_2:
       loops: 0
+      priority: 300
+
   award_muzzle_flash_3:
     sh_muzzle_flash_3:
       loops: 0
+      priority: 300
   award_muzzle_flash_4:
     sh_muzzle_flash_4:
       loops: 0
+      priority: 300
   award_muzzle_flash_5:
     sh_muzzle_flash_5:
       loops: 0
+      priority: 300
   award_muzzle_flash_6:
     sh_muzzle_flash_6:
       loops: 0
+      priority: 300
   hc_sc_1:
     sh_sec_shell_1:
       loops: 0
+      priority: 300
   hc_sc_2:
     sh_sec_shell_2:
       loops: 0
+      priority: 300
   hc_sc_3:
     sh_sec_shell_3:
       loops: 0
+      priority: 300
   hc_sc_4:
     sh_sec_shell_4:
       loops: 0
+      priority: 300
   hc_sc_5:
     sh_sec_shell_5:
       loops: 0
+      priority: 300
   hc_sc_6:
     sh_sec_shell_6:
       loops: 0
+      priority: 300
   hc_sc_7:
     sh_sec_shell_7:
       loops: 0
+      priority: 300
   hc_sc_8:
     sh_sec_shell_8:
       loops: 0
+      priority: 300
   hc_sc_9:
     sh_sec_shell_9:
       loops: 0
+      priority: 300
   hc_sc_10:
     sh_sec_shell_10:
       loops: 0
+      priority: 300
   hc_sc_11:
     sh_sec_shell_11:
       loops: 0
+      priority: 300
   hc_sc_12:
     sh_sec_shell_12:
       loops: 0
+      priority: 300
   jackpot_1_unlit_hit:
     sh_jackpot_1:
       loops: 0
+      priority: 300
   jackpot_2_unlit_hit:
     sh_jackpot_2:
       loops: 0
+      priority: 300
   jackpot_3_unlit_hit:
     sh_jackpot_3:
       loops: 0
+      priority: 300
   jackpot_4_unlit_hit:
     sh_jackpot_4:
       loops: 0
+      priority: 300
   jackpot_5_unlit_hit:
     sh_jackpot_5:
       loops: 0
+      priority: 300
   jackpot_6_unlit_hit:
     sh_jackpot_6:
       loops: 0
+      priority: 300
   spot_double_jackpot_1:
     sh_double_jackpot_1:
       loops: 0
+      priority: 300
   spot_double_jackpot_2:
     sh_double_jackpot_2:
       loops: 0
+      priority: 300
   spot_double_jackpot_3:
     sh_double_jackpot_3:
       loops: 0
+      priority: 300
   spot_double_jackpot_4:
     sh_double_jackpot_4:
       loops: 0
+      priority: 300
   spot_double_jackpot_5:
     sh_double_jackpot_5:
       loops: 0
+      priority: 300
   spot_double_jackpot_6:
     sh_double_jackpot_6:
       loops: 0
+      priority: 300
   spot_triple_jackpot_1:
     sh_triple_jackpot_1:
       loops: 0
+      priority: 300
   spot_triple_jackpot_2:
     sh_triple_jackpot_2:
       loops: 0
+      priority: 300
   spot_triple_jackpot_3:
     sh_triple_jackpot_3:
       loops: 0
+      priority: 300
   spot_triple_jackpot_4:
     sh_triple_jackpot_4:
       loops: 0
+      priority: 300
   spot_triple_jackpot_5:
     sh_triple_jackpot_5:
       loops: 0
+      priority: 300
   spot_triple_jackpot_6:
     sh_triple_jackpot_6:
       loops: 0
+      priority: 300
   spot_multiple_jackpot_sfx_1:
     sh_multiple_jackpot_background_sound_1:
       loops: 0
+      priority: 300
   spot_multiple_jackpot_sfx_2:
     sh_multiple_jackpot_background_sound_2:
       loops: 0
+      priority: 300
   spot_multiple_jackpot_sfx_3:
     sh_multiple_jackpot_background_sound_3:
       loops: 0
+      priority: 300
   take_crit_dmg:
     sh_hc_crit_dmg:
       loops: 0
+      priority: 300
   take_heavy_dmg:
     sh_hc_heavy_dmg:
       loops: 0
+      priority: 300
 
 slide_player:
   mode_hc_multiball_started:

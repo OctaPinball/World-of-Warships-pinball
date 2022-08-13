@@ -106,6 +106,7 @@ show_player:
   m7calculate:
     sh_mode_7_shot_made:
       loops: 0
+      priority: 400
 
 slides:
     mode_7_shot_made_slide_1:

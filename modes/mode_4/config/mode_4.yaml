@@ -51,3 +51,4 @@ show_player:
   m4calculate:
     sh_mode_4_shot_made:
       loops: 0
+      priority: 400

@@ -52,3 +52,4 @@ show_player:
   m6calculate:
     sh_mode_6_shot_made:
       loops: 0
+      priority: 400

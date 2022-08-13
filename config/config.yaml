@@ -5,6 +5,8 @@ config:
   - config_hc_support.yaml
   - config_capture_support.yaml
   - config_commander_support.yaml
+  - config_dmg_con_support.yaml
+  - config_operator_settings.yaml
 
 
 
@@ -723,10 +725,16 @@ player_vars:
   m9entrynumber:
     initial_value: 0
     value_type: int
+  m10_finished:
+    initial_value: 0
+    value_type: int
   mode_shot_enabled:
     initial_value: 0
     value_type: int
   mode_shot_made:
+    initial_value: 0
+    value_type: int
+  completed_modes:
     initial_value: 0
     value_type: int
   aa_fire_timer_active:
@@ -987,7 +995,8 @@ event_player:    #STATE_MACHINES TRANSITION SUPPORT
   multiball_battle_multiball_ended: deactivate_multiball
 
   #ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "enabled"}:           #end_mode #MODE MANAGERBEN HÍVÓDIK!!!
-  ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "disabled"}: ball_drain_phase_1_checked
+  ball_drain_phase_1_started{device.state_machines.global_state.state == "wizard"}: mode_10_will_end
+  ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "disabled" and device.state_machines.global_state.state != "wizard"}: ball_drain_phase_1_checked
   ball_drain_phase_1_checked: mode_state_machine_reset
 
   right_ramp_citadel_pre_hit{device.state_machines.citadel_diverter_state.state == battle_fire_on}: activate_citadel_diverter
@@ -1061,9 +1070,9 @@ state_machines:
     starting_state: disabled
     states:
       enabled:
-        events_when_started: HAGYDFIGYELMENKIVUL
+        events_when_started: IGNORE
       disabled:
-        events_when_started: HAGYDFIGYELMENKIVUL
+        events_when_started: IGNORE
     transitions:
       - source: enabled
         target: disabled

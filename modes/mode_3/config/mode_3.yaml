@@ -61,3 +61,4 @@ show_player:
   m3calculate:
     sh_mode_3_shot_made:
       loops: 0
+      priority: 400

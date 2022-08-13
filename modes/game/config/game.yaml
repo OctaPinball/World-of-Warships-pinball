@@ -65,6 +65,7 @@ slide_player:
     ball_saved_slide:
       action: play
       expire: 1s
+      priority: 800
 
 show_player:
   ball_save_main_ball_save_timer_start:
@@ -115,6 +116,22 @@ show_player:
         color: orange
   ball_save_add_a_ball_ball_save_disabled:
     ball_save: stop
+  ball_save_dmg_con_ball_save_timer_start:
+    flash_color:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_dmg_con_ball_save_hurry_up:
+    flash_color:
+      key: ball_save
+      speed: 4
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_dmg_con_ball_save_disabled:
+    ball_save: stop
 
 
 ball_saves:
@@ -127,6 +144,7 @@ ball_saves:
     timer_start_events: balldevice_bd_plunger_ball_eject_success
     eject_delay: 1s
     enable_events: ball_started
+    disable_events: start_mode_10, add_a_ball, activate_multiball
   multiball_ball_save:
     active_time: 10s
     balls_to_save: -1
@@ -143,6 +161,15 @@ ball_saves:
     hurry_up_time: 3s
     timer_start_events: ball_save_add_a_ball_ball_save_enabled
     enable_events: add_a_ball
+  dmg_con_ball_save:
+    active_time: 15s
+    balls_to_save: -1
+    grace_period: 3s
+    hurry_up_time: 3s
+    timer_start_events: s_main_hole_inactive
+    enable_events: start_mode_10
+
+
 
 widgets:
 

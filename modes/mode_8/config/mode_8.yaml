@@ -61,3 +61,4 @@ show_player:
   m8calculate:
     sh_mode_8_shot_made:
       loops: 0
+      priority: 400

@@ -213,7 +213,7 @@
   slides:
     end_mode_8_completed:
       - type: text
-        text: MAIN BATTERY
+        text: DAMAGE CONTROL
         x: 80
         anchor_y: top
         y: top
@@ -221,7 +221,7 @@
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: RELOAD BOOSTER
+        text: PARTY
         x: 80
         anchor_y: top
         y: top-11
@@ -229,7 +229,7 @@
         round_anchor_x: left
         round_anchor_y: top
       - type: text
-        text: BOOSTER
+        text: INCOMPLETE
         x: 80
         anchor_y: top
         y: top-22
