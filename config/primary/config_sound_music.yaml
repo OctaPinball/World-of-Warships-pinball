@@ -1,0 +1,118 @@
+#config_version=5
+
+sound_system:
+  master_volume: 1
+  tracks:
+    music:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.5
+    voice:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.7
+    sfx:
+      type: standard
+      simultaneous_sounds: 8
+      volume: 0.8
+    critical_dmg_track:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.6
+
+assets:
+  sounds:
+    default:
+      load: on_demand
+    music:
+      track: music
+    sfx:
+      track: sfx
+    voice:
+      track: voice
+
+sounds:
+  defeat:
+    track: music
+  battle:
+    track: music
+  heavy_dmg:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.6
+  critical_dmg:
+    track: critical_dmg_track
+    simultaneous_limit: 1
+    ducking:
+      target: music, voice, sfx
+      delay: 0
+      attack: 0.6 sec
+      attenuation: -13db
+      release_point: 3 sec
+      release: 1 sec
+  enemy_shoot_2:
+    simultaneous_limit: 1
+    track: sfx
+  enemy_shoot_3:
+    simultaneous_limit: 1
+    track: sfx
+  enemy_shoot_4:
+    simultaneous_limit: 1
+    track: sfx
+  enemy_shoot_22:
+    simultaneous_limit: 1
+    track: sfx
+  far_explosion_1:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.9
+  far_explosion_2:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.9
+  far_explosion_3:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.9
+  shoot_1:
+    simultaneous_limit: 1
+    track: sfx
+  shoot_6:
+    simultaneous_limit: 1
+    track: sfx
+  shoot_16:
+    simultaneous_limit: 1
+    track: sfx
+  shoot_17:
+    simultaneous_limit: 1
+    track: sfx
+  shoot_18:
+    simultaneous_limit: 1
+    track: sfx
+  shoot_19:
+    simultaneous_limit: 1
+    track: sfx
+  shell_arrive_5:
+    simultaneous_limit: 1
+    track: sfx
+  shell_exit_1:
+    simultaneous_limit: 1
+    track: sfx
+  enemy_shoot_5:
+    simultaneous_limit: 1
+    track: sfx
+  ricochet_loud_7:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.9
+  enemy_shoot_19:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.9
+  shell_arrive_8:
+    simultaneous_limit: 1
+    track: sfx
+    volume: 0.7
+  shell_exit_3:
+    simultaneous_limit: 1
+    track: sfx

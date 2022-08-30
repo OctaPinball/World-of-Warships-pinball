@@ -1,0 +1,43 @@
+#config_version=5
+
+modes:
+  - attract
+  - high_score
+  - match
+  - main_play
+  - value_reset
+  - mode_lit
+  - capture
+  - capture_hurryup
+  - capture_award
+  #- skill_shot
+  - commander_skill
+  - commander_skill_manager
+  - mode_1
+  - mode_2
+  - mode_3
+  - mode_4
+  - mode_5
+  - mode_6
+  - mode_7
+  - mode_8
+  - mode_9
+  - dmg_con_party
+  - mode_wizard
+  - mode_manager
+  - mode_timer
+  - container
+  - salvo_lit
+  - hc_lock_lit
+  - hc_multiball
+  - hc_multiball_super
+  - confederate
+  - battle
+  - battle_manager
+  - detonation
+  - drednaught
+  #- value_manager  ÁTNEVEZÉS MAJD MAINRE (HASZNÁLHATATLAN PILLANATNYILAG!!!!!)
+  - port_hole_manager
+  #- ship_crew
+  - bomb
+  - aircraft_carrier

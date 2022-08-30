@@ -1,0 +1,24 @@
+#config_version=5
+
+keyboard:
+  debug: yes
+  numlock+s:
+    switch: s_start
+  numlock+q:
+    switch: s_right_inlane
+  numlock+e:
+    switch: s_left_flipper
+  numlock+r:
+    switch: s_right_flipper
+  numlock+t:
+    switch: s_right_slingshot
+  numlock+up:
+    event: increase_commander_skill
+  numlock+left:
+    event: start_commander_skill
+  numlock+right:
+    event: select_commander_skill
+  numlock+m:
+    event: activate_commander_slide
+  numlock+n:
+    event: deactivate_commander_slide

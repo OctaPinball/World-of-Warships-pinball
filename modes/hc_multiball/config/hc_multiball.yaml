@@ -201,14 +201,14 @@ variable_player:
       action: set
       int: 0
   jackpots_unlit_hit:
+    score: 20000000
+    hctotal: 20000000
+  award_double_jackpot:
     score: 40000000
     hctotal: 40000000
-  award_double_jackpot:
+  award_triple_jackpot:
     score: 80000000
     hctotal: 80000000
-  award_triple_jackpot:
-    score: 120000000
-    hctotal: 120000000
 
 
       

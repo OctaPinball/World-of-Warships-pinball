@@ -38,6 +38,18 @@ timers:
         action: stop
 
 variable_player:
+  award_super_jackpot:
+    score: 100000000
+    hctotal: 100000000
+  award_double_super_jackpot:
+    score: 200000000
+    hctotal: 200000000
+  award_triple_super_jackpot:
+    score: 300000000
+    hctotal: 300000000
+  award_ultra_jackpot:
+    score: 1000000000
+    hctotal: 1000000000
   ball_hold_super_hold_held_ball: 
     super_lock: 1
   exit_super_phase:
@@ -133,7 +145,7 @@ slide_player:
   mode_hc_multiball_super_started:
     hc_super_slide:
       action: play
-      priority: 300
+      priority: 299
   mode_hc_multiball_super_stopped:
     hc_super_slide:
       action: remove
@@ -820,7 +832,7 @@ widgets:
               value: 1
               duration: 0.6s
       - type: text
-        text: "200M"
+        text: "100M"
         x: 64
         y: bottom+9
         z: 120
@@ -867,7 +879,7 @@ widgets:
               value: 1
               duration: 0.6s
       - type: text
-        text: "400M"
+        text: "200M"
         x: 64
         y: bottom+1
         z: 150
@@ -915,7 +927,7 @@ widgets:
               value: 1
               duration: 0.6s
       - type: text
-        text: "600M"
+        text: "300M"
         x: 64
         y: bottom+1
         z: 150

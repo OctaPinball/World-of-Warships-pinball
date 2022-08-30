@@ -1,0 +1,64 @@
+#config_version=5
+
+
+window:
+    width: 512
+    height: 128
+    title: Color DMD
+    resizable: yes
+    borderless: no
+    fullscreen: no
+    exit_on_escape: True
+    source_display: dmd
+    left: 903           #903 original or 660 new
+    top: 30
+    effects:
+        - type: color_dmd
+
+displays:
+  dmd:
+    width: 128
+    height: 32
+    default: true
+
+
+
+playfields:
+  playfield:
+    default_source_device: bd_plunger
+    tags: default
+
+virtual_platform_start_active_switches:
+  - s_trough1
+  - s_trough2
+  - s_trough3
+  - s_trough4
+  - s_trough5
+  - s_trough6
+
+#machine:
+#  balls_installed:
+#  min_balls:
+
+sequence_shots:
+  right_loop:
+    switch_sequence: s_right_loop_pre, s_right_loop_made
+    sequence_timeout: 3s
+  right_ramp_citadel_pre:
+    switch_sequence: s_right_ramp_pre, s_right_loop_made
+    sequence_timeout: 3s
+  right_ramp_citadel:
+    switch_sequence: s_right_ramp_pre, s_right_loop_made, s_conning_tower
+    sequence_timeout: 3s
+  torpedo_citadel:
+    switch_sequence: s_torpedo_pre, s_conning_tower
+    sequence_timeout: 3s
+
+
+combo_switches:
+  both_flippers:
+    tag_1: left_flipper
+    tag_2: right_flipper
+    events_when_both: both_flippers
+    hold_time: 0.1s
+

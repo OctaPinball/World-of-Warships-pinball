@@ -1,0 +1,68 @@
+#config_version=5
+
+
+widget_styles:
+    attract_mode_high_score_display_label:
+        font_size: 15
+        anchor_x: center
+        anchor_y: top
+        x: center
+        y: top
+        bold: true
+    attract_mode_high_score_display_name:
+        font_size: 13
+        anchor_x: left
+        anchor_y: bottom
+        x: left+2
+        y: bottom
+        bold: true
+    attract_mode_high_score_display_score:
+        font_size: 13
+        anchor_x: right
+        anchor_y: bottom
+        x: right-2
+        y: bottom
+        bold: true
+        number_grouping: true
+        min_digits: 1
+
+
+shows:
+  sh_off:
+    - time: 0
+      lights:
+        (led): off
+  sh_on:
+    - time: 0
+      lights:
+        (led): on
+  sh_red:
+    - time: 0
+      lights:
+        (led): red
+  sh_orange:
+    - time: 0
+      lights:
+        (led): orange
+  sh_yellow:
+    - time: 0
+      lights:
+        (led): yellow
+  sh_blue:
+    - time: 0
+      lights:
+        (led): blue
+  sh_green:
+    - time: 0
+      lights:
+        (led): green
+
+
+counters:
+  m1_delay:
+    count_events: sw_take_dmg
+    count_complete_value: 1
+    multiple_hit_window: 1s
+    disable_on_complete: false
+    events_when_complete: m1calculate_pre
+
