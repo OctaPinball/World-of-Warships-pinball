@@ -1,0 +1,277 @@
+#config_version=5
+
+queue_event_player:
+  ball_drain_phase_1_will_start:
+    queue_event: ball_drain_phase_1_starting
+    events_when_finished: ball_ending_checked                 #mozgasd ha máshol akarod lezárni!! ball_drain_phase_1_end
+  secondary_citadel_diverter_will_start:
+    queue_event: secondary_citadel_diverter_starting
+    events_when_finished: activate_citadel_diverter
+
+queue_relay_player:
+  ball_ending:
+    post: ball_drain_phase_1_will_start
+    wait_for: ball_ending_checked
+  ball_drain_phase_1_starting:
+    post: ball_drain_phase_1_started
+    wait_for: ball_drain_phase_1_checked
+  secondary_citadel_diverter_starting:
+    post: enable_citadel_diverter
+    wait_for: valami
+
+event_player:    #STATE_MACHINES TRANSITION SUPPORT
+  enable_drop_target: enable_drop_target
+
+  start_hc_multiball: activate_multiball
+  start_battle: activate_multiball
+  
+  multiball_high_caliber_multiball_ended_confirmed: deactivate_multiball
+  multiball_battle_multiball_ended: deactivate_multiball
+
+  #ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "enabled"}:           #end_mode #MODE MANAGERBEN HÍVÓDIK!!!
+  ball_drain_phase_1_started{device.state_machines.global_state.state == "wizard"}: mode_10_will_end
+  ball_drain_phase_1_started{device.state_machines.mode_total_state.state == "disabled" and device.state_machines.global_state.state != "wizard"}: ball_drain_phase_1_checked
+  ball_drain_phase_1_checked: mode_state_machine_reset
+
+  right_ramp_citadel_pre_hit{device.state_machines.citadel_diverter_state.state == battle_fire_on}: activate_citadel_diverter
+  right_ramp_citadel_pre_hit{device.state_machines.citadel_diverter_state.state == battle_fire_off}: secondary_citadel_diverter_will_start
+  #right_ramp_citadel_timeout{device.state_machines.citadel_diverter_state.state == battle_fire_off}: 
+  #right_ramp_citadel_hit{device.state_machines.citadel_diverter_state.state == battle_fire_off}: 
+  s_right_slingshot_active: enable_citadel_diverter
+  s_left_slingshot_active: disable_citadel_diverter
+
+
+
+state_machines:
+  global_state:
+    starting_state: main
+    states:
+      main:
+        label: Start state
+        events_when_started: main_state
+        events_when_stopped: main_state_stopped
+      multiball:
+        events_when_started: multiball_state
+      mode:
+        events_when_started: mode_state
+        events_when_stopped: mode_state_stopped
+      modeandmultiball:
+        events_when_started: modeandmultiball_state
+      capture:
+        events_when_started: capture_state
+        events_when_stopped: capture_state_stopped
+      wizard:
+        events_when_started: wizard_state
+        events_when_stopped: wizard_state_stopped
+    transitions:
+      - source: main
+        target: wizard
+        events: activate_wizard
+      - source: wizard
+        target: main
+        events: deactivate_wizard
+      - source: main
+        target: multiball
+        events: activate_multiball #PLUSZ MULTIBALLOKAT BEÍRNI!!!!!
+      - source: mode
+        target: modeandmultiball
+        events: activate_multiball
+      - source: main
+        target: mode
+        events: mode_enabled
+      - source: modeandmultiball
+        target: mode
+        events: multiball_inactive
+      - source: modeandmultiball
+        target: multiball
+        events: disable_mode
+      - source: multiball
+        target: main
+        events: multiball_inactive #változtatás szükséges NEM KONFIGURÁLT!!!!!
+      - source: mode
+        target: main
+        events: end_mode, mode_completed
+      - source: multiball, mode, main
+        target: main
+        events: state_machine_reset
+      - source: main
+        target: capture
+        events: activate_capture
+      - source: capture
+        target: main
+        events: deactivate_capture
+  mode_total_state:
+    starting_state: disabled
+    states:
+      enabled:
+        events_when_started: IGNORE
+      disabled:
+        events_when_started: IGNORE
+    transitions:
+      - source: enabled
+        target: disabled
+        events: disable_mode_total
+      - source: disabled
+        target: enabled
+        events: enable_mode_total
+  hc_multiball:
+    starting_state: lock_lit_state
+    states:
+      lock_lit_state:
+        label: Start state
+        events_when_started: lock_lit_started
+        events_when_stopped: lock_lit_stopped
+      lock_state:
+        events_when_started: lock_started
+        events_when_stopped: lock_stopped
+      jackpot:
+        events_when_started: jackpot_start
+        events_when_stopped: jackpot_stopped
+      superjackpot:
+        events_when_started: super_jackpot_start
+        events_when_stopped: super_jackpot_stopped
+    transitions:
+      - source: lock_state
+        target: jackpot
+        events: start_hc_multiball
+      - source: jackpot
+        target: superjackpot
+        events: jackpots_lit_complete
+      - source: superjackpot
+        target: jackpot
+        events: exit_super_phase_to_jackpot
+      - source: jackpot, superjackpot, lock_lit_state
+        target: lock_lit_state
+        events: multiball_high_caliber_multiball_ended_confirmed, ball_started
+      - source: lock_lit_state
+        target: lock_state
+        events: lock_lits_lit_complete
+      - source: lock_state
+        target: lock_lit_state
+        events: enable_lock_lit_state
+  mode_states:
+    starting_state: lite
+    states:
+      lite:
+        events_when_started: disable_mode
+      active:
+        events_when_started: enable_mode
+    transitions:
+      - source: lite
+        target: active
+        events: mode_enabled
+      - source: active
+        target: lite
+        events: mode_disabled
+  global_multiball:
+    starting_state: inactive
+    states:
+      inactive:
+        events_when_started: multiball_inactive
+      active:
+        events_when_started: multiball_active
+    transitions:
+      - source: inactive
+        target: active
+        events: activate_multiball, activate_wizard
+      - source: active
+        target: inactive
+        events: deactivate_multiball, deactivate_wizard
+  detonation_states:
+    starting_state: lite
+    states:
+      lite:
+        events_when_started: lite_detonation_start
+        events_when_stopped: lite_detonation_stop
+      lit:
+        events_when_started: detonation_lit
+        events_when_stopped: detonation_reset
+    transitions:
+      - source: lite
+        target: lit
+        events: detonation_lit_detonation_profile_detonation_state_5_hit
+      - source: lit
+        target: lite
+        events: detonation_detonation_active_hit
+  battle_state:
+    starting_state: inactive
+    states:
+      inactive:
+        events_when_started: battle_inactive
+      active:
+        events_when_started: battle_active
+    transitions:
+      - source: inactive
+        target: active
+        events: start_battle
+      - source: active
+        target: inactive
+        events: multiball_battle_multiball_ended
+  battle_level_state:
+    starting_state: start
+    states:
+      start:
+        events_when_started: HAGYDFIGYELMENKIVUL
+      destroyer:
+        events_when_started: destroyer_battle_stats
+      cruiser:
+        events_when_started: cruiser_battle_stats
+      battleship:
+        events_when_started: battleship_battle_stats
+      aircraft_carrier:
+        events_when_started: aircraft_carrier_battle_stats
+    transitions:
+      - source: start
+        target: destroyer
+        events: start_battle
+      - source: destroyer
+        target: cruiser
+        events: start_battle
+      - source: cruiser
+        target: battleship
+        events: start_battle
+      - source: battleship
+        target: aircraft_carrier
+        events: start_battle
+      - source: aircraft_carrier
+        target: destroyer
+        events: start_battle
+  citadel_diverter_state:
+    starting_state: main
+    states:
+      main:
+        events_when_started: enable_citadel_diverter
+      battle_fire_on:
+        events_when_started: enable_citadel_diverter
+      battle_fire_off:
+        events_when_started: disable_citadel_diverter
+    transitions:
+      - source: main
+        target: battle_fire_off
+        events: mode_battle_started
+      - source: battle_fire_off
+        target: battle_fire_on
+        events: start_fire_3
+      - source: battle_fire_on
+        target: battle_fire_off
+        events: timer_fire_3_timer_complete
+  citadel_diverter_secondary_state:
+    starting_state: main
+    states:
+      main:
+        label: main
+      battle_fire_on:
+        label: fire_2on
+      battle_fire_off:
+        label: fire_2off
+    transitions:
+      - source: main
+        target: battle_fire_off
+        events: mode_battle_started
+      - source: battle_fire_off
+        target: battle_fire_on
+        events: start_fire_2
+      - source: battle_fire_on
+        target: battle_fire_off
+        events: timer_fire_2_timer_complete
+

@@ -54,7 +54,7 @@ shot_groups:
 shows:
   blue:
     - lights:
-        (leds): blue2
+        (leds): blue
   detonation_show_2:
     - lights:
         (leds): green

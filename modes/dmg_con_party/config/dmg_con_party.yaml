@@ -4,7 +4,7 @@ mode:
     start_events: start_mode_10
     stop_events: end_mode_10
     events_when_started: activate_wizard
-    #events_when_stopped: deactivate_wizard
+    events_when_stopped: deactivate_wizard
     priority: 600
 
 timers:
@@ -20,7 +20,6 @@ timers:
         action: restart
   dmg_con_timer:
     start_value: machine.mv_dmg_con_time
-    max_value: machine.mv_dmg_con_time
     end_value: 0
     tick_interval: 1s
     direction: down
@@ -41,6 +40,9 @@ timers:
         value: 5
       - event: dmg_con_add_time_shots_unlit_hit
         action: start
+      - event: dmg_con_timer_max_reached
+        action: jump
+        value: machine.mv_dmg_con_time
   dmg_con_overtime:
     start_value: 5
     end_value: 0
@@ -71,7 +73,7 @@ variable_player:
     dmg_con_jackpot_value: (current_player.dmg_con_value / 50)
   player_dmg_con_party_dmg_con_timer_tick:
     dmg_con_timer_display:
-      float: device.timers.dmg_con_timer.ticks * 30 / 90
+      float: device.timers.dmg_con_timer.ticks * 30 / machine.mv_dmg_con_time
       action: set
     dmg_con_timer_value:
       int: device.timers.dmg_con_timer.ticks
@@ -262,6 +264,7 @@ event_player:
   timer_dmg_con_overtime_complete:
     - end_mode_10
     - mode_10_will_end
+  timer_dmg_con_timer_time_added{ticks > machine.mv_dmg_con_time}: dmg_con_timer_max_reached
 
 
 state_machines:

@@ -1,0 +1,390 @@
+#config_version=5
+
+player_vars:
+  ReceivedDMG:
+    initial_value: 0
+    value_type: int
+  DMGValue: 
+    initial_value: 10000000
+    value_type: int
+  JetValue:
+    initial_value: 5000000
+    value_type: int
+  BonusX:
+    initial_value: 0
+    value_type: int
+  m1shotmade:
+    initial_value: 0
+    value_type: int
+  m2shotmade:
+    initial_value: 0
+    value_type: int
+  m3shotmade:
+    initial_value: 0
+    value_type: int
+  m4shotmade:
+    initial_value: 0
+    value_type: int
+  m5shotmade:
+    initial_value: 0
+    value_type: int
+  m6shotmade:
+    initial_value: 0
+    value_type: int
+  m7shotmade:
+    initial_value: 0
+    value_type: int
+  m8shotmade:
+    initial_value: 0
+    value_type: int
+  m9shotmade:
+    initial_value: 0
+    value_type: int
+  m1_active:
+    initial_value: 0
+    value_type: int
+  m2_active:
+    initial_value: 0
+    value_type: int
+  m3_active:
+    initial_value: 0
+    value_type: int
+  m4_active:
+    initial_value: 0
+    value_type: int
+  m5_active:
+    initial_value: 0
+    value_type: int
+  m6_active:
+    initial_value: 0
+    value_type: int
+  m7_active:
+    initial_value: 0
+    value_type: int
+  m8_active:
+    initial_value: 0
+    value_type: int
+  m9_active:
+    initial_value: 0
+    value_type: int
+  m1shotremaining:
+    initial_value: 4
+    value_type: int
+  m2shotremaining:
+    initial_value: 20 #JET MIATT MEG KELL VÁLTOZATNI
+    value_type: int
+  m3shotremaining:
+    initial_value: 4
+    value_type: int
+  m4shotremaining:
+    initial_value: 4
+    value_type: int
+  m5shotremaining:
+    initial_value: 4
+    value_type: int
+  m6shotremaining:
+    initial_value: 4
+    value_type: int
+  m7shotremaining:
+    initial_value: 4
+    value_type: int
+  m8shotremaining:
+    initial_value: 4
+    value_type: int
+  m9shotremaining:
+    initial_value: 4
+    value_type: int
+  m1entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m2entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m3entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m4entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m5entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m6entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m7entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m8entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m9entrynumber_m:
+    initial_value: 1
+    value_type: int
+  m1entrynumber:
+    initial_value: 0
+    value_type: int
+  m2entrynumber:
+    initial_value: 0
+    value_type: int
+  m3entrynumber:
+    initial_value: 0
+    value_type: int
+  m4entrynumber:
+    initial_value: 0
+    value_type: int
+  m5entrynumber:
+    initial_value: 0
+    value_type: int
+  m6entrynumber:
+    initial_value: 0
+    value_type: int
+  m7entrynumber:
+    initial_value: 0
+    value_type: int
+  m8entrynumber:
+    initial_value: 0
+    value_type: int
+  m9entrynumber:
+    initial_value: 0
+    value_type: int
+  m10_finished:
+    initial_value: 0
+    value_type: int
+  mode_shot_enabled:
+    initial_value: 0
+    value_type: int
+  mode_shot_made:
+    initial_value: 0
+    value_type: int
+  completed_modes:
+    initial_value: 0
+    value_type: int
+  aa_fire_timer_active:
+    initial_value: 0
+    value_type: int
+  lock_lit_1_state:
+    initial_value: 0
+    value_type: int
+  lock_lit_2_state:
+    initial_value: 0
+    value_type: int
+  freeze_started:
+    initial_value: 0
+    value_type: int
+  timer_height:
+    initial_value: 0
+    value_type: float
+  citadel_number:
+    initial_value: 0
+    value_type: int
+  torpedo_number:
+    initial_value: 0
+    value_type: int
+  citadel_load_number:
+    initial_value: 3
+    value_type: int
+  torpedo_load_number:
+    initial_value: 3
+    value_type: int
+  citadel_ready:
+    initial_value: 0
+    value_type: int
+  torpedo_ready:
+    initial_value: 0
+    value_type: int
+  torpedo_dmg:
+    initial_value: 10 #MEGHATÁROZÁS SZÜKSÉGES!!!!!
+    value_type: float
+  citadel_dmg:
+    initial_value: 10 #MEGHATÁROZÁS SZÜKSÉGES!!!!!
+    value_type: float
+  fire_dmg:
+    initial_value: 10 #MEGHATÁROZÁS SZÜKSÉGES!!!!!
+    value_type: float
+  penetration_dmg:
+    initial_value: 10 #MEGHATÁROZÁS SZÜKSÉGES!!!!!
+    value_type: float 
+  modeshotremaining:
+    initial_value: 0
+    value_type: int
+  super_lock:
+    initial_value: 0
+    value_type: int
+  container_lit:
+    initial_value: 0
+    value_type: int
+  addaball_lit:
+    initial_value: 0
+    value_type: int
+  more_time_lit:
+    initial_value: 0
+    value_type: int
+  ship:
+    initial_value: none
+    value_type: str
+  language:
+    initial_value: none
+    value_type: str
+  battle_bumper:
+    initial_value: fire
+    value_type: str
+  fire_1_active:
+    initial_value: 0
+    value_type: int
+  fire_2_active:
+    initial_value: 0
+    value_type: int
+  fire_3_active:
+    initial_value: 0
+    value_type: int
+  m1_shot_need:
+    initial_value: 0
+    value_type: int 
+  m2_shot_need:
+    initial_value: 0
+    value_type: int 
+  m3_shot_need:
+    initial_value: 0
+    value_type: int 
+  m4_shot_need:
+    initial_value: 0
+    value_type: int 
+  m5_shot_need:
+    initial_value: 0
+    value_type: int 
+  m6_shot_need:
+    initial_value: 0
+    value_type: int 
+  m7_shot_need:
+    initial_value: 0
+    value_type: int 
+  m8_shot_need:
+    initial_value: 0
+    value_type: int 
+  m9_shot_need:
+    initial_value: 0
+    value_type: int 
+  m10_shot_need:
+    initial_value: 0
+    value_type: int
+  m9_phase_1_active:
+    initial_value: 0
+    value_type: int
+  m9_phase_2_active:
+    initial_value: 0
+    value_type: int
+  bomb_number:
+    initial_value: 0
+    value_type: int
+  t_1_1_commander:
+    initial_value: 0
+    value_type: int
+  t_1_2_commander:
+    initial_value: 0
+    value_type: int
+  t_1_3_commander:
+    initial_value: 0
+    value_type: int
+  t_1_4_commander:
+    initial_value: 0
+    value_type: int
+  t_2_1_commander:
+    initial_value: 0
+    value_type: int
+  t_2_2_commander:
+    initial_value: 0
+    value_type: int
+  t_2_3_commander:
+    initial_value: 0
+    value_type: int
+  t_2_4_commander:
+    initial_value: 0
+    value_type: int
+  t_3_1_commander:
+    initial_value: 0
+    value_type: int
+  t_3_2_commander:
+    initial_value: 0
+    value_type: int
+  t_3_3_commander:
+    initial_value: 0
+    value_type: int
+  t_3_4_commander:
+    initial_value: 0
+    value_type: int
+  t_4_1_commander:
+    initial_value: 0
+    value_type: int
+  t_4_2_commander:
+    initial_value: 0
+    value_type: int
+  t_4_3_commander:
+    initial_value: 0
+    value_type: int
+  t_4_4_commander:
+    initial_value: 0
+    value_type: int
+  current_commander:
+    initial_value: 1
+    value_type: int
+  current_skill_points:
+    initial_value: 0
+    value_type: int
+  current_skill_level:
+    initial_value: 0
+    value_type: int
+  skill_lit:
+    initial_value: 0
+    value_type: int
+  bomb_1_active:
+    initial_value: 0
+    value_type: int
+  bomb_2_active:
+    initial_value: 0
+    value_type: int
+  bomb_3_active:
+    initial_value: 0
+    value_type: int
+  bomb_4_active:
+    initial_value: 0
+    value_type: int
+  bomb_5_active:
+    initial_value: 0
+    value_type: int
+  bomb_6_active:
+    initial_value: 0
+    value_type: int
+  bomb_7_active:
+    initial_value: 0
+    value_type: int
+  bomb_8_active:
+    initial_value: 0
+    value_type: int
+  bomb_9_active:
+    initial_value: 0
+    value_type: int
+  bomb_10_active:
+    initial_value: 0
+    value_type: int
+  bomb_11_active:
+    initial_value: 0
+    value_type: int
+  bomb_animation_queue:
+    initial_value: 0
+    value_type: int
+  bomb_animation_in_progress:
+    initial_value: 0
+    value_type: int
+  bomb_animation_completed:
+    initial_value: 0
+    value_type: int
+  bomb_animation_no_more:
+    initial_value: 0
+    value_type: int
+  aircraft_carrier_in_engage:
+    initial_value: 0
+    value_type: int
+  aircraft_carrier_torpedo_dropped:
+    initial_value: 0
+    value_type: int

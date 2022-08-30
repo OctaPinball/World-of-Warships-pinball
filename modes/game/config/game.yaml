@@ -144,7 +144,7 @@ ball_saves:
     timer_start_events: balldevice_bd_plunger_ball_eject_success
     eject_delay: 1s
     enable_events: ball_started
-    disable_events: start_mode_10, add_a_ball, activate_multiball
+    disable_events: start_mode_10, add_a_ball, activate_multiball, multiball_consumable_multiball_started
   multiball_ball_save:
     active_time: 10s
     balls_to_save: -1
@@ -168,7 +168,13 @@ ball_saves:
     hurry_up_time: 3s
     timer_start_events: s_main_hole_inactive
     enable_events: start_mode_10
-
+  consumable_multiball_ball_save:
+    active_time: 15s
+    balls_to_save: -1
+    grace_period: 3s
+    hurry_up_time: 3s
+    timer_start_events: s_main_hole_inactive
+    enable_events: multiball_consumable_multiball_started
 
 
 widgets:
