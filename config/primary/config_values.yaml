@@ -160,6 +160,9 @@ player_vars:
   completed_modes:
     initial_value: 0
     value_type: int
+  dmg_con_last_jackpot:
+    initial_value: 10000000
+    value_type: int
   aa_fire_timer_active:
     initial_value: 0
     value_type: int
@@ -206,7 +209,7 @@ player_vars:
     initial_value: 10 #MEGHATÁROZÁS SZÜKSÉGES!!!!!
     value_type: float 
   modeshotremaining:
-    initial_value: 0
+    initial_value: -1
     value_type: int
   super_lock:
     initial_value: 0

@@ -3,7 +3,91 @@ mode:
     start_events: ball_started
     priority: 100
 
+
+state_machines:
+  bomb_state:
+    starting_state: bomb_2
+    states:
+      bomb_1:
+        events_when_started: bomb_1_started
+      bomb_2:
+        events_when_started: bomb_2_started
+      bomb_3:
+        events_when_started: bomb_3_started
+      bomb_4:
+        events_when_started: bomb_4_started
+      bomb_5:
+        events_when_started: bomb_5_started
+      bomb_6:
+        events_when_started: bomb_6_started
+      bomb_7_and_9:
+        events_when_started: bomb_7_and_9_started
+      bomb_8:
+        events_when_started: bomb_8_started
+      bomb_10:
+        events_when_started: bomb_10_started
+      bomb_mode:
+        events_when_started: bomb_mode_started
+    transitions:
+      - source: bomb_2
+        target: bomb_1
+        events: skill_stopped #NEVEZD MEG!!
+      - source: bomb_1
+        target: bomb_3
+        events: mode_aircraft_carrier_started #NEVEZD MEG!! /Lehet jó név
+      - source: bomb_3
+        target: bomb_1
+        events: main_state #NEVEZD MEG!! /Lehet jó név
+      - source: bomb_1
+        target: bomb_5
+        events: capture_state
+      - source: bomb_5
+        target: bomb_1
+        events: main_state
+      - source: bomb_1
+        target: bomb_6
+        events: jackpot_start
+      - source: bomb_6
+        target: bomb_1
+        events: main_state
+      - source: bomb_6
+        target: bomb_4
+        events: super_jackpot_start
+      - source: bomb_4
+        target: bomb_6
+        events: jackpot_start
+      - source: bomb_4
+        target: bomb_1
+        events: main_state
+      - source: bomb_1
+        target: bomb_10
+        events: krakken_started #NEVEZD MEG!!
+      - source: bomb_10
+        target: bomb_1
+        events: main_state
+      - source: bomb_1
+        target: bomb_1
+        events: radar_started #NEVEZD MEG!!
+      - source: bomb_8
+        target: bomb_7_and_9
+        events: radar_completed #NEVEZD MEG!!
+      - source: bomb_7_and_9
+        target: bomb_1
+        events: main_state
+      - source: bomb_1
+        target: bomb_mode
+        events: mode_state 
+      - source: bomb_mode
+        target: bomb_1
+        events: main_state 
+
 event_player:
+  #check_bomb{(current_player.bomb_number) >= (current_player.mv_(device.state_machines.bomb_state.state)_cost)}: (device.state_machines.bomb_state.state)_flash
+  check_bomb: check_(device.state_machines.bomb_state.state)
+  
+  
+  
+  
   player_bomb_number: check_bomb
   s_action_button_active{current_player.bomb_number > 0 and device.state_machines.global_state.state == "main"}:
     - bomb_battle_advance
@@ -27,37 +111,84 @@ variable_player:
   s_action_button_active{current_player.bomb_number > 0 and device.state_machines.hc_multiball.state == "superjackpot"}:
     bomb_number: -1
 
+shows:
+  rainbow:
+    - lights:
+        (leds): red
+    - lights:
+        (leds): orange
+    - lights:
+        (leds): yellow
+    - lights:
+        (leds): green
+    - lights:
+        (leds): blue
+    - lights:
+        (leds): purple
 
 show_player:
-  check_bomb:
+  check_bombb:
     flash_color:
       action: stop
       speed: 2
       show_tokens:
         lights: l_action_button
-  check_bomb{current_player.bomb_number > 1 and device.state_machines.global_state.state == "mode"}:
-    flash_color:
-      speed: 2
-      show_tokens:
-        lights: l_action_button
-        color: FFFFFF #white
-  check_bomb{current_player.bomb_number > 0 and device.state_machines.global_state.state == "main" and current_player.bomb_1_active == 1}:
+  bomb_1_flash:
     flash_color:
       speed: 2
       show_tokens:
         lights: l_action_button
         color: FFFF00 #yellow
-  check_bomb{current_player.bomb_number > 0 and device.state_machines.hc_multiball.state == "superjackpot" and current_player.bomb_4_active == 1}:
+  bomb_2_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: FF00FF #pink
+  bomb_3_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: 0000FF #blue
+  bomb_4_flash:
     flash_color:
       speed: 2
       show_tokens:
         lights: l_action_button
         color: 8000FF #purple
-  check_bomb{current_player.bomb_number > 1 and device.state_machines.hc_multiball.state == "jackpot" and current_player.bomb_6_active == 1}:
+  bomb_5_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: 00FFFF #cyan
+  bomb_6_flash:
     flash_color:
       speed: 2
       show_tokens:
         lights: l_action_button
         color: FF8000 #orange
-
-
+  bomb_7_and_9_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: FF0000 #red
+  bomb_8_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: 00FF00 #green
+  bomb_10_flash:
+    rainbow:
+      speed: 10
+      show_tokens:
+        leds: l_action_button
+  bomb_mode_flash:
+    flash_color:
+      speed: 2
+      show_tokens:
+        lights: l_action_button
+        color: FFFFFF #white

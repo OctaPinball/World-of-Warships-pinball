@@ -2,5 +2,39 @@
 
 machine_vars:
   mv_dmg_con_time:
-    initial_value: 90
+    initial_value: 9
     value_type: int
+  mv_bomb_1_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_2_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_3_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_4_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_5_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_6_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_7_and_9_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_8_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_10_cost:
+    initial_value: 1
+    value_type: int
+  mv_bomb_mode_cost:
+    initial_value: 1
+    value_type: int
+
+
+
+

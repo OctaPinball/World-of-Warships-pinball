@@ -146,7 +146,7 @@ widgets:
         round_anchor_y: top
       - type: text
         text: INCOMPLETE
-        x: 81
+        x: 80
         z: 105
         anchor_y: top
         y: top-22

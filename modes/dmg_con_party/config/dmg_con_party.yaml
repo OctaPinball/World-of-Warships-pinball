@@ -149,6 +149,9 @@ variable_player:
       int: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
       action: set
     score: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
+    dmg_con_last_jackpot:
+      action: set
+      int: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
     dmg_con_total: (current_player.dmg_con_jackpot_value * current_player.dmg_con_multiplier)
   recive_state_start:
     dmg_con_jackpot_value:
