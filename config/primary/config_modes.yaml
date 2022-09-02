@@ -10,7 +10,7 @@ modes:
   - capture
   - capture_hurryup
   - capture_award
-  #- skill_shot
+  - skill_shot
   - commander_skill
   - commander_skill_manager
   - mode_1

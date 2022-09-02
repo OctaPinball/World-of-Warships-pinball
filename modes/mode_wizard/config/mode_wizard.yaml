@@ -157,6 +157,7 @@ variable_player:
       int: (current_player.DMGValue / 4) / 1000000
   m10calculate{current_player.m10_shot_need > 0}:
     m10_shot_need: -1
+    score: current_player.dmg_con_last_jackpot
   mode_wizard_values_initiated:
     wizard_mode_initation_completed:
       action: set
@@ -169,7 +170,7 @@ queue_event_player:
 
 queue_relay_player:
   mode_wizard_values_initiating:
-    post: ball_drain_phase_1_will_start
+    post: HAGYDFIGYELMENKIVUL
     wait_for: slide_wizard_mode_slide_active
 
 event_player:

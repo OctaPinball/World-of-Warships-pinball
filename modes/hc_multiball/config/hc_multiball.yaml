@@ -196,10 +196,6 @@ shot_groups:
     restart_events: jackpot_start, lock_lit_started, stop_jackpot
 
 variable_player:
-  mode_hc_multiball_started:
-    hctotal:
-      action: set
-      int: 0
   jackpots_unlit_hit:
     score: 20000000
     hctotal: 20000000
@@ -207,8 +203,8 @@ variable_player:
     score: 40000000
     hctotal: 40000000
   award_triple_jackpot:
-    score: 80000000
-    hctotal: 80000000
+    score: 60000000
+    hctotal: 60000000
 
 
       
@@ -1522,10 +1518,19 @@ widgets:
       anchor_x: left
       anchor_y: bottom
       x: 43
-      y: 3
+      y: 2
       z: 500
       fps: 10
       auto_play: true
+    - type: rectangle
+      anchor_x: left
+      anchor_y: bottom
+      x: left+22
+      y: bottom
+      z: 150
+      width: 84
+      height: 9
+      color: black
   double_jackpot:
     - type: image
       image: DOUBLE JACKPOT
@@ -1536,6 +1541,15 @@ widgets:
       z: 500
       fps: 10
       auto_play: true
+    - type: rectangle
+      anchor_x: left
+      anchor_y: bottom
+      x: left+22
+      y: bottom
+      z: 150
+      width: 84
+      height: 9
+      color: black
   triple_jackpot:
     - type: image
       image: TRIPLE JACKPOT
@@ -1546,3 +1560,12 @@ widgets:
       z: 500
       fps: 10
       auto_play: true
+    - type: rectangle
+      anchor_x: left
+      anchor_y: bottom
+      x: left+22
+      y: bottom
+      z: 150
+      width: 84
+      height: 9
+      color: black

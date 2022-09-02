@@ -132,7 +132,22 @@ show_player:
         color: orange
   ball_save_dmg_con_ball_save_disabled:
     ball_save: stop
-
+  ball_save_consumable_multiball_ball_save_timer_start:
+    flash_color:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_consumable_multiball_ball_save_hurry_up:
+    flash_color:
+      key: ball_save
+      speed: 4
+      show_tokens:
+        lights: l_shoot_again
+        color: orange
+  ball_save_consumable_multiball_ball_save_disabled:
+    ball_save: stop
 
 ball_saves:
   main_ball_save:

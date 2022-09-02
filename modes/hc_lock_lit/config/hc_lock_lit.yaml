@@ -61,6 +61,12 @@ multiball_locks:
       disable_events: lock_stopped
       reset_count_for_current_player_events: jackpot_start, jackpot_stopped, super_jackpot_stopped
 
+variable_player:
+  multiball_lock_high_caliber_locked_ball{device.multiball_locks.high_caliber.locked_balls == 3}:
+    hctotal:
+      action: set
+      int: 0
+
 event_player:
   multiball_lock_high_caliber_locked_ball{device.multiball_locks.high_caliber.locked_balls == 3}: start_hc_multiball
   multiball_lock_high_caliber_locked_ball{device.multiball_locks.high_caliber.locked_balls < 3}: enable_lock_lit_state
