@@ -391,3 +391,6 @@ player_vars:
   aircraft_carrier_torpedo_dropped:
     initial_value: 0
     value_type: int
+  spinner_value:
+    initial_value: 0
+    value_type: int

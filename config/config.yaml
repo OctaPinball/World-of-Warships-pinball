@@ -18,3 +18,4 @@ config:
   - support/config_support_capture.yaml
   - support/config_support_commander.yaml
   - support/config_support_dmg_con.yaml
+  - support/config_support_status_report.yaml

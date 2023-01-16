@@ -49,6 +49,10 @@ ball_devices:
     eject_timeouts: 3s
     eject_coil: c_plunger
     player_controlled_eject_event: s_plunger_button_active
+  bd_saucer:
+    ball_switches: s_saucer
+    eject_coil: c_saucer_eject
+    eject_timeouts: 1s
   bd_main_hole:
     ball_switches: s_main_hole
     eject_coil: c_scoop_eject
@@ -281,8 +285,17 @@ switches:
   s_torpedo_pre:
     number: 66
     tags: switch_hit
-  s_action_button:
+  s_spinner:
     number: 67
+    tags: switch_hit
+  s_saucer:
+    number: 68
+    tags: switch_hit
+  s_right_tunnel:
+    number: 69
+    tags: switch_hit
+  s_action_button:
+    number: 70
 
 lights:
   l_shoot_again:
@@ -485,6 +498,8 @@ coils:
     default_hold_power: 0.375
   c_scoop_eject:
     number: 23
+  c_saucer_eject:
+    number: 24
 
 diverters:
   citadel_diverter:

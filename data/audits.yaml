@@ -38,10 +38,10 @@ shots:
   lane_C: 348
   lane_D: 361
   lane_E: 139
-  lock_lit_1: 1588
-  lock_lit_2: 1502
-  ricochet_1: 172
-  ricochet_2: 684
+  lock_lit_1: 1591
+  lock_lit_2: 1505
+  ricochet_1: 173
+  ricochet_2: 685
   ricochet_3: 91
   ricochet_4: 49
   ricochet_5: 3
@@ -49,18 +49,18 @@ switches:
   s_action_button: 45
   s_bumper_1: 735
   s_bumper_2: 223
-  s_bumper_3: 649
+  s_bumper_3: 667
   s_center_ramp: 114
   s_citadel: 75
   s_citadel_lock: 255
   s_conning_tower: 4
   s_detonation: 172
   s_detonation_lit: 24
-  s_dmg_1: 2703
-  s_dmg_2: 64
+  s_dmg_1: 2704
+  s_dmg_2: 65
   s_dmg_3: 20
   s_dmg_4: 27
-  s_dmg_5: 22
+  s_dmg_5: 26
   s_dmg_6: 139
   s_dmg_7: 293
   s_drop_target: 2094
@@ -69,21 +69,21 @@ switches:
   s_kickback: 0
   s_kickback_target_1: 0
   s_kickback_target_2: 0
-  s_kickback_target_3: 4
+  s_kickback_target_3: 6
   s_kickback_terget_1: 0
-  s_left_flipper: 1432
+  s_left_flipper: 1472
   s_left_hole: 0
   s_left_inlane: 349
   s_left_loop_made: 244
   s_left_loop_pre: 201
   s_left_mid_inlane: 146
   s_left_outlane: 125
-  s_left_ramp_made: 1993
+  s_left_ramp_made: 1996
   s_left_ramp_pre: 273
   s_left_slingshot: 33
-  s_lock_1: 423
-  s_lock_2: 435
-  s_lock_3: 518
+  s_lock_1: 425
+  s_lock_2: 437
+  s_lock_3: 520
   s_magnet_switch: 0
   s_main_hole: 1061
   s_pen_1: 819
@@ -92,31 +92,34 @@ switches:
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 4060
+  s_plunger: 4084
   s_plunger_button: 4
-  s_ricochet_1: 196
-  s_ricochet_2: 691
+  s_ricochet_1: 197
+  s_ricochet_2: 692
   s_ricochet_3: 93
   s_ricochet_4: 54
   s_ricochet_5: 8
-  s_right_flipper: 4145
+  s_right_flipper: 4223
   s_right_hole: 26
   s_right_inlane: 363
   s_right_loop_made: 83
-  s_right_loop_pre: 70
+  s_right_loop_pre: 71
   s_right_outlane: 141
-  s_right_ramp_made: 1700
+  s_right_ramp_made: 1703
   s_right_ramp_pre: 83
   s_right_slingshot: 132
   s_right_small_ramp: 0
+  s_right_tunnel: 0
+  s_saucer: 0
   s_side_hole: 316
-  s_side_ramp_made: 1119
+  s_side_ramp_made: 1125
   s_side_ramp_pre: 113
-  s_start: 140
+  s_spinner: 0
+  s_start: 150
   s_torpedo: 739
   s_torpedo_lane: 2
   s_torpedo_pre: 0
-  s_trough1: 654
+  s_trough1: 658
   s_trough2: 105
   s_trough3: 82
   s_trough4: 34

@@ -68,6 +68,13 @@ slide_player:
       priority: 800
 
 show_player:
+  flipper_cradle:
+    sh_status_report:
+      action: play
+      priority: 1600
+  both_flippers:
+    sh_status_report:
+      action: advance
   ball_save_main_ball_save_timer_start:
     flash_color:
       key: ball_save
@@ -192,8 +199,8 @@ ball_saves:
     enable_events: multiball_consumable_multiball_started
 
 
-widgets:
 
+widgets:
   base_score_widget:
     - type: text
       anchor_y: center
