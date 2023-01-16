@@ -1,0 +1,15 @@
+#show_version=5
+
+- time: 0
+  slides:
+    status_report_tilte:
+      - type: text
+        text: STATUS REPORT
+        style: big
+        font_size: 10 #vagy 14
+        y: center
+        round_anchor_x: left
+        round_anchor_y: top
+- time: +2
+  events:
+    - activate_status_report_scores
