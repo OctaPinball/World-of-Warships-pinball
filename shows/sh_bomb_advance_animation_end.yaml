@@ -1,4 +1,4 @@
-#show_version=5
+#show_version=6
 
 - time: 1
   events: end_advance_bomb_animation_slide
