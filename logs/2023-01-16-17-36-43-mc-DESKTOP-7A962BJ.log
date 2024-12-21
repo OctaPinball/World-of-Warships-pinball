@@ -1,0 +1,146 @@
+2023-01-16 17:36:43,985 : kivy : Factory: 184 symbols loaded
+2023-01-16 17:36:44,121 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.1
+2023-01-16 17:36:44,122 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer, img_gif 
+2023-01-16 17:36:44,169 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2023-01-16 17:36:44,169 : kivy : Video: Provider: gstplayer
+2023-01-16 17:36:44,226 : kivy : Loading MPF-MC controller
+2023-01-16 17:36:44,228 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-01-16 17:36:44,228 : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config
+2023-01-16 17:36:44,228 : ConfigProcessor : Loading config from file c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-01-16 17:36:44,264 : ConfigProcessor : Loading config: c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2023-01-16 17:36:44,265 : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.
+2023-01-16 17:36:44,267 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config
+2023-01-16 17:36:44,276 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_else_virtual.yaml
+2023-01-16 17:36:44,348 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_hardware.yaml
+2023-01-16 17:36:44,353 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_keys.yaml
+2023-01-16 17:36:44,403 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_logic.yaml
+2023-01-16 17:36:44,408 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_modes.yaml
+2023-01-16 17:36:44,414 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_operator_settings.yaml
+2023-01-16 17:36:44,431 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_sound_music.yaml
+2023-01-16 17:36:44,487 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_values.yaml
+2023-01-16 17:36:44,495 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_virtual_hardware.yaml
+2023-01-16 17:36:44,904 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_mode_end.yaml
+2023-01-16 17:36:44,935 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_hc.yaml
+2023-01-16 17:36:44,943 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_capture.yaml
+2023-01-16 17:36:44,965 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_commander.yaml
+2023-01-16 17:36:45,018 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_dmg_con.yaml
+2023-01-16 17:36:45,061 : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_status_report.yaml
+2023-01-16 17:36:45,078 : ConfigProcessor : Config file cache created: C:\Users\dell\AppData\Local\Temp\6d82fd4a30091e02690fac5de20c7449.mpf_cache
+2023-01-16 17:36:45,079 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-16 17:36:45,079 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e4aaedaa0a5d6d283bdf8896bd678b71.mpf_cache
+2023-01-16 17:36:45,084 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-16 17:36:45,084 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d05889abdb32f5a85db64ac2e197f4ff.mpf_cache
+2023-01-16 17:36:45,085 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\434c2e3a52e1507818428e1c584a9ae0.mpf_cache
+2023-01-16 17:36:45,085 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c96ee90647ae5b034e2dd42c348c42ad.mpf_cache
+2023-01-16 17:36:45,086 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ca0415bb38fd20ce1ae72b2592ece46e.mpf_cache
+2023-01-16 17:36:45,087 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2023-01-16 17:36:45,087 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c22c03646c3330fed25ec0d2c1900176.mpf_cache
+2023-01-16 17:36:45,088 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4f40b51a2a6ab6b3327b174347355c6f.mpf_cache
+2023-01-16 17:36:45,088 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\39fabcdae38f081491893b3f9bf3922e.mpf_cache
+2023-01-16 17:36:45,088 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f18cd76783971ff471759940af4bc5eb.mpf_cache
+2023-01-16 17:36:45,089 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\943ecf72a5798e3efec3d4f70c6ce1d2.mpf_cache
+2023-01-16 17:36:45,090 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\04d9c03061fa17a1f6b23081f79db9ab.mpf_cache
+2023-01-16 17:36:45,090 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2023-01-16 17:36:45,091 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f0ffd5ecaddfe34035bf3b1779215a88.mpf_cache
+2023-01-16 17:36:45,091 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2023-01-16 17:36:45,092 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2023-01-16 17:36:45,092 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2023-01-16 17:36:45,092 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2023-01-16 17:36:45,093 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2023-01-16 17:36:45,093 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2023-01-16 17:36:45,093 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2023-01-16 17:36:45,094 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\dd71d04ba3f4dce8325f2504de3de352.mpf_cache
+2023-01-16 17:36:45,094 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\47da5935da57327449007069e0d0551c.mpf_cache
+2023-01-16 17:36:45,095 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2023-01-16 17:36:45,096 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7ab9985e2a62b75a325504808417b1e7.mpf_cache
+2023-01-16 17:36:45,096 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2023-01-16 17:36:45,097 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2023-01-16 17:36:45,097 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2023-01-16 17:36:45,097 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2023-01-16 17:36:45,098 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2023-01-16 17:36:45,099 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2023-01-16 17:36:45,099 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2023-01-16 17:36:45,100 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2023-01-16 17:36:45,100 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2023-01-16 17:36:45,101 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\78980531363184480bbd7075661ced33.mpf_cache
+2023-01-16 17:36:45,101 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2023-01-16 17:36:45,102 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\44231afd4be159e8c99041e8eb88670e.mpf_cache
+2023-01-16 17:36:45,102 : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2b5357265150b67996b1d26df60329cf.mpf_cache
+2023-01-16 17:36:45,103 : mpfmc : Mission Pinball Framework Media Controller v0.54.2
+2023-01-16 17:36:45,103 : mpfmc : Mission Pinball Framework Game Engine v0.54.6
+2023-01-16 17:36:45,103 : mpfmc : Machine path: E:\MPF\wows\wows
+2023-01-16 17:36:45,103 : mpfmc : Starting clock at 60.0Hz
+2023-01-16 17:36:45,116 : kivy : Text: Provider: sdl2
+2023-01-16 17:36:45,150 : kivy : Window: Provider: sdl2
+2023-01-16 17:36:45,472 : kivy : GL: Using the "OpenGL" graphics system
+2023-01-16 17:36:45,479 : kivy : GL: GLEW initialization succeeded
+2023-01-16 17:36:45,479 : kivy : GL: Backend used <glew>
+2023-01-16 17:36:45,479 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 516.59'>
+2023-01-16 17:36:45,479 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2023-01-16 17:36:45,480 : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'>
+2023-01-16 17:36:45,480 : kivy : GL: OpenGL parsed version: 4, 6
+2023-01-16 17:36:45,480 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2023-01-16 17:36:45,480 : kivy : GL: Texture max size <32768>
+2023-01-16 17:36:45,480 : kivy : GL: Texture max units <32>
+2023-01-16 17:36:45,497 : kivy : Window: auto add sdl2 input provider
+2023-01-16 17:36:45,497 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-01-16 17:36:45,761 : AudioInterface : Initialized
+2023-01-16 17:36:45,767 : kivy : Base: Start application main loop
+2023-01-16 17:36:45,767 : EventManager : Event: ======'display_dmd_initialized'====== Args={}
+2023-01-16 17:36:45,831 : mpfmc : Display: Setting 'dmd' as default display
+2023-01-16 17:36:45,838 : kivy : GL: NPOT texture support is available
+2023-01-16 17:36:45,854 : EventManager : Event: ======'displays_initialized'====== Args={}
+2023-01-16 17:36:45,855 : EventManager : Event: ======'slide_dmd_blank_created'====== Args={}
+2023-01-16 17:36:45,855 : EventManager : Event: ======'display_dmd_ready'====== Args={}
+2023-01-16 17:36:45,865 : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-16 17:36:45,895 : kivy : Base: Leaving application in progress...
+2023-01-16 17:36:45,895 : kivy : Exception while processing RegisteredHandler(callback=<bound method McConfigPlayer._initialise_system_wide of McConfigPlayer.widgets>, priority=1, kwargs={}, key=UUID('877d18fc-3c57-4160-a965-e912820eec83'), condition=None, blocking_facility=None) for event init_phase_1. Unknown widget mp_score_widget_player_4
+Traceback (most recent call last):
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 683, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mc_config_player.py", line 36, in _initialise_system_wide
+    self.machine.machine_config[self.config_file_section]))
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\core\config_player.py", line 105, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\config_players\device_config_player.py", line 51, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\config_players\widget_player.py", line 113, in _validate_config_item
+    raise AssertionError("Unknown widget {}".format(widget))
+AssertionError: Unknown widget mp_score_widget_player_4
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\commands\mc.py", line 224, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\app.py", line 855, in run
+    runTouchApp()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+    self._mainloop()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+    EventLoop.idle()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\base.py", line 339, in idle
+    Clock.tick()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\kivy\clock.py", line 591, in tick
+    self._process_events()
+  File "kivy\_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\uix\display.py", line 208, in _displays_initialized
+    self.mc.displays_initialized()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mc.py", line 348, in displays_initialized
+    self._init()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpfmc\core\mc.py", line 373, in _init
+    self.events.process_event_queue()
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 770, in process_event_queue
+    **event[3])
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 729, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\core\events.py", line 685, in _run_handlers
+    raise Exception("Exception while processing {} for event {}. {}".format(handler, event, e)) from e
+Exception: Exception while processing RegisteredHandler(callback=<bound method McConfigPlayer._initialise_system_wide of McConfigPlayer.widgets>, priority=1, kwargs={}, key=UUID('877d18fc-3c57-4160-a965-e912820eec83'), condition=None, blocking_facility=None) for event init_phase_1. Unknown widget mp_score_widget_player_4
+2023-01-16 17:36:45,981 : kivy : Stopping child threads... (1 remaining)
+2023-01-16 17:36:46,786 : kivy : All child threads stopped.

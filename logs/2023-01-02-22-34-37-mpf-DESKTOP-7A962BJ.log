@@ -1,0 +1,1280 @@
+2023-01-02 22:34:37,410 : INFO : root : Loading config.
+2023-01-02 22:34:37,419 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-02 22:34:37,450 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\823390186140f561069e51d67517f5d0.mpf_cache
+2023-01-02 22:34:37,695 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-02 22:34:37,712 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e4aaedaa0a5d6d283bdf8896bd678b71.mpf_cache
+2023-01-02 22:34:37,717 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-02 22:34:37,738 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d05889abdb32f5a85db64ac2e197f4ff.mpf_cache
+2023-01-02 22:34:37,744 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\434c2e3a52e1507818428e1c584a9ae0.mpf_cache
+2023-01-02 22:34:37,751 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c96ee90647ae5b034e2dd42c348c42ad.mpf_cache
+2023-01-02 22:34:37,766 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ca0415bb38fd20ce1ae72b2592ece46e.mpf_cache
+2023-01-02 22:34:37,780 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2023-01-02 22:34:37,789 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c22c03646c3330fed25ec0d2c1900176.mpf_cache
+2023-01-02 22:34:37,797 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4f40b51a2a6ab6b3327b174347355c6f.mpf_cache
+2023-01-02 22:34:37,804 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\39fabcdae38f081491893b3f9bf3922e.mpf_cache
+2023-01-02 22:34:37,809 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f18cd76783971ff471759940af4bc5eb.mpf_cache
+2023-01-02 22:34:37,835 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\943ecf72a5798e3efec3d4f70c6ce1d2.mpf_cache
+2023-01-02 22:34:37,849 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\04d9c03061fa17a1f6b23081f79db9ab.mpf_cache
+2023-01-02 22:34:37,857 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2023-01-02 22:34:37,864 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f0ffd5ecaddfe34035bf3b1779215a88.mpf_cache
+2023-01-02 22:34:37,870 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2023-01-02 22:34:37,875 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2023-01-02 22:34:37,880 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2023-01-02 22:34:37,885 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2023-01-02 22:34:37,893 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2023-01-02 22:34:37,898 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2023-01-02 22:34:37,903 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2023-01-02 22:34:37,908 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\dd71d04ba3f4dce8325f2504de3de352.mpf_cache
+2023-01-02 22:34:37,916 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\47da5935da57327449007069e0d0551c.mpf_cache
+2023-01-02 22:34:37,934 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2023-01-02 22:34:37,942 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7ab9985e2a62b75a325504808417b1e7.mpf_cache
+2023-01-02 22:34:37,947 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2023-01-02 22:34:37,952 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2023-01-02 22:34:37,957 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2023-01-02 22:34:37,963 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2023-01-02 22:34:37,980 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2023-01-02 22:34:37,986 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2023-01-02 22:34:37,992 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2023-01-02 22:34:38,001 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2023-01-02 22:34:38,010 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2023-01-02 22:34:38,015 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\78980531363184480bbd7075661ced33.mpf_cache
+2023-01-02 22:34:38,028 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2023-01-02 22:34:38,034 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\44231afd4be159e8c99041e8eb88670e.mpf_cache
+2023-01-02 22:34:38,056 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2b5357265150b67996b1d26df60329cf.mpf_cache
+2023-01-02 22:34:38,075 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\6d62665f0d27f04673542af594d4fd9b.mpf_cache
+2023-01-02 22:34:38,079 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3748cd4146dd8769dc8203d243b40460.mpf_cache
+2023-01-02 22:34:38,084 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\17743d86d766158b74063aba6bc1c32c.mpf_cache
+2023-01-02 22:34:38,089 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f880dfaba64907cc1c8d35fe4f9ee098.mpf_cache
+2023-01-02 22:34:38,093 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b3315542fefac86d8251965e4eddcee0.mpf_cache
+2023-01-02 22:34:38,098 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c87ce6071caf9b8e671d40e32f84144f.mpf_cache
+2023-01-02 22:34:38,102 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2896a43e0d61e3501c9963d4b59c6ee0.mpf_cache
+2023-01-02 22:34:38,108 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ff8f94bde3fa94916ad1b7409fed77bd.mpf_cache
+2023-01-02 22:34:38,114 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\053da04979f77c811527e2c0f3ca94fb.mpf_cache
+2023-01-02 22:34:38,138 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\76437d1e292ff239f4f9dc05fbdd5cdf.mpf_cache
+2023-01-02 22:34:38,144 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\a103f9965307e92153b3826866cd7d56.mpf_cache
+2023-01-02 22:34:38,147 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\edf282469509fb91fe2444b6848262a1.mpf_cache
+2023-01-02 22:34:38,151 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b8da0a805f864daaf4908642bfd2e7fd.mpf_cache
+2023-01-02 22:34:38,155 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\57bc401cb4a04615f5b5aa4ba6a61eb7.mpf_cache
+2023-01-02 22:34:38,160 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\fee9cc2b93cb113814269e4a59231078.mpf_cache
+2023-01-02 22:34:38,176 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\fcb209f5756d4056b66c34a3e9f20f60.mpf_cache
+2023-01-02 22:34:38,181 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\797d5c88f37a3f4c1eda6cc76ebd1d4b.mpf_cache
+2023-01-02 22:34:38,184 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\fd8f672dffbfb9b282859f7185f62437.mpf_cache
+2023-01-02 22:34:38,189 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\986b6c77a360e7ca0a5b736ec9bfb4fa.mpf_cache
+2023-01-02 22:34:38,194 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\851e1d46f2be32b89fdca6ef94995943.mpf_cache
+2023-01-02 22:34:38,198 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\95f5997d9c4798b115eb453656d93a1f.mpf_cache
+2023-01-02 22:34:38,231 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\804b9a1ad2b0368c8378a1697de79431.mpf_cache
+2023-01-02 22:34:38,235 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3f05176740ce9b1ce630d9f26057f472.mpf_cache
+2023-01-02 22:34:38,240 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d75c6855c6bfc342a42171d44ee55d0f.mpf_cache
+2023-01-02 22:34:38,245 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c03af884f77fd2edff48f1f1b29a0001.mpf_cache
+2023-01-02 22:34:38,249 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\125cf4d7d8d0f7b14ac4e9b5c5fc6dd9.mpf_cache
+2023-01-02 22:34:38,253 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e98bbe1017594ac8f5dc55070bdaec1b.mpf_cache
+2023-01-02 22:34:38,257 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\540f9a41a139edc7fb3c0d3fef764d79.mpf_cache
+2023-01-02 22:34:38,262 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\66310f6b7da6aa9e1e12a092b4e5ea1e.mpf_cache
+2023-01-02 22:34:38,266 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e39b84c1f1807716ec310701a6bf0d73.mpf_cache
+2023-01-02 22:34:38,271 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\a3a3c1b8b3198ac6ffa6b5064057ae07.mpf_cache
+2023-01-02 22:34:38,276 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4eebc146e222c8d9b7fa4d2858e69ea1.mpf_cache
+2023-01-02 22:34:38,281 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e126248c44ebfdee710b05c2b7d5fe82.mpf_cache
+2023-01-02 22:34:38,304 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\69ecee52b21d2a851426dcc7135d38ea.mpf_cache
+2023-01-02 22:34:38,311 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\56ece61e32d3cc2ed53dd325a47460b4.mpf_cache
+2023-01-02 22:34:38,327 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d0b1dbeaceec3deef73ab0fce07cd740.mpf_cache
+2023-01-02 22:34:38,343 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3d3afc7fea552c2bae3e6e1d92aa1a26.mpf_cache
+2023-01-02 22:34:38,349 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4bd243ad0d8c16d00a837306cf5c3d29.mpf_cache
+2023-01-02 22:34:38,354 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7f312b640f6d5109d8d1be2a05f128e8.mpf_cache
+2023-01-02 22:34:38,359 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\67980d6a57506cd4da44486112b91bec.mpf_cache
+2023-01-02 22:34:38,363 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\9ec3c911ae7e15f7065133c529810f95.mpf_cache
+2023-01-02 22:34:38,369 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\930069940b749f97f86d219b2ddeacf1.mpf_cache
+2023-01-02 22:34:38,383 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\650f26d6333e64d21657a8ef260f5acf.mpf_cache
+2023-01-02 22:34:38,389 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7fe69373349de136ea08d265848ee2de.mpf_cache
+2023-01-02 22:34:38,394 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\24196d5bffa5766d9b4a62f9ae23e660.mpf_cache
+2023-01-02 22:34:38,399 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\5f56171e4007003f2e0029bfa218d47c.mpf_cache
+2023-01-02 22:34:38,405 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\9828dc3aacab1158f9e233d43cb3fe1f.mpf_cache
+2023-01-02 22:34:38,410 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\93dd7129697f51b97f6c3186dcf43a8c.mpf_cache
+2023-01-02 22:34:38,413 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\854a9aa5d57e7e92df5c4ac62cddaec0.mpf_cache
+2023-01-02 22:34:38,428 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4a17f5ab6f47bd6cbffa808b6eeea916.mpf_cache
+2023-01-02 22:34:38,448 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\87b77888918ca02abc6ea55edabaa1e0.mpf_cache
+2023-01-02 22:34:38,452 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2e8097eb902f0db673edff67ef20cd70.mpf_cache
+2023-01-02 22:34:38,457 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\6dda5ce3394e1c203b91cdb4c3bc5158.mpf_cache
+2023-01-02 22:34:38,469 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\801d82c75b08baf8aba110a640054dee.mpf_cache
+2023-01-02 22:34:38,480 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\6d7eeb6b67afdec81637282a9dda6782.mpf_cache
+2023-01-02 22:34:38,484 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f18efe2c04100550263acd9a8a6038af.mpf_cache
+2023-01-02 22:34:38,489 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\77dfdfbf7011c8796e93f9e4ee745691.mpf_cache
+2023-01-02 22:34:38,493 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\55e62533d8b0090336fcaf5380faf342.mpf_cache
+2023-01-02 22:34:38,497 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\9fa4a25ee32f55bf2c6a76fb59d8bbaf.mpf_cache
+2023-01-02 22:34:38,501 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7e90ab1bc560333dd4b4d9f4aaf6bf62.mpf_cache
+2023-01-02 22:34:38,506 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\24505a0d42d384632078d94085b52904.mpf_cache
+2023-01-02 22:34:38,512 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d2e2dee5d391f181bf417bbfa62b8ee2.mpf_cache
+2023-01-02 22:34:38,516 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4398dc713d774371f49c655025259670.mpf_cache
+2023-01-02 22:34:38,521 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2a10046c74e5eb8ef0ed9d338302b7e2.mpf_cache
+2023-01-02 22:34:38,525 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\1976a772a16c7f14b7c542c255637f22.mpf_cache
+2023-01-02 22:34:38,532 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\91df8e0ae0e44730ed622ea2efb74e97.mpf_cache
+2023-01-02 22:34:38,536 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\dff6fabdd3c60a7e52618c514c4d53bb.mpf_cache
+2023-01-02 22:34:38,540 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b00ca6d895de68a8daf4555cf943ba58.mpf_cache
+2023-01-02 22:34:38,546 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b5b8a4db5bea0726b6595532599dafa3.mpf_cache
+2023-01-02 22:34:38,550 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\69fdf32f8b1f00ca71933bfdf818d181.mpf_cache
+2023-01-02 22:34:38,555 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\2ea47c81ed4f8a69c675021c80778e85.mpf_cache
+2023-01-02 22:34:38,559 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4341f22727a1b0f8b478ff6fc7114278.mpf_cache
+2023-01-02 22:34:38,563 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\34b907b0c1988670c99198ad34048e9b.mpf_cache
+2023-01-02 22:34:38,569 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3078b120455821a73c8c6f8a1dceab4f.mpf_cache
+2023-01-02 22:34:38,573 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d95a17e65a2b41e386a7fc14bcda65fd.mpf_cache
+2023-01-02 22:34:38,578 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\70a3dc288dcfdeeb747f888700969697.mpf_cache
+2023-01-02 22:34:38,582 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\a545989d29acb91f9b5046622b67b4ed.mpf_cache
+2023-01-02 22:34:38,586 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\8d6f9c7ff9c39db68f4d155bf8492fbe.mpf_cache
+2023-01-02 22:34:38,591 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\155f4ce74e2bf17af8dbff2a4763087f.mpf_cache
+2023-01-02 22:34:38,595 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\1f327f8ed4990105250a8e68ccfd880b.mpf_cache
+2023-01-02 22:34:38,600 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\631f1a0f4495ddfec417d1e517d075ee.mpf_cache
+2023-01-02 22:34:38,604 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\58d128190d1d0b57398f3d0bb3d51665.mpf_cache
+2023-01-02 22:34:38,609 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3a392e0f36204bd15fe7f620a9abd8a5.mpf_cache
+2023-01-02 22:34:38,620 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\a21cdf4e7d11d0ddd588c2361820cd3f.mpf_cache
+2023-01-02 22:34:38,629 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\c985e32e9d44f65a2b4ce21de0879b93.mpf_cache
+2023-01-02 22:34:38,633 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\53b5443f454133ae1b362b3b93db77cb.mpf_cache
+2023-01-02 22:34:38,637 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3931d087bd0a337e7115b05d59ca5799.mpf_cache
+2023-01-02 22:34:38,642 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\4b9dbb62597032bf50b643d8dab4e70a.mpf_cache
+2023-01-02 22:34:38,646 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\765fb0e29c5e0a3c4df63af3a63a2aa9.mpf_cache
+2023-01-02 22:34:38,650 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\92bd7ddb78685ce3872fdffddbf4066b.mpf_cache
+2023-01-02 22:34:38,654 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f17b18f8fc49aa4015f8aaed5fe0310c.mpf_cache
+2023-01-02 22:34:38,659 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\6025440fe966918e9010659c75a84677.mpf_cache
+2023-01-02 22:34:38,682 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\cfdf05d29e2db67703b682b9e2f3ca3c.mpf_cache
+2023-01-02 22:34:38,687 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\d94e10a03295440a68c0665192595ed1.mpf_cache
+2023-01-02 22:34:38,691 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\01f102dbddb32abe391845f1f1fb6297.mpf_cache
+2023-01-02 22:34:38,695 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\31f678389d4048ccede53f3d9bb6ebf4.mpf_cache
+2023-01-02 22:34:38,700 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b22da84cc4aef91ed7f9bc0328a0f1b4.mpf_cache
+2023-01-02 22:34:38,704 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\da1fede4c95c7878b99d619776f98fd7.mpf_cache
+2023-01-02 22:34:38,708 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\cc30193cdee974cc13426b098027cee1.mpf_cache
+2023-01-02 22:34:38,713 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\58e69a62c4f703cc84058f6193109d31.mpf_cache
+2023-01-02 22:34:38,717 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e6a4926517ab55f9ed1b3658c3e4007c.mpf_cache
+2023-01-02 22:34:38,725 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\66ee654434268f21d59a1a197a33e84e.mpf_cache
+2023-01-02 22:34:38,730 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\0ad8a8c62d71fd6db5e688e34997c124.mpf_cache
+2023-01-02 22:34:38,734 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\986ed299862bf4d6a9ee043620eb4411.mpf_cache
+2023-01-02 22:34:38,738 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\85def6e32b8790efec9df62810edf89f.mpf_cache
+2023-01-02 22:34:38,743 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\b4b8bbe6eb89ffab7b0a5bdc28aa737c.mpf_cache
+2023-01-02 22:34:38,748 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\234f7aa8fcdaed8506c3f7e3d1434348.mpf_cache
+2023-01-02 22:34:38,752 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\836170f935ca4f3a3c83dd48d4288e22.mpf_cache
+2023-01-02 22:34:38,756 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\0a4bf4f558c6de89fd1636f30c6211d9.mpf_cache
+2023-01-02 22:34:38,761 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3936448b27d8bfc57c517bc3bf9d3aa2.mpf_cache
+2023-01-02 22:34:38,765 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\73d13f131bebf83032dc613efdff3522.mpf_cache
+2023-01-02 22:34:38,769 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\20beca28b497152ca0fd3409b83d4b87.mpf_cache
+2023-01-02 22:34:38,774 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\e816efa2a54094e8cd44dabebc7784df.mpf_cache
+2023-01-02 22:34:38,778 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\ec91b3a5e4d650dc4f7371582fb38eed.mpf_cache
+2023-01-02 22:34:38,782 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\9a1a1c28ae640e16df86b556a2688443.mpf_cache
+2023-01-02 22:34:38,786 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\3463b2a86a39355c183f674ae2b12038.mpf_cache
+2023-01-02 22:34:38,791 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\6e6719c61d3fa021e7d679c2f24e1608.mpf_cache
+2023-01-02 22:34:38,795 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\aa69a2c5c0adb7f9c40b6db4f1ca3483.mpf_cache
+2023-01-02 22:34:38,799 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\971ebba8800a659d7a8e99cb206beff7.mpf_cache
+2023-01-02 22:34:38,803 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\07e13f5cf5882efd50a16f81bcde4606.mpf_cache
+2023-01-02 22:34:38,807 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\48a45c572b20481e47ff005f73695e50.mpf_cache
+2023-01-02 22:34:38,811 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f12c25ef7bc56249cbbfe26e4a8634a0.mpf_cache
+2023-01-02 22:34:38,822 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\7058dd9e75ad4dd97e6d02eda1f8d5f4.mpf_cache
+2023-01-02 22:34:38,826 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\a26dda2f3898e9b95a688d2faa147e67.mpf_cache
+2023-01-02 22:34:38,830 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\fbd33e7aab60e9ffed5e28859db24a15.mpf_cache
+2023-01-02 22:34:38,835 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\64f60477c2da2625fa9ef2a86d50bb34.mpf_cache
+2023-01-02 22:34:38,839 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\49b862cde9d22907c81f839348639a1f.mpf_cache
+2023-01-02 22:34:38,844 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\21dda72cc57cadcf698e50094b8ee97d.mpf_cache
+2023-01-02 22:34:38,859 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\f9ee12ee8bbd05f85378a9386ceacce5.mpf_cache
+2023-01-02 22:34:38,864 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\0394fc9fe8dda0bc8c420287c11c8aae.mpf_cache
+2023-01-02 22:34:38,869 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\812e1e327d6ef9a51d487328d0586885.mpf_cache
+2023-01-02 22:34:38,873 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\70cf3c9830d27e79cc1fda7cb07bc23d.mpf_cache
+2023-01-02 22:34:38,879 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\db70c5aab62dca0f645afe12f6eb7df3.mpf_cache
+2023-01-02 22:34:38,884 : INFO : Machine : Mission Pinball Framework Core Engine v0.54.6
+2023-01-02 22:34:38,884 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-02-22-34-37-mpf-DESKTOP-7A962BJ.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-02 22:34:38,884 : INFO : Machine : MPF path: c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf
+2023-01-02 22:34:38,884 : INFO : Machine : Machine path: E:\MPF\wows\wows
+2023-01-02 22:34:38,884 : INFO : Machine : Platform: win32
+2023-01-02 22:34:38,884 : INFO : Machine : Python executable location: c:\users\dell\appdata\local\programs\python\python36\python.exe
+2023-01-02 22:34:38,884 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2023-01-02 22:34:38,887 : INFO : Machine : Initialise MPF.
+2023-01-02 22:34:39,411 : INFO : Pin2DmdDevice : Connecting to Pin2DMD RGB DMD
+2023-01-02 22:34:39,427 : INFO : Pin2DmdDevice : Connected to Pin2DMD
+2023-01-02 22:34:39,427 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_dmg_con_time'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_1_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_2_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_3_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_4_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_5_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_6_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,495 : INFO : EventManager : Event: ======'machine_var_mv_bomb_7_and_9_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_mv_bomb_8_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_mv_bomb_10_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_mv_bomb_mode_cost'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.54.6', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.54.6, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19041-SP0', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19041', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-02 22:34:39,496 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-02 22:34:40,140 : INFO : EventManager : Event: ======'logicblock_m1_delay_updated'====== Args={'value': 0, 'enabled': True}
+2023-01-02 22:34:40,140 : INFO : EventManager : Event: ======'logicblock_m1_delay_updated'====== Args={'value': 0, 'enabled': True}
+2023-01-02 22:34:40,140 : INFO : EventManager : Event: ======'logicblock_capture_global_counter_updated'====== Args={'value': 6, 'enabled': True}
+2023-01-02 22:34:40,140 : INFO : EventManager : Event: ======'logicblock_capture_global_counter_updated'====== Args={'value': 6, 'enabled': True}
+2023-01-02 22:34:40,142 : INFO : EventManager : Event: ======'main_state'====== Args={}
+2023-01-02 22:34:40,142 : INFO : EventManager : Event: ======'IGNORE'====== Args={}
+2023-01-02 22:34:40,142 : INFO : EventManager : Event: ======'lock_lit_started'====== Args={}
+2023-01-02 22:34:40,143 : INFO : EventManager : Event: ======'disable_mode'====== Args={}
+2023-01-02 22:34:40,143 : INFO : EventManager : Event: ======'multiball_inactive'====== Args={}
+2023-01-02 22:34:40,143 : INFO : EventManager : Event: ======'lite_detonation_start'====== Args={}
+2023-01-02 22:34:40,144 : INFO : EventManager : Event: ======'battle_inactive'====== Args={}
+2023-01-02 22:34:40,144 : INFO : EventManager : Event: ======'HAGYDFIGYELMENKIVUL'====== Args={}
+2023-01-02 22:34:40,144 : INFO : EventManager : Event: ======'enable_citadel_diverter'====== Args={}
+2023-01-02 22:34:40,145 : INFO : EventManager : Event: ======'commander_1_changed'====== Args={}
+2023-01-02 22:34:40,147 : WARNING : Mode.drednaught : Can only start mode drednaught during a game. Aborting start.
+2023-01-02 22:34:40,147 : WARNING : Mode.capture : Can only start mode capture during a game. Aborting start.
+2023-01-02 22:34:40,147 : WARNING : Mode.confederate : Can only start mode confederate during a game. Aborting start.
+2023-01-02 22:34:40,147 : WARNING : Mode.main_play : Can only start mode main_play during a game. Aborting start.
+2023-01-02 22:34:40,147 : WARNING : Mode.hc_lock_lit : Can only start mode hc_lock_lit during a game. Aborting start.
+2023-01-02 22:34:40,161 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('2', <Platform.SmartVirtual>) <switch.s_trough1>
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>) <switch.s_trough2>
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>) <switch.s_trough3>
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>) <switch.s_trough4>
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('6', <Platform.SmartVirtual>) <switch.s_trough5>
+2023-01-02 22:34:40,162 : INFO : SwitchController : Found active switch: ('7', <Platform.SmartVirtual>) <switch.s_trough6>
+2023-01-02 22:34:40,243 : INFO : EventManager : Event: ======'machine_var_score1_label'====== Args={'value': 'GRAND ADMIRAL', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,243 : INFO : EventManager : Event: ======'machine_var_score1_name'====== Args={'value': 'SBA', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score1_value'====== Args={'value': 1000000000, 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score2_label'====== Args={'value': 'ADMIRAL 1', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score2_name'====== Args={'value': 'OCP', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score2_value'====== Args={'value': 900000000, 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score3_label'====== Args={'value': 'ADMIRAL 2', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score3_name'====== Args={'value': 'AND', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score3_value'====== Args={'value': 800000000, 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score4_label'====== Args={'value': 'ADMIRAL 3', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score4_name'====== Args={'value': 'W G', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score4_value'====== Args={'value': 700000000, 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,244 : INFO : EventManager : Event: ======'machine_var_score5_label'====== Args={'value': 'ADMIRAL 4', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,245 : INFO : EventManager : Event: ======'machine_var_score5_name'====== Args={'value': 'WOW', 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,245 : INFO : EventManager : Event: ======'machine_var_score5_value'====== Args={'value': 600000000, 'prev_value': None, 'change': True}
+2023-01-02 22:34:40,245 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2023-01-02 22:34:40,247 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2023-01-02 22:34:47,511 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2023-01-02 22:34:47,511 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2023-01-02 22:34:47,530 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.54.2', 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,531 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.54.2 (config_version=5, BCP v1.1, Requires MPF v0.54.0)', 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,533 : INFO : ball_device.bd_trough : State: idle
+2023-01-02 22:34:47,543 : INFO : ball_device.bd_plunger : State: idle
+2023-01-02 22:34:47,544 : INFO : ball_device.bd_main_hole : State: idle
+2023-01-02 22:34:47,544 : INFO : ball_device.bd_hc_lock : State: idle
+2023-01-02 22:34:47,634 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-02 22:34:47,729 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 1.0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,743 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-02 22:34:47,752 : INFO : BallController : Initial balls found: 5
+2023-01-02 22:34:47,753 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,753 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 653, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,754 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0], 'total': 1}, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,754 : INFO : EventManager : Event: ======'machine_var_audits_shots_battle_shot'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,754 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_1'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,755 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_2'====== Args={'value': 235, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,755 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_3'====== Args={'value': 91, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,755 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_4'====== Args={'value': 29, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,755 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_5'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,756 : INFO : EventManager : Event: ======'machine_var_audits_shots_confederate_6'====== Args={'value': 399, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,756 : INFO : EventManager : Event: ======'machine_var_audits_shots_detonation'====== Args={'value': 42, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,756 : INFO : EventManager : Event: ======'machine_var_audits_shots_detonation_lit'====== Args={'value': 172, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,757 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_1'====== Args={'value': 96, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,757 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_2'====== Args={'value': 122, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,757 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_3'====== Args={'value': 84, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,758 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_4'====== Args={'value': 101, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,758 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_5'====== Args={'value': 78, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,758 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_6'====== Args={'value': 99, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,759 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_add_time_1'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,759 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_add_time_2'====== Args={'value': 43, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,759 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_add_time_3'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,760 : INFO : EventManager : Event: ======'machine_var_audits_shots_dmg_con_add_time_4'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,760 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_1'====== Args={'value': 79, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,761 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_2'====== Args={'value': 106, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,761 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_3'====== Args={'value': 91, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,762 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_4'====== Args={'value': 41, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,762 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_5'====== Args={'value': 42, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,762 : INFO : EventManager : Event: ======'machine_var_audits_shots_jackpot_6'====== Args={'value': 51, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,763 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_A'====== Args={'value': 125, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,763 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_B'====== Args={'value': 146, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,764 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_C'====== Args={'value': 348, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,764 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_D'====== Args={'value': 361, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,764 : INFO : EventManager : Event: ======'machine_var_audits_shots_lane_E'====== Args={'value': 139, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,765 : INFO : EventManager : Event: ======'machine_var_audits_shots_lock_lit_1'====== Args={'value': 1591, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,765 : INFO : EventManager : Event: ======'machine_var_audits_shots_lock_lit_2'====== Args={'value': 1505, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,765 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_1'====== Args={'value': 173, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,766 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_2'====== Args={'value': 685, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,766 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_3'====== Args={'value': 91, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,767 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_4'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,767 : INFO : EventManager : Event: ======'machine_var_audits_shots_ricochet_5'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,767 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_action_button'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,782 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_1'====== Args={'value': 735, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,783 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_2'====== Args={'value': 223, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,783 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_bumper_3'====== Args={'value': 667, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,784 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_center_ramp'====== Args={'value': 114, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,784 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_citadel'====== Args={'value': 75, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,784 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_citadel_lock'====== Args={'value': 255, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,785 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_conning_tower'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,785 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_detonation'====== Args={'value': 172, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,786 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_detonation_lit'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,786 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_1'====== Args={'value': 2703, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,787 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_2'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,787 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_3'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,787 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_4'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,788 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_5'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,788 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_6'====== Args={'value': 139, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,789 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_dmg_7'====== Args={'value': 293, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,789 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_target'====== Args={'value': 2094, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,789 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,790 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_lane'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,790 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,791 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,791 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,791 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_target_3'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,792 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_kickback_terget_1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,792 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1432, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,793 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_hole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,794 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'value': 349, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,794 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_made'====== Args={'value': 244, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,795 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_loop_pre'====== Args={'value': 201, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,795 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_mid_inlane'====== Args={'value': 146, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,796 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 125, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,796 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_made'====== Args={'value': 1996, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,797 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_pre'====== Args={'value': 273, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,797 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 33, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,797 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_1'====== Args={'value': 425, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,798 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_2'====== Args={'value': 437, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,799 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lock_3'====== Args={'value': 520, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,799 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_magnet_switch'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,799 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_hole'====== Args={'value': 1061, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,800 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_1'====== Args={'value': 819, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,800 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_2'====== Args={'value': 96, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,801 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_3'====== Args={'value': 322, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,801 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_4'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,802 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_5'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,802 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pen_6'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,802 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 4063, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,803 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_button'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,803 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_1'====== Args={'value': 197, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,804 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_2'====== Args={'value': 692, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,804 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_3'====== Args={'value': 93, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,805 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_4'====== Args={'value': 54, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,805 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ricochet_5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,806 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 4177, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,806 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_hole'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,807 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 363, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,807 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_loop_made'====== Args={'value': 83, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,808 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_loop_pre'====== Args={'value': 70, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,808 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 141, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,809 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_made'====== Args={'value': 1703, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,809 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_pre'====== Args={'value': 83, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,810 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 132, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,811 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_small_ramp'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,811 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_hole'====== Args={'value': 316, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,812 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_made'====== Args={'value': 1125, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,812 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_side_ramp_pre'====== Args={'value': 113, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,813 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,813 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_torpedo'====== Args={'value': 739, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,814 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_torpedo_lane'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,814 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_torpedo_pre'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,815 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 654, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,816 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 105, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,816 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 82, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,817 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,817 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,818 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,818 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-02 22:34:47,819 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-02 22:34:47,842 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-01-02 22:34:47,855 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-01-02 22:34:47,861 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-01-02 22:34:47,861 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-01-02 22:34:47,861 : INFO : EventManager : Event: ======'diverter_citadel_diverter_deactivating'====== Args={}
+2023-01-02 22:34:47,862 : INFO : coil.c_loop_diverter : Disabling Driver
+2023-01-02 22:34:47,862 : INFO : EventManager : Event: ======'diverter_torpedo_peg_deactivating'====== Args={}
+2023-01-02 22:34:47,862 : INFO : coil.c_torpedo_peg : Disabling Driver
+2023-01-02 22:34:47,862 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-01-02 22:34:47,862 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-01-02 22:34:47,862 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-01-02 22:34:47,863 : INFO : Mode.attract : Started. Priority: 10
+2023-01-02 22:34:47,863 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-01-02 22:34:47,863 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-01-02 22:34:47,863 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-01-02 22:34:47,928 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:47,928 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:47,942 : INFO : Machine : Starting the main run loop.
+2023-01-02 22:34:48,483 : INFO : BcpServer : New client connected.
+2023-01-02 22:34:49,889 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:49,895 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:51,888 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:51,894 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:54,477 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:54,518 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:55,923 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:55,930 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:58,456 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:58,467 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:34:59,888 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:34:59,888 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:01,869 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:01,873 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:03,892 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:03,892 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:05,896 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:05,899 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:07,868 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:07,873 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:09,867 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:09,872 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:11,893 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:11,901 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:13,887 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:13,892 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:15,885 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:15,891 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:17,931 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:17,939 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:19,868 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:19,872 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:21,901 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:21,920 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:23,868 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:23,873 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:25,885 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:25,890 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:27,885 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:27,890 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:29,884 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:29,892 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:31,870 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:31,875 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:33,869 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:33,874 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:35,877 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:35,878 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:37,870 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:37,876 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:39,878 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:39,879 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:41,910 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:41,933 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:43,894 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:43,914 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:45,927 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:45,949 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:47,939 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:47,961 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:49,881 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:49,882 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:51,908 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:51,908 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:53,899 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:53,900 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:55,871 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:55,875 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:57,871 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:57,872 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:35:59,885 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:35:59,890 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:01,883 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:01,885 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:03,877 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:03,893 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:05,873 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:05,880 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:07,875 : INFO : EventManager : Event: ======'slide_test_slide_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:07,883 : INFO : EventManager : Event: ======'slide_test_slide_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:09,891 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:09,905 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:11,874 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:11,882 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:11,887 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:16,884 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:16,888 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:18,869 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:18,883 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:20,867 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:20,870 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:20,885 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:22,874 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:22,874 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:22,875 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:24,867 : INFO : EventManager : Event: ======'slide_attract_slide_4_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:24,871 : INFO : EventManager : Event: ======'slide_attract_slide_4_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:26,869 : INFO : EventManager : Event: ======'slide_attract_slide_5_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:26,873 : INFO : EventManager : Event: ======'slide_attract_slide_5_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:28,874 : INFO : EventManager : Event: ======'slide_attract_slide_6_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:28,880 : INFO : EventManager : Event: ======'slide_attract_slide_6_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:30,885 : INFO : EventManager : Event: ======'slide_attract_slide_7_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:30,890 : INFO : EventManager : Event: ======'slide_attract_slide_7_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:32,872 : INFO : EventManager : Event: ======'slide_attract_slide_8_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:32,882 : INFO : EventManager : Event: ======'slide_attract_slide_8_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:34,872 : INFO : EventManager : Event: ======'slide_attract_slide_9_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:34,881 : INFO : EventManager : Event: ======'slide_attract_slide_9_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:36,891 : INFO : EventManager : Event: ======'slide_attract_slide_10_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:36,897 : INFO : EventManager : Event: ======'slide_attract_slide_10_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:37,870 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:37,873 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:37,875 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:39,872 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:39,877 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:39,882 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:41,887 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:41,894 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:41,911 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:43,888 : INFO : EventManager : Event: ======'slide_end_mode_8_co_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:43,908 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:43,908 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:45,888 : INFO : EventManager : Event: ======'slide_end_mode_8_com_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:45,939 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:45,944 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:47,873 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:47,879 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:47,886 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:49,873 : INFO : EventManager : Event: ======'slide_scores_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:49,877 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:49,881 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:51,873 : INFO : EventManager : Event: ======'slide_medals_back_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:51,891 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:51,891 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:53,873 : INFO : EventManager : Event: ======'slide_medals_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:53,875 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:53,879 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:55,873 : INFO : EventManager : Event: ======'slide_aircraft_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:55,873 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:55,874 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:57,870 : INFO : EventManager : Event: ======'slide_t_1_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:57,877 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:57,896 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:36:59,871 : INFO : EventManager : Event: ======'slide_t_1_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:36:59,876 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:36:59,882 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:01,872 : INFO : EventManager : Event: ======'slide_t_1_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:01,877 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:01,894 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:03,888 : INFO : EventManager : Event: ======'slide_t_1_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:03,894 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:03,899 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:05,874 : INFO : EventManager : Event: ======'slide_t_2_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:05,878 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:05,883 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:07,886 : INFO : EventManager : Event: ======'slide_t_2_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:07,886 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:07,887 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:09,880 : INFO : EventManager : Event: ======'slide_t_2_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:09,880 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:09,887 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:11,873 : INFO : EventManager : Event: ======'slide_t_2_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:11,877 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:11,894 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:13,874 : INFO : EventManager : Event: ======'slide_t_3_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:13,878 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:13,885 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:15,874 : INFO : EventManager : Event: ======'slide_t_3_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:15,878 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:15,885 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:17,873 : INFO : EventManager : Event: ======'slide_t_3_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:17,880 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:17,897 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:19,874 : INFO : EventManager : Event: ======'slide_t_3_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:19,878 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:19,883 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:21,888 : INFO : EventManager : Event: ======'slide_t_4_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:21,888 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:21,889 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:23,874 : INFO : EventManager : Event: ======'slide_t_4_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:23,892 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:23,892 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:25,874 : INFO : EventManager : Event: ======'slide_t_4_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:25,879 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:25,899 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:27,876 : INFO : EventManager : Event: ======'slide_t_4_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:27,888 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:27,899 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:29,893 : INFO : EventManager : Event: ======'slide_commander_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:29,894 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:29,894 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:31,886 : INFO : EventManager : Event: ======'slide_red_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:31,915 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:31,937 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:33,887 : INFO : EventManager : Event: ======'slide_blue_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:33,986 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:34,011 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:35,893 : INFO : EventManager : Event: ======'slide_green_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:35,932 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:35,959 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:37,884 : INFO : EventManager : Event: ======'slide_yellow_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:37,916 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:37,940 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:39,873 : INFO : EventManager : Event: ======'slide_capture_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:39,874 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:39,876 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:41,883 : INFO : EventManager : Event: ======'slide_capture_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:41,883 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:41,884 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:43,876 : INFO : EventManager : Event: ======'slide_capture_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:43,876 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:43,877 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:45,876 : INFO : EventManager : Event: ======'slide_cons_test_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:45,879 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:45,884 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:47,875 : INFO : EventManager : Event: ======'slide_consumable_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:47,878 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:47,882 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:49,878 : INFO : EventManager : Event: ======'slide_consumable_slide1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:49,879 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:49,882 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:51,896 : INFO : EventManager : Event: ======'slide_consumable_slide2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:51,896 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:51,896 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:53,877 : INFO : EventManager : Event: ======'slide_hc_test_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:53,886 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:53,894 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:55,876 : INFO : EventManager : Event: ======'slide_test_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:55,885 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:55,892 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:57,860 : INFO : EventManager : Event: ======'slide_test_slide_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:57,869 : INFO : EventManager : Event: ======'slide_test_slide_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:57,876 : INFO : EventManager : Event: ======'slide_test_slide_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:37:59,887 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:37:59,888 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:37:59,895 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:01,877 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:01,887 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:01,892 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:06,874 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:06,877 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:06,894 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:08,858 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:08,860 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:08,863 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:10,862 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:10,863 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:10,863 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:12,860 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:12,862 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:12,865 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:14,874 : INFO : EventManager : Event: ======'slide_attract_slide_4_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:14,937 : INFO : EventManager : Event: ======'slide_attract_slide_4_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:14,941 : INFO : EventManager : Event: ======'slide_attract_slide_4_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:16,883 : INFO : EventManager : Event: ======'slide_attract_slide_5_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:16,883 : INFO : EventManager : Event: ======'slide_attract_slide_5_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:16,884 : INFO : EventManager : Event: ======'slide_attract_slide_5_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:18,880 : INFO : EventManager : Event: ======'slide_attract_slide_6_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:18,893 : INFO : EventManager : Event: ======'slide_attract_slide_6_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:18,903 : INFO : EventManager : Event: ======'slide_attract_slide_6_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:20,876 : INFO : EventManager : Event: ======'slide_attract_slide_7_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:20,881 : INFO : EventManager : Event: ======'slide_attract_slide_7_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:20,887 : INFO : EventManager : Event: ======'slide_attract_slide_7_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:22,876 : INFO : EventManager : Event: ======'slide_attract_slide_8_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:22,882 : INFO : EventManager : Event: ======'slide_attract_slide_8_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:22,902 : INFO : EventManager : Event: ======'slide_attract_slide_8_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:24,860 : INFO : EventManager : Event: ======'slide_attract_slide_9_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:24,867 : INFO : EventManager : Event: ======'slide_attract_slide_9_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:24,874 : INFO : EventManager : Event: ======'slide_attract_slide_9_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:26,895 : INFO : EventManager : Event: ======'slide_attract_slide_10_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:26,932 : INFO : EventManager : Event: ======'slide_attract_slide_10_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:26,947 : INFO : EventManager : Event: ======'slide_attract_slide_10_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:27,861 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:27,862 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:27,867 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:29,861 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:29,865 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:29,871 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:31,878 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:31,886 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:31,895 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:33,880 : INFO : EventManager : Event: ======'slide_end_mode_8_co_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:33,887 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:33,896 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:35,887 : INFO : EventManager : Event: ======'slide_end_mode_8_com_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:35,887 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:35,890 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:37,862 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:37,867 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:37,873 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:39,879 : INFO : EventManager : Event: ======'slide_scores_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:39,883 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:39,887 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:41,898 : INFO : EventManager : Event: ======'slide_medals_back_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:41,918 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:41,918 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:43,895 : INFO : EventManager : Event: ======'slide_medals_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:43,898 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:43,914 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:45,899 : INFO : EventManager : Event: ======'slide_aircraft_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:45,903 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:45,925 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:47,881 : INFO : EventManager : Event: ======'slide_t_1_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:47,888 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:47,897 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:49,899 : INFO : EventManager : Event: ======'slide_t_1_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:49,906 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:49,925 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:51,863 : INFO : EventManager : Event: ======'slide_t_1_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:51,867 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:51,876 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:53,888 : INFO : EventManager : Event: ======'slide_t_1_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:53,888 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:53,890 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:55,880 : INFO : EventManager : Event: ======'slide_t_2_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:55,885 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:55,891 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:57,880 : INFO : EventManager : Event: ======'slide_t_2_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:57,885 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:57,892 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:38:59,864 : INFO : EventManager : Event: ======'slide_t_2_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:38:59,868 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:38:59,878 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:01,884 : INFO : EventManager : Event: ======'slide_t_2_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:01,886 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:01,896 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:03,897 : INFO : EventManager : Event: ======'slide_t_3_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:03,902 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:03,919 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:05,896 : INFO : EventManager : Event: ======'slide_t_3_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:05,901 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:05,921 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:07,864 : INFO : EventManager : Event: ======'slide_t_3_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:07,869 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:07,875 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:09,863 : INFO : EventManager : Event: ======'slide_t_3_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:09,869 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:09,874 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:11,880 : INFO : EventManager : Event: ======'slide_t_4_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:11,886 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:11,891 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:13,898 : INFO : EventManager : Event: ======'slide_t_4_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:13,973 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:13,980 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:15,865 : INFO : EventManager : Event: ======'slide_t_4_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:15,871 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:15,876 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:17,898 : INFO : EventManager : Event: ======'slide_t_4_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:17,904 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:17,909 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:19,884 : INFO : EventManager : Event: ======'slide_commander_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:19,884 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:19,885 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:21,890 : INFO : EventManager : Event: ======'slide_red_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:21,920 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:21,940 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:23,922 : INFO : EventManager : Event: ======'slide_blue_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:23,942 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:23,966 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:25,893 : INFO : EventManager : Event: ======'slide_green_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:25,928 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:25,954 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:27,877 : INFO : EventManager : Event: ======'slide_yellow_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:27,912 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:27,934 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:29,896 : INFO : EventManager : Event: ======'slide_capture_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:29,898 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:29,899 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:31,863 : INFO : EventManager : Event: ======'slide_capture_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:31,863 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:31,866 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:33,883 : INFO : EventManager : Event: ======'slide_capture_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:33,884 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:33,884 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:35,881 : INFO : EventManager : Event: ======'slide_cons_test_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:35,885 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:35,889 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:37,887 : INFO : EventManager : Event: ======'slide_consumable_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:37,888 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:37,888 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:39,866 : INFO : EventManager : Event: ======'slide_consumable_slide1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:39,868 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:39,872 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:41,880 : INFO : EventManager : Event: ======'slide_consumable_slide2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:41,884 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:41,886 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:43,972 : INFO : EventManager : Event: ======'slide_hc_test_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:44,001 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:44,010 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:45,883 : INFO : EventManager : Event: ======'slide_test_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:45,892 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:45,900 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:47,867 : INFO : EventManager : Event: ======'slide_test_slide_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:47,875 : INFO : EventManager : Event: ======'slide_test_slide_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:47,884 : INFO : EventManager : Event: ======'slide_test_slide_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:49,886 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:49,892 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:49,899 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:51,876 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:51,968 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:51,991 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:56,881 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:56,883 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:56,887 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:39:58,864 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:39:58,866 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:39:58,869 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:00,898 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:00,899 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:00,902 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:02,881 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:02,885 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:02,888 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:04,881 : INFO : EventManager : Event: ======'slide_attract_slide_4_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:04,883 : INFO : EventManager : Event: ======'slide_attract_slide_4_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:04,898 : INFO : EventManager : Event: ======'slide_attract_slide_4_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:06,895 : INFO : EventManager : Event: ======'slide_attract_slide_5_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:06,895 : INFO : EventManager : Event: ======'slide_attract_slide_5_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:06,896 : INFO : EventManager : Event: ======'slide_attract_slide_5_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:08,894 : INFO : EventManager : Event: ======'slide_attract_slide_6_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:08,894 : INFO : EventManager : Event: ======'slide_attract_slide_6_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:08,902 : INFO : EventManager : Event: ======'slide_attract_slide_6_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:10,867 : INFO : EventManager : Event: ======'slide_attract_slide_7_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:10,872 : INFO : EventManager : Event: ======'slide_attract_slide_7_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:10,878 : INFO : EventManager : Event: ======'slide_attract_slide_7_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:12,883 : INFO : EventManager : Event: ======'slide_attract_slide_8_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:12,884 : INFO : EventManager : Event: ======'slide_attract_slide_8_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:12,884 : INFO : EventManager : Event: ======'slide_attract_slide_8_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:14,885 : INFO : EventManager : Event: ======'slide_attract_slide_9_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:14,891 : INFO : EventManager : Event: ======'slide_attract_slide_9_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:14,907 : INFO : EventManager : Event: ======'slide_attract_slide_9_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:16,868 : INFO : EventManager : Event: ======'slide_attract_slide_10_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:16,875 : INFO : EventManager : Event: ======'slide_attract_slide_10_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:16,891 : INFO : EventManager : Event: ======'slide_attract_slide_10_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:17,868 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:17,869 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:17,874 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:19,886 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:19,893 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:19,902 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:21,868 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:21,875 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:21,880 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:23,870 : INFO : EventManager : Event: ======'slide_end_mode_8_co_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:23,889 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:23,890 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:25,869 : INFO : EventManager : Event: ======'slide_end_mode_8_com_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:25,877 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:25,882 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:27,896 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:27,896 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:27,897 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:29,903 : INFO : EventManager : Event: ======'slide_scores_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:29,921 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:29,921 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:31,868 : INFO : EventManager : Event: ======'slide_medals_back_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:31,873 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:31,875 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:33,869 : INFO : EventManager : Event: ======'slide_medals_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:33,874 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:33,894 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:35,870 : INFO : EventManager : Event: ======'slide_aircraft_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:35,871 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:35,872 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:37,869 : INFO : EventManager : Event: ======'slide_t_1_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:37,875 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:37,881 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:39,886 : INFO : EventManager : Event: ======'slide_t_1_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:39,891 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:39,898 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:41,889 : INFO : EventManager : Event: ======'slide_t_1_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:41,893 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:41,899 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:43,871 : INFO : EventManager : Event: ======'slide_t_1_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:43,875 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:43,881 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:45,888 : INFO : EventManager : Event: ======'slide_t_2_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:45,906 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:45,906 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:47,879 : INFO : EventManager : Event: ======'slide_t_2_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:47,880 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:47,882 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:49,880 : INFO : EventManager : Event: ======'slide_t_2_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:49,881 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:49,881 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:51,887 : INFO : EventManager : Event: ======'slide_t_2_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:51,893 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:51,899 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:53,904 : INFO : EventManager : Event: ======'slide_t_3_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:53,922 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:53,922 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:55,872 : INFO : EventManager : Event: ======'slide_t_3_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:55,876 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:55,883 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:57,888 : INFO : EventManager : Event: ======'slide_t_3_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:57,901 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:57,920 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:40:59,883 : INFO : EventManager : Event: ======'slide_t_3_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:40:59,883 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:40:59,884 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:01,873 : INFO : EventManager : Event: ======'slide_t_4_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:01,877 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:01,895 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:03,880 : INFO : EventManager : Event: ======'slide_t_4_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:03,880 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:03,882 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:05,870 : INFO : EventManager : Event: ======'slide_t_4_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:05,876 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:05,882 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:07,886 : INFO : EventManager : Event: ======'slide_t_4_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:07,887 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:07,888 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:09,882 : INFO : EventManager : Event: ======'slide_commander_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:09,883 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:09,883 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:11,882 : INFO : EventManager : Event: ======'slide_red_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:11,909 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:11,929 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:13,885 : INFO : EventManager : Event: ======'slide_blue_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:13,910 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:13,932 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:15,898 : INFO : EventManager : Event: ======'slide_green_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:15,985 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:16,010 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:17,884 : INFO : EventManager : Event: ======'slide_yellow_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:17,913 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:17,933 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:19,870 : INFO : EventManager : Event: ======'slide_capture_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:19,872 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:19,874 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:21,871 : INFO : EventManager : Event: ======'slide_capture_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:21,873 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:21,874 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:23,870 : INFO : EventManager : Event: ======'slide_capture_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:23,875 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:23,875 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:25,889 : INFO : EventManager : Event: ======'slide_cons_test_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:25,909 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:25,909 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:27,880 : INFO : EventManager : Event: ======'slide_consumable_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:27,881 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:27,881 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:29,873 : INFO : EventManager : Event: ======'slide_consumable_slide1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:29,876 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:29,878 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:31,874 : INFO : EventManager : Event: ======'slide_consumable_slide2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:31,875 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:31,876 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:33,877 : INFO : EventManager : Event: ======'slide_hc_test_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:33,887 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:33,896 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:35,876 : INFO : EventManager : Event: ======'slide_test_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:35,904 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:35,904 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:37,892 : INFO : EventManager : Event: ======'slide_test_slide_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:37,899 : INFO : EventManager : Event: ======'slide_test_slide_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:37,915 : INFO : EventManager : Event: ======'slide_test_slide_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:39,892 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:39,899 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:39,907 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:41,889 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:41,889 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:41,889 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:46,901 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:46,901 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:46,901 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:48,872 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:48,874 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:48,880 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:50,892 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:50,892 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:50,893 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:52,888 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:52,890 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:52,892 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:54,892 : INFO : EventManager : Event: ======'slide_attract_slide_4_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:54,892 : INFO : EventManager : Event: ======'slide_attract_slide_4_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:54,893 : INFO : EventManager : Event: ======'slide_attract_slide_4_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:56,890 : INFO : EventManager : Event: ======'slide_attract_slide_5_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:56,891 : INFO : EventManager : Event: ======'slide_attract_slide_5_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:56,894 : INFO : EventManager : Event: ======'slide_attract_slide_5_active'====== Args={'_from_bcp': True}
+2023-01-02 22:41:58,873 : INFO : EventManager : Event: ======'slide_attract_slide_6_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:41:58,879 : INFO : EventManager : Event: ======'slide_attract_slide_6_created'====== Args={'_from_bcp': True}
+2023-01-02 22:41:58,885 : INFO : EventManager : Event: ======'slide_attract_slide_6_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:00,858 : INFO : EventManager : Event: ======'slide_attract_slide_7_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:00,863 : INFO : EventManager : Event: ======'slide_attract_slide_7_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:00,870 : INFO : EventManager : Event: ======'slide_attract_slide_7_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:02,874 : INFO : EventManager : Event: ======'slide_attract_slide_8_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:02,893 : INFO : EventManager : Event: ======'slide_attract_slide_8_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:02,893 : INFO : EventManager : Event: ======'slide_attract_slide_8_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:04,875 : INFO : EventManager : Event: ======'slide_attract_slide_9_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:04,895 : INFO : EventManager : Event: ======'slide_attract_slide_9_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:04,895 : INFO : EventManager : Event: ======'slide_attract_slide_9_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:06,878 : INFO : EventManager : Event: ======'slide_attract_slide_10_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:06,880 : INFO : EventManager : Event: ======'slide_attract_slide_10_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:06,887 : INFO : EventManager : Event: ======'slide_attract_slide_10_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:07,873 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:07,889 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:07,890 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:09,889 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:09,889 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:09,890 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:11,871 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:11,871 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:11,873 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:13,889 : INFO : EventManager : Event: ======'slide_end_mode_8_co_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:13,890 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:13,890 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:15,887 : INFO : EventManager : Event: ======'slide_end_mode_8_com_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:15,958 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:15,965 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:17,875 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:17,881 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:17,887 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:19,858 : INFO : EventManager : Event: ======'slide_scores_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:19,863 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:19,868 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:21,878 : INFO : EventManager : Event: ======'slide_medals_back_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:21,881 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:21,886 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:23,889 : INFO : EventManager : Event: ======'slide_medals_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:23,889 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:23,890 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:25,893 : INFO : EventManager : Event: ======'slide_aircraft_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:25,894 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:25,894 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:27,877 : INFO : EventManager : Event: ======'slide_t_1_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:27,882 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:27,887 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:29,881 : INFO : EventManager : Event: ======'slide_t_1_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:29,888 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:29,895 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:31,888 : INFO : EventManager : Event: ======'slide_t_1_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:31,889 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:31,889 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:33,895 : INFO : EventManager : Event: ======'slide_t_1_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:33,899 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:33,915 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:35,881 : INFO : EventManager : Event: ======'slide_t_2_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:35,882 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:35,887 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:37,876 : INFO : EventManager : Event: ======'slide_t_2_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:37,882 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:37,887 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:39,896 : INFO : EventManager : Event: ======'slide_t_2_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:39,902 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:39,908 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:41,863 : INFO : EventManager : Event: ======'slide_t_2_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:41,874 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:41,881 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:43,879 : INFO : EventManager : Event: ======'slide_t_3_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:43,884 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:43,890 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:45,881 : INFO : EventManager : Event: ======'slide_t_3_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:45,883 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:45,888 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:47,879 : INFO : EventManager : Event: ======'slide_t_3_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:47,887 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:47,894 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:49,881 : INFO : EventManager : Event: ======'slide_t_3_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:49,919 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:49,921 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:51,894 : INFO : EventManager : Event: ======'slide_t_4_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:51,900 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:51,916 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:53,878 : INFO : EventManager : Event: ======'slide_t_4_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:53,889 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:53,895 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:55,880 : INFO : EventManager : Event: ======'slide_t_4_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:55,885 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:55,901 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:57,919 : INFO : EventManager : Event: ======'slide_t_4_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:58,011 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:58,018 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:42:59,875 : INFO : EventManager : Event: ======'slide_commander_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:42:59,880 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:42:59,881 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:01,890 : INFO : EventManager : Event: ======'slide_red_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:01,938 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:01,971 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:03,922 : INFO : EventManager : Event: ======'slide_blue_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:04,013 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:04,037 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:05,890 : INFO : EventManager : Event: ======'slide_green_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:05,927 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:05,951 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:07,903 : INFO : EventManager : Event: ======'slide_yellow_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:07,920 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:07,940 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:09,877 : INFO : EventManager : Event: ======'slide_capture_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:09,877 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:09,877 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:11,871 : INFO : EventManager : Event: ======'slide_capture_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:11,872 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:11,872 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:13,861 : INFO : EventManager : Event: ======'slide_capture_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:13,863 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:13,867 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:15,878 : INFO : EventManager : Event: ======'slide_cons_test_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:15,883 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:15,899 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:17,895 : INFO : EventManager : Event: ======'slide_consumable_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:17,899 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:17,900 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:19,880 : INFO : EventManager : Event: ======'slide_consumable_slide1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:19,884 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:19,900 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:21,861 : INFO : EventManager : Event: ======'slide_consumable_slide2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:21,863 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:21,864 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:23,881 : INFO : EventManager : Event: ======'slide_hc_test_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:23,891 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:23,900 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:25,865 : INFO : EventManager : Event: ======'slide_test_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:25,895 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:25,898 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:27,899 : INFO : EventManager : Event: ======'slide_test_slide_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:27,917 : INFO : EventManager : Event: ======'slide_test_slide_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:27,917 : INFO : EventManager : Event: ======'slide_test_slide_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:29,881 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:29,916 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:29,916 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:31,883 : INFO : EventManager : Event: ======'slide_test_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:31,892 : INFO : EventManager : Event: ======'slide_test_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:31,898 : INFO : EventManager : Event: ======'slide_test_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:36,862 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:36,864 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:36,867 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:38,878 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:38,881 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:38,885 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:40,879 : INFO : EventManager : Event: ======'slide_attract_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:40,880 : INFO : EventManager : Event: ======'slide_attract_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:40,882 : INFO : EventManager : Event: ======'slide_attract_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:42,862 : INFO : EventManager : Event: ======'slide_attract_slide_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:42,864 : INFO : EventManager : Event: ======'slide_attract_slide_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:42,867 : INFO : EventManager : Event: ======'slide_attract_slide_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:44,863 : INFO : EventManager : Event: ======'slide_attract_slide_4_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:44,867 : INFO : EventManager : Event: ======'slide_attract_slide_4_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:44,870 : INFO : EventManager : Event: ======'slide_attract_slide_4_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:46,880 : INFO : EventManager : Event: ======'slide_attract_slide_5_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:46,962 : INFO : EventManager : Event: ======'slide_attract_slide_5_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:46,965 : INFO : EventManager : Event: ======'slide_attract_slide_5_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:48,889 : INFO : EventManager : Event: ======'slide_attract_slide_6_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:48,890 : INFO : EventManager : Event: ======'slide_attract_slide_6_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:48,897 : INFO : EventManager : Event: ======'slide_attract_slide_6_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:50,866 : INFO : EventManager : Event: ======'slide_attract_slide_7_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:50,871 : INFO : EventManager : Event: ======'slide_attract_slide_7_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:50,876 : INFO : EventManager : Event: ======'slide_attract_slide_7_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:52,883 : INFO : EventManager : Event: ======'slide_attract_slide_8_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:52,889 : INFO : EventManager : Event: ======'slide_attract_slide_8_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:52,909 : INFO : EventManager : Event: ======'slide_attract_slide_8_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:54,894 : INFO : EventManager : Event: ======'slide_attract_slide_9_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:54,895 : INFO : EventManager : Event: ======'slide_attract_slide_9_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:54,895 : INFO : EventManager : Event: ======'slide_attract_slide_9_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:56,890 : INFO : EventManager : Event: ======'slide_attract_slide_10_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:56,891 : INFO : EventManager : Event: ======'slide_attract_slide_10_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:56,894 : INFO : EventManager : Event: ======'slide_attract_slide_10_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:57,880 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:57,883 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:57,886 : INFO : EventManager : Event: ======'slide_attract_game_over_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:43:59,887 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:43:59,892 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_created'====== Args={'_from_bcp': True}
+2023-01-02 22:43:59,898 : INFO : EventManager : Event: ======'slide_end_mode_8_compIG_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:01,884 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:01,889 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:01,894 : INFO : EventManager : Event: ======'slide_end_mode_8_comp_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:03,885 : INFO : EventManager : Event: ======'slide_end_mode_8_co_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:03,899 : INFO : EventManager : Event: ======'slide_end_mode_8_co_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:03,917 : INFO : EventManager : Event: ======'slide_end_mode_8_co_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:05,883 : INFO : EventManager : Event: ======'slide_end_mode_8_com_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:05,888 : INFO : EventManager : Event: ======'slide_end_mode_8_com_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:05,895 : INFO : EventManager : Event: ======'slide_end_mode_8_com_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:07,866 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:07,873 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:07,878 : INFO : EventManager : Event: ======'slide_end_mode_8_completed_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:09,900 : INFO : EventManager : Event: ======'slide_scores_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:09,905 : INFO : EventManager : Event: ======'slide_scores_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:09,924 : INFO : EventManager : Event: ======'slide_scores_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:11,867 : INFO : EventManager : Event: ======'slide_medals_back_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:11,874 : INFO : EventManager : Event: ======'slide_medals_back_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:11,874 : INFO : EventManager : Event: ======'slide_medals_back_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:13,867 : INFO : EventManager : Event: ======'slide_medals_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:13,871 : INFO : EventManager : Event: ======'slide_medals_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:13,875 : INFO : EventManager : Event: ======'slide_medals_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:15,886 : INFO : EventManager : Event: ======'slide_aircraft_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:15,886 : INFO : EventManager : Event: ======'slide_aircraft_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:15,886 : INFO : EventManager : Event: ======'slide_aircraft_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:17,884 : INFO : EventManager : Event: ======'slide_t_1_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:17,888 : INFO : EventManager : Event: ======'slide_t_1_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:17,897 : INFO : EventManager : Event: ======'slide_t_1_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:19,884 : INFO : EventManager : Event: ======'slide_t_1_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:19,889 : INFO : EventManager : Event: ======'slide_t_1_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:19,895 : INFO : EventManager : Event: ======'slide_t_1_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:21,883 : INFO : EventManager : Event: ======'slide_t_1_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:21,889 : INFO : EventManager : Event: ======'slide_t_1_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:21,894 : INFO : EventManager : Event: ======'slide_t_1_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:23,883 : INFO : EventManager : Event: ======'slide_t_1_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:23,889 : INFO : EventManager : Event: ======'slide_t_1_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:23,896 : INFO : EventManager : Event: ======'slide_t_1_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:25,895 : INFO : EventManager : Event: ======'slide_t_2_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:25,901 : INFO : EventManager : Event: ======'slide_t_2_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:25,918 : INFO : EventManager : Event: ======'slide_t_2_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:27,885 : INFO : EventManager : Event: ======'slide_t_2_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:27,889 : INFO : EventManager : Event: ======'slide_t_2_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:27,895 : INFO : EventManager : Event: ======'slide_t_2_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:29,885 : INFO : EventManager : Event: ======'slide_t_2_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:29,890 : INFO : EventManager : Event: ======'slide_t_2_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:29,896 : INFO : EventManager : Event: ======'slide_t_2_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:31,869 : INFO : EventManager : Event: ======'slide_t_2_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:31,873 : INFO : EventManager : Event: ======'slide_t_2_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:31,892 : INFO : EventManager : Event: ======'slide_t_2_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:33,901 : INFO : EventManager : Event: ======'slide_t_3_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:33,907 : INFO : EventManager : Event: ======'slide_t_3_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:33,921 : INFO : EventManager : Event: ======'slide_t_3_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:35,902 : INFO : EventManager : Event: ======'slide_t_3_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:35,906 : INFO : EventManager : Event: ======'slide_t_3_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:35,922 : INFO : EventManager : Event: ======'slide_t_3_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:37,868 : INFO : EventManager : Event: ======'slide_t_3_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:37,874 : INFO : EventManager : Event: ======'slide_t_3_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:37,883 : INFO : EventManager : Event: ======'slide_t_3_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:39,869 : INFO : EventManager : Event: ======'slide_t_3_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:39,879 : INFO : EventManager : Event: ======'slide_t_3_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:39,886 : INFO : EventManager : Event: ======'slide_t_3_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:41,886 : INFO : EventManager : Event: ======'slide_t_4_1_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:41,904 : INFO : EventManager : Event: ======'slide_t_4_1_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:41,905 : INFO : EventManager : Event: ======'slide_t_4_1_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:43,886 : INFO : EventManager : Event: ======'slide_t_4_2_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:43,890 : INFO : EventManager : Event: ======'slide_t_4_2_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:43,908 : INFO : EventManager : Event: ======'slide_t_4_2_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:45,926 : INFO : EventManager : Event: ======'slide_t_4_3_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:45,948 : INFO : EventManager : Event: ======'slide_t_4_3_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:45,959 : INFO : EventManager : Event: ======'slide_t_4_3_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:47,887 : INFO : EventManager : Event: ======'slide_t_4_4_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:47,891 : INFO : EventManager : Event: ======'slide_t_4_4_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:47,904 : INFO : EventManager : Event: ======'slide_t_4_4_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:49,870 : INFO : EventManager : Event: ======'slide_commander_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:49,872 : INFO : EventManager : Event: ======'slide_commander_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:49,872 : INFO : EventManager : Event: ======'slide_commander_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:51,905 : INFO : EventManager : Event: ======'slide_red_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:51,925 : INFO : EventManager : Event: ======'slide_red_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:51,946 : INFO : EventManager : Event: ======'slide_red_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:53,879 : INFO : EventManager : Event: ======'slide_blue_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:53,910 : INFO : EventManager : Event: ======'slide_blue_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:53,931 : INFO : EventManager : Event: ======'slide_blue_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:55,896 : INFO : EventManager : Event: ======'slide_green_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:55,911 : INFO : EventManager : Event: ======'slide_green_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:55,935 : INFO : EventManager : Event: ======'slide_green_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:57,881 : INFO : EventManager : Event: ======'slide_yellow_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:57,908 : INFO : EventManager : Event: ======'slide_yellow_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:57,929 : INFO : EventManager : Event: ======'slide_yellow_active'====== Args={'_from_bcp': True}
+2023-01-02 22:44:59,884 : INFO : EventManager : Event: ======'slide_capture_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:44:59,886 : INFO : EventManager : Event: ======'slide_capture_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:44:59,889 : INFO : EventManager : Event: ======'slide_capture_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:01,894 : INFO : EventManager : Event: ======'slide_capture_2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:01,895 : INFO : EventManager : Event: ======'slide_capture_2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:01,895 : INFO : EventManager : Event: ======'slide_capture_2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:03,885 : INFO : EventManager : Event: ======'slide_capture_3_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:03,886 : INFO : EventManager : Event: ======'slide_capture_3_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:03,887 : INFO : EventManager : Event: ======'slide_capture_3_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:05,887 : INFO : EventManager : Event: ======'slide_cons_test_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:05,890 : INFO : EventManager : Event: ======'slide_cons_test_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:05,895 : INFO : EventManager : Event: ======'slide_cons_test_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:07,872 : INFO : EventManager : Event: ======'slide_consumable_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:07,874 : INFO : EventManager : Event: ======'slide_consumable_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:07,874 : INFO : EventManager : Event: ======'slide_consumable_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:09,873 : INFO : EventManager : Event: ======'slide_consumable_slide1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:09,874 : INFO : EventManager : Event: ======'slide_consumable_slide1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:09,876 : INFO : EventManager : Event: ======'slide_consumable_slide1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:11,868 : INFO : EventManager : Event: ======'slide_consumable_slide2_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:11,871 : INFO : EventManager : Event: ======'slide_consumable_slide2_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:11,873 : INFO : EventManager : Event: ======'slide_consumable_slide2_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:13,892 : INFO : EventManager : Event: ======'slide_hc_test_slide_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:13,991 : INFO : EventManager : Event: ======'slide_hc_test_slide_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:13,998 : INFO : EventManager : Event: ======'slide_hc_test_slide_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:15,874 : INFO : EventManager : Event: ======'slide_test_slide_1_removed'====== Args={'_from_bcp': True}
+2023-01-02 22:45:15,881 : INFO : EventManager : Event: ======'slide_test_slide_1_created'====== Args={'_from_bcp': True}
+2023-01-02 22:45:15,889 : INFO : EventManager : Event: ======'slide_test_slide_1_active'====== Args={'_from_bcp': True}
+2023-01-02 22:45:17,195 : INFO : Machine : Shutting down...
+2023-01-02 22:45:17,195 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-02 22:45:17,198 : INFO : root : MPF run loop ended.

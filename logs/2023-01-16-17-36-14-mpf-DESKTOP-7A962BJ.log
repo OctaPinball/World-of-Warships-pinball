@@ -1,0 +1,28 @@
+2023-01-16 17:36:14,767 : INFO : root : Loading config.
+2023-01-16 17:36:14,769 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-16 17:36:14,770 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\config\config.yaml
+2023-01-16 17:36:14,770 : INFO : ConfigProcessor : Loading config from file c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2023-01-16 17:36:14,837 : INFO : ConfigProcessor : Loading config: c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-16 17:36:14,838 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.
+2023-01-16 17:36:14,840 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config.yaml
+2023-01-16 17:36:14,851 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_else_virtual.yaml
+2023-01-16 17:36:14,931 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_hardware.yaml
+2023-01-16 17:36:14,935 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_keys.yaml
+2023-01-16 17:36:14,987 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_logic.yaml
+2023-01-16 17:36:14,992 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_modes.yaml
+2023-01-16 17:36:14,998 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_operator_settings.yaml
+2023-01-16 17:36:15,016 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_sound_music.yaml
+2023-01-16 17:36:15,075 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_values.yaml
+2023-01-16 17:36:15,084 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_virtual_hardware.yaml
+2023-01-16 17:36:15,488 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_mode_end.yaml
+2023-01-16 17:36:15,516 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_hc.yaml
+2023-01-16 17:36:15,523 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_capture.yaml
+2023-01-16 17:36:15,539 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_commander.yaml
+2023-01-16 17:36:15,587 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_dmg_con.yaml
+2023-01-16 17:36:15,629 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_status_report.yaml
+2023-01-16 17:36:15,646 : INFO : ConfigProcessor : Config file cache created: C:\Users\dell\AppData\Local\Temp\823390186140f561069e51d67517f5d0.mpf_cache
+2023-01-16 17:36:15,705 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-16 17:36:15,706 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\game\config\game.yaml
+2023-01-16 17:36:15,706 : INFO : ConfigProcessor : Loading config from file c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml.
+2023-01-16 17:36:15,707 : INFO : ConfigProcessor : Loading config: c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml
+2023-01-16 17:36:15,707 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\game\config\game.yaml.

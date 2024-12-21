@@ -1,0 +1,6 @@
+2024-12-21 19:44:30,994 : INFO : root : Loading config.
+2024-12-21 19:44:31,042 : INFO : ConfigProcessor : Config spec file cache created: C:\Users\schol\AppData\Local\Temp\config_spec.mpf_cache
+2024-12-21 19:44:31,042 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-12-21 19:44:31,042 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\mpfconfig.yaml.
+2024-12-21 19:44:31,058 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\mpfconfig.yaml
+2024-12-21 19:44:31,058 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.

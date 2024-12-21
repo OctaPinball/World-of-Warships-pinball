@@ -1,0 +1,173 @@
+2024-12-21 19:59:07,583 : INFO : root : Loading config.
+2024-12-21 19:59:07,600 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-12-21 19:59:07,600 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\mpfconfig.yaml.
+2024-12-21 19:59:07,611 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\mpfconfig.yaml
+2024-12-21 19:59:07,611 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\config\config.yaml.
+2024-12-21 19:59:07,611 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\config.yaml
+2024-12-21 19:59:07,611 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_else_virtual.yaml
+2024-12-21 19:59:07,616 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_hardware.yaml
+2024-12-21 19:59:07,616 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_keys.yaml
+2024-12-21 19:59:07,636 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_logic.yaml
+2024-12-21 19:59:07,636 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_modes.yaml
+2024-12-21 19:59:07,636 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_operator_settings.yaml
+2024-12-21 19:59:07,643 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_sound_music.yaml
+2024-12-21 19:59:07,643 : ERROR : ConfigProcessor : Config section 'sound_system' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,643 : ERROR : ConfigProcessor : Config section 'sounds' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,653 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_values.yaml
+2024-12-21 19:59:07,655 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\primary/config_virtual_hardware.yaml
+2024-12-21 19:59:07,727 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_mode_end.yaml
+2024-12-21 19:59:07,727 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,727 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_hc.yaml
+2024-12-21 19:59:07,727 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,727 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_capture.yaml
+2024-12-21 19:59:07,746 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_commander.yaml
+2024-12-21 19:59:07,756 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_dmg_con.yaml
+2024-12-21 19:59:07,756 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,762 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\config\support/config_support_status_report.yaml
+2024-12-21 19:59:07,762 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,780 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\026b22ab9367e68de753563d26426ed6.mpf_cache
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\attract\config\attract.yaml
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\attract\config\attract.yaml.
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\attract\config\attract.yaml
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\18d48894d4c853fd651f02cb19af5f8d.mpf_cache
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\game\config\game.yaml.
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\game\config\game.yaml
+2024-12-21 19:59:07,869 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\game\config\game.yaml.
+2024-12-21 19:59:07,885 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\game\config\game.yaml
+2024-12-21 19:59:07,885 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,887 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\c0076ea06477415256b7322831894b79.mpf_cache
+2024-12-21 19:59:07,887 : INFO : ConfigProcessor : Loading config from cache: C:\Users\schol\AppData\Local\Temp\18d48894d4c853fd651f02cb19af5f8d.mpf_cache
+2024-12-21 19:59:07,887 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\high_score\config\high_score.yaml.
+2024-12-21 19:59:07,887 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\high_score\config\high_score.yaml
+2024-12-21 19:59:07,887 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\high_score\config\high_score.yaml.
+2024-12-21 19:59:07,898 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\high_score\config\high_score.yaml
+2024-12-21 19:59:07,898 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,898 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\bf5573ffc89c50013e171c1603dea7d4.mpf_cache
+2024-12-21 19:59:07,898 : INFO : ConfigProcessor : Loading config from file C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\match\config\match.yaml.
+2024-12-21 19:59:07,901 : INFO : ConfigProcessor : Loading config: C:\ProgramData\anaconda3\envs\mpf_env\Lib\site-packages\mpf\modes\match\config\match.yaml
+2024-12-21 19:59:07,901 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\match\config\match.yaml.
+2024-12-21 19:59:07,906 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\match\config\match.yaml
+2024-12-21 19:59:07,906 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,906 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\edf5657429715a4af6695f733dc48730.mpf_cache
+2024-12-21 19:59:07,906 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\main_play\config\main_play.yaml.
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\main_play\config\main_play.yaml
+2024-12-21 19:59:07,923 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\c96ee90647ae5b034e2dd42c348c42ad.mpf_cache
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\value_reset\config\value_reset.yaml.
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\value_reset\config\value_reset.yaml
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\ca0415bb38fd20ce1ae72b2592ece46e.mpf_cache
+2024-12-21 19:59:07,923 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_lit\config\mode_lit.yaml.
+2024-12-21 19:59:07,932 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_lit\config\mode_lit.yaml
+2024-12-21 19:59:07,932 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\72e9fea1cb562e40024eb5e8538ccaf2.mpf_cache
+2024-12-21 19:59:07,933 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\capture\config\capture.yaml.
+2024-12-21 19:59:07,949 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\capture\config\capture.yaml
+2024-12-21 19:59:07,949 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,949 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\c22c03646c3330fed25ec0d2c1900176.mpf_cache
+2024-12-21 19:59:07,949 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\capture_hurryup\config\capture_hurryup.yaml.
+2024-12-21 19:59:07,960 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\capture_hurryup\config\capture_hurryup.yaml
+2024-12-21 19:59:07,960 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,960 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\4f40b51a2a6ab6b3327b174347355c6f.mpf_cache
+2024-12-21 19:59:07,960 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\capture_award\config\capture_award.yaml.
+2024-12-21 19:59:07,968 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\capture_award\config\capture_award.yaml
+2024-12-21 19:59:07,968 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:07,968 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\39fabcdae38f081491893b3f9bf3922e.mpf_cache
+2024-12-21 19:59:07,968 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\commander_skill\config\commander_skill.yaml.
+2024-12-21 19:59:08,010 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\commander_skill\config\commander_skill.yaml
+2024-12-21 19:59:08,010 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,010 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\943ecf72a5798e3efec3d4f70c6ce1d2.mpf_cache
+2024-12-21 19:59:08,010 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\commander_skill_manager\config\commander_skill_manager.yaml.
+2024-12-21 19:59:08,042 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\commander_skill_manager\config\commander_skill_manager.yaml
+2024-12-21 19:59:08,042 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,042 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\04d9c03061fa17a1f6b23081f79db9ab.mpf_cache
+2024-12-21 19:59:08,042 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_1\config\mode_1.yaml.
+2024-12-21 19:59:08,046 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_1\config\mode_1.yaml
+2024-12-21 19:59:08,046 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\1ff29be1d22fb14fe5fd1c82a6918df4.mpf_cache
+2024-12-21 19:59:08,046 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_2\config\mode_2.yaml.
+2024-12-21 19:59:08,051 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_2\config\mode_2.yaml
+2024-12-21 19:59:08,051 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,053 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\f0ffd5ecaddfe34035bf3b1779215a88.mpf_cache
+2024-12-21 19:59:08,053 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_3\config\mode_3.yaml.
+2024-12-21 19:59:08,056 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_3\config\mode_3.yaml
+2024-12-21 19:59:08,056 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\b0de444617e3bf30a07f755a6d4831cc.mpf_cache
+2024-12-21 19:59:08,056 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_4\config\mode_4.yaml.
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_4\config\mode_4.yaml
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\200a9b2dddbe7706ffb4c4426b6d54a8.mpf_cache
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_5\config\mode_5.yaml.
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_5\config\mode_5.yaml
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\5ab98d4be1e8de85bea62364890eb2e9.mpf_cache
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_6\config\mode_6.yaml.
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_6\config\mode_6.yaml
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\4303dca7489148da2d256fc831cf8c96.mpf_cache
+2024-12-21 19:59:08,057 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_7\config\mode_7.yaml.
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_7\config\mode_7.yaml
+2024-12-21 19:59:08,068 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\e8fceecd8f65a6a7269e98c7961bbf6a.mpf_cache
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_8\config\mode_8.yaml.
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_8\config\mode_8.yaml
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\c84d6d08bf6f923cbcccfeeea02d2c8a.mpf_cache
+2024-12-21 19:59:08,068 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_9\config\mode_9.yaml.
+2024-12-21 19:59:08,073 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_9\config\mode_9.yaml
+2024-12-21 19:59:08,073 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\159a0b7ffc6de2ed1a8cdcd57b7df3c0.mpf_cache
+2024-12-21 19:59:08,073 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\dmg_con_party\config\dmg_con_party.yaml.
+2024-12-21 19:59:08,089 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\dmg_con_party\config\dmg_con_party.yaml
+2024-12-21 19:59:08,089 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,089 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\dd71d04ba3f4dce8325f2504de3de352.mpf_cache
+2024-12-21 19:59:08,089 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_wizard\config\mode_wizard.yaml.
+2024-12-21 19:59:08,120 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_wizard\config\mode_wizard.yaml
+2024-12-21 19:59:08,120 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,120 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\47da5935da57327449007069e0d0551c.mpf_cache
+2024-12-21 19:59:08,120 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_manager\config\mode_manager.yaml.
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_manager\config\mode_manager.yaml
+2024-12-21 19:59:08,144 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\b1234e2c44a33609dc2af4760c4a3f89.mpf_cache
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\mode_timer\config\mode_timer.yaml.
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\mode_timer\config\mode_timer.yaml
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\7ab9985e2a62b75a325504808417b1e7.mpf_cache
+2024-12-21 19:59:08,144 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\container\config\container.yaml.
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\container\config\container.yaml
+2024-12-21 19:59:08,163 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\466eddfec572894d9eb472ce07aa5fba.mpf_cache
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\salvo_lit\config\salvo_lit.yaml.
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\salvo_lit\config\salvo_lit.yaml
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\93429a2a8e0859f6546b68f40c2a4656.mpf_cache
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\hc_lock_lit\config\hc_lock_lit.yaml.
+2024-12-21 19:59:08,163 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\hc_lock_lit\config\hc_lock_lit.yaml
+2024-12-21 19:59:08,168 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\95ae88fb094583fa2b4097c6df179650.mpf_cache
+2024-12-21 19:59:08,168 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\hc_multiball\config\hc_multiball.yaml.
+2024-12-21 19:59:08,218 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\hc_multiball\config\hc_multiball.yaml
+2024-12-21 19:59:08,218 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,220 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\de2d3fc178b15ce3807fa4ab35b9c965.mpf_cache
+2024-12-21 19:59:08,220 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\hc_multiball_super\config\hc_multiball_super.yaml.
+2024-12-21 19:59:08,241 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\hc_multiball_super\config\hc_multiball_super.yaml
+2024-12-21 19:59:08,241 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,243 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\0c80ca2179989d09b86c78c19ec87d9b.mpf_cache
+2024-12-21 19:59:08,243 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\confederate\config\confederate.yaml.
+2024-12-21 19:59:08,245 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\confederate\config\confederate.yaml
+2024-12-21 19:59:08,245 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\95e265efe14e4eb05d8d5c5689c9ae6b.mpf_cache
+2024-12-21 19:59:08,246 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\battle\config\battle.yaml.
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\battle\config\battle.yaml
+2024-12-21 19:59:08,247 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\ba047bbdc168fca96d58d351c4240916.mpf_cache
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\battle_manager\config\battle_manager.yaml.
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\battle_manager\config\battle_manager.yaml
+2024-12-21 19:59:08,247 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\7c1900736275ba8a713cfe77e991e929.mpf_cache
+2024-12-21 19:59:08,247 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\detonation\config\detonation.yaml.
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\detonation\config\detonation.yaml
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\db3d1ab92e5d5c563b40d82372434517.mpf_cache
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\drednaught\config\drednaught.yaml.
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\drednaught\config\drednaught.yaml
+2024-12-21 19:59:08,262 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\78980531363184480bbd7075661ced33.mpf_cache
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\port_hole_manager\config\port_hole_manager.yaml.
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\port_hole_manager\config\port_hole_manager.yaml
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\efcf079e5af2b94e88dae4e07273acc8.mpf_cache
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\bomb\config\bomb.yaml.
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\bomb\config\bomb.yaml
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\44231afd4be159e8c99041e8eb88670e.mpf_cache
+2024-12-21 19:59:08,262 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\aircraft_carrier\config\aircraft_carrier.yaml.
+2024-12-21 19:59:08,294 : INFO : ConfigProcessor : Loading config: E:\MPF\wows\wows\modes\aircraft_carrier\config\aircraft_carrier.yaml
+2024-12-21 19:59:08,294 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-12-21 19:59:08,296 : INFO : ConfigProcessor : Config file cache created: C:\Users\schol\AppData\Local\Temp\2b5357265150b67996b1d26df60329cf.mpf_cache
+2024-12-21 19:59:08,296 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\shows\.\mode_countdown.yaml.

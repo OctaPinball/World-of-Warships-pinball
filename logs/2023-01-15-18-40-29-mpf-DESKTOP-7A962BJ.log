@@ -1,0 +1,8 @@
+2023-01-15 18:40:29,163 : INFO : root : Loading config.
+2023-01-15 18:40:29,167 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-15 18:40:29,167 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\823390186140f561069e51d67517f5d0.mpf_cache
+2023-01-15 18:40:29,245 : INFO : ConfigProcessor : Loading config from cache: C:\Users\dell\AppData\Local\Temp\59a64183768b31a5bf2b8a1c5fa05afc.mpf_cache
+2023-01-15 18:40:29,245 : WARNING : ConfigProcessor : Config file in cache changed: E:\MPF\wows\wows\modes\game\config\game.yaml
+2023-01-15 18:40:29,245 : INFO : ConfigProcessor : Loading config from file c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml.
+2023-01-15 18:40:29,247 : INFO : ConfigProcessor : Loading config: c:\users\dell\appdata\local\programs\python\python36\lib\site-packages\mpf\modes\game\config\game.yaml
+2023-01-15 18:40:29,247 : INFO : ConfigProcessor : Loading config from file E:\MPF\wows\wows\modes\game\config\game.yaml.
