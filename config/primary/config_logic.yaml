@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 queue_event_player:
   ball_drain_phase_1_will_start:
