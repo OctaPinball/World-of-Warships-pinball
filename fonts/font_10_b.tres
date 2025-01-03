@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://ctnq0la85ngxm"]
+
+[ext_resource type="FontFile" uid="uid://b4k7e7sr7wfdk" path="res://fonts/Quadrit.ttf" id="1_u1ddk"]
+
+[resource]
+line_spacing = 1.0
+font = ExtResource("1_u1ddk")
+font_size = 10

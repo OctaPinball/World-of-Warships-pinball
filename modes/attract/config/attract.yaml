@@ -1,12 +1,42 @@
 #config_version=6
 
-show_player:
-  mode_attract_started:
-    sh_attract:
-      action: play
-  s_left_flipper_active:
-    sh_attract:
-      action: step_back
-  s_right_flipper_active:
-    sh_attract:
-      action: advance
+# Attract mode that starts when the machine boots up, stops
+# whenever a game is started, and re-starts after the game ends.
+
+mode_settings:
+  selectable_items:
+    - game_over
+    - last_scores_1p{machine.player1_score and not machine.player2_score}
+    - last_scores_2p{machine.player2_score and not machine.player3_score}
+    - last_scores_3p{machine.player3_score and not machine.player4_score}
+    - last_scores_4p{machine.player4_score}
+    - octa_pinball
+    - and
+    - wargaming
+    - presents
+    - logo
+    - high_scores
+    - high_score_1
+    - high_score_2
+    - high_score_3
+    - high_score_4
+    - high_score_5
+  next_item_events: s_flipper_right_active, timer_attract_carousel_timer_complete
+  previous_item_events: s_flipper_left_active
+
+slide_player:
+  mode_attract_started: attract
+  
+timers:
+  attract_carousel_timer:
+    end_value: 1
+    tick_interval: 5s
+    start_running: true
+    control_events:
+      - event: item_highlighted
+        action: restart
+      - event: flipper_cradle
+        action: stop
+      - event: flipper_cradle_release
+        action: restart
+

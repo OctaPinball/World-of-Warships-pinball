@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://35l5m8hm0qje"]
+
+[ext_resource type="FontFile" uid="uid://ygxvf1oltg1" path="res://fonts/smallest_pixel-7.ttf" id="1_j5jw4"]
+
+[resource]
+line_spacing = 1.0
+font = ExtResource("1_j5jw4")
+font_size = 20

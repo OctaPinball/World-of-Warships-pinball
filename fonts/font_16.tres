@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dt7kwqxg3oksw"]
+
+[ext_resource type="FontFile" uid="uid://cly53tgimtqo8" path="res://fonts/pixelmix.ttf" id="1_07og4"]
+
+[resource]
+line_spacing = 1.0
+font = ExtResource("1_07og4")

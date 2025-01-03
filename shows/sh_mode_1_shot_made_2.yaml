@@ -1,15 +1,7 @@
 #show_version=6
 - time: 0
   slides:
-    mode_1_shot_made_slide_1:
-      - type: image
-        image: cons_1_background
-        y: 18
-      - type: image
-        image: cons_1_2
-        y: 18
-        z: 1
-        loops: 0
+    mode_1_shot_made_1
 - time: +1.1
   widgets:
     mode_1_shot_made_score_widget:
