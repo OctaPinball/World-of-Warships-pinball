@@ -49,6 +49,8 @@ var _thread: Thread
 ###
 
 func _ready() -> void:
+	# Set the port for BCP connections
+	port = MPF.get_config_value("gmc", "bcp_port", port)
 	# Wait until a server is actively listening before polling for clients
 	set_process(false)
 
@@ -131,7 +133,6 @@ func send_event(event_name: String, bounceback: bool = true) -> void:
 	_send("trigger?name=%s" % event_name)
 	if bounceback:
 		self._bounceback(event_name)
-
 
 func send_event_with_args(event_name: String, args: Dictionary, bounceback: bool = true) -> void:
 	if not args or args.is_empty():

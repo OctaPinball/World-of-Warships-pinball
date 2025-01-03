@@ -14,6 +14,7 @@ rgb_dmds:
   default:  # your DMD
     brightness: 1      # adjust the brightness of your display if it is too bright
     fps: 30
+    source_display: main
 
 drop_targets:
      citadel_drop_target:
