@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cb5kj2j226cre"
+path="res://.godot/imported/container_ball.gif-4521c69c69b2391e19c87e4049d069d9.tres"
+
+[deps]
+
+source_file="res://images/container_ball.gif"
+dest_files=["res://.godot/imported/container_ball.gif-4521c69c69b2391e19c87e4049d069d9.tres"]
+
+[params]
+
+frames_per_second=30

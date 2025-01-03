@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://c845xy7h6u02m"
+path="res://.godot/imported/mode_10_desc.gif-2c205f25d18e7a197101c31e35b036f4.tres"
+
+[deps]
+
+source_file="res://images/mode_10_desc.gif"
+dest_files=["res://.godot/imported/mode_10_desc.gif-2c205f25d18e7a197101c31e35b036f4.tres"]
+
+[params]
+
+frames_per_second=30

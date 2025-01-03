@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://chvae28d4i3d1"
+path="res://.godot/imported/aircraft_carrier_splash.gif-52db17319a596697d72980e543246596.tres"
+
+[deps]
+
+source_file="res://images/aircraft_carrier_splash.gif"
+dest_files=["res://.godot/imported/aircraft_carrier_splash.gif-52db17319a596697d72980e543246596.tres"]
+
+[params]
+
+frames_per_second=30

@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bg2bs1op5a3ya"
+path="res://.godot/imported/super_2.gif-f6ea7b3bbe5ab10837649ef506c99526.tres"
+
+[deps]
+
+source_file="res://images/super_2.gif"
+dest_files=["res://.godot/imported/super_2.gif-f6ea7b3bbe5ab10837649ef506c99526.tres"]
+
+[params]
+
+frames_per_second=30

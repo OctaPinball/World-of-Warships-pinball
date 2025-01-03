@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bcdmjyuclot5v"
+path="res://.godot/imported/kozep_felepitmeny.gif-24d1f6d1e3285cfd5642aa5d0ce3d86d.tres"
+
+[deps]
+
+source_file="res://images/kozep_felepitmeny.gif"
+dest_files=["res://.godot/imported/kozep_felepitmeny.gif-24d1f6d1e3285cfd5642aa5d0ce3d86d.tres"]
+
+[params]
+
+frames_per_second=30

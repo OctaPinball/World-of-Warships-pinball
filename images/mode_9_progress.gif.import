@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://d1c8ln1tkrpnq"
+path="res://.godot/imported/mode_9_progress.gif-0141bf3b29a07f99fdefc953038e34b9.tres"
+
+[deps]
+
+source_file="res://images/mode_9_progress.gif"
+dest_files=["res://.godot/imported/mode_9_progress.gif-0141bf3b29a07f99fdefc953038e34b9.tres"]
+
+[params]
+
+frames_per_second=30

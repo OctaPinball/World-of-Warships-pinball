@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dhb7362yed6ja"
+path="res://.godot/imported/hc_super_gun_2.gif-0ee15b02fb6c9d7b416a789ca8d60362.tres"
+
+[deps]
+
+source_file="res://images/hc_super_gun_2.gif"
+dest_files=["res://.godot/imported/hc_super_gun_2.gif-0ee15b02fb6c9d7b416a789ca8d60362.tres"]
+
+[params]
+
+frames_per_second=30

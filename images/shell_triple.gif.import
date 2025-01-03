@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bfx185x1f2hdy"
+path="res://.godot/imported/shell_triple.gif-6e4cad46c1533f6bfe4b55a5dd1813e3.tres"
+
+[deps]
+
+source_file="res://images/shell_triple.gif"
+dest_files=["res://.godot/imported/shell_triple.gif-6e4cad46c1533f6bfe4b55a5dd1813e3.tres"]
+
+[params]
+
+frames_per_second=30

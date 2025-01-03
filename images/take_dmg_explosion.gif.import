@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://deb3edhsgdaxx"
+path="res://.godot/imported/take_dmg_explosion.gif-0b65a470c1b8b12747d44d79c9043971.tres"
+
+[deps]
+
+source_file="res://images/take_dmg_explosion.gif"
+dest_files=["res://.godot/imported/take_dmg_explosion.gif-0b65a470c1b8b12747d44d79c9043971.tres"]
+
+[params]
+
+frames_per_second=30

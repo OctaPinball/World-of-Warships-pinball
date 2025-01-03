@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b0aw01qdhqtft"
+path="res://.godot/imported/aircraft_carrier_explosion.gif-1c9962d6a57a2ec4639a8e51bc642ade.tres"
+
+[deps]
+
+source_file="res://images/aircraft_carrier_explosion.gif"
+dest_files=["res://.godot/imported/aircraft_carrier_explosion.gif-1c9962d6a57a2ec4639a8e51bc642ade.tres"]
+
+[params]
+
+frames_per_second=30

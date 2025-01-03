@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dewnng1dyk6ll"
+path="res://.godot/imported/shell_double_2.gif-e3dcf184fb0a1a1d54b53ec0e6a1049c.tres"
+
+[deps]
+
+source_file="res://images/shell_double_2.gif"
+dest_files=["res://.godot/imported/shell_double_2.gif-e3dcf184fb0a1a1d54b53ec0e6a1049c.tres"]
+
+[params]
+
+frames_per_second=30

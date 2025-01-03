@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cgjxh4xtbm5pd"
+path="res://.godot/imported/kozep_izzo_2.gif-249617b4e828d81b55827d50335c3a10.tres"
+
+[deps]
+
+source_file="res://images/kozep_izzo_2.gif"
+dest_files=["res://.godot/imported/kozep_izzo_2.gif-249617b4e828d81b55827d50335c3a10.tres"]
+
+[params]
+
+frames_per_second=30

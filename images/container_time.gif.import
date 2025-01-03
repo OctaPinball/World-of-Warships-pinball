@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b51yusxwr2hlw"
+path="res://.godot/imported/container_time.gif-cc4198b7207ba2da699d0a57b16b2e26.tres"
+
+[deps]
+
+source_file="res://images/container_time.gif"
+dest_files=["res://.godot/imported/container_time.gif-cc4198b7207ba2da699d0a57b16b2e26.tres"]
+
+[params]
+
+frames_per_second=30

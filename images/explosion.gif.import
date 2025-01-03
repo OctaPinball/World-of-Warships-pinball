@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://c0np3axv1oiyu"
+path="res://.godot/imported/explosion.gif-f1c93b9cccd7d157aaa6dd4e5fad880c.tres"
+
+[deps]
+
+source_file="res://images/explosion.gif"
+dest_files=["res://.godot/imported/explosion.gif-f1c93b9cccd7d157aaa6dd4e5fad880c.tres"]
+
+[params]
+
+frames_per_second=30

@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://c0rqvk1sexx78"
+path="res://.godot/imported/penetration.gif-ea5baf2c66829722871b181c37dd2e16.tres"
+
+[deps]
+
+source_file="res://images/penetration.gif"
+dest_files=["res://.godot/imported/penetration.gif-ea5baf2c66829722871b181c37dd2e16.tres"]
+
+[params]
+
+frames_per_second=30

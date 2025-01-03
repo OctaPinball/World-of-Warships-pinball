@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bonhdgposu4vm"
+path="res://.godot/imported/mode_7_desc_rev.gif-a946b5ad1df158e187a35fbe9235bd66.tres"
+
+[deps]
+
+source_file="res://images/mode_7_desc_rev.gif"
+dest_files=["res://.godot/imported/mode_7_desc_rev.gif-a946b5ad1df158e187a35fbe9235bd66.tres"]
+
+[params]
+
+frames_per_second=30

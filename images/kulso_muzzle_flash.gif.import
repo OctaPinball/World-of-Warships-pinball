@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://be0d4jih6uwrf"
+path="res://.godot/imported/kulso_muzzle_flash.gif-191ab23b51de58b723880f9902b55201.tres"
+
+[deps]
+
+source_file="res://images/kulso_muzzle_flash.gif"
+dest_files=["res://.godot/imported/kulso_muzzle_flash.gif-191ab23b51de58b723880f9902b55201.tres"]
+
+[params]
+
+frames_per_second=30

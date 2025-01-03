@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cw0v18okoex10"
+path="res://.godot/imported/super_1_muzzle.gif-309e949c74fdd5ea4a4fe70db815a764.tres"
+
+[deps]
+
+source_file="res://images/super_1_muzzle.gif"
+dest_files=["res://.godot/imported/super_1_muzzle.gif-309e949c74fdd5ea4a4fe70db815a764.tres"]
+
+[params]
+
+frames_per_second=30

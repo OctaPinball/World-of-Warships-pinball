@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://1hegnr7adxqc"
+path="res://.godot/imported/aircraft_carrier_torpedo.gif-2330a0a873de4f5c103bd2bd80c4bd32.tres"
+
+[deps]
+
+source_file="res://images/aircraft_carrier_torpedo.gif"
+dest_files=["res://.godot/imported/aircraft_carrier_torpedo.gif-2330a0a873de4f5c103bd2bd80c4bd32.tres"]
+
+[params]
+
+frames_per_second=30

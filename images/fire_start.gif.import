@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://neoipstknkex"
+path="res://.godot/imported/fire_start.gif-f08cf3211591b8449ff50086adc6feea.tres"
+
+[deps]
+
+source_file="res://images/fire_start.gif"
+dest_files=["res://.godot/imported/fire_start.gif-f08cf3211591b8449ff50086adc6feea.tres"]
+
+[params]
+
+frames_per_second=30

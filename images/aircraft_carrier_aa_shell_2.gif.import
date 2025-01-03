@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://btc84a3d3i8s"
+path="res://.godot/imported/aircraft_carrier_aa_shell_2.gif-be2e792a19edf5db4eda394c8a2f4d72.tres"
+
+[deps]
+
+source_file="res://images/aircraft_carrier_aa_shell_2.gif"
+dest_files=["res://.godot/imported/aircraft_carrier_aa_shell_2.gif-be2e792a19edf5db4eda394c8a2f4d72.tres"]
+
+[params]
+
+frames_per_second=30

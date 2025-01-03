@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cplxe83ka0dnk"
+path="res://.godot/imported/belso_agyu.gif-7ef2bb9a9eabd52249ee2cc1703fe96b.tres"
+
+[deps]
+
+source_file="res://images/belso_agyu.gif"
+dest_files=["res://.godot/imported/belso_agyu.gif-7ef2bb9a9eabd52249ee2cc1703fe96b.tres"]
+
+[params]
+
+frames_per_second=30

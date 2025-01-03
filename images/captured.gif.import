@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b2e8kttn23na4"
+path="res://.godot/imported/captured.gif-aab5bab69ec221c45ed27169284f34fe.tres"
+
+[deps]
+
+source_file="res://images/captured.gif"
+dest_files=["res://.godot/imported/captured.gif-aab5bab69ec221c45ed27169284f34fe.tres"]
+
+[params]
+
+frames_per_second=30

@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dkarbbqvubs1f"
+path="res://.godot/imported/mode_2_completed.gif-ae3fb2429a2a83397f52fbaf1c114c93.tres"
+
+[deps]
+
+source_file="res://images/mode_2_completed.gif"
+dest_files=["res://.godot/imported/mode_2_completed.gif-ae3fb2429a2a83397f52fbaf1c114c93.tres"]
+
+[params]
+
+frames_per_second=30

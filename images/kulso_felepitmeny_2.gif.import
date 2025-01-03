@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://ngf10j34viob"
+path="res://.godot/imported/kulso_felepitmeny_2.gif-8db5282cb3f4574ee1e6c69cc7fe3eec.tres"
+
+[deps]
+
+source_file="res://images/kulso_felepitmeny_2.gif"
+dest_files=["res://.godot/imported/kulso_felepitmeny_2.gif-8db5282cb3f4574ee1e6c69cc7fe3eec.tres"]
+
+[params]
+
+frames_per_second=30

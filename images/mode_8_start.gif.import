@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://du7b1r22k1loi"
+path="res://.godot/imported/mode_8_start.gif-c2af080f63fd4c6ee4e03e173d5ce5dd.tres"
+
+[deps]
+
+source_file="res://images/mode_8_start.gif"
+dest_files=["res://.godot/imported/mode_8_start.gif-c2af080f63fd4c6ee4e03e173d5ce5dd.tres"]
+
+[params]
+
+frames_per_second=30

@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://p8mb6xy3umvi"
+path="res://.godot/imported/sec_he_1_shell.gif-07a00987de21a35edd2dcbff61e68be7.tres"
+
+[deps]
+
+source_file="res://images/sec_he_1_shell.gif"
+dest_files=["res://.godot/imported/sec_he_1_shell.gif-07a00987de21a35edd2dcbff61e68be7.tres"]
+
+[params]
+
+frames_per_second=30

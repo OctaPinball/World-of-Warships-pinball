@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bbclyp1bksdsx"
+path="res://.godot/imported/belso_felepitmeny_2.gif-504ccca1c01aa972951c8a71887227a8.tres"
+
+[deps]
+
+source_file="res://images/belso_felepitmeny_2.gif"
+dest_files=["res://.godot/imported/belso_felepitmeny_2.gif-504ccca1c01aa972951c8a71887227a8.tres"]
+
+[params]
+
+frames_per_second=30

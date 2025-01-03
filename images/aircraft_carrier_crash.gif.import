@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://qq7a6r5jdvoe"
+path="res://.godot/imported/aircraft_carrier_crash.gif-1d35d68f90a8749657cadb27150f5c38.tres"
+
+[deps]
+
+source_file="res://images/aircraft_carrier_crash.gif"
+dest_files=["res://.godot/imported/aircraft_carrier_crash.gif-1d35d68f90a8749657cadb27150f5c38.tres"]
+
+[params]
+
+frames_per_second=30

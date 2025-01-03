@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://by56ue1xkh3ts"
+path="res://.godot/imported/hc_start.gif-73887869f41c84014ee6ee2ba447b63c.tres"
+
+[deps]
+
+source_file="res://images/hc_start.gif"
+dest_files=["res://.godot/imported/hc_start.gif-73887869f41c84014ee6ee2ba447b63c.tres"]
+
+[params]
+
+frames_per_second=30

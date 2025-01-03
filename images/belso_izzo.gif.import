@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://bihebg7u4fog3"
+path="res://.godot/imported/belso_izzo.gif-be1978d3cc9a2a757e1f065804f99957.tres"
+
+[deps]
+
+source_file="res://images/belso_izzo.gif"
+dest_files=["res://.godot/imported/belso_izzo.gif-be1978d3cc9a2a757e1f065804f99957.tres"]
+
+[params]
+
+frames_per_second=30

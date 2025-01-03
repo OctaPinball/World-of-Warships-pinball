@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dg8sbcj88jq5j"
+path="res://.godot/imported/kozep_agyu_2.gif-4e1d970b44d64c1b00fece50b5bc1258.tres"
+
+[deps]
+
+source_file="res://images/kozep_agyu_2.gif"
+dest_files=["res://.godot/imported/kozep_agyu_2.gif-4e1d970b44d64c1b00fece50b5bc1258.tres"]
+
+[params]
+
+frames_per_second=30

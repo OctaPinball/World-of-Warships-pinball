@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cneu0bho5gtuw"
+path="res://.godot/imported/aa_4.gif-d547ac348ba5deec04deca320d139c1f.tres"
+
+[deps]
+
+source_file="res://images/aa_4.gif"
+dest_files=["res://.godot/imported/aa_4.gif-d547ac348ba5deec04deca320d139c1f.tres"]
+
+[params]
+
+frames_per_second=30

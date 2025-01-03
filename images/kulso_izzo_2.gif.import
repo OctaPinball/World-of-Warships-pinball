@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b50lpr7wsdwpf"
+path="res://.godot/imported/kulso_izzo_2.gif-ebe803ee22e1dff512d659fea5557d3d.tres"
+
+[deps]
+
+source_file="res://images/kulso_izzo_2.gif"
+dest_files=["res://.godot/imported/kulso_izzo_2.gif-ebe803ee22e1dff512d659fea5557d3d.tres"]
+
+[params]
+
+frames_per_second=30

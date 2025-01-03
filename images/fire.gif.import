@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b2p4ca3cosamu"
+path="res://.godot/imported/fire.gif-0539d1c654561c92b854c41ece6c73da.tres"
+
+[deps]
+
+source_file="res://images/fire.gif"
+dest_files=["res://.godot/imported/fire.gif-0539d1c654561c92b854c41ece6c73da.tres"]
+
+[params]
+
+frames_per_second=30

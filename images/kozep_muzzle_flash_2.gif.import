@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://djud2boymefxj"
+path="res://.godot/imported/kozep_muzzle_flash_2.gif-c17f6c2e41e098db0f19d0a907d0b691.tres"
+
+[deps]
+
+source_file="res://images/kozep_muzzle_flash_2.gif"
+dest_files=["res://.godot/imported/kozep_muzzle_flash_2.gif-c17f6c2e41e098db0f19d0a907d0b691.tres"]
+
+[params]
+
+frames_per_second=30

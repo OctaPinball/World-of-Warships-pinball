@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b5387de85n7g8"
+path="res://.godot/imported/kulso_agyu_2.gif-3ecf128883ba3049c3264d7f14bed343.tres"
+
+[deps]
+
+source_file="res://images/kulso_agyu_2.gif"
+dest_files=["res://.godot/imported/kulso_agyu_2.gif-3ecf128883ba3049c3264d7f14bed343.tres"]
+
+[params]
+
+frames_per_second=30
