@@ -64,7 +64,6 @@ random_event_player:
         - increase_bonus_x
         - increase_dmg_value
         - increase_jet_value
-        - increase_xp
 
 event_player:
   start_container: award_container
@@ -72,7 +71,6 @@ event_player:
   award_container{current_player.addaball_lit == 0}: award_container_phase_1
   award_container_phase_1{current_player.more_time_lit == 1}: more_time
   award_container_phase_1{current_player.more_time_lit == 0}: random_container
-  slide_container_xp_text_removed: container_slide_end
   slide_container_x_text_removed: container_slide_end
   slide_container_jet_text_removed: container_slide_end
   slide_container_dmg_text_removed: container_slide_end
@@ -99,7 +97,6 @@ show_player:
   add_a_ball:
     sh_container_ball:
       loops: 0
-
   increase_bonus_x:
     sh_container_x:
       loops: 0
@@ -108,9 +105,6 @@ show_player:
       loops: 0
   increase_jet_value:
     sh_container_jet:
-      loops: 0
-  increase_xp:
-    sh_container_xp:
       loops: 0
 
 slide_player:

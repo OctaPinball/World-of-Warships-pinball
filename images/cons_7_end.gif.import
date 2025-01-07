@@ -1,7 +1,7 @@
 [remap]
 
-importer="import_gif_to_sprite_frames"
-type="SpriteFrames"
+importer="import_gif_to_animated_texture"
+type="AnimatedTexture"
 uid="uid://w1i2my07cwub"
 path="res://.godot/imported/cons_7_end.gif-032f49758755546e4df10ae815a83ac6.tres"
 
@@ -12,4 +12,3 @@ dest_files=["res://.godot/imported/cons_7_end.gif-032f49758755546e4df10ae815a83a
 
 [params]
 
-frames_per_second=30

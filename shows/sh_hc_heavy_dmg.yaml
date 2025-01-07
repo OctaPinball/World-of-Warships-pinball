@@ -5,15 +5,15 @@
       loops: 0
     shell_exit_3:
       loops: 0
-- time: +0.5
+- time: "+0.5"
   sounds:
     shell_arrive_8:
       loops: 0
-- time: +2
+- time: "+2"
   sounds:
     ricochet_loud_7:
       loops: 0
-- time: +0.3
+- time: "+0.3"
   sounds:
     heavy_dmg:
       loops: 0

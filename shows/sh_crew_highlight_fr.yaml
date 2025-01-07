@@ -1,7 +1,0 @@
-#show_version=6
-- time: 0
-  slides:
-    fr_lit:
-      - type: text
-        font_size: 20
-        text: FR

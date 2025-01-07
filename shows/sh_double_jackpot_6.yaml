@@ -5,7 +5,7 @@
         slide: high_caliber_slide
       double_jackpot:
         slide: high_caliber_slide
-- time: +1
+- time: "+1"
   events:
     remove_hc_6
   widgets:
@@ -27,12 +27,12 @@
         slide: high_caliber_slide
       agyu_6_marad:
         slide: high_caliber_slide
-- time: +1
+- time: "+1"
   widgets:
       felepitmeny_6:
         slide: high_caliber_slide
         action: remove
-- time: +0.2
+- time: "+0.2"
   events:
     jackpot_6_text_removed
   widgets:

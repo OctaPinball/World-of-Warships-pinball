@@ -3,7 +3,7 @@
   widgets:
       sec_shell_5:
         slide: high_caliber_slide
-- time: +1
+- time: "+1"
   widgets:
       sec_shell_5:
         slide: high_caliber_slide

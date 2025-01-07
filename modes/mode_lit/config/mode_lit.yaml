@@ -192,15 +192,15 @@ shows:
       - time: 0
         lights:
           (lights): on
-      - time: +0.1
+      - time: "+0.1"
         lights:
           (lights): off
-      - time: +0.1
+      - time: "+0.1"
   slow_flash_modes:
       - time: 0
         lights:
           (lights): on
-      - time: +0.5
+      - time: "+0.5"
         lights:
           (lights): off
-      - time: +0.5
+      - time: "+0.5"

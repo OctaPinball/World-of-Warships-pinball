@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://bckr3bahdoc8b"]
+[gd_scene load_steps=10 format=3 uid="uid://bckr3bahdoc8b"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mdxb5"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_qykvw"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_1r2g5"]
 [ext_resource type="FontFile" uid="uid://cly53tgimtqo8" path="res://fonts/pixelmix.ttf" id="4_44lq0"]
-[ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="4_dqhly"]
 [ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="5_gtsgu"]
 [ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="7_wi4te"]
 [ext_resource type="Texture2D" uid="uid://diarddp7vekex" path="res://images/wargaming_logo.png" id="8_nbr3c"]
@@ -98,7 +97,8 @@ offset_bottom = 30.0
 theme_override_font_sizes/font_size = 80
 text = "123,456,789"
 label_settings = ExtResource("7_wi4te")
-visible_ratio = -0.0909091
+visible_characters = 0
+visible_ratio = 0.0
 script = ExtResource("3_1r2g5")
 variable_type = 2
 variable_name = "player1_score"
@@ -134,10 +134,9 @@ variable_name = "player3_score"
 comma_separate = true
 min_digits = 2
 
-[node name="last_scores_3p2" type="Node2D" parent="MPFCarousel"]
-visible = false
+[node name="last_scores_4p" type="Node2D" parent="MPFCarousel"]
 
-[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_3p2"]
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_4p"]
 offset_left = 1.0
 offset_top = -2.0
 offset_right = 129.0
@@ -151,7 +150,7 @@ variable_name = "player1_score"
 comma_separate = true
 min_digits = 2
 
-[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_3p2"]
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_4p"]
 offset_top = -2.0
 offset_right = 128.0
 offset_bottom = 30.0
@@ -165,7 +164,7 @@ variable_name = "player2_score"
 comma_separate = true
 min_digits = 2
 
-[node name="player3_score" type="Label" parent="MPFCarousel/last_scores_3p2"]
+[node name="player3_score" type="Label" parent="MPFCarousel/last_scores_4p"]
 offset_left = 1.0
 offset_top = 2.0
 offset_right = 129.0
@@ -180,7 +179,7 @@ variable_name = "player3_score"
 comma_separate = true
 min_digits = 2
 
-[node name="player4_score" type="Label" parent="MPFCarousel/last_scores_3p2"]
+[node name="player4_score" type="Label" parent="MPFCarousel/last_scores_4p"]
 offset_top = 2.0
 offset_right = 128.0
 offset_bottom = 34.0
@@ -194,11 +193,6 @@ variable_type = 2
 variable_name = "player4_score"
 comma_separate = true
 min_digits = 2
-
-[node name="mpf_logo" type="Sprite2D" parent="MPFCarousel"]
-visible = false
-position = Vector2(670, 522)
-texture = ExtResource("4_dqhly")
 
 [node name="octa_pinball" type="Label" parent="MPFCarousel"]
 visible = false

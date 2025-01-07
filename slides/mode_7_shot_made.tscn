@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw5evij43ih1"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_aj4fd"]
+[ext_resource type="Texture2D" uid="uid://7yndb4y00wwo" path="res://images/cons_7_background.png" id="2_uo7au"]
+[ext_resource type="Texture2D" uid="uid://duv2cgn8ubl4o" path="res://images/cons_7_foreground.png" id="3_fyyjm"]
+[ext_resource type="Texture2D" uid="uid://ci74wk1u7spit" path="res://images/cons_7_torp.png" id="3_lf4tr"]
+
+[node name="Mode7ShotMade" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_aj4fd")
+
+[node name="Cons7Background" type="Sprite2D" parent="."]
+texture = ExtResource("2_uo7au")
+centered = false
+
+[node name="Cons7Torp" type="Sprite2D" parent="."]
+position = Vector2(65, 2)
+texture = ExtResource("3_lf4tr")
+centered = false
+
+[node name="Cons7Torp2" type="Sprite2D" parent="."]
+position = Vector2(65, 12)
+texture = ExtResource("3_lf4tr")
+centered = false
+
+[node name="Cons7Torp3" type="Sprite2D" parent="."]
+position = Vector2(65, 22)
+texture = ExtResource("3_lf4tr")
+centered = false
+
+[node name="Cons7Foreground" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("3_fyyjm")
+centered = false

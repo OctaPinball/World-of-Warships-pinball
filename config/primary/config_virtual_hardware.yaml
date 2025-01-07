@@ -1,28 +1,6 @@
 #config_version=6
 
 
-window:
-    width: 512
-    height: 128
-    title: Color DMD
-    resizable: yes
-    borderless: no
-    fullscreen: no
-    exit_on_escape: True
-    source_display: dmd
-    left: 903           #903 original or 660 new
-    top: 30
-    effects:
-        - type: color_dmd
-
-displays:
-  dmd:
-    width: 128
-    height: 32
-    default: true
-
-
-
 playfields:
   playfield:
     default_source_device: bd_plunger

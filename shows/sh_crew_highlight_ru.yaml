@@ -1,7 +1,0 @@
-#show_version=6
-- time: 0
-  slides:
-    ru_lit:
-      - type: text
-        font_size: 20
-        text: RU

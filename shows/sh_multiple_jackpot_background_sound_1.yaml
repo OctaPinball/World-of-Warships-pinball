@@ -3,7 +3,7 @@
   sounds:
     shoot_1:
       loops: 0
-- time: +1
+- time: "+1"
   sounds:
     far_explosion_3:
       loops: 0

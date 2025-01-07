@@ -8,7 +8,7 @@
   events:
     - remove_capturing_widget_1_1
     - active_capturing_widget_1_2
-- time: +1
+- time: "+1"
   events:
     - remove_capturing_widget_1_2
     - remove_capturing_letter

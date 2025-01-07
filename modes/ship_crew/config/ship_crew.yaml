@@ -1,5 +1,5 @@
 #config_version=6
-
+#TODO show rework
 mode:
   start_events: ball_started{ball==1}
   stop_events: ship_crew_finished
@@ -187,22 +187,6 @@ show_player:
     sh_ship_highlight_haragumo:
       action: stop
 
-  deactivate_crew_lit:
-    sh_crew_highlight_uk:
-      action: stop
-    sh_crew_highlight_us:
-      action: stop
-    sh_crew_highlight_de:
-      action: stop
-    sh_crew_highlight_ru:
-      action: stop
-    sh_crew_highlight_fr:
-      action: stop
-    sh_crew_highlight_it:
-      action: stop
-    sh_crew_highlight_ja:
-      action: stop
-
   achievement_des_moines_state_selected: sh_ship_highlight_des_moines
   achievement_stalingrad_state_selected: sh_ship_highlight_stalingrad
   achievement_venezia_state_selected: sh_ship_highlight_venezia
@@ -212,13 +196,7 @@ show_player:
   achievement_shimakaze_state_selected: sh_ship_highlight_shimakaze
   achievement_daring_state_selected: sh_ship_highlight_daring
   achievement_haragumo_state_selected: sh_ship_highlight_haragumo
-  achievement_uk_state_selected: sh_crew_highlight_uk
-  achievement_us_state_selected: sh_crew_highlight_us
-  achievement_de_state_selected: sh_crew_highlight_de
-  achievement_ru_state_selected: sh_crew_highlight_ru
-  achievement_fr_state_selected: sh_crew_highlight_fr
-  achievement_it_state_selected: sh_crew_highlight_it
-  achievement_ja_state_selected: sh_crew_highlight_ja
+
 
 
 

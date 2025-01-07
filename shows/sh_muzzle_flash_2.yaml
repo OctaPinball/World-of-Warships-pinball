@@ -3,7 +3,7 @@
   widgets:
       muzzle_flash_2:
         slide: high_caliber_slide
-- time: +1
+- time: "+1"
   widgets:
       muzzle_flash_2:
         slide: high_caliber_slide

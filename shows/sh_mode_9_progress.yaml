@@ -3,15 +3,15 @@
 - time: 0
   events:
     - mode_9_end_progress_slide_add
-- time: +2
+- time: "+2"
   events:
     - mode_9_end_progress_slide_transition_add
     - mode_9_end_progress_slide_remove
     - mode_9_end_total_progress_slide_add
-- time: +1.35
+- time: "+1.35"
   events:
     - mode_9_end_progress_slide_transition_remove
-- time: +2
+- time: "+2"
   events:
     - mode_9_end_total_progress_slide_remove
     - mode_completed_finished

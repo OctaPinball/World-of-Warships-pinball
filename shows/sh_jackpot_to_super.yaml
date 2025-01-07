@@ -3,7 +3,7 @@
 - time: 0
   events:
     - activate_super_transition_slide_1
-- time: +2
+- time: "+2"
   events:
     - activate_super_transition_slide_2
     - stop_jackpot

@@ -1,7 +1,7 @@
 #show_version=6
 
 - time: 0
-- time: +5.35
+- time: "+5.35"
   events:
     - ball_drain_phase_1_checked
     - disable_mode_total
