@@ -3,7 +3,7 @@
 modes:
   - attract
   #- high_score
-  #- match
+  - match
   #- main_play
   #- value_reset
   #- mode_lit
