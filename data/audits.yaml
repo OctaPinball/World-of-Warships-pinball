@@ -1,71 +1,71 @@
 events:
   game_ended: 5
-  game_started: 684
+  game_started: 685
 missing_switches:
-  s_action_button: 31
-  s_bumper_1: 31
-  s_bumper_2: 31
-  s_bumper_3: 31
-  s_center_ramp: 31
-  s_citadel: 31
-  s_conning_tower: 31
-  s_detonation: 31
-  s_detonation_lit: 31
-  s_dmg_1: 31
-  s_dmg_2: 31
-  s_dmg_3: 31
-  s_dmg_4: 31
-  s_dmg_5: 31
-  s_dmg_6: 31
-  s_dmg_7: 31
-  s_drop_target: 31
-  s_kickback: 31
-  s_kickback_target_1: 31
-  s_kickback_target_2: 31
-  s_kickback_target_3: 31
-  s_left_flipper: 31
-  s_left_inlane: 31
-  s_left_loop_made: 31
-  s_left_loop_pre: 31
-  s_left_mid_inlane: 31
-  s_left_outlane: 31
-  s_left_ramp_made: 31
-  s_left_ramp_pre: 31
-  s_left_slingshot: 31
-  s_lock_1: 31
-  s_lock_2: 31
-  s_lock_3: 31
-  s_main_hole: 31
-  s_pen_1: 31
-  s_pen_2: 31
-  s_pen_3: 31
-  s_ricochet_1: 31
-  s_ricochet_2: 31
-  s_ricochet_3: 31
-  s_ricochet_4: 31
-  s_right_flipper: 30
-  s_right_inlane: 31
-  s_right_loop_made: 31
-  s_right_loop_pre: 31
-  s_right_outlane: 31
-  s_right_ramp_made: 31
-  s_right_ramp_pre: 31
-  s_right_slingshot: 31
-  s_right_tunnel: 31
-  s_saucer: 31
-  s_side_hole: 31
-  s_side_ramp_made: 31
-  s_side_ramp_pre: 31
-  s_spinner: 31
-  s_start: 1
-  s_torpedo: 31
-  s_torpedo_pre: 31
-  s_trough2: 31
-  s_trough3: 31
-  s_trough4: 31
-  s_trough5: 31
-  s_trough6: 31
-  s_trough_jam: 31
+  s_action_button: 32
+  s_bumper_1: 32
+  s_bumper_2: 32
+  s_bumper_3: 32
+  s_center_ramp: 32
+  s_citadel: 32
+  s_conning_tower: 32
+  s_detonation: 32
+  s_detonation_lit: 32
+  s_dmg_1: 32
+  s_dmg_2: 32
+  s_dmg_3: 32
+  s_dmg_4: 32
+  s_dmg_5: 32
+  s_dmg_6: 32
+  s_dmg_7: 32
+  s_drop_target: 32
+  s_kickback: 32
+  s_kickback_target_1: 32
+  s_kickback_target_2: 32
+  s_kickback_target_3: 32
+  s_left_flipper: 32
+  s_left_inlane: 32
+  s_left_loop_made: 32
+  s_left_loop_pre: 32
+  s_left_mid_inlane: 32
+  s_left_outlane: 32
+  s_left_ramp_made: 32
+  s_left_ramp_pre: 32
+  s_left_slingshot: 32
+  s_lock_1: 32
+  s_lock_2: 32
+  s_lock_3: 32
+  s_main_hole: 32
+  s_pen_1: 32
+  s_pen_2: 32
+  s_pen_3: 32
+  s_ricochet_1: 32
+  s_ricochet_2: 32
+  s_ricochet_3: 32
+  s_ricochet_4: 32
+  s_right_flipper: 31
+  s_right_inlane: 32
+  s_right_loop_made: 32
+  s_right_loop_pre: 32
+  s_right_outlane: 32
+  s_right_ramp_made: 32
+  s_right_ramp_pre: 32
+  s_right_slingshot: 32
+  s_right_tunnel: 32
+  s_saucer: 32
+  s_side_hole: 32
+  s_side_ramp_made: 32
+  s_side_ramp_pre: 32
+  s_spinner: 32
+  s_start: 2
+  s_torpedo: 32
+  s_torpedo_pre: 32
+  s_trough2: 32
+  s_trough3: 32
+  s_trough4: 32
+  s_trough5: 32
+  s_trough6: 32
+  s_trough_jam: 32
 player:
   score:
     average: 0
@@ -161,8 +161,8 @@ switches:
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 4259
-  s_plunger_button: 64
+  s_plunger: 4261
+  s_plunger_button: 65
   s_ricochet_1: 197
   s_ricochet_2: 692
   s_ricochet_3: 93
@@ -188,7 +188,7 @@ switches:
   s_torpedo: 740
   s_torpedo_lane: 2
   s_torpedo_pre: 0
-  s_trough1: 791
+  s_trough1: 792
   s_trough2: 108
   s_trough3: 84
   s_trough4: 36

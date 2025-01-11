@@ -46,7 +46,7 @@ slide_player:
     score_multi_4:
       action: remove
   ball_save_main_ball_save_saving_ball:
-    ball_saved_slide:
+    ball_saved:
       action: play
       expire: 1s
       priority: 800
