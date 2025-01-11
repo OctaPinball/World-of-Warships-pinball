@@ -2,4 +2,9 @@
 - time: 0
   slides:
     match
-- time: "+7"
+- time: "7"
+  events:
+    - match_end
+  slides:
+    match:
+      action: remove
