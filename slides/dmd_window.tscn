@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwl4c3uqgcew6"]
 
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_window.gd" id="1_uh2dl"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_dmd_display.gd" id="2_l813t"]
-[ext_resource type="Shader" path="res://addons/mpf-gmc/resources/rgb_shift_rbg.gdshader" id="3_osxc0"]
+[ext_resource type="Script" uid="uid://bpqij1nly4pi2" path="res://addons/mpf-gmc/classes/mpf_window.gd" id="1_uh2dl"]
+[ext_resource type="Script" uid="uid://b4kvqaw0ff2qd" path="res://addons/mpf-gmc/classes/mpf_dmd_display.gd" id="2_l813t"]
+[ext_resource type="Shader" uid="uid://b7ixistnyej35" path="res://addons/mpf-gmc/resources/rgb_shift_rbg.gdshader" id="3_osxc0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6psgm"]
 shader = ExtResource("3_osxc0")

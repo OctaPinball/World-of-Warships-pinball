@@ -2,7 +2,7 @@
 
 modes:
   - attract
-  #- high_score
+  - high_score
   - match
   #- main_play
   #- value_reset
@@ -28,9 +28,9 @@ modes:
   #- mode_timer
   #- container
   #- salvo_lit
-  #- hc_lock_lit
+  - hc_lock_lit
   #- hc_multiball
-  #- hc_multiball_super
+  - hc_multiball_super
   #- confederate
   #- battle
   #- battle_manager

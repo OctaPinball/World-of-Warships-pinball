@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://bckr3bahdoc8b"]
 
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mdxb5"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_qykvw"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_1r2g5"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mdxb5"]
+[ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_qykvw"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_1r2g5"]
 [ext_resource type="FontFile" uid="uid://cly53tgimtqo8" path="res://fonts/pixelmix.ttf" id="4_44lq0"]
 [ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="5_gtsgu"]
 [ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="7_wi4te"]
@@ -23,12 +23,17 @@ offset_right = 128.0
 offset_bottom = 32.0
 color = Color(0, 0, 0, 1)
 
-[node name="MPFCarousel" type="Node2D" parent="."]
+[node name="MPFCarousel" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("2_qykvw")
 carousel_name = "attract"
+metadata/_custom_type_script = "uid://dpe3dq8axt3g7"
 
 [node name="game_over" type="Label" parent="MPFCarousel"]
 visible = false
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 32.0
 theme_override_font_sizes/font_size = 80
@@ -135,6 +140,7 @@ comma_separate = true
 min_digits = 2
 
 [node name="last_scores_4p" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_4p"]
 offset_left = 1.0
@@ -196,6 +202,7 @@ min_digits = 2
 
 [node name="octa_pinball" type="Label" parent="MPFCarousel"]
 visible = false
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 32.0
 theme_override_font_sizes/font_size = 80
@@ -206,6 +213,7 @@ vertical_alignment = 1
 
 [node name="and" type="Label" parent="MPFCarousel"]
 visible = false
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 32.0
 theme_override_font_sizes/font_size = 80
@@ -221,6 +229,7 @@ texture = ExtResource("8_nbr3c")
 
 [node name="presents" type="Label" parent="MPFCarousel"]
 visible = false
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 32.0
 theme_override_font_sizes/font_size = 80
@@ -236,6 +245,7 @@ texture = ExtResource("9_um4us")
 
 [node name="high_scores" type="Label" parent="MPFCarousel"]
 visible = false
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 32.0
 theme_override_font_sizes/font_size = 80

@@ -2,9 +2,9 @@
 
 config:
   #Primary config files
-  - primary/config_else_virtual.yaml
+  #- primary/config_else_virtual.yaml
   - primary/config_hardware.yaml
-  - primary/config_keys.yaml
+  #- primary/config_keys.yaml
   - primary/config_logic.yaml
   - primary/config_modes.yaml
   - primary/config_operator_settings.yaml

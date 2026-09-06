@@ -1,7 +1,7 @@
 #config_version=6
 
 hardware:
-  #platform: smart_virtual
+  platform: smart_virtual
   rgb_dmd: pin2dmd
 
 
