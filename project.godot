@@ -30,7 +30,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/mpf-gmc/plugin.cfg")
+enabled=PackedStringArray("res://addons/mpf-gmc/plugin.cfg", "res://addons/mpf_design_exporter/plugin.cfg")
 
 [importer_defaults]
 
