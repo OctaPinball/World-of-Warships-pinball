@@ -1,71 +1,65 @@
 events:
   game_ended: 6
-  game_started: 694
+  game_started: 700
 missing_switches:
-  s_action_button: 1
-  s_bumper_1: 41
-  s_bumper_2: 41
-  s_bumper_3: 41
-  s_center_ramp: 41
-  s_citadel: 41
-  s_conning_tower: 41
-  s_detonation: 41
-  s_detonation_lit: 41
-  s_dmg_1: 7
-  s_dmg_2: 7
-  s_dmg_3: 8
-  s_dmg_4: 41
-  s_dmg_5: 41
-  s_dmg_6: 7
-  s_dmg_7: 41
-  s_drop_target: 41
-  s_kickback: 41
-  s_kickback_target_1: 41
-  s_kickback_target_2: 41
-  s_kickback_target_3: 41
-  s_left_flipper: 41
-  s_left_inlane: 41
+  s_action_button: 7
+  s_bumper_2: 47
+  s_bumper_3: 47
+  s_center_ramp: 47
+  s_citadel: 47
+  s_conning_tower: 47
+  s_detonation: 47
+  s_detonation_lit: 47
+  s_dmg_1: 13
+  s_dmg_2: 13
+  s_dmg_4: 5
+  s_dmg_5: 47
+  s_dmg_6: 13
+  s_dmg_7: 47
+  s_drop_target: 47
+  s_kickback: 47
+  s_kickback_target_1: 47
+  s_kickback_target_2: 47
+  s_kickback_target_3: 47
+  s_left_flipper: 47
+  s_left_inlane: 47
   s_left_loop_made: 1
-  s_left_loop_pre: 41
-  s_left_mid_inlane: 41
-  s_left_outlane: 41
-  s_left_ramp_made: 1
-  s_left_ramp_pre: 41
-  s_left_slingshot: 41
-  s_lock_1: 1
-  s_lock_2: 1
-  s_lock_3: 1
-  s_main_hole: 41
-  s_pen_1: 41
-  s_pen_2: 41
-  s_pen_3: 41
-  s_plunger_button: 1
-  s_ricochet_1: 41
-  s_ricochet_2: 41
-  s_ricochet_3: 41
-  s_ricochet_4: 41
-  s_right_flipper: 1
-  s_right_inlane: 41
-  s_right_loop_made: 41
-  s_right_loop_pre: 41
-  s_right_outlane: 41
-  s_right_ramp_made: 1
-  s_right_ramp_pre: 41
-  s_right_slingshot: 41
-  s_right_tunnel: 41
-  s_saucer: 41
-  s_side_hole: 41
-  s_side_ramp_made: 41
-  s_side_ramp_pre: 41
-  s_spinner: 41
-  s_torpedo: 41
-  s_torpedo_pre: 41
-  s_trough2: 41
-  s_trough3: 41
-  s_trough4: 41
-  s_trough5: 41
-  s_trough6: 41
-  s_trough_jam: 41
+  s_left_loop_pre: 47
+  s_left_mid_inlane: 47
+  s_left_outlane: 47
+  s_left_ramp_pre: 47
+  s_main_hole: 47
+  s_pen_1: 47
+  s_pen_2: 47
+  s_pen_3: 47
+  s_plunger_button: 7
+  s_ricochet_1: 47
+  s_ricochet_2: 47
+  s_ricochet_3: 47
+  s_ricochet_4: 47
+  s_right_flipper: 7
+  s_right_inlane: 47
+  s_right_loop_made: 47
+  s_right_loop_pre: 47
+  s_right_outlane: 47
+  s_right_ramp_pre: 47
+  s_right_slingshot: 47
+  s_right_tunnel: 47
+  s_saucer: 47
+  s_side_hole: 47
+  s_side_ramp_made: 47
+  s_side_ramp_pre: 47
+  s_spinner: 47
+  s_start: 6
+  s_torpedo: 47
+  s_torpedo_pre: 47
+  s_trough1: 6
+  s_trough2: 47
+  s_trough3: 47
+  s_trough4: 47
+  s_trough5: 47
+  s_trough6: 47
+  s_trough_jam: 47
 player:
   score:
     average: 0
@@ -97,8 +91,8 @@ shots:
   dmg_con_add_time_2: 43
   dmg_con_add_time_3: 24
   dmg_con_add_time_4: 21
-  jackpot_1: 79
-  jackpot_2: 107
+  jackpot_1: 84
+  jackpot_2: 108
   jackpot_3: 91
   jackpot_4: 41
   jackpot_5: 42
@@ -108,8 +102,8 @@ shots:
   lane_C: 350
   lane_D: 363
   lane_E: 140
-  lock_lit_1: 1601
-  lock_lit_2: 1514
+  lock_lit_1: 1619
+  lock_lit_2: 1532
   ricochet_1: 173
   ricochet_2: 685
   ricochet_3: 91
@@ -117,7 +111,7 @@ shots:
   ricochet_5: 3
 switches:
   s_action_button: 48
-  s_bumper_1: 735
+  s_bumper_1: 776
   s_bumper_2: 223
   s_bumper_3: 688
   s_center_ramp: 115
@@ -128,8 +122,8 @@ switches:
   s_detonation_lit: 24
   s_dmg_1: 2708
   s_dmg_2: 67
-  s_dmg_3: 21
-  s_dmg_4: 28
+  s_dmg_3: 24
+  s_dmg_4: 46
   s_dmg_5: 27
   s_dmg_6: 141
   s_dmg_7: 293
@@ -144,16 +138,16 @@ switches:
   s_left_flipper: 1472
   s_left_hole: 0
   s_left_inlane: 351
-  s_left_loop_made: 248
+  s_left_loop_made: 253
   s_left_loop_pre: 201
   s_left_mid_inlane: 147
   s_left_outlane: 125
-  s_left_ramp_made: 2018
+  s_left_ramp_made: 2037
   s_left_ramp_pre: 275
-  s_left_slingshot: 38
-  s_lock_1: 430
-  s_lock_2: 442
-  s_lock_3: 525
+  s_left_slingshot: 39
+  s_lock_1: 437
+  s_lock_2: 448
+  s_lock_3: 531
   s_magnet_switch: 0
   s_main_hole: 1065
   s_pen_1: 820
@@ -162,7 +156,7 @@ switches:
   s_pen_4: 5
   s_pen_5: 2
   s_pen_6: 8
-  s_plunger: 4282
+  s_plunger: 4300
   s_plunger_button: 66
   s_ricochet_1: 197
   s_ricochet_2: 692
@@ -175,7 +169,7 @@ switches:
   s_right_loop_made: 84
   s_right_loop_pre: 72
   s_right_outlane: 142
-  s_right_ramp_made: 1712
+  s_right_ramp_made: 1730
   s_right_ramp_pre: 83
   s_right_slingshot: 135
   s_right_small_ramp: 0

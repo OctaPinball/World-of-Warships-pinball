@@ -29,8 +29,8 @@ modes:
   #- container
   #- salvo_lit
   - hc_lock_lit
-  #- hc_multiball
-  - hc_multiball_super
+  - hc_multiball
+  #- hc_multiball_super
   #- confederate
   #- battle
   #- battle_manager

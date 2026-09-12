@@ -1,0 +1,352 @@
+[gd_scene load_steps=18 format=3 uid="uid://okc066wq7asj"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_fe0ex"]
+[ext_resource type="LabelSettings" uid="uid://bhlkpxr6drej3" path="res://fonts/font_8_m.tres" id="2_2dy3w"]
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="2_ehg3t"]
+[ext_resource type="Texture2D" uid="uid://c8ps5nfmvcvq4" path="res://images/hc_1.png" id="3_52yrp"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_fqsb8"]
+[ext_resource type="Texture2D" uid="uid://c45pjrnllj11f" path="res://images/hc_2.png" id="4_7aryq"]
+[ext_resource type="Texture2D" uid="uid://coq0qjhduqq4e" path="res://images/hc_3.png" id="5_5krbj"]
+[ext_resource type="Texture2D" uid="uid://cfx3fs6g216su" path="res://images/hc_4.png" id="6_2dy3w"]
+[ext_resource type="Texture2D" uid="uid://doo35se0kgk5t" path="res://images/hc_5.png" id="7_fqsb8"]
+[ext_resource type="Texture2D" uid="uid://b3l6vdc6m77g" path="res://images/hc_6.png" id="8_7r2uw"]
+[ext_resource type="Texture2D" uid="uid://c0jdmejrajuoa" path="res://images/sec_ap_1_shell_spritesheet.png" id="11_7r2uw"]
+[ext_resource type="Texture2D" uid="uid://ce1bxbeh5dbku" path="res://images/sec_ap_1_shell_2_spritesheet.png" id="12_7f5ty"]
+[ext_resource type="Texture2D" uid="uid://daigbjjnc4f67" path="res://images/sec_he_1_shell_spritesheet.png" id="12_otsai"]
+[ext_resource type="Texture2D" uid="uid://u7wctao1s7ka" path="res://images/fire_start_spritesheet.png" id="14_i7efy"]
+
+[sub_resource type="Animation" id="Animation_7f5ty"]
+resource_name = "fire_start_1"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.100000024, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_i7efy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fiq2q"]
+_data = {
+&"RESET": SubResource("Animation_i7efy"),
+&"fire_start_1": SubResource("Animation_7f5ty")
+}
+
+[node name="high_caliber" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fe0ex")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="hc_score" type="Label" parent="."]
+z_index = 120
+layout_mode = 0
+offset_top = 10.0
+offset_right = 128.0
+offset_bottom = 36.0
+text = "123,234,756,234"
+label_settings = ExtResource("2_2dy3w")
+horizontal_alignment = 1
+vertical_alignment = 2
+script = ExtResource("3_fqsb8")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+
+[node name="hc_1" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_1"]
+texture = ExtResource("3_52yrp")
+centered = false
+
+[node name="hc_2" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_2"]
+position = Vector2(21, 0)
+texture = ExtResource("4_7aryq")
+centered = false
+
+[node name="hc_3" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_3"]
+position = Vector2(42, 0)
+texture = ExtResource("5_5krbj")
+centered = false
+
+[node name="hc_4" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_4"]
+position = Vector2(64, 0)
+texture = ExtResource("6_2dy3w")
+centered = false
+
+[node name="hc_5" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_5"]
+position = Vector2(86, 0)
+texture = ExtResource("7_fqsb8")
+centered = false
+
+[node name="hc_6" type="Control" parent="."]
+z_index = 100
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="hc_6"]
+position = Vector2(107, 0)
+texture = ExtResource("8_7r2uw")
+centered = false
+
+[node name="sec_shell_12" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_12"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_11" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_11"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_10" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_10"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_9" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_9"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_8" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_8"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_7" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_7"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_6" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_6"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_5" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_5"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_4" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_4"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_3" type="Control" parent="."]
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_3"]
+position = Vector2(68, 0)
+texture = ExtResource("12_7f5ty")
+centered = false
+hframes = 10
+
+[node name="sec_shell_1" type="Control" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_1"]
+position = Vector2(60, 0)
+texture = ExtResource("11_7r2uw")
+centered = false
+hframes = 10
+
+[node name="sec_shell_2" type="Control" parent="."]
+z_index = 110
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="sec_shell_2"]
+position = Vector2(57, 5)
+texture = ExtResource("12_otsai")
+centered = false
+hframes = 10
+
+[node name="fire_start_1" type="Control" parent="." node_paths=PackedStringArray("animation_player")]
+visible = false
+z_index = 400
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ehg3t")
+animation_player = NodePath("AnimationPlayer")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Sprite2D" type="Sprite2D" parent="fire_start_1"]
+position = Vector2(6, 10)
+texture = ExtResource("14_i7efy")
+centered = false
+hframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="fire_start_1"]
+libraries = {
+&"": SubResource("AnimationLibrary_fiq2q")
+}
