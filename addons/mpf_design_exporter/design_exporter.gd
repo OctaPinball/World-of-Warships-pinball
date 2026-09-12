@@ -309,6 +309,7 @@ func _export_design_scene(design_path: String, result: ExportResult,
 	# the 128x32 canvas can be measured relative to the slide root.
 	var widgets: Array[Node] = []
 	_collect_widgets(root, widgets, design_path, result)
+	_check_animation_players(root, widgets, design_path, result)
 
 	for order in widgets.size():
 		var widget: Node = widgets[order]
@@ -353,6 +354,45 @@ func _export_design_scene(design_path: String, result: ExportResult,
 	_save_scene(root, _slide_path(slide_name), design_path, result)
 	result.slides.append(_slide_path(slide_name))
 	root.free()
+
+
+## MPFSceneBase has an exported `animation_player` reference that GMC plays for
+## the created/active/inactive/removed animations. Godot stores such a reference
+## as a NodePath inside the saved scene, so it only survives packing when the
+## target sits in the same scene. A slide pointing at an AnimationPlayer inside
+## a widget (or the other way round) would silently lose its animations, so it
+## is rejected here instead.
+func _check_animation_players(slide_root: Node, widgets: Array[Node],
+		design_path: String, result: ExportResult) -> void:
+	var slide_player := _animation_player_of(slide_root)
+	for widget in widgets:
+		if slide_player != null and widget.is_ancestor_of(slide_player):
+			result.error(
+				"'%s': the slide's animation_player ('%s') is inside widget '%s'. " % [
+					design_path, slide_player.name, widget.name]
+				+ "Move it out of the widget: the two become separate scenes."
+			)
+		var widget_player := _animation_player_of(widget)
+		if widget_player != null and not widget.is_ancestor_of(widget_player):
+			result.error(
+				"'%s': widget '%s' points at an animation_player ('%s') outside itself. " % [
+					design_path, widget.name, widget_player.name]
+				+ "Each widget must contain its own AnimationPlayer."
+			)
+
+
+## The AnimationPlayer an MPFSlide/MPFWidget node points at, or null.
+##
+## get() rather than direct property access, because the GMC classes are not
+## @tool scripts: inside the editor their nodes only carry the values stored in
+## the scene file, and an exported node reference is stored as a NodePath that
+## has to be resolved by hand. In a running game the same property is already a
+## Node, so both cases are handled.
+func _animation_player_of(node: Node) -> AnimationPlayer:
+	var value = node.get("animation_player")
+	if value is NodePath:
+		return null if value.is_empty() else node.get_node_or_null(value) as AnimationPlayer
+	return value as AnimationPlayer
 
 
 ## Depth-first collection of the widgets belonging to `slide_root`, in tree

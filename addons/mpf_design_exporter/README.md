@@ -44,6 +44,11 @@ design/game.tscn                       -> generated/slides/game.tscn
 * Names must be unique across the whole design directory, because GMC keys every
   scene by file name alone.
 * Widgets cannot be nested inside other widgets - MPF always targets a slide.
+* If a slide or widget uses GMC's `animation_player` property (the
+  created/active/inactive/removed animations), the AnimationPlayer it points at
+  must live inside that same node: the slide and the widget become separate
+  scenes, and Godot cannot store a node reference that crosses the boundary.
+  Give each widget its own AnimationPlayer.
 * Files and folders starting with `_` are ignored, e.g. `design/_parts/icon.tscn`
   for shared pieces that design scenes instance but that are not slides or
   widgets themselves.
