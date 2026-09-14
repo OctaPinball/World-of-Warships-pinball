@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0h3r0306bqeq"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_u6fkg"]
+[ext_resource type="Texture2D" uid="uid://c0jdmejrajuoa" path="res://images/sec_ap_1_shell_spritesheet.png" id="2_prrio"]
+
+[node name="sec_shell_12" type="Control"]
+visible = false
+z_index = 110
+layout_mode = 3
+anchors_preset = 0
+offset_right = 128.0
+offset_bottom = 32.0
+script = ExtResource("1_u6fkg")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+metadata/generated_notice = "THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation."
+metadata/generated_from = "res://design/high_caliber.tscn : sec_shell_12"
+
+[node name="_design_layout" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="_design_layout"]
+position = Vector2(60, 0)
+texture = ExtResource("2_prrio")
+centered = false
+hframes = 10

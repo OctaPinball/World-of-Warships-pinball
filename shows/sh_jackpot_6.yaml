@@ -2,35 +2,35 @@
 - time: 0
   widgets:
       shell_6:
-        slide: high_caliber_slide
+        slide: high_caliber
       jackpot:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+1"
   widgets:
       shell_6:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       explosion_6:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+0.2"
   widgets:
       fire_start_6:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+0.6"
   widgets:
       fire_start_6:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       fire_6:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+0.2"
   events:
     jackpot_6_text_removed
   widgets:
       explosion_6:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       jackpot:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
   duration: -1

@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbfg3e8iskvd"]
+[gd_scene load_steps=5 format=3 uid="uid://b1pfm53sipt5c"]
 
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_2e3e0"]
-[ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="2_jrp3w"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_cfkf5"]
-[ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="5_e4jqq"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j3nba"]
+[ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="2_as6le"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_kln63"]
+[ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="4_t4sa8"]
 
 [node name="ScoreMulti" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_2e3e0")
+script = ExtResource("1_j3nba")
+metadata/generated_notice = "THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation."
+metadata/generated_from = "res://design/score_multi_4.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -22,8 +24,8 @@ offset_top = -3.0
 offset_right = 128.0
 offset_bottom = 23.0
 text = "3,234,756,234"
-label_settings = ExtResource("2_jrp3w")
-script = ExtResource("3_cfkf5")
+label_settings = ExtResource("2_as6le")
+script = ExtResource("3_kln63")
 variable_type = 4
 variable_name = "score"
 comma_separate = true
@@ -36,9 +38,9 @@ offset_top = -3.0
 offset_right = 129.0
 offset_bottom = 23.0
 text = "3,234,756,234"
-label_settings = ExtResource("2_jrp3w")
+label_settings = ExtResource("2_as6le")
 horizontal_alignment = 2
-script = ExtResource("3_cfkf5")
+script = ExtResource("3_kln63")
 variable_type = 5
 variable_name = "score"
 comma_separate = true
@@ -50,9 +52,9 @@ offset_top = -11.0
 offset_right = 128.0
 offset_bottom = 15.0
 text = "23,234,756,234"
-label_settings = ExtResource("2_jrp3w")
+label_settings = ExtResource("2_as6le")
 vertical_alignment = 2
-script = ExtResource("3_cfkf5")
+script = ExtResource("3_kln63")
 variable_type = 6
 variable_name = "score"
 comma_separate = true
@@ -64,10 +66,10 @@ offset_top = 7.0
 offset_right = 128.0
 offset_bottom = 33.0
 text = "23,234,756,234"
-label_settings = ExtResource("5_e4jqq")
+label_settings = ExtResource("4_t4sa8")
 horizontal_alignment = 2
 vertical_alignment = 1
-script = ExtResource("3_cfkf5")
+script = ExtResource("3_kln63")
 variable_type = 7
 variable_name = "score"
 comma_separate = true
@@ -80,29 +82,31 @@ offset_top = 3.0
 offset_right = 128.0
 offset_bottom = 35.0
 text = "FREE PLAY"
-label_settings = ExtResource("2_jrp3w")
+label_settings = ExtResource("2_as6le")
 horizontal_alignment = 1
 vertical_alignment = 2
-script = ExtResource("3_cfkf5")
+script = ExtResource("3_kln63")
 variable_type = 2
 variable_name = "credits_string"
 
 [node name="ball" type="Label" parent="."]
+layout_mode = 0
 offset_left = 17.0
 offset_top = 24.0
 offset_right = 57.0
 offset_bottom = 47.0
 text = "BALL"
-label_settings = ExtResource("2_jrp3w")
+label_settings = ExtResource("2_as6le")
 
 [node name="ball_number" type="Label" parent="."]
+layout_mode = 0
 offset_left = 42.0
 offset_top = 3.0
 offset_right = 58.0
 offset_bottom = 35.0
 text = "1"
-label_settings = ExtResource("2_jrp3w")
+label_settings = ExtResource("2_as6le")
 vertical_alignment = 2
-script = ExtResource("3_cfkf5")
+script = ExtResource("3_kln63")
 variable_name = "ball"
 update_event = "ball_started"

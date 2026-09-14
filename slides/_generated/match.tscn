@@ -1,16 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://7xr6tyim7b88"]
+[gd_scene load_steps=12 format=3 uid="uid://ciaql20hj4jes"]
 
-[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_a3y6v"]
-[ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="2_hsnke"]
-[ext_resource type="Texture2D" uid="uid://dr7pihv3rmm4x" path="res://images/match_ship.png" id="3_p4d8l"]
-[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_v4g4k"]
-[ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="4_akm5y"]
-[ext_resource type="FontFile" uid="uid://b4k7e7sr7wfdk" path="res://fonts/Quadrit.ttf" id="5_myonv"]
-[ext_resource type="Texture2D" uid="uid://clikegnf3b66l" path="res://images/match_explosion.png" id="7_bmpnc"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_1ve4p"]
+[ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="2_sw0sp"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_kt4gg"]
+[ext_resource type="LabelSettings" uid="uid://ctnq0la85ngxm" path="res://fonts/font_10_b.tres" id="4_32gmx"]
+[ext_resource type="FontFile" uid="uid://b4k7e7sr7wfdk" path="res://fonts/Quadrit.ttf" id="5_hwtbe"]
+[ext_resource type="Texture2D" uid="uid://dr7pihv3rmm4x" path="res://images/match_ship.png" id="6_mddqd"]
+[ext_resource type="Texture2D" uid="uid://clikegnf3b66l" path="res://images/match_explosion.png" id="7_f2t87"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ndvj4"]
 line_spacing = 1.0
-font = ExtResource("5_myonv")
+font = ExtResource("5_hwtbe")
 font_size = 10
 font_color = Color(0, 1, 0, 1)
 
@@ -293,7 +293,9 @@ _data = {
 [node name="Match" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_a3y6v")
+script = ExtResource("1_1ve4p")
+metadata/generated_notice = "THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation."
+metadata/generated_from = "res://design/match.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -311,9 +313,9 @@ offset_right = 75.0
 offset_bottom = 30.0
 theme_override_font_sizes/font_size = 80
 text = "123,456,789"
-label_settings = ExtResource("2_hsnke")
+label_settings = ExtResource("2_sw0sp")
 horizontal_alignment = 2
-script = ExtResource("3_v4g4k")
+script = ExtResource("3_kt4gg")
 variable_type = 2
 variable_name = "player1_score"
 comma_separate = true
@@ -326,9 +328,9 @@ offset_right = 75.0
 offset_bottom = 37.0
 theme_override_font_sizes/font_size = 80
 text = "123,456,789"
-label_settings = ExtResource("2_hsnke")
+label_settings = ExtResource("2_sw0sp")
 horizontal_alignment = 2
-script = ExtResource("3_v4g4k")
+script = ExtResource("3_kt4gg")
 variable_type = 2
 variable_name = "player2_score"
 comma_separate = true
@@ -341,10 +343,10 @@ offset_right = 75.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 80
 text = "123,456,789"
-label_settings = ExtResource("2_hsnke")
+label_settings = ExtResource("2_sw0sp")
 horizontal_alignment = 2
 vertical_alignment = 2
-script = ExtResource("3_v4g4k")
+script = ExtResource("3_kt4gg")
 variable_type = 2
 variable_name = "player3_score"
 comma_separate = true
@@ -357,10 +359,10 @@ offset_right = 75.0
 offset_bottom = 30.0
 theme_override_font_sizes/font_size = 80
 text = "123,456,789"
-label_settings = ExtResource("2_hsnke")
+label_settings = ExtResource("2_sw0sp")
 horizontal_alignment = 2
 vertical_alignment = 2
-script = ExtResource("3_v4g4k")
+script = ExtResource("3_kt4gg")
 variable_type = 2
 variable_name = "player4_score"
 comma_separate = true
@@ -373,9 +375,9 @@ offset_left = 94.0
 offset_right = 114.0
 offset_bottom = 23.0
 text = "80"
-label_settings = ExtResource("4_akm5y")
+label_settings = ExtResource("4_32gmx")
 horizontal_alignment = 1
-script = ExtResource("3_v4g4k")
+script = ExtResource("3_kt4gg")
 variable_type = 2
 variable_name = "match_number"
 min_digits = 2
@@ -388,7 +390,7 @@ offset_right = 124.0
 offset_bottom = 23.0
 text = "80
 "
-label_settings = ExtResource("4_akm5y")
+label_settings = ExtResource("4_32gmx")
 horizontal_alignment = 1
 
 [node name="Match" type="Label" parent="."]
@@ -399,7 +401,7 @@ offset_top = 15.0
 offset_right = 125.0
 offset_bottom = 38.0
 text = "MATCH"
-label_settings = ExtResource("4_akm5y")
+label_settings = ExtResource("4_32gmx")
 horizontal_alignment = 1
 
 [node name="Match for free game" type="Label" parent="."]
@@ -413,7 +415,7 @@ horizontal_alignment = 1
 
 [node name="MatchShip" type="Sprite2D" parent="."]
 position = Vector2(-36, 26)
-texture = ExtResource("3_p4d8l")
+texture = ExtResource("6_mddqd")
 centered = false
 offset = Vector2(-35, -6)
 
@@ -426,5 +428,5 @@ autoplay = "new_animation"
 [node name="MatchExplosion" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(87, 17)
-texture = ExtResource("7_bmpnc")
+texture = ExtResource("7_f2t87")
 hframes = 12

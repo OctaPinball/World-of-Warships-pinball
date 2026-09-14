@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://okc066wq7asj"]
+[gd_scene load_steps=24 format=3 uid="uid://cxmhjutr35ww"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_fe0ex"]
 [ext_resource type="LabelSettings" uid="uid://bhlkpxr6drej3" path="res://fonts/font_8_m.tres" id="2_2dy3w"]
@@ -46,6 +46,22 @@ tracks/0/keys = {
 "values": [0, 1, 2]
 }
 
+[sub_resource type="Animation" id="Animation_u3sq0"]
+resource_name = "sec_shell_1"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
 [sub_resource type="Animation" id="Animation_fiq2q"]
 resource_name = "sec_shell_2"
 step = 0.1
@@ -62,8 +78,56 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 
-[sub_resource type="Animation" id="Animation_u3sq0"]
-resource_name = "sec_shell_1"
+[sub_resource type="Animation" id="Animation_uusrj"]
+resource_name = "sec_shell_3"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_6xwuo"]
+resource_name = "sec_shell_4"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_5lg3v"]
+resource_name = "sec_shell_5"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_2v7mo"]
+resource_name = "sec_shell_6"
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -83,7 +147,11 @@ _data = {
 &"RESET": SubResource("Animation_i7efy"),
 &"fire_start_1": SubResource("Animation_7f5ty"),
 &"sec_shell_1": SubResource("Animation_u3sq0"),
-&"sec_shell_2": SubResource("Animation_fiq2q")
+&"sec_shell_2": SubResource("Animation_fiq2q"),
+&"sec_shell_3": SubResource("Animation_uusrj"),
+&"sec_shell_4": SubResource("Animation_6xwuo"),
+&"sec_shell_5": SubResource("Animation_5lg3v"),
+&"sec_shell_6": SubResource("Animation_2v7mo")
 }
 
 [node name="high_caliber" type="Control"]
@@ -277,7 +345,6 @@ centered = false
 hframes = 10
 
 [node name="sec_shell_6" type="Control" parent="."]
-visible = false
 z_index = 110
 anchors_preset = 0
 offset_right = 40.0
@@ -291,8 +358,13 @@ texture = ExtResource("11_7r2uw")
 centered = false
 hframes = 10
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sec_shell_6"]
+libraries = {
+&"": SubResource("AnimationLibrary_fiq2q")
+}
+autoplay = "sec_shell_6"
+
 [node name="sec_shell_5" type="Control" parent="."]
-visible = false
 z_index = 110
 anchors_preset = 0
 offset_right = 40.0
@@ -306,8 +378,13 @@ texture = ExtResource("11_7r2uw")
 centered = false
 hframes = 10
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sec_shell_5"]
+libraries = {
+&"": SubResource("AnimationLibrary_fiq2q")
+}
+autoplay = "sec_shell_5"
+
 [node name="sec_shell_4" type="Control" parent="."]
-visible = false
 z_index = 110
 anchors_preset = 0
 offset_right = 40.0
@@ -320,6 +397,12 @@ position = Vector2(60, 0)
 texture = ExtResource("11_7r2uw")
 centered = false
 hframes = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sec_shell_4"]
+libraries = {
+&"": SubResource("AnimationLibrary_fiq2q")
+}
+autoplay = "sec_shell_4"
 
 [node name="sec_shell_3" type="Control" parent="."]
 z_index = 110
@@ -334,6 +417,12 @@ position = Vector2(68, 0)
 texture = ExtResource("12_7f5ty")
 centered = false
 hframes = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sec_shell_3"]
+libraries = {
+&"": SubResource("AnimationLibrary_fiq2q")
+}
+autoplay = "sec_shell_3"
 
 [node name="sec_shell_1" type="Control" parent="."]
 z_index = 110
@@ -353,6 +442,7 @@ hframes = 10
 libraries = {
 &"": SubResource("AnimationLibrary_fiq2q")
 }
+autoplay = "sec_shell_1"
 
 [node name="sec_shell_2" type="Control" parent="."]
 z_index = 110
@@ -372,6 +462,7 @@ hframes = 10
 libraries = {
 &"": SubResource("AnimationLibrary_fiq2q")
 }
+autoplay = "sec_shell_2"
 
 [node name="fire_start_1" type="Control" parent="." node_paths=PackedStringArray("animation_player")]
 z_index = 400
@@ -392,3 +483,4 @@ hframes = 3
 libraries = {
 &"": SubResource("AnimationLibrary_fiq2q")
 }
+autoplay = "fire_start_1"

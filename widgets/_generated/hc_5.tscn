@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0wbtma4be56v"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_exkno"]
+[ext_resource type="Texture2D" uid="uid://doo35se0kgk5t" path="res://images/hc_5.png" id="2_v6pyc"]
+
+[node name="hc_5" type="Control"]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+offset_right = 128.0
+offset_bottom = 32.0
+script = ExtResource("1_exkno")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+metadata/generated_notice = "THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation."
+metadata/generated_from = "res://design/high_caliber.tscn : hc_5"
+
+[node name="_design_layout" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="_design_layout"]
+position = Vector2(86, 0)
+texture = ExtResource("2_v6pyc")
+centered = false

@@ -1,0 +1,22 @@
+THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation.
+This directory is owned by addons/mpf_design_tools and is deleted on every run.
+
+hc_1.tscn  <-  res://design/high_caliber.tscn : hc_1
+hc_2.tscn  <-  res://design/high_caliber.tscn : hc_2
+hc_3.tscn  <-  res://design/high_caliber.tscn : hc_3
+hc_4.tscn  <-  res://design/high_caliber.tscn : hc_4
+hc_5.tscn  <-  res://design/high_caliber.tscn : hc_5
+hc_6.tscn  <-  res://design/high_caliber.tscn : hc_6
+sec_shell_12.tscn  <-  res://design/high_caliber.tscn : sec_shell_12
+sec_shell_11.tscn  <-  res://design/high_caliber.tscn : sec_shell_11
+sec_shell_10.tscn  <-  res://design/high_caliber.tscn : sec_shell_10
+sec_shell_9.tscn  <-  res://design/high_caliber.tscn : sec_shell_9
+sec_shell_8.tscn  <-  res://design/high_caliber.tscn : sec_shell_8
+sec_shell_7.tscn  <-  res://design/high_caliber.tscn : sec_shell_7
+sec_shell_6.tscn  <-  res://design/high_caliber.tscn : sec_shell_6
+sec_shell_5.tscn  <-  res://design/high_caliber.tscn : sec_shell_5
+sec_shell_4.tscn  <-  res://design/high_caliber.tscn : sec_shell_4
+sec_shell_3.tscn  <-  res://design/high_caliber.tscn : sec_shell_3
+sec_shell_1.tscn  <-  res://design/high_caliber.tscn : sec_shell_1
+sec_shell_2.tscn  <-  res://design/high_caliber.tscn : sec_shell_2
+fire_start_1.tscn  <-  res://design/high_caliber.tscn : fire_start_1

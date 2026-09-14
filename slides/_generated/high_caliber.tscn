@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0xtswog77x5c"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_dpsw6"]
+[ext_resource type="LabelSettings" uid="uid://bhlkpxr6drej3" path="res://fonts/font_8_m.tres" id="2_i7l1c"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_y74i3"]
+
+[node name="high_caliber" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dpsw6")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+metadata/generated_notice = "THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation."
+metadata/generated_from = "res://design/high_caliber.tscn"
+
+[node name="hc_score" type="Label" parent="."]
+z_index = 120
+layout_mode = 0
+offset_top = 10.0
+offset_right = 128.0
+offset_bottom = 36.0
+text = "123,234,756,234"
+label_settings = ExtResource("2_i7l1c")
+horizontal_alignment = 1
+vertical_alignment = 2
+script = ExtResource("3_y74i3")
+variable_name = "score"
+comma_separate = true
+min_digits = 2

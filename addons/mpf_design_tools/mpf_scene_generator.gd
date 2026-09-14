@@ -215,8 +215,14 @@ func _check_widget(path: String, root: Node, widget: Control) -> void:
 	var anim_player := _node_property(widget, "animation_player")
 	if anim_player and not widget.is_ancestor_of(anim_player):
 		_error("%s: its animation_player must be a node inside the widget." % where)
-	elif anim_player == null and _descendants(widget).any(func(n: Node): return n is AnimationPlayer):
-		_warn("%s contains an AnimationPlayer but its 'animation_player' property is empty, so GMC will not play created/active/removed animations or widget_player 'action: animation' on it." % where)
+	elif anim_player == null:
+		# An AnimationPlayer is started either by Godot (its `autoplay` animation plays when
+		# the widget appears) or by GMC (through the widget's `animation_player` property).
+		# Only warn when neither is set up, because then nothing will ever play it.
+		for node in _descendants(widget):
+			if node is AnimationPlayer and node.autoplay == "":
+				_warn("%s: AnimationPlayer '%s' has no autoplay and the widget's 'Animation Player' property is empty, so nothing will start its animations. Set autoplay on it, or set the widget's 'Animation Player' property (needed for created/active/removed animations and widget_player 'action: animation')." % [where, widget.get_path_to(node)])
+				break
 
 	if not widget.visible:
 		_warn("%s is hidden in the design. It will also be hidden at runtime." % where)
@@ -405,12 +411,15 @@ func _check_names(outputs: Array[Output]) -> void:
 			_error("Generated %s '%s' (from %s) has the same name as %s. GMC identifies scenes by file name only, so one would silently replace the other." % [output.kind, output.name, output.source, existing[output.name]])
 
 
-## If GMC's scripts do not compile, `node is MPFSlide` is silently false for every node.
+## If GMC's scripts are missing or do not compile, `node is MPFSlide` is silently false
+## for every node. Note: Script.can_instantiate() is NOT usable here, because inside the
+## editor it returns false for every script that is not @tool (like GMC's classes).
 func _check_gmc_classes() -> bool:
-	for script_path in [MPF_SLIDE_SCRIPT, MPF_WIDGET_SCRIPT]:
-		var script := load(script_path) as Script
-		if script == null or not script.can_instantiate():
-			_error("'%s' is missing or does not compile. Is the mpf-gmc addon installed and enabled?" % script_path)
+	for entry in [[MPF_SLIDE_SCRIPT, &"MPFSlide"], [MPF_WIDGET_SCRIPT, &"MPFWidget"]]:
+		var script := load(entry[0]) as Script
+		# A compiled script knows its native base class ("Control"); a broken one returns "".
+		if script == null or script.get_instance_base_type() == &"" or script.get_global_name() != entry[1]:
+			_error("'%s' is missing, does not compile, or is not class_name %s. Is the mpf-gmc addon installed?" % [entry[0], entry[1]])
 			return false
 	return true
 
@@ -605,11 +614,15 @@ func _info(message: String) -> void:
 
 func _warn(message: String) -> void:
 	warnings.append(message)
-	push_warning("[MPF Generator] " + message)
-	print("[MPF Generator] WARNING: ", message)
+	_print_colored("yellow", "WARNING: " + message)
 
 
 func _error(message: String) -> void:
 	errors.append(message)
-	push_error("[MPF Generator] " + message)
-	print("[MPF Generator] ERROR: ", message)
+	_print_colored("red", "ERROR: " + message)
+
+
+## One colored line in the Output panel. print_rich() understands BBCode; text in
+## brackets that is not a known tag (like "[MPF Generator]") is printed as-is.
+func _print_colored(color: String, message: String) -> void:
+	print_rich("[color=%s][MPF Generator] %s[/color]" % [color, message])

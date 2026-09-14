@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbfg3e8iskvd"]
+[gd_scene load_steps=5 format=3 uid="uid://jxifxnw7o5s4"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_2e3e0"]
 [ext_resource type="LabelSettings" uid="uid://btmgsbe28nhn3" path="res://fonts/font_5px.tres" id="2_jrp3w"]

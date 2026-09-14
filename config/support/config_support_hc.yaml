@@ -20,7 +20,7 @@ slide_player:
         type: fade
         duration: 0.3s
   activate_jackpot_to_super:
-    high_caliber_slide:
+    high_caliber:
       action: remove
 
 slides:

@@ -1,0 +1,12 @@
+THIS FILE IS GENERATED from res://design. DO NOT EDIT MANUALLY - it is deleted and rebuilt on every generation.
+This directory is owned by addons/mpf_design_tools and is deleted on every run.
+
+attract.tscn  <-  res://design/attract.tscn
+ball_saved.tscn  <-  res://design/ball_saved.tscn
+high_caliber.tscn  <-  res://design/high_caliber.tscn
+match.tscn  <-  res://design/match.tscn
+score_multi_1.tscn  <-  res://design/score_multi_1.tscn
+score_multi_2.tscn  <-  res://design/score_multi_2.tscn
+score_multi_3.tscn  <-  res://design/score_multi_3.tscn
+score_multi_4.tscn  <-  res://design/score_multi_4.tscn
+score_single.tscn  <-  res://design/score_single.tscn

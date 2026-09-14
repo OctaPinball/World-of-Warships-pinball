@@ -2,11 +2,11 @@
 - time: 0
   widgets:
       muzzle_flash_1:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+0.8"
   widgets:
       muzzle_flash_1:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
 
 

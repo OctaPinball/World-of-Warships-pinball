@@ -2,42 +2,42 @@
 - time: 0
   widgets:
       shell_double_2:
-        slide: high_caliber_slide
+        slide: high_caliber
       double_jackpot:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+1"
   events:
     remove_hc_2
   widgets:
       shell_double_2:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       hc_2:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       hajotest_2:
-        slide: high_caliber_slide
+        slide: high_caliber
       hajotest_izzo_2:
-        slide: high_caliber_slide
+        slide: high_caliber
       felepitmeny_2:
-        slide: high_caliber_slide
+        slide: high_caliber
       robbanas_2:
-        slide: high_caliber_slide
+        slide: high_caliber
       agyu_2_marad:
-        slide: high_caliber_slide
+        slide: high_caliber
 - time: "+1"
   widgets:
       felepitmeny_2:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
 - time: "+0.2"
   events:
     jackpot_2_text_removed
   widgets:
       robbanas_2:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
       double_jackpot:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
   duration: -1

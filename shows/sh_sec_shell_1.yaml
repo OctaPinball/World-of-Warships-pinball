@@ -2,10 +2,12 @@
 - time: 0
   widgets:
       sec_shell_1:
-        slide: high_caliber_slide
+        slide: high_caliber
+        action: animation
+        animation: sec_shell_1
 - time: "+1"
   widgets:
       sec_shell_1:
-        slide: high_caliber_slide
+        slide: high_caliber
         action: remove
 
