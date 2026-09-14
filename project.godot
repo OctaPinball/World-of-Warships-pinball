@@ -22,10 +22,10 @@ MPF="*res://addons/mpf-gmc/mpf_gmc.gd"
 [display]
 
 window/size/viewport_width=256
-window/size/viewport_height=64
+window/size/viewport_height=32
 window/size/initial_position_type=0
 window/size/initial_position=Vector2i(3102, 30)
-window/stretch/aspect="ignore"
+window/size/resizable=false
 window/stretch/scale_mode="integer"
 
 [editor_plugins]
